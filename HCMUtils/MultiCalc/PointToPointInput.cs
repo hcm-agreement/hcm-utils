@@ -1,0 +1,52 @@
+using HCMUtils.Types;
+
+namespace HCMUtils.MultiCalc;
+
+public record PointToPointInput(
+    (double Lat, double Long) TxCoordinates,
+    int? TxHeightAboveSeaLevel,
+    (string Horizontal, string Vertical) TxAntennaType,
+    double TxAzimuth,
+    double TxElevation,
+    int TxAntennaHeight,
+    double TxPower,
+    GainType TxGainType,
+    double TxFrequency,
+    bool ChannelOccupation,
+    Temperature? SeaTemperature,
+    double? DistanceOverSea,
+    int TxServiceAreaReadius,
+    (double Lat, double Long) RxCoordinates,
+    int? RxHeightAboveSeaLevel,
+    int RxAntennaHeight,
+    Country TxCountry,
+    Country RxCountry,
+    double? PermissibleFieldStrength,
+    double RxFrequency,
+    string TxEmissionDesignation,
+    string RxEmissionDesignation,
+    (string Horizontal, string Vertical) RxAntennaType,
+    double RxAzimuth,
+    double RxElevation,
+    GainType RxGainType,
+    double RxGain,
+    double DepolarizationLoss,
+    int? FrequencyDifferenceCorrectionFactor,
+    int RxServiceAreaRadius
+) : Input(
+        TxCoordinates,
+        TxHeightAboveSeaLevel,
+        TxAntennaType,
+        TxAzimuth,
+        TxElevation,
+        TxAntennaHeight,
+        TxPower,
+        TxGainType,
+        TxFrequency,
+        ChannelOccupation,
+        SeaTemperature,
+        DistanceOverSea,
+        TxServiceAreaReadius,
+        TxCountry,
+        PermissibleFieldStrength
+);

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HCMUtils/HCMUtils.csproj" />
+  <Project Path="HCMUtilsTests/HCMUtilsTests.csproj" />
+</Solution>
