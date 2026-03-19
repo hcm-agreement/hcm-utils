@@ -12,7 +12,7 @@ public class Helpers
         var groupedInputLines = GroupInputLines(inputLines);
 
         return from groupedInput in groupedInputLines
-               select (Input)(String.Helpers.ParseMode(groupedInput[0]) == Types.ModeType.PointToLine ? ParsePointToLineMultiCalc([.. groupedInput]) : ParsePointToPointMultiCalc([.. groupedInput]));
+               select (Input)(String.Helpers.ParseModeType(groupedInput[0]) == Types.ModeType.PointToLine ? ParsePointToLineMultiCalc([.. groupedInput]) : ParsePointToPointMultiCalc([.. groupedInput]));
     }
 
     static List<List<string>> GroupInputLines(IEnumerable<string> inputLines)
@@ -22,7 +22,7 @@ public class Helpers
         while (inputLines.Any())
         {
             var mode = inputLines.First();
-            var takeLines = String.Helpers.ParseMode(mode) == Types.ModeType.PointToLine ? 21 : 33;
+            var takeLines = String.Helpers.ParseModeType(mode) == Types.ModeType.PointToLine ? 21 : 33;
 
             groupedInputLines = [.. groupedInputLines, [.. inputLines.Take(takeLines)]];
 

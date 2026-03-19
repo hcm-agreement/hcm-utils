@@ -95,7 +95,7 @@ public partial class Helpers
             _ => throw new Exception($"Unable to parse temperature `{input}")
         };
     }
-    public static ModeType ParseMode(string input)
+    public static ModeType ParseModeType(string input)
     {
         return int.Parse(input) >= 0 ? ModeType.PointToPoint : ModeType.PointToLine;
     }
