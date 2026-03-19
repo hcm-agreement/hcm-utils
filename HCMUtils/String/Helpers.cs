@@ -95,11 +95,23 @@ public partial class Helpers
             _ => throw new Exception($"Unable to parse temperature `{input}")
         };
     }
+
+    /// <summary>
+    /// Get the mode type from a string.
+    /// </summary>
+    /// <param name="input">A string containing a mode, e.g. -10 or 1</param>
+    /// <returns>The mode type corresponding with the mode described by the string</returns>
     public static ModeType ParseModeType(string input)
     {
         return int.Parse(input) >= 0 ? ModeType.PointToPoint : ModeType.PointToLine;
     }
 
+    /// <summary>
+    /// Get the gain type of a string
+    /// </summary>
+    /// <param name="input">A string, either "E" or "I"</param>
+    /// <returns>The corresponding gain type</returns>
+    /// <exception cref="Exception"></exception>
     public static GainType ParseGainType(string input)
     {
         return input.Trim().ToLower() switch
@@ -108,5 +120,39 @@ public partial class Helpers
             "i" => GainType.Isotropic,
             _ => throw new Exception($"Unable to parse gain type `{input}")
         };
+    }
+
+    /// <summary>
+    /// Get a DMS string from a decimal degree number and the axis (lat or long)
+    /// </summary>
+    /// <param name="degrees">A coordinate in decimal degree form</param>
+    /// <param name="isLatitude">Whether the decimal is on the latitudinal or longitudinal axis</param>
+    /// <returns></returns>
+    public static string ToDMSString(double degrees, bool isLatitude)
+    {
+        var degreesPart = Math.Truncate(Math.Abs(degrees));
+        var minutesPart = (Math.Abs(degrees) - degreesPart) * 60;
+        var secondsPart = (minutesPart - Math.Truncate(minutesPart)) * 60;
+
+        var direction = isLatitude ? (
+            degrees >= 0 ? 'N' : 'S'
+        ) : (
+            degrees >= 0 ? 'E' : 'W'
+        );
+
+        return degreesPart.ToString().PadLeft(isLatitude ? 3 : 2, '0')
+            + direction
+            + Math.Truncate(minutesPart).ToString().PadLeft(2, '0')
+            + Math.Round(secondsPart).ToString().PadLeft(2, '0');
+    }
+
+    /// <summary>
+    /// Get a coordinates string from a latitude and longitude in tupel form
+    /// </summary>
+    /// <param name="coordinates">A tuple of coordinates</param>
+    /// <returns>The string representation in DMS form of the coordinate pair</returns>
+    public static string ToCoordinatesString((double Lat, double Long) coordinates)
+    {
+        return ToDMSString(coordinates.Lat, true) + ToDMSString(coordinates.Long, false);
     }
 }

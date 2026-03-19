@@ -10,6 +10,15 @@ public class HelpersTest
     public void ParsesDMSStringsCorrectly()
     {
         Assert.Equal(51.7025, Helpers.ParseDMSString("51N4209"));
+        Assert.Equal(51.7025, Helpers.ParseDMSString("051N4209"));
+        Assert.Equal(-51.7025, Helpers.ParseDMSString("51S4209"));
+        Assert.Equal(51.7025, Helpers.ParseDMSString("051N4209"));
+        Assert.Equal(8.22, Helpers.ParseDMSString("8E1312"));
+        Assert.Equal(8.22, Helpers.ParseDMSString("08E1312"));
+        Assert.Equal(8.22, Helpers.ParseDMSString("008E1312"));
+        Assert.Equal(-8.22, Helpers.ParseDMSString("8W1312"));
+        Assert.Equal(-8.22, Helpers.ParseDMSString("08W1312"));
+        Assert.Equal(-8.22, Helpers.ParseDMSString("008W1312"));
     }
 
     [Fact]
@@ -98,4 +107,25 @@ public class HelpersTest
         Assert.Equal(ModeType.PointToLine, Helpers.ParseModeType("-11"));
     }
 
+    [Fact]
+    public void ConvertsDMSStringsCorrectly()
+    {
+        Assert.Equal("051N4209", Helpers.ToDMSString(51.7025, true));
+        Assert.Equal("051S4209", Helpers.ToDMSString(-51.7025, true));
+        Assert.Equal("08E1312", Helpers.ToDMSString(8.22, false));
+        Assert.Equal("08W1312", Helpers.ToDMSString(-8.22, false));
+    }
+
+    [Fact]
+    public void ConvertsCoordinateStringsCorrectly()
+    {
+        Assert.Equal("008N131251E4545", Helpers.ToCoordinatesString((8.22, 51.7625)));
+        Assert.Equal("008S131251W4545", Helpers.ToCoordinatesString((-8.22, -51.7625)));
+        Assert.Equal("018N131251E4545", Helpers.ToCoordinatesString((18.22, 51.7625)));
+        Assert.Equal("018S131251W4545", Helpers.ToCoordinatesString((-18.22, -51.7625)));
+        Assert.Equal("008N131201E4545", Helpers.ToCoordinatesString((8.22, 1.7625)));
+        Assert.Equal("008S131201W4545", Helpers.ToCoordinatesString((-8.22, -1.7625)));
+        Assert.Equal("018N131201E4545", Helpers.ToCoordinatesString((18.22, 1.7625)));
+        Assert.Equal("018S131201W4545", Helpers.ToCoordinatesString((-18.22, -1.7625)));
+    }
 }
