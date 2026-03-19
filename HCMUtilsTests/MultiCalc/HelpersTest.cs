@@ -12,14 +12,22 @@ public class HelpersTest
     public void ParsesModeCorrectly()
     {
         Assert.IsType<PointToLineInput>(Helpers.ParseMultiCalc(BuildPointToLineTestInput(mode: "-1")).First());
+        Assert.Equal(-1, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(mode: "-1")).Mode);
         Assert.IsType<PointToLineInput>(Helpers.ParseMultiCalc(BuildPointToLineTestInput(mode: "-9")).First());
+        Assert.Equal(-9, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(mode: "-9")).Mode);
         Assert.IsType<PointToLineInput>(Helpers.ParseMultiCalc(BuildPointToLineTestInput(mode: "-10")).First());
+        Assert.Equal(-10, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(mode: "-10")).Mode);
         Assert.IsType<PointToLineInput>(Helpers.ParseMultiCalc(BuildPointToLineTestInput(mode: "-11")).First());
+        Assert.Equal(-11, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(mode: "-11")).Mode);
 
         Assert.IsType<PointToPointInput>(Helpers.ParseMultiCalc(BuildPointToPointTestInput(mode: "0")).First());
+        Assert.Equal(0, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(mode: "0")).Mode);
         Assert.IsType<PointToPointInput>(Helpers.ParseMultiCalc(BuildPointToPointTestInput(mode: "10")).First());
+        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(mode: "10")).Mode);
         Assert.IsType<PointToPointInput>(Helpers.ParseMultiCalc(BuildPointToPointTestInput(mode: "11")).First());
+        Assert.Equal(11, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(mode: "11")).Mode);
         Assert.IsType<PointToPointInput>(Helpers.ParseMultiCalc(BuildPointToPointTestInput(mode: "12")).First());
+        Assert.Equal(12, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(mode: "12")).Mode);
     }
 
     [Fact]
