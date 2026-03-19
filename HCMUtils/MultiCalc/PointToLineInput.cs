@@ -3,6 +3,7 @@ using HCMUtils.Types;
 namespace HCMUtils.MultiCalc;
 
 public record PointToLineInput(
+    int Mode,
     (double Lat, double Long) TxCoordinates,
     int? TxHeightAboveSeaLevel,
     (string Horizontal, string Vertical) TxAntennaType,
@@ -22,6 +23,7 @@ public record PointToLineInput(
     double? PermissibleFieldStrength,
     int MaxCrossBorderRange
 ) : Input(
+        Mode,
         TxCoordinates,
         TxHeightAboveSeaLevel,
         TxAntennaType,

@@ -77,25 +77,25 @@ public class HelpersTest
     [Fact]
     public void ParsesModesCorrectly()
     {
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("0"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("  0"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("0  "));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("10"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode(" 10"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("10 "));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("11"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode(" 11"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("11 "));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("12"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode(" 12"));
-        Assert.Equal(Mode.PointToPoint, Helpers.ParseMode("12 "));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("0"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("  0"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("0  "));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("10"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode(" 10"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("10 "));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("11"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode(" 11"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("11 "));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("12"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode(" 12"));
+        Assert.Equal(ModeType.PointToPoint, Helpers.ParseMode("12 "));
 
-        Assert.Equal(Mode.PointToLine, Helpers.ParseMode("-1"));
-        Assert.Equal(Mode.PointToLine, Helpers.ParseMode(" -1"));
-        Assert.Equal(Mode.PointToLine, Helpers.ParseMode("-9"));
-        Assert.Equal(Mode.PointToLine, Helpers.ParseMode(" -9"));
-        Assert.Equal(Mode.PointToLine, Helpers.ParseMode("-10"));
-        Assert.Equal(Mode.PointToLine, Helpers.ParseMode("-11"));
+        Assert.Equal(ModeType.PointToLine, Helpers.ParseMode("-1"));
+        Assert.Equal(ModeType.PointToLine, Helpers.ParseMode(" -1"));
+        Assert.Equal(ModeType.PointToLine, Helpers.ParseMode("-9"));
+        Assert.Equal(ModeType.PointToLine, Helpers.ParseMode(" -9"));
+        Assert.Equal(ModeType.PointToLine, Helpers.ParseMode("-10"));
+        Assert.Equal(ModeType.PointToLine, Helpers.ParseMode("-11"));
     }
 
 }

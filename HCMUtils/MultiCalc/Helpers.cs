@@ -12,7 +12,7 @@ public class Helpers
         var groupedInputLines = GroupInputLines(inputLines);
 
         return from groupedInput in groupedInputLines
-               select (Input)(String.Helpers.ParseMode(groupedInput[0]) == Types.Mode.PointToLine ? ParsePointToLineMultiCalc([.. groupedInput]) : ParsePointToPointMultiCalc([.. groupedInput]));
+               select (Input)(String.Helpers.ParseMode(groupedInput[0]) == Types.ModeType.PointToLine ? ParsePointToLineMultiCalc([.. groupedInput]) : ParsePointToPointMultiCalc([.. groupedInput]));
     }
 
     static List<List<string>> GroupInputLines(IEnumerable<string> inputLines)
@@ -22,7 +22,7 @@ public class Helpers
         while (inputLines.Any())
         {
             var mode = inputLines.First();
-            var takeLines = String.Helpers.ParseMode(mode) == Types.Mode.PointToLine ? 21 : 33;
+            var takeLines = String.Helpers.ParseMode(mode) == Types.ModeType.PointToLine ? 21 : 33;
 
             groupedInputLines = [.. groupedInputLines, [.. inputLines.Take(takeLines)]];
 
@@ -35,6 +35,7 @@ public class Helpers
     internal static PointToLineInput ParsePointToLineMultiCalc(List<string> inputList)
     {
         return new(
+            int.Parse(inputList[0]),
             String.Helpers.ParseCoordinates(inputList[1]),
             int.TryParse(inputList[2], out var TxHeightAboveSeaLevel) ? TxHeightAboveSeaLevel : null,
             (inputList[3], inputList[4]),
@@ -59,6 +60,7 @@ public class Helpers
     internal static PointToPointInput ParsePointToPointMultiCalc(List<string> inputList)
     {
         return new(
+            int.Parse(inputList[0]),
             String.Helpers.ParseCoordinates(inputList[1]),
             int.TryParse(inputList[2], out var TxHeightAboveSeaLevel) ? TxHeightAboveSeaLevel : null,
             (inputList[3], inputList[4]),

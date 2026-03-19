@@ -1,7 +1,6 @@
 using HCMUtils;
 using HCMUtils.MultiCalc;
 using HCMUtils.Types;
-using Newtonsoft.Json;
 
 [assembly: CaptureConsole]
 
@@ -389,6 +388,6 @@ public class HelpersTest
     [Fact]
     public void ParsesMultiCalcLinesCorrectly()
     {
-        Assert.NotEmpty(JsonConvert.SerializeObject(Helpers.ParseMultiCalc(File.ReadLines("fixtures/MultiCalc.txt")), Formatting.Indented));
+        Assert.NotEmpty(Helpers.ParseMultiCalc(File.ReadLines("fixtures/MultiCalc.txt")));
     }
 }

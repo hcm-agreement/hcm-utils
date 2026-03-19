@@ -3,6 +3,7 @@ using HCMUtils.Types;
 namespace HCMUtils.MultiCalc;
 
 public record PointToPointInput(
+    int Mode,
     (double Lat, double Long) TxCoordinates,
     int? TxHeightAboveSeaLevel,
     (string Horizontal, string Vertical) TxAntennaType,
@@ -34,6 +35,7 @@ public record PointToPointInput(
     int? FrequencyDifferenceCorrectionFactor,
     int RxServiceAreaRadius
 ) : Input(
+        Mode,
         TxCoordinates,
         TxHeightAboveSeaLevel,
         TxAntennaType,
