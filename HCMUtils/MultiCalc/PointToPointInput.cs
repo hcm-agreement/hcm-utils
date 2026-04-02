@@ -5,7 +5,7 @@ namespace HCMUtils.MultiCalc;
 public record PointToPointInput(
     int Mode,
     (double Lat, double Long) TxCoordinates,
-    int? TxHeightAboveSeaLevel,
+    int? TxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
     double TxAzimuth,
     double TxElevation,
@@ -16,9 +16,9 @@ public record PointToPointInput(
     bool ChannelOccupation,
     Temperature? SeaTemperature,
     double? DistanceOverSea,
-    int TxServiceAreaReadius,
+    int TxServiceAreaRadius,
     (double Lat, double Long) RxCoordinates,
-    int? RxHeightAboveSeaLevel,
+    int? RxSiteHeight,
     int RxAntennaHeight,
     Country TxCountry,
     Country RxCountry,
@@ -37,7 +37,7 @@ public record PointToPointInput(
 ) : Input(
         Mode,
         TxCoordinates,
-        TxHeightAboveSeaLevel,
+        TxSiteHeight,
         TxAntennaType,
         TxAzimuth,
         TxElevation,
@@ -48,7 +48,8 @@ public record PointToPointInput(
         ChannelOccupation,
         SeaTemperature,
         DistanceOverSea,
-        TxServiceAreaReadius,
+        TxServiceAreaRadius,
         TxCountry,
-        PermissibleFieldStrength
+        PermissibleFieldStrength,
+        TxEmissionDesignation
 );

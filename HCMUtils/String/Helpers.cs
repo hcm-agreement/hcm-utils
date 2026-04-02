@@ -55,17 +55,28 @@ public partial class Helpers
     {
         var match = SINumberRegex().Match(input);
 
-        return double.Parse(match.Groups["number"].Value) * GetSIMultiplier(match.Groups["prefix"].Value);
+        return double.Parse(match.Groups["number"].Value) * GetSIMultiplier(GetSIPrefix(match.Groups["prefix"].Value));
     }
 
-    static int GetSIMultiplier(string input)
+    static SIPrefix GetSIPrefix(string input)
     {
         return input switch
         {
-            "G" => 1_000_000_000,
-            "M" => 1_000_000,
-            "k" => 1_000,
-            _ => 1,
+            "G"=> SIPrefix.G,
+            "M" => SIPrefix.M,
+            "k" => SIPrefix.k,
+            _ => throw new Exception($"Unable to parse SI prefix `{input}")
+        };
+    }
+
+    static int GetSIMultiplier(SIPrefix input)
+    {
+        return input switch
+        {
+            SIPrefix.G=> 1_000_000_000,
+            SIPrefix.M => 1_000_000,
+            SIPrefix.k => 1_000,
+            _ => throw new Exception($"Not an enum value `{input}`")
         };
     }
 
@@ -140,7 +151,7 @@ public partial class Helpers
             degrees >= 0 ? 'E' : 'W'
         );
 
-        return degreesPart.ToString().PadLeft(isLatitude ? 3 : 2, '0')
+        return degreesPart.ToString().PadLeft(isLatitude ? 2 : 3, '0')
             + direction
             + Math.Truncate(minutesPart).ToString().PadLeft(2, '0')
             + Math.Round(secondsPart).ToString().PadLeft(2, '0');
@@ -151,8 +162,203 @@ public partial class Helpers
     /// </summary>
     /// <param name="coordinates">A tuple of coordinates</param>
     /// <returns>The string representation in DMS form of the coordinate pair</returns>
-    public static string ToCoordinatesString((double Lat, double Long) coordinates)
+    public static string ToCoordinatesString((double Long, double Lat) coordinates)
     {
-        return ToDMSString(coordinates.Lat, true) + ToDMSString(coordinates.Long, false);
+        return ToDMSString(coordinates.Long, false) + ToDMSString(coordinates.Lat, true);
+    }
+
+    /// <summary>
+    /// Get a E/I char from a GainType
+    /// </summary>
+    /// <param name="gainType">The input GainType</param>
+    /// <returns>E for dipole-based gain calculation, I for isotropic radiator-based gain calculation</returns>
+    public static char ToGainTypeString(GainType gainType)
+    {
+        return gainType == GainType.Dipole ? 'E' : 'I';
+    }
+
+    static string ToSIPrefixString(SIPrefix prefix)
+    {
+        return prefix switch
+        {
+            SIPrefix.G=> "G",
+            SIPrefix.M => "M",
+            SIPrefix.k => "k",
+            _ => throw new Exception($"Not an enum value `{prefix}`")
+        };
+    }
+
+    /// <summary>
+    /// Converts an input frequency as a number into a string frequency with a desired prefix
+    /// </summary>
+    /// <param name="input">The input frequency to convert, e.g. 3_750_000_000</param>
+    /// <param name="desiredPrefix">The desired prefix, e.g. G</param>
+    /// <returns>The frequency as a string including the desired prefix, e.g. 3.75000G</returns>
+    public static string ToFrequencyString(double input, SIPrefix desiredPrefix)
+    {
+        return (input / GetSIMultiplier(desiredPrefix)).ToString("#####.00000") +
+        ToSIPrefixString(desiredPrefix);
+    }
+
+    /// <summary>
+    /// Converts a boolean to a string
+    /// </summary>
+    /// <param name="input">The input boolean, such as true</param>
+    /// <returns>The ouput string, e.g. "1"</returns>
+    public static string ToBooleanString(bool input)
+    {
+        return input ? "1" : "0";
+    }
+
+    public static string ToTemperatureString(Temperature temperature)
+    {
+        return temperature == Temperature.Warm ? "W" : "C";
+    }
+
+    public static string BuildLegacyInputString(
+        (double Lat, double Long) txCoordinates,
+        (double Lat, double Long) rxCoordinates,
+        int? txSiteHeight,
+        int? rxSiteHeight,
+        (string Horizontal, string Vertical) txAntennaType,
+        double txAzimuth,
+        double txElevation,
+        int txAntennaHeight,
+        int rxAntennaHeight,
+        GainType txGainType,
+        double txPower,
+        double txFrequency,
+        bool channelOccupation,
+        Temperature? seaTemperature,
+        int txServiceAreaRadius,
+        int rxServiceAreaRadius,
+        double? distanceOverSea,
+        double rxFrequency,
+        string rxEmissionDesignation,
+        string txEmissionDesignation,
+        (string Horizontal, string Vertical) rxAntennaType,
+        double rxAzimuth,
+        double rxElevation,
+        GainType rxGainType,
+        double rxGain,
+        double depolarizationLoss,
+        double? permissibleFieldStrength,
+        int? frequencyDifferenceCorrectionFactor,
+        Country rxCountry,
+        Country txCountry,
+        string topoPath,
+        string borderPath,
+        string morphoPath,
+        string? debugOutputPath
+    )
+    {
+        return ToCoordinatesString(txCoordinates) +
+          ToCoordinatesString(rxCoordinates) +
+          (txSiteHeight?.ToString().PadLeft(4) ?? "    ") +
+          (rxSiteHeight?.ToString().PadLeft(4) ?? "    ") +
+          txAntennaType.Horizontal.PadLeft(7) +
+          txAntennaType.Vertical.PadLeft(7) +
+          txAzimuth.ToString("###.0").PadLeft(5) +
+          txElevation.ToString("###.0").PadLeft(5) +
+          txAntennaHeight.ToString().PadLeft(4) +
+          rxAntennaHeight.ToString().PadLeft(4) +
+          ToGainTypeString(txGainType) +
+          txPower.ToString("###.00").PadLeft(6) +
+          ToFrequencyString(txFrequency, SIPrefix.M).PadLeft(12) +
+          ToBooleanString(channelOccupation) +
+          (seaTemperature == null ? " " : ToTemperatureString((Temperature)seaTemperature)) + // waiting until they fixed dotnet/csharplang#33
+          txServiceAreaRadius.ToString().PadLeft(5) +
+          rxServiceAreaRadius.ToString().PadLeft(5) +
+          (distanceOverSea?.ToString("###.0").PadLeft(5) ?? "     ") +
+          ToFrequencyString(rxFrequency, SIPrefix.M).PadLeft(12) +
+          rxEmissionDesignation.PadLeft(9) +
+          txEmissionDesignation.PadLeft(9) +
+          rxAntennaType.Horizontal.PadLeft(7) +
+          rxAntennaType.Vertical.PadLeft(7) +
+          rxAzimuth.ToString("###.0").PadLeft(5) +
+          rxElevation.ToString("###.0").PadLeft(5) +
+          ToGainTypeString(rxGainType) +
+          rxGain.ToString("###.0").PadLeft(4) +
+          depolarizationLoss.ToString("###.0").PadLeft(4) +
+          (permissibleFieldStrength?.ToString("###.0").PadLeft(5) ?? "     ") +
+          (frequencyDifferenceCorrectionFactor?.ToString().PadLeft(4) ?? "    ") +
+          ITUHelpers.ToITULetterCodeString(rxCountry).PadRight(3, '_') +
+          ITUHelpers.ToITULetterCodeString(txCountry).PadRight(3, '_') +
+          "".PadLeft(3) +
+          topoPath.PadRight(63) +
+          borderPath.PadRight(63) +
+          morphoPath.PadRight(63) +
+          "".PadLeft(6) +
+          "".PadLeft(20) +
+          "".PadLeft(15) +
+          "".PadLeft(15) +
+          debugOutputPath;
+    }
+
+    public static string BuildLegacyInputString(
+        (double Lat, double Long) txCoordinates,
+        int? txSiteHeight,
+        (string Horizontal, string Vertical) txAntennaType,
+        double txAzimuth,
+        double txElevation,
+        int txAntennaHeight,
+        GainType txGainType,
+        double txPower,
+        double txFrequency,
+        bool channelOccupation,
+        Temperature? seaTemperature,
+        int txServiceAreaRadius,
+        double? distanceOverSea,
+        string txEmissionDesignation,
+        double? permissibleFieldStrength,
+        Country targetCountry,
+        Country txCountry,
+        int maxCrossBorderRange,
+        string topoPath,
+        string borderPath,
+        string morphoPath,
+        string? debugOutputPath
+    )
+    {
+        return ToCoordinatesString(txCoordinates) +
+          "".PadLeft(15) +
+          (txSiteHeight?.ToString().PadLeft(4) ?? "    ") +
+          "".PadLeft(4) +
+          txAntennaType.Horizontal.PadLeft(7) +
+          txAntennaType.Vertical.PadLeft(7) +
+          txAzimuth.ToString("###.0").PadLeft(5) +
+          txElevation.ToString("###.0").PadLeft(5) +
+          txAntennaHeight.ToString().PadLeft(4) +
+          "".PadLeft(4) +
+          ToGainTypeString(txGainType) +
+          txPower.ToString("###.00").PadLeft(6) +
+          ToFrequencyString(txFrequency, SIPrefix.M).PadLeft(12) +
+          ToBooleanString(channelOccupation) +
+          (seaTemperature == null ? " " : ToTemperatureString((Temperature)seaTemperature)) + // waiting until they fixed dotnet/csharplang#33
+          txServiceAreaRadius.ToString().PadLeft(5) +
+          "".PadLeft(5) +
+          (distanceOverSea?.ToString("###.0").PadLeft(5) ?? "     ") +
+          "".PadLeft(12) +
+          "".PadLeft(9) +
+          txEmissionDesignation.PadLeft(9) +
+          "".PadLeft(14) +
+          "".PadLeft(5) +
+          "".PadLeft(5) +
+          " " +
+          "".PadLeft(4) +
+          "".PadLeft(4) +
+          (permissibleFieldStrength?.ToString("###.0").PadLeft(5) ?? "     ") +
+          "".PadLeft(4) +
+          ITUHelpers.ToITULetterCodeString(targetCountry).PadRight(3, '_') +
+          ITUHelpers.ToITULetterCodeString(txCountry).PadRight(3, '_') +
+          maxCrossBorderRange.ToString().PadLeft(3) +
+          topoPath.PadRight(63) +
+          borderPath.PadRight(63) +
+          morphoPath.PadRight(63) +
+          "".PadLeft(6) +
+          "".PadLeft(20) +
+          "".PadLeft(15) +
+          "".PadLeft(15) + 
+          debugOutputPath;
     }
 }

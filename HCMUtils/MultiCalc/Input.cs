@@ -5,7 +5,7 @@ namespace HCMUtils.MultiCalc;
 public record Input(
     int Mode,
     (double Lat, double Long) TxCoordinates,
-    int? TxHeightAboveSeaLevel,
+    int? TxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
     double TxAzimuth,
     double TxElevation,
@@ -16,7 +16,8 @@ public record Input(
     bool ChannelOccupation,
     Temperature? SeaTemperature,
     double? DistanceOverSea,
-    int TxServiceAreaReadius,
+    int TxServiceAreaRadius,
     Country TxCountry,
-    double? PermissibleFieldStrength
+    double? PermissibleFieldStrength,
+    string TxEmissionDesignation
 );

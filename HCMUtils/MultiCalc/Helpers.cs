@@ -50,10 +50,11 @@ public class Helpers
             double.TryParse(inputList[13], out var DistanceOverSea) ? DistanceOverSea : null,
             int.Parse(inputList[14]),
             int.Parse(inputList[15]),
-            ITUHelpers.ParseITULetterCode(inputList[16]),
-            ITUHelpers.ParseITULetterCode(inputList[17]),
+            ITUHelpers.ParseCountry(inputList[16]),
+            ITUHelpers.ParseCountry(inputList[17]),
             double.TryParse(inputList[18], out var PermissibleFieldStrength) ? PermissibleFieldStrength : null,
-            int.Parse(inputList[19])
+            int.Parse(inputList[19]),
+            inputList[20]
         );
     }
 
@@ -77,8 +78,8 @@ public class Helpers
             String.Helpers.ParseCoordinates(inputList[15]),
             int.TryParse(inputList[16], out var RxHeightAboveSeaLevel) ? RxHeightAboveSeaLevel : null,
             int.Parse(inputList[17]),
-            ITUHelpers.ParseITULetterCode(inputList[18]),
-            ITUHelpers.ParseITULetterCode(inputList[19]),
+            ITUHelpers.ParseCountry(inputList[18]),
+            ITUHelpers.ParseCountry(inputList[19]),
             double.TryParse(inputList[20], out var PermissibleFieldStrength) ? PermissibleFieldStrength : null,
             String.Helpers.ParseSINumber(inputList[21]),
             inputList[22],

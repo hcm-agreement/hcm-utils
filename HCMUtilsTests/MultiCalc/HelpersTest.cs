@@ -45,20 +45,20 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesTxHeightAboveSeaLevelCorrectly()
+    public void ParsesTxSiteHeightCorrectly()
     {
-        Assert.Equal(10, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txHeightAboveSeaLevel: "10")).TxHeightAboveSeaLevel);
-        Assert.Null(Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txHeightAboveSeaLevel: "")).TxHeightAboveSeaLevel);
+        Assert.Equal(10, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txSiteHeight: "10")).TxSiteHeight);
+        Assert.Null(Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txSiteHeight: "")).TxSiteHeight);
 
-        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txHeightAboveSeaLevel: "10")).TxHeightAboveSeaLevel);
-        Assert.Null(Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txHeightAboveSeaLevel: "")).TxHeightAboveSeaLevel);
+        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txSiteHeight: "10")).TxSiteHeight);
+        Assert.Null(Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txSiteHeight: "")).TxSiteHeight);
     }
 
     [Fact]
     public void ParsesRxHeightAboveSeaLevelCorrectly()
     {
-        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxHeightAboveSeaLevel: "10")).RxHeightAboveSeaLevel);
-        Assert.Null(Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxHeightAboveSeaLevel: "")).RxHeightAboveSeaLevel);
+        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxHeightAboveSeaLevel: "10")).RxSiteHeight);
+        Assert.Null(Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxHeightAboveSeaLevel: "")).RxSiteHeight);
     }
 
     [Fact]
@@ -208,9 +208,9 @@ public class HelpersTest
     [Fact]
     public void ParsesTxServiceAreaRadiusCorrectly()
     {
-        Assert.Equal(10, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txServiceAreaRadius: "10")).TxServiceAreaReadius);
+        Assert.Equal(10, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txServiceAreaRadius: "10")).TxServiceAreaRadius);
 
-        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txServiceAreaRadius: "10")).TxServiceAreaReadius);
+        Assert.Equal(10, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txServiceAreaRadius: "10")).TxServiceAreaRadius);
     }
 
     [Fact]
@@ -276,7 +276,7 @@ public class HelpersTest
     static List<string> BuildPointToLineTestInput(
         string mode = "1",
         string txCoordinates = "8E422351N1337",
-        string txHeightAboveSeaLevel = "",
+        string txSiteHeight = "",
         string txHorizontalAntennaType = "000ND00",
         string txVerticalAntennaType = "1234AB56",
         string txAzimuth = "0.0",
@@ -293,13 +293,14 @@ public class HelpersTest
         string txCountry = "D",
         string targetCountry = "D",
         string permissibleFieldStrength = "",
-        string maxCrossBorderRange = "0"
+        string maxCrossBorderRange = "0",
+        string txEmissionDesignation = "5M00G7WEF"
     )
     {
         return [
             mode,
             txCoordinates,
-            txHeightAboveSeaLevel,
+            txSiteHeight,
             txHorizontalAntennaType,
             txVerticalAntennaType,
             txAzimuth,
@@ -316,14 +317,15 @@ public class HelpersTest
             txCountry,
             targetCountry,
             permissibleFieldStrength,
-            maxCrossBorderRange
+            maxCrossBorderRange,
+            txEmissionDesignation
         ];
     }
 
     static List<string> BuildPointToPointTestInput(
         string mode = "0",
         string txCoordinates = "8E422351N1337",
-        string txHeightAboveSeaLevel = "",
+        string txSiteHeight = "",
         string txHorizontalAntennaType = "000ND00",
         string txVerticalAntennaType = "1234AB56",
         string txAzimuth = "0.0",
@@ -359,7 +361,7 @@ public class HelpersTest
         return [
             mode,
             txCoordinates,
-            txHeightAboveSeaLevel,
+            txSiteHeight,
             txHorizontalAntennaType,
             txVerticalAntennaType,
             txAzimuth,
