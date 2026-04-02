@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HCMUtils\HCMUtils.csproj" />
+    <ProjectReference Include="..\..\src\HCMUtils\HCMUtils.csproj" />
   </ItemGroup>
 
   <Target Name="CopyTestFixtures" AfterTargets="AfterBuild">

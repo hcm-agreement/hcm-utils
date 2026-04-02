@@ -1,4 +1,4 @@
-namespace HCMUtilsTests;
+namespace HCMUtils.Tests;
 
 using HCMUtils;
 using HCMUtils.Types;

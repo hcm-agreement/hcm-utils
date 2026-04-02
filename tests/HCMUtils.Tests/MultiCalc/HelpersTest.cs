@@ -1,10 +1,9 @@
-using HCMUtils;
 using HCMUtils.MultiCalc;
 using HCMUtils.Types;
 
 [assembly: CaptureConsole]
 
-namespace HCMUtilsTests.MultiCalc;
+namespace HCMUtils.Tests.MultiCalc;
 
 public class HelpersTest
 {

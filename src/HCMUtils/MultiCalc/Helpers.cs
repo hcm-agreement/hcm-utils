@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("HCMUtilsTests")]
+[assembly: InternalsVisibleTo("HCMUtils.Tests")]
 
 namespace HCMUtils.MultiCalc;
 
