@@ -39,10 +39,7 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesRxCoordinatesCorrectly()
-    {
-        Assert.Equal((8.7225, 51.7025), Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxCoordinates: "8E432151N4209")).RxCoordinates);
-    }
+    public void ParsesRxCoordinatesCorrectly() => Assert.Equal((8.7225, 51.7025), Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxCoordinates: "8E432151N4209")).RxCoordinates);
 
     [Fact]
     public void ParsesTxSiteHeightCorrectly()
@@ -70,22 +67,13 @@ public class HelpersTest
     }
 
     [Fact]
-    public void SetsRxAntennaTypeCorrectly()
-    {
-        Assert.Equal(("000ND00", "1234AB56"), Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxHorizontalAntennaType: "000ND00", rxVerticalAntennaType: "1234AB56")).RxAntennaType);
-    }
+    public void SetsRxAntennaTypeCorrectly() => Assert.Equal(("000ND00", "1234AB56"), Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxHorizontalAntennaType: "000ND00", rxVerticalAntennaType: "1234AB56")).RxAntennaType);
 
     [Fact]
-    public void SetsTxEmissionDesignationCorrectly()
-    {
-        Assert.Equal("5M00G7WEF", Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txEmissionDesignation: "5M00G7WEF")).TxEmissionDesignation);
-    }
+    public void SetsTxEmissionDesignationCorrectly() => Assert.Equal("5M00G7WEF", Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(txEmissionDesignation: "5M00G7WEF")).TxEmissionDesignation);
 
     [Fact]
-    public void SetsRxEmissionDesignationCorrectly()
-    {
-        Assert.Equal("5M00G7WEF", Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxEmissionDesignation: "5M00G7WEF")).RxEmissionDesignation);
-    }
+    public void SetsRxEmissionDesignationCorrectly() => Assert.Equal("5M00G7WEF", Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxEmissionDesignation: "5M00G7WEF")).RxEmissionDesignation);
 
     [Fact]
     public void ParsesTxAzimuthCorrectly()
@@ -104,16 +92,10 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesRxAzimuthCorrectly()
-    {
-        Assert.Equal(20.5, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxAzimuth: " 20.5")).RxAzimuth);
-    }
+    public void ParsesRxAzimuthCorrectly() => Assert.Equal(20.5, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxAzimuth: " 20.5")).RxAzimuth);
 
     [Fact]
-    public void ParsesRxElevationCorrectly()
-    {
-        Assert.Equal(67.12, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxElevation: "67.12")).RxElevation);
-    }
+    public void ParsesRxElevationCorrectly() => Assert.Equal(67.12, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxElevation: "67.12")).RxElevation);
     [Fact]
     public void ParsesTxAntennaHeightCorrectly()
     {
@@ -123,10 +105,7 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesRxAntennaHeightCorrectly()
-    {
-        Assert.Equal(2, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxAntennaHeight: " 2")).RxAntennaHeight);
-    }
+    public void ParsesRxAntennaHeightCorrectly() => Assert.Equal(2, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxAntennaHeight: " 2")).RxAntennaHeight);
 
     [Fact]
     public void ParsesTxPowerCorrectly()
@@ -214,16 +193,10 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesRxServiceAreaRadiusCorrectly()
-    {
-        Assert.Equal(1, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxServiceAreaRadius: "1")).RxServiceAreaRadius);
-    }
+    public void ParsesRxServiceAreaRadiusCorrectly() => Assert.Equal(1, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxServiceAreaRadius: "1")).RxServiceAreaRadius);
 
     [Fact]
-    public void ParsesDistanceToBorderlineCorrectly()
-    {
-        Assert.Equal(40, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(distanceToBorderline: "40")).DistanceToBorderline);
-    }
+    public void ParsesDistanceToBorderlineCorrectly() => Assert.Equal(40, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(distanceToBorderline: "40")).DistanceToBorderline);
 
     [Fact]
     public void ParsesTxCountryCorrectly()
@@ -233,10 +206,7 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesTargetCountryCorrectly()
-    {
-        Assert.Equal(Country.Germany, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txCountry: "D__")).TargetCountry);
-    }
+    public void ParsesTargetCountryCorrectly() => Assert.Equal(Country.Germany, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(txCountry: "D__")).TargetCountry);
 
     [Fact]
     public void ParsesPermissibleFieldStrengthCorrectly()
@@ -249,22 +219,13 @@ public class HelpersTest
     }
 
     [Fact]
-    public void ParsesMaxCrossBorderRangeCorrectly()
-    {
-        Assert.Equal(5, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(maxCrossBorderRange: "5")).MaxCrossBorderRange);
-    }
+    public void ParsesMaxCrossBorderRangeCorrectly() => Assert.Equal(5, Helpers.ParsePointToLineMultiCalc(BuildPointToLineTestInput(maxCrossBorderRange: "5")).MaxCrossBorderRange);
 
     [Fact]
-    public void ParsesRxGainCorrectly()
-    {
-        Assert.Equal(8.2, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxGain: "8.2")).RxGain);
-    }
+    public void ParsesRxGainCorrectly() => Assert.Equal(8.2, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(rxGain: "8.2")).RxGain);
 
     [Fact]
-    public void ParsesDepolarizationLossCorrectly()
-    {
-        Assert.Equal(0.5, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(depolarizationLoss: "0.5")).DepolarizationLoss);
-    }
+    public void ParsesDepolarizationLossCorrectly() => Assert.Equal(0.5, Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(depolarizationLoss: "0.5")).DepolarizationLoss);
 
     [Fact]
     public void ParsesFrequencyDifferenceCorrectionFactorCorrectly()
@@ -273,7 +234,7 @@ public class HelpersTest
         Assert.Null(Helpers.ParsePointToPointMultiCalc(BuildPointToPointTestInput(frequencyDifferenceCorrectionFactor: "")).FrequencyDifferenceCorrectionFactor);
     }
 
-    static List<string> BuildPointToLineTestInput(
+    private static List<string> BuildPointToLineTestInput(
         string mode = "1",
         string txCoordinates = "8E422351N1337",
         string txSiteHeight = "",
@@ -295,9 +256,7 @@ public class HelpersTest
         string permissibleFieldStrength = "",
         string maxCrossBorderRange = "0",
         string txEmissionDesignation = "5M00G7WEF"
-    )
-    {
-        return [
+    ) => [
             mode,
             txCoordinates,
             txSiteHeight,
@@ -320,9 +279,8 @@ public class HelpersTest
             maxCrossBorderRange,
             txEmissionDesignation
         ];
-    }
 
-    static List<string> BuildPointToPointTestInput(
+    private static List<string> BuildPointToPointTestInput(
         string mode = "0",
         string txCoordinates = "8E422351N1337",
         string txSiteHeight = "",
@@ -356,9 +314,7 @@ public class HelpersTest
         string depolarizationLoss = "0.0",
         string frequencyDifferenceCorrectionFactor = "",
         string rxServiceAreaRadius = "0"
-    )
-    {
-        return [
+    ) => [
             mode,
             txCoordinates,
             txSiteHeight,
@@ -393,11 +349,7 @@ public class HelpersTest
             frequencyDifferenceCorrectionFactor,
             rxServiceAreaRadius
         ];
-    }
 
     [Fact]
-    public void ParsesMultiCalcLinesCorrectly()
-    {
-        Assert.NotEmpty(Helpers.ParseMultiCalc(File.ReadLines("fixtures/MultiCalc.txt")));
-    }
+    public void ParsesMultiCalcLinesCorrectly() => Assert.NotEmpty(Helpers.ParseMultiCalc(File.ReadLines("fixtures/MultiCalc.txt")));
 }

@@ -1,11 +1,12 @@
-﻿using System.Text.RegularExpressions;
+namespace HCMUtils;
+
+using System.Globalization;
+using System.Text.RegularExpressions;
 using HCMUtils.Types;
 
-namespace HCMUtils.String;
-
-public partial class Helpers
+public partial class StringHelpers
 {
-    internal static string[] PositiveDMSDirections = ["N", "E"];
+    private static readonly string[] PositiveDMSDirections = ["N", "E"];
 
     [GeneratedRegex(@"(?<degrees>\d{1,3})(?<direction>N|E|S|W)(?<minutes>\d{2})(?<seconds>\d{2})")]
     internal static partial Regex DMSRegex();
@@ -19,9 +20,9 @@ public partial class Helpers
         var match = DMSRegex().Match(input);
 
         return (PositiveDMSDirections.Contains(match.Groups["direction"].Value) ? 1 : -1) * (
-            double.Parse(match.Groups["degrees"].Value)
-            + double.Parse(match.Groups["minutes"].Value) / 60
-            + double.Parse(match.Groups["seconds"].Value) / (60 * 60)
+            double.Parse(match.Groups["degrees"].Value, CultureInfo.InvariantCulture)
+            + (double.Parse(match.Groups["minutes"].Value, CultureInfo.InvariantCulture) / 60)
+            + (double.Parse(match.Groups["seconds"].Value, CultureInfo.InvariantCulture) / (60 * 60))
         );
     }
 
@@ -55,30 +56,24 @@ public partial class Helpers
     {
         var match = SINumberRegex().Match(input);
 
-        return double.Parse(match.Groups["number"].Value) * GetSIMultiplier(GetSIPrefix(match.Groups["prefix"].Value));
+        return double.Parse(match.Groups["number"].Value, CultureInfo.InvariantCulture) * GetSIMultiplier(GetSIPrefix(match.Groups["prefix"].Value));
     }
 
-    static SIPrefix GetSIPrefix(string input)
+    protected static SIPrefix GetSIPrefix(string input) => input switch
     {
-        return input switch
-        {
-            "G"=> SIPrefix.G,
-            "M" => SIPrefix.M,
-            "k" => SIPrefix.k,
-            _ => throw new Exception($"Unable to parse SI prefix `{input}")
-        };
-    }
+        "G" => SIPrefix.G,
+        "M" => SIPrefix.M,
+        "k" => SIPrefix.k,
+        _ => throw new ArgumentException($"Unable to parse SI prefix `{input}")
+    };
 
-    static int GetSIMultiplier(SIPrefix input)
+    protected static int GetSIMultiplier(SIPrefix input) => input switch
     {
-        return input switch
-        {
-            SIPrefix.G=> 1_000_000_000,
-            SIPrefix.M => 1_000_000,
-            SIPrefix.k => 1_000,
-            _ => throw new Exception($"Not an enum value `{input}`")
-        };
-    }
+        SIPrefix.G => 1_000_000_000,
+        SIPrefix.M => 1_000_000,
+        SIPrefix.k => 1_000,
+        _ => throw new ArgumentException($"Not an enum value `{input}`")
+    };
 
     /// <summary>
     /// Parses a 0/N or 1/Y to its respective boolean (1/Y = true, everything else = false)
@@ -87,9 +82,9 @@ public partial class Helpers
     /// <returns>The corresponding boolean</returns>
     public static bool ParseBoolean(string input)
     {
-        var normalizedInput = input.Trim().ToLower();
+        var normalizedInput = input.Trim();
 
-        return normalizedInput.Equals("1") || normalizedInput.Equals("y");
+        return normalizedInput.Equals("1", StringComparison.OrdinalIgnoreCase) || normalizedInput.Equals("y", StringComparison.OrdinalIgnoreCase);
     }
 
     /// <summary>
@@ -97,25 +92,19 @@ public partial class Helpers
     /// </summary>
     /// <param name="input">The input string, either "W" or "C" for warm or cold.</param>
     /// <returns>The parsed temperature</returns>
-    public static Temperature ParseTemperature(string input)
+    public static Temperature ParseTemperature(string input) => input.Trim().ToLower(CultureInfo.InvariantCulture) switch
     {
-        return input.Trim().ToLower() switch
-        {
-            "w" => Temperature.Warm,
-            "c" => Temperature.Cold,
-            _ => throw new Exception($"Unable to parse temperature `{input}")
-        };
-    }
+        "w" => Temperature.Warm,
+        "c" => Temperature.Cold,
+        _ => throw new ArgumentException($"Unable to parse temperature `{input}")
+    };
 
     /// <summary>
     /// Get the mode type from a string.
     /// </summary>
     /// <param name="input">A string containing a mode, e.g. -10 or 1</param>
     /// <returns>The mode type corresponding with the mode described by the string</returns>
-    public static ModeType ParseModeType(string input)
-    {
-        return int.Parse(input) >= 0 ? ModeType.PointToPoint : ModeType.PointToLine;
-    }
+    public static ModeType ParseModeType(string input) => int.Parse(input, CultureInfo.InvariantCulture) >= 0 ? ModeType.PointToPoint : ModeType.PointToLine;
 
     /// <summary>
     /// Get the gain type of a string
@@ -123,15 +112,12 @@ public partial class Helpers
     /// <param name="input">A string, either "E" or "I"</param>
     /// <returns>The corresponding gain type</returns>
     /// <exception cref="Exception"></exception>
-    public static GainType ParseGainType(string input)
+    public static GainType ParseGainType(string input) => input.Trim().ToLower(CultureInfo.InvariantCulture) switch
     {
-        return input.Trim().ToLower() switch
-        {
-            "e" => GainType.Dipole,
-            "i" => GainType.Isotropic,
-            _ => throw new Exception($"Unable to parse gain type `{input}")
-        };
-    }
+        "e" => GainType.Dipole,
+        "i" => GainType.Isotropic,
+        _ => throw new ArgumentException($"Unable to parse gain type `{input}")
+    };
 
     /// <summary>
     /// Get a DMS string from a decimal degree number and the axis (lat or long)
@@ -151,10 +137,10 @@ public partial class Helpers
             degrees >= 0 ? 'E' : 'W'
         );
 
-        return degreesPart.ToString().PadLeft(isLatitude ? 2 : 3, '0')
+        return degreesPart.ToString(CultureInfo.InvariantCulture).PadLeft(isLatitude ? 2 : 3, '0')
             + direction
-            + Math.Truncate(minutesPart).ToString().PadLeft(2, '0')
-            + Math.Round(secondsPart).ToString().PadLeft(2, '0');
+            + Math.Truncate(minutesPart).ToString(CultureInfo.InvariantCulture).PadLeft(2, '0')
+            + Math.Round(secondsPart).ToString(CultureInfo.InvariantCulture).PadLeft(2, '0');
     }
 
     /// <summary>
@@ -162,31 +148,22 @@ public partial class Helpers
     /// </summary>
     /// <param name="coordinates">A tuple of coordinates</param>
     /// <returns>The string representation in DMS form of the coordinate pair</returns>
-    public static string ToCoordinatesString((double Long, double Lat) coordinates)
-    {
-        return ToDMSString(coordinates.Long, false) + ToDMSString(coordinates.Lat, true);
-    }
+    public static string ToCoordinatesString((double Long, double Lat) coordinates) => ToDMSString(coordinates.Long, false) + ToDMSString(coordinates.Lat, true);
 
     /// <summary>
     /// Get a E/I char from a GainType
     /// </summary>
     /// <param name="gainType">The input GainType</param>
     /// <returns>E for dipole-based gain calculation, I for isotropic radiator-based gain calculation</returns>
-    public static char ToGainTypeString(GainType gainType)
-    {
-        return gainType == GainType.Dipole ? 'E' : 'I';
-    }
+    public static char ToGainTypeString(GainType gainType) => gainType == GainType.Dipole ? 'E' : 'I';
 
-    static string ToSIPrefixString(SIPrefix prefix)
+    protected static string ToSIPrefixString(SIPrefix prefix) => prefix switch
     {
-        return prefix switch
-        {
-            SIPrefix.G=> "G",
-            SIPrefix.M => "M",
-            SIPrefix.k => "k",
-            _ => throw new Exception($"Not an enum value `{prefix}`")
-        };
-    }
+        SIPrefix.G => "G",
+        SIPrefix.M => "M",
+        SIPrefix.k => "k",
+        _ => throw new ArgumentException($"Not an enum value `{prefix}`")
+    };
 
     /// <summary>
     /// Converts an input frequency as a number into a string frequency with a desired prefix
@@ -194,26 +171,17 @@ public partial class Helpers
     /// <param name="input">The input frequency to convert, e.g. 3_750_000_000</param>
     /// <param name="desiredPrefix">The desired prefix, e.g. G</param>
     /// <returns>The frequency as a string including the desired prefix, e.g. 3.75000G</returns>
-    public static string ToFrequencyString(double input, SIPrefix desiredPrefix)
-    {
-        return (input / GetSIMultiplier(desiredPrefix)).ToString("#####.00000") +
+    public static string ToFrequencyString(double input, SIPrefix desiredPrefix) => (input / GetSIMultiplier(desiredPrefix)).ToString("#####.00000", CultureInfo.InvariantCulture) +
         ToSIPrefixString(desiredPrefix);
-    }
 
     /// <summary>
     /// Converts a boolean to a string
     /// </summary>
     /// <param name="input">The input boolean, such as true</param>
     /// <returns>The ouput string, e.g. "1"</returns>
-    public static string ToBooleanString(bool input)
-    {
-        return input ? "1" : "0";
-    }
+    public static string ToBooleanString(bool input) => input ? "1" : "0";
 
-    public static string ToTemperatureString(Temperature temperature)
-    {
-        return temperature == Temperature.Warm ? "W" : "C";
-    }
+    public static string ToTemperatureString(Temperature temperature) => temperature == Temperature.Warm ? "W" : "C";
 
     public static string BuildLegacyInputString(
         (double Lat, double Long) txCoordinates,
@@ -250,38 +218,36 @@ public partial class Helpers
         string borderPath,
         string morphoPath,
         string? debugOutputPath
-    )
-    {
-        return ToCoordinatesString(txCoordinates) +
+    ) => ToCoordinatesString(txCoordinates) +
           ToCoordinatesString(rxCoordinates) +
-          (txSiteHeight?.ToString().PadLeft(4) ?? "    ") +
-          (rxSiteHeight?.ToString().PadLeft(4) ?? "    ") +
+          (txSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+          (rxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
           txAntennaType.Horizontal.PadLeft(7) +
           txAntennaType.Vertical.PadLeft(7) +
-          txAzimuth.ToString("###.0").PadLeft(5) +
-          txElevation.ToString("###.0").PadLeft(5) +
-          txAntennaHeight.ToString().PadLeft(4) +
-          rxAntennaHeight.ToString().PadLeft(4) +
+          txAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          txElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          txAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
+          rxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
           ToGainTypeString(txGainType) +
-          txPower.ToString("###.00").PadLeft(6) +
+          txPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
           ToFrequencyString(txFrequency, SIPrefix.M).PadLeft(12) +
           ToBooleanString(channelOccupation) +
           (seaTemperature == null ? " " : ToTemperatureString((Temperature)seaTemperature)) + // waiting until they fixed dotnet/csharplang#33
-          txServiceAreaRadius.ToString().PadLeft(5) +
-          rxServiceAreaRadius.ToString().PadLeft(5) +
-          (distanceOverSea?.ToString("###.0").PadLeft(5) ?? "     ") +
+          txServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+          rxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+          (distanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           ToFrequencyString(rxFrequency, SIPrefix.M).PadLeft(12) +
           rxEmissionDesignation.PadLeft(9) +
           txEmissionDesignation.PadLeft(9) +
           rxAntennaType.Horizontal.PadLeft(7) +
           rxAntennaType.Vertical.PadLeft(7) +
-          rxAzimuth.ToString("###.0").PadLeft(5) +
-          rxElevation.ToString("###.0").PadLeft(5) +
+          rxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          rxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
           ToGainTypeString(rxGainType) +
-          rxGain.ToString("###.0").PadLeft(4) +
-          depolarizationLoss.ToString("###.0").PadLeft(4) +
-          (permissibleFieldStrength?.ToString("###.0").PadLeft(5) ?? "     ") +
-          (frequencyDifferenceCorrectionFactor?.ToString().PadLeft(4) ?? "    ") +
+          rxGain.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
+          depolarizationLoss.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
+          (permissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          (frequencyDifferenceCorrectionFactor?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
           ITUHelpers.ToITULetterCodeString(rxCountry).PadRight(3, '_') +
           ITUHelpers.ToITULetterCodeString(txCountry).PadRight(3, '_') +
           "".PadLeft(3) +
@@ -293,7 +259,6 @@ public partial class Helpers
           "".PadLeft(15) +
           "".PadLeft(15) +
           debugOutputPath;
-    }
 
     public static string BuildLegacyInputString(
         (double Lat, double Long) txCoordinates,
@@ -318,26 +283,24 @@ public partial class Helpers
         string borderPath,
         string morphoPath,
         string? debugOutputPath
-    )
-    {
-        return ToCoordinatesString(txCoordinates) +
+    ) => ToCoordinatesString(txCoordinates) +
           "".PadLeft(15) +
-          (txSiteHeight?.ToString().PadLeft(4) ?? "    ") +
+          (txSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
           "".PadLeft(4) +
           txAntennaType.Horizontal.PadLeft(7) +
           txAntennaType.Vertical.PadLeft(7) +
-          txAzimuth.ToString("###.0").PadLeft(5) +
-          txElevation.ToString("###.0").PadLeft(5) +
-          txAntennaHeight.ToString().PadLeft(4) +
+          txAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          txElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          txAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
           "".PadLeft(4) +
           ToGainTypeString(txGainType) +
-          txPower.ToString("###.00").PadLeft(6) +
+          txPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
           ToFrequencyString(txFrequency, SIPrefix.M).PadLeft(12) +
           ToBooleanString(channelOccupation) +
           (seaTemperature == null ? " " : ToTemperatureString((Temperature)seaTemperature)) + // waiting until they fixed dotnet/csharplang#33
-          txServiceAreaRadius.ToString().PadLeft(5) +
+          txServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
           "".PadLeft(5) +
-          (distanceOverSea?.ToString("###.0").PadLeft(5) ?? "     ") +
+          (distanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           "".PadLeft(12) +
           "".PadLeft(9) +
           txEmissionDesignation.PadLeft(9) +
@@ -347,18 +310,17 @@ public partial class Helpers
           " " +
           "".PadLeft(4) +
           "".PadLeft(4) +
-          (permissibleFieldStrength?.ToString("###.0").PadLeft(5) ?? "     ") +
+          (permissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           "".PadLeft(4) +
           ITUHelpers.ToITULetterCodeString(targetCountry).PadRight(3, '_') +
           ITUHelpers.ToITULetterCodeString(txCountry).PadRight(3, '_') +
-          maxCrossBorderRange.ToString().PadLeft(3) +
+          maxCrossBorderRange.ToString(CultureInfo.InvariantCulture).PadLeft(3) +
           topoPath.PadRight(63) +
           borderPath.PadRight(63) +
           morphoPath.PadRight(63) +
           "".PadLeft(6) +
           "".PadLeft(20) +
           "".PadLeft(15) +
-          "".PadLeft(15) + 
+          "".PadLeft(15) +
           debugOutputPath;
-    }
 }

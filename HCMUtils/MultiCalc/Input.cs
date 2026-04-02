@@ -1,6 +1,6 @@
-using HCMUtils.Types;
-
 namespace HCMUtils.MultiCalc;
+
+using HCMUtils.Types;
 
 public record Input(
     int Mode,

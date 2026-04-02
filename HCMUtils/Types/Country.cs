@@ -1,6 +1,7 @@
 namespace HCMUtils.Types;
 
-public enum Country {
+public enum Country
+{
     Afghanistan,
     Albania,
     Algeria,
@@ -194,5 +195,5 @@ public enum Country {
     Vietnam,
     Yemen,
     Zambia,
-    Zimbabwe 
+    Zimbabwe
 }

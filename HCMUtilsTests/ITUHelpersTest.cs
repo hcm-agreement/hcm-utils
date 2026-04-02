@@ -1,7 +1,7 @@
-using HCMUtils.String;
-using HCMUtils.Types;
+namespace HCMUtilsTests;
 
-namespace HCMUtilsTests.String;
+using HCMUtils;
+using HCMUtils.Types;
 
 public class ITUHelpersTest
 {
@@ -19,7 +19,7 @@ public class ITUHelpersTest
         Assert.Equal(Country.Netherlands, ITUHelpers.ParseCountry("HOL"));
         Assert.Equal(Country.Poland, ITUHelpers.ParseCountry("POL"));
         Assert.Equal(Country.Switzerland, ITUHelpers.ParseCountry("SUI"));
-        Assert.Throws<Exception>(() => ITUHelpers.ParseCountry("NONSENSE"));
+        Assert.Throws<ArgumentException>(() => ITUHelpers.ParseCountry("NONSENSE"));
     }
 
     [Fact]
@@ -34,6 +34,6 @@ public class ITUHelpersTest
         Assert.Equal("HOL", ITUHelpers.ToITULetterCodeString(Country.Netherlands));
         Assert.Equal("POL", ITUHelpers.ToITULetterCodeString(Country.Poland));
         Assert.Equal("SUI", ITUHelpers.ToITULetterCodeString(Country.Switzerland));
-        Assert.Throws<Exception>(() => ITUHelpers.ToITULetterCodeString((Country)(-2)));
+        Assert.Throws<ArgumentException>(() => ITUHelpers.ToITULetterCodeString((Country)(-2)));
     }
 }
