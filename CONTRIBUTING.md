@@ -39,3 +39,13 @@ dotnet tool update -g docfx
 # Compile and serve the docs (go to http://localhost:8080 in your browser)
 docfx .\docfx.json --serve
 ```
+
+## Linting
+
+Run
+
+```bash
+dotnet format --verify-no-changes 
+```
+
+before submitting your pull request for approval in order to verify your code conforms with the coding style of this project.
