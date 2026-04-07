@@ -2,7 +2,8 @@ name: check
 on: [push]
 jobs:
   test:
-    runs-on: mcr.microsoft.com/dotnet/sdk:10.0
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@latest
+      - uses: actions/setup-dotnet@v4
       - run: dotnet test
