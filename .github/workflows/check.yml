@@ -9,7 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-dotnet@v5
-      - run: dotnet test
+      - run: dotnet test --coverage --coverage-output-format cobertura --coverage-output coverage.cobertura.xml
+      - uses: 5monkeys/cobertura-action@master
+        with:
+          path: tests/HCMUtils.Tests/bin/Debug/net10.0/TestResults/coverage.cobertura.xml
+          minimum_coverage: 75
   verify-format:
     runs-on: ubuntu-latest
     steps:
