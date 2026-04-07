@@ -1,0 +1,32 @@
+name: check
+on: [push]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      packages: read
+      pull-requests: write
+      checks: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+      - run: dotnet test --coverage --coverage-output-format cobertura --coverage-output coverage.cobertura.xml --coverage-settings CodeCoverage.runsettings
+      - uses: 5monkeys/cobertura-action@master
+        continue-on-error: true
+        with:
+          fail_below_threshold: true
+          path: tests/HCMUtils.Tests/bin/Debug/net10.0/TestResults/coverage.cobertura.xml
+          skip_covered: false
+          minimum_coverage: 75
+  verify-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+      - run: dotnet format --verify-no-changes
