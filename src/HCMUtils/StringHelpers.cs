@@ -55,11 +55,21 @@ public partial class StringHelpers
     public static double ParseSINumber(string input)
     {
         var match = SINumberRegex().Match(input);
+        if (!match.Success)
+        {
+            throw new ArgumentException($"Unable to parse input: `{input}`");
+        }
 
-        return double.Parse(match.Groups["number"].Value, CultureInfo.InvariantCulture) * GetSIMultiplier(GetSIPrefix(match.Groups["prefix"].Value));
+        return double.Parse(match.Groups["number"].Value, CultureInfo.InvariantCulture) * GetSIMultiplier(ParseSIPrefix(match.Groups["prefix"].Value));
     }
 
-    protected static SIPrefix GetSIPrefix(string input) => input switch
+    /// <summary>
+    /// Parses an input si prefix and returns an enum value
+    /// </summary>
+    /// <param name="input">an input string, such as `"G"`</param>
+    /// <returns>The corresponding enum value, e.g. `SIPrefix.G`</returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static SIPrefix ParseSIPrefix(string input) => input switch
     {
         "G" => SIPrefix.G,
         "M" => SIPrefix.M,
@@ -67,7 +77,13 @@ public partial class StringHelpers
         _ => throw new ArgumentException($"Unable to parse SI prefix `{input}")
     };
 
-    protected static int GetSIMultiplier(SIPrefix input) => input switch
+    /// <summary>
+    /// Returns the corresponding multiplier for an SIPrefix
+    /// </summary>
+    /// <param name="input">The input, such as `SIPrefix.k`</param>
+    /// <returns>The corresponding multiplier, such as `1_000`</returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static int GetSIMultiplier(SIPrefix input) => input switch
     {
         SIPrefix.G => 1_000_000_000,
         SIPrefix.M => 1_000_000,
@@ -157,7 +173,13 @@ public partial class StringHelpers
     /// <returns>E for dipole-based gain calculation, I for isotropic radiator-based gain calculation</returns>
     public static char ToGainTypeString(GainType gainType) => gainType == GainType.Dipole ? 'E' : 'I';
 
-    protected static string ToSIPrefixString(SIPrefix prefix) => prefix switch
+    /// <summary>
+    /// Returns the associated SI prefix string
+    /// </summary>
+    /// <param name="prefix">an SIPrefix</param>
+    /// <returns>the string representation of the input, e.g. `"G"`</returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static string ToSIPrefixString(SIPrefix prefix) => prefix switch
     {
         SIPrefix.G => "G",
         SIPrefix.M => "M",

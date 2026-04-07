@@ -38,6 +38,25 @@ public class StringHelpersTest
         Assert.Equal(3_800_000_000, StringHelpers.ParseSINumber("3.8G"));
         Assert.Equal(145_500_000, StringHelpers.ParseSINumber("145.500M"));
         Assert.Equal(145_500, StringHelpers.ParseSINumber("145.500k"));
+        Assert.Throws<ArgumentException>(() => StringHelpers.ParseSINumber("NO"));
+    }
+
+    [Fact]
+    public void ParsesSIPrefixesCorrectly()
+    {
+        Assert.Equal(SIPrefix.G, StringHelpers.ParseSIPrefix("G"));
+        Assert.Equal(SIPrefix.M, StringHelpers.ParseSIPrefix("M"));
+        Assert.Equal(SIPrefix.k, StringHelpers.ParseSIPrefix("k"));
+        Assert.Throws<ArgumentException>(() => StringHelpers.ParseSIPrefix("NO"));
+    }
+
+    [Fact]
+    public void ReturnsSIMultipliersCorrectly()
+    {
+        Assert.Equal(1_000_000_000, StringHelpers.GetSIMultiplier(SIPrefix.G));
+        Assert.Equal(1_000_000, StringHelpers.GetSIMultiplier(SIPrefix.M));
+        Assert.Equal(1_000, StringHelpers.GetSIMultiplier(SIPrefix.k));
+        Assert.Throws<ArgumentException>(() => StringHelpers.GetSIMultiplier((SIPrefix)1337));
     }
 
     [Fact]
@@ -144,6 +163,16 @@ public class StringHelpersTest
     }
 
     [Fact]
+    public void ConvertsSIPrefixesCorrectly()
+    {
+        Assert.Equal("G", StringHelpers.ToSIPrefixString(SIPrefix.G));
+        Assert.Equal("M", StringHelpers.ToSIPrefixString(SIPrefix.M));
+        Assert.Equal("k", StringHelpers.ToSIPrefixString(SIPrefix.k));
+        Assert.Throws<ArgumentException>(() => StringHelpers.ToSIPrefixString((SIPrefix)1337));
+    }
+
+
+    [Fact]
     public void ConvertsBooleanStringsCorrectly()
     {
         Assert.Equal("1", StringHelpers.ToBooleanString(true));
@@ -191,7 +220,7 @@ public class StringHelpersTest
 
         // point to point
         Assert.Equal(
-            "008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
+            "008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
             StringHelpers.BuildLegacyInputString(
                 (8.22, 51.7625),
                 (18.22, 52.7625),
@@ -226,14 +255,14 @@ public class StringHelpersTest
                 "D:\\TOPO",
                 "D:\\BORDER",
                 "D:\\MORPHO",
-                null
+                "C:\\"
             )
         );
 
         // test null parameters
         // point to line
         Assert.Equal(
-            "008E131251N4545                       000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1    20                               5M00G7WEF                                          AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
+            "008E131251N4545                       000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1    20                               5M00G7WEF                                          AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
             StringHelpers.BuildLegacyInputString(
                 (8.22, 51.7625),
                 null,
@@ -256,13 +285,13 @@ public class StringHelpersTest
                 "D:\\TOPO",
                 "D:\\BORDER",
                 "D:\\MORPHO",
-                "C:\\"
+                null
             )
         );
 
         // point to point
         Assert.Equal(
-            "008E131251N4545018E131252N4545        000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1    20   18      8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1    AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
+            "008E131251N4545018E131252N4545        000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1    20   18      8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0         AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
             StringHelpers.BuildLegacyInputString(
                 (8.22, 51.7625),
                 (18.22, 52.7625),
@@ -290,7 +319,7 @@ public class StringHelpersTest
                 GainType.Dipole,
                 10.0,
                 2.0,
-                2.1,
+                null,
                 null,
                 Country.Austria,
                 Country.Germany,
