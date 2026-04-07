@@ -1,7 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
-  <MTP.CodeCoverage>
-    <ExcludeAssemblies>
-      <Regex>*System.Text.RegularExpressions.Generator*</Regex>
-    </ExcludeAssemblies>
-  </MTP.CodeCoverage>
+    <CodeCoverage>
+        <Attributes>
+            <Exclude>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+            </Exclude>
+        </Attributes>
+    </CodeCoverage>
 </Configuration>
