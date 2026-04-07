@@ -31,7 +31,7 @@ The package is supported on Linux and Windows with a minimum .NET SDK of 10.0.
 
 Build an input string for a point-to-line calculation for the legacy API:
 
-```csharp
+```cs
 var inputOutputString = HCMUtils.String.Helpers.BuildLegacyInputString(
     TxCoordinates,
     TxSiteHeight,
@@ -59,7 +59,7 @@ var inputOutputString = HCMUtils.String.Helpers.BuildLegacyInputString(
 
 ### Convert HCM input strings
 
-```csharp
+```cs
 var frequency = StringHelpers.ParseSINumber("3.8G"); // => 3_800_000_000
 var gainType = StringHelpers.ParseGainType("E"); // => GainType.Dipole
 // ...

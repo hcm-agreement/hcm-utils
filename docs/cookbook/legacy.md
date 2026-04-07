@@ -8,7 +8,7 @@ Copy the legacy DLL (in this case `HCMMS_V7215.dll`) and make sure it is include
 
 ## Define the library interface
 
-```csharp
+```cs
 // HCM.cs
 namespace HCMTestCaseGenerator;
 
@@ -58,7 +58,7 @@ public static partial class HCM
 
 ## Call the legacy function
 
-```csharp
+```cs
 var inputOutputString = "..."; // use e.g. HCMUtils.StringHelpers.BuildLegacyString
 var inputOutputStringPointer = Marshal.StringToHGlobalAnsi(inputOutputString);
 var mode = 1;
