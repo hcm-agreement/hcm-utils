@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseDMSString
     path: src/HCMUtils/StringHelpers.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseCoordinates
     path: src/HCMUtils/StringHelpers.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseSINumber
     path: src/HCMUtils/StringHelpers.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseSIPrefix
     path: src/HCMUtils/StringHelpers.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: GetSIMultiplier
     path: src/HCMUtils/StringHelpers.cs
@@ -264,7 +264,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseBoolean
     path: src/HCMUtils/StringHelpers.cs
@@ -302,7 +302,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseTemperature
     path: src/HCMUtils/StringHelpers.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseModeType
     path: src/HCMUtils/StringHelpers.cs
@@ -378,7 +378,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseGainType
     path: src/HCMUtils/StringHelpers.cs
@@ -420,7 +420,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToDMSString
     path: src/HCMUtils/StringHelpers.cs
@@ -461,7 +461,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToCoordinatesString
     path: src/HCMUtils/StringHelpers.cs
@@ -499,7 +499,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToGainTypeString
     path: src/HCMUtils/StringHelpers.cs
@@ -534,7 +534,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToSIPrefixString
     path: src/HCMUtils/StringHelpers.cs
@@ -573,7 +573,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToFrequencyString
     path: src/HCMUtils/StringHelpers.cs
@@ -614,7 +614,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToBooleanString
     path: src/HCMUtils/StringHelpers.cs
@@ -652,7 +652,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToTemperatureString
     path: src/HCMUtils/StringHelpers.cs
@@ -683,7 +683,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BuildLegacyInputString
     path: src/HCMUtils/StringHelpers.cs
@@ -820,7 +820,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BuildLegacyInputString
     path: src/HCMUtils/StringHelpers.cs

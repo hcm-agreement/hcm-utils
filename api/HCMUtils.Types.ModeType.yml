@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/ModeType.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ModeType
     path: src/HCMUtils/Types/ModeType.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/ModeType.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: PointToPoint
     path: src/HCMUtils/Types/ModeType.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/ModeType.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: PointToLine
     path: src/HCMUtils/Types/ModeType.cs

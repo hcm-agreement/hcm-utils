@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Temperature.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Temperature
     path: src/HCMUtils/Types/Temperature.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Temperature.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Warm
     path: src/HCMUtils/Types/Temperature.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Temperature.cs
-      branch: add-docs
+      branch: main
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Cold
     path: src/HCMUtils/Types/Temperature.cs
