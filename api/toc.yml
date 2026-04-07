@@ -1,0 +1,48 @@
+### YamlMime:TableOfContent
+items:
+- uid: HCMUtils
+  name: HCMUtils
+  type: Namespace
+  items:
+  - uid: HCMUtils.ITUHelpers
+    name: ITUHelpers
+    type: Class
+  - uid: HCMUtils.StringHelpers
+    name: StringHelpers
+    type: Class
+- uid: HCMUtils.MultiCalc
+  name: HCMUtils.MultiCalc
+  type: Namespace
+  items:
+  - uid: HCMUtils.MultiCalc.Helpers
+    name: Helpers
+    type: Class
+  - uid: HCMUtils.MultiCalc.Input
+    name: Input
+    type: Class
+  - uid: HCMUtils.MultiCalc.PointToLineInput
+    name: PointToLineInput
+    type: Class
+  - uid: HCMUtils.MultiCalc.PointToPointInput
+    name: PointToPointInput
+    type: Class
+- uid: HCMUtils.Types
+  name: HCMUtils.Types
+  type: Namespace
+  items:
+  - uid: HCMUtils.Types.Country
+    name: Country
+    type: Enum
+  - uid: HCMUtils.Types.GainType
+    name: GainType
+    type: Enum
+  - uid: HCMUtils.Types.ModeType
+    name: ModeType
+    type: Enum
+  - uid: HCMUtils.Types.SIPrefix
+    name: SIPrefix
+    type: Enum
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    type: Enum
+memberLayout: SamePage

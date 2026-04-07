@@ -1,0 +1,5296 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  id: Country
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.Country.Afghanistan
+  - HCMUtils.Types.Country.Albania
+  - HCMUtils.Types.Country.Algeria
+  - HCMUtils.Types.Country.Andorra
+  - HCMUtils.Types.Country.Angola
+  - HCMUtils.Types.Country.AntiguaAndBarbuda
+  - HCMUtils.Types.Country.ArgentineRepublic
+  - HCMUtils.Types.Country.Armenia
+  - HCMUtils.Types.Country.Australia
+  - HCMUtils.Types.Country.Austria
+  - HCMUtils.Types.Country.Azerbaijan
+  - HCMUtils.Types.Country.Bahamas
+  - HCMUtils.Types.Country.Bahrain
+  - HCMUtils.Types.Country.Bangladesh
+  - HCMUtils.Types.Country.Barbados
+  - HCMUtils.Types.Country.Belarus
+  - HCMUtils.Types.Country.Belgium
+  - HCMUtils.Types.Country.Belize
+  - HCMUtils.Types.Country.Benin
+  - HCMUtils.Types.Country.Bhutan
+  - HCMUtils.Types.Country.Bolivia
+  - HCMUtils.Types.Country.BosniaAndHerzegovina
+  - HCMUtils.Types.Country.Botswana
+  - HCMUtils.Types.Country.Brazil
+  - HCMUtils.Types.Country.BruneiDarussalam
+  - HCMUtils.Types.Country.Bulgaria
+  - HCMUtils.Types.Country.BurkinaFaso
+  - HCMUtils.Types.Country.Burundi
+  - HCMUtils.Types.Country.CaboVerde
+  - HCMUtils.Types.Country.Cambodia
+  - HCMUtils.Types.Country.Cameroon
+  - HCMUtils.Types.Country.Canada
+  - HCMUtils.Types.Country.CentralAfricanRepublic
+  - HCMUtils.Types.Country.Chad
+  - HCMUtils.Types.Country.Chile
+  - HCMUtils.Types.Country.China
+  - HCMUtils.Types.Country.Colombia
+  - HCMUtils.Types.Country.Comoros
+  - HCMUtils.Types.Country.Congo
+  - HCMUtils.Types.Country.CostaRica
+  - HCMUtils.Types.Country.CoteDIvoire
+  - HCMUtils.Types.Country.Croatia
+  - HCMUtils.Types.Country.Cuba
+  - HCMUtils.Types.Country.Cyprus
+  - HCMUtils.Types.Country.CzechRepublic
+  - HCMUtils.Types.Country.DemocraticPeoplesRepublicofKorea
+  - HCMUtils.Types.Country.DemocraticRepublicOfTheCongo
+  - HCMUtils.Types.Country.Denmark
+  - HCMUtils.Types.Country.Djibouti
+  - HCMUtils.Types.Country.Dominica
+  - HCMUtils.Types.Country.DominicanRepublic
+  - HCMUtils.Types.Country.Ecuador
+  - HCMUtils.Types.Country.Egypt
+  - HCMUtils.Types.Country.ElSalvador
+  - HCMUtils.Types.Country.EquatorialGuinea
+  - HCMUtils.Types.Country.Eritrea
+  - HCMUtils.Types.Country.Estonia
+  - HCMUtils.Types.Country.Eswatini
+  - HCMUtils.Types.Country.Ethiopia
+  - HCMUtils.Types.Country.Fiji
+  - HCMUtils.Types.Country.Finland
+  - HCMUtils.Types.Country.France
+  - HCMUtils.Types.Country.Gabon
+  - HCMUtils.Types.Country.Gambia
+  - HCMUtils.Types.Country.Georgia
+  - HCMUtils.Types.Country.Germany
+  - HCMUtils.Types.Country.Ghana
+  - HCMUtils.Types.Country.Greece
+  - HCMUtils.Types.Country.Grenada
+  - HCMUtils.Types.Country.Guatemala
+  - HCMUtils.Types.Country.Guinea
+  - HCMUtils.Types.Country.GuineaBissau
+  - HCMUtils.Types.Country.Guyana
+  - HCMUtils.Types.Country.Haiti
+  - HCMUtils.Types.Country.Honduras
+  - HCMUtils.Types.Country.Hungary
+  - HCMUtils.Types.Country.Iceland
+  - HCMUtils.Types.Country.India
+  - HCMUtils.Types.Country.Indonesia
+  - HCMUtils.Types.Country.Iran
+  - HCMUtils.Types.Country.Iraq
+  - HCMUtils.Types.Country.Ireland
+  - HCMUtils.Types.Country.Israel
+  - HCMUtils.Types.Country.Italy
+  - HCMUtils.Types.Country.Jamaica
+  - HCMUtils.Types.Country.Japan
+  - HCMUtils.Types.Country.Jordan
+  - HCMUtils.Types.Country.Kazakhstan
+  - HCMUtils.Types.Country.Kenya
+  - HCMUtils.Types.Country.Kiribati
+  - HCMUtils.Types.Country.Korea
+  - HCMUtils.Types.Country.Kuwait
+  - HCMUtils.Types.Country.KyrgyzRepublic
+  - HCMUtils.Types.Country.LaoPeoplesDemocraticRepublic
+  - HCMUtils.Types.Country.Latvia
+  - HCMUtils.Types.Country.Lebanon
+  - HCMUtils.Types.Country.Lesotho
+  - HCMUtils.Types.Country.Liberia
+  - HCMUtils.Types.Country.Libya
+  - HCMUtils.Types.Country.Liechtenstein
+  - HCMUtils.Types.Country.Lithuania
+  - HCMUtils.Types.Country.Luxembourg
+  - HCMUtils.Types.Country.Madagascar
+  - HCMUtils.Types.Country.Malawi
+  - HCMUtils.Types.Country.Malaysia
+  - HCMUtils.Types.Country.Maldives
+  - HCMUtils.Types.Country.Mali
+  - HCMUtils.Types.Country.Malta
+  - HCMUtils.Types.Country.MarshallIslands
+  - HCMUtils.Types.Country.Mauritania
+  - HCMUtils.Types.Country.Mauritius
+  - HCMUtils.Types.Country.Mexico
+  - HCMUtils.Types.Country.Micronesia
+  - HCMUtils.Types.Country.Moldova
+  - HCMUtils.Types.Country.Monaco
+  - HCMUtils.Types.Country.Mongolia
+  - HCMUtils.Types.Country.Montenegro
+  - HCMUtils.Types.Country.Morocco
+  - HCMUtils.Types.Country.Mozambique
+  - HCMUtils.Types.Country.Myanmar
+  - HCMUtils.Types.Country.Namibia
+  - HCMUtils.Types.Country.Nauru
+  - HCMUtils.Types.Country.Nepal
+  - HCMUtils.Types.Country.Netherlands
+  - HCMUtils.Types.Country.NewZealand
+  - HCMUtils.Types.Country.Nicaragua
+  - HCMUtils.Types.Country.Niger
+  - HCMUtils.Types.Country.Nigeria
+  - HCMUtils.Types.Country.NorthMacedonia
+  - HCMUtils.Types.Country.Norway
+  - HCMUtils.Types.Country.Oman
+  - HCMUtils.Types.Country.Pakistan
+  - HCMUtils.Types.Country.Palau
+  - HCMUtils.Types.Country.Panama
+  - HCMUtils.Types.Country.PapuaNewGuinea
+  - HCMUtils.Types.Country.Paraguay
+  - HCMUtils.Types.Country.Peru
+  - HCMUtils.Types.Country.Philippines
+  - HCMUtils.Types.Country.Poland
+  - HCMUtils.Types.Country.Portugal
+  - HCMUtils.Types.Country.Qatar
+  - HCMUtils.Types.Country.Romania
+  - HCMUtils.Types.Country.RussianFederation
+  - HCMUtils.Types.Country.Rwanda
+  - HCMUtils.Types.Country.SaintKittsAndNevis
+  - HCMUtils.Types.Country.SaintLucia
+  - HCMUtils.Types.Country.SaintVincentAndTheGrenadines
+  - HCMUtils.Types.Country.Samoa
+  - HCMUtils.Types.Country.SanMarino
+  - HCMUtils.Types.Country.SaoTomeAndPrincipe
+  - HCMUtils.Types.Country.SaudiArabia
+  - HCMUtils.Types.Country.Senegal
+  - HCMUtils.Types.Country.Serbia
+  - HCMUtils.Types.Country.Seychelles
+  - HCMUtils.Types.Country.SierraLeone
+  - HCMUtils.Types.Country.Singapore
+  - HCMUtils.Types.Country.SlovakRepublic
+  - HCMUtils.Types.Country.Slovenia
+  - HCMUtils.Types.Country.SolomonIslands
+  - HCMUtils.Types.Country.Somalia
+  - HCMUtils.Types.Country.SouthAfrica
+  - HCMUtils.Types.Country.SouthSudan
+  - HCMUtils.Types.Country.Spain
+  - HCMUtils.Types.Country.SriLanka
+  - HCMUtils.Types.Country.Sudan
+  - HCMUtils.Types.Country.Suriname
+  - HCMUtils.Types.Country.Sweden
+  - HCMUtils.Types.Country.Switzerland
+  - HCMUtils.Types.Country.SyrianArabRepublic
+  - HCMUtils.Types.Country.Tajikistan
+  - HCMUtils.Types.Country.Tanzania
+  - HCMUtils.Types.Country.Thailand
+  - HCMUtils.Types.Country.TimorLeste
+  - HCMUtils.Types.Country.TogoleseRepublic
+  - HCMUtils.Types.Country.Tonga
+  - HCMUtils.Types.Country.TrinidadAndTobago
+  - HCMUtils.Types.Country.Tunisia
+  - HCMUtils.Types.Country.Turkmenistan
+  - HCMUtils.Types.Country.Tuvalu
+  - HCMUtils.Types.Country.Türkiye
+  - HCMUtils.Types.Country.Uganda
+  - HCMUtils.Types.Country.Ukraine
+  - HCMUtils.Types.Country.UnitedArabEmirates
+  - HCMUtils.Types.Country.UnitedKingdomOfGreatBritainAndNorthernIreland
+  - HCMUtils.Types.Country.UnitedStatesOfAmerica
+  - HCMUtils.Types.Country.Uruguay
+  - HCMUtils.Types.Country.Uzbekistan
+  - HCMUtils.Types.Country.Vanuatu
+  - HCMUtils.Types.Country.VaticanCity
+  - HCMUtils.Types.Country.Venezuela
+  - HCMUtils.Types.Country.Vietnam
+  - HCMUtils.Types.Country.Yemen
+  - HCMUtils.Types.Country.Zambia
+  - HCMUtils.Types.Country.Zimbabwe
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country
+  type: Enum
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Country
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 2
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: public enum Country
+    content.vb: Public Enum Country
+- uid: HCMUtils.Types.Country.Afghanistan
+  commentId: F:HCMUtils.Types.Country.Afghanistan
+  id: Afghanistan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Afghanistan
+  nameWithType: Country.Afghanistan
+  fullName: HCMUtils.Types.Country.Afghanistan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Afghanistan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Afghanistan = 0
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Albania
+  commentId: F:HCMUtils.Types.Country.Albania
+  id: Albania
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Albania
+  nameWithType: Country.Albania
+  fullName: HCMUtils.Types.Country.Albania
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Albania
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 5
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Albania = 1
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Algeria
+  commentId: F:HCMUtils.Types.Country.Algeria
+  id: Algeria
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Algeria
+  nameWithType: Country.Algeria
+  fullName: HCMUtils.Types.Country.Algeria
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Algeria
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 6
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Algeria = 2
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Andorra
+  commentId: F:HCMUtils.Types.Country.Andorra
+  id: Andorra
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Andorra
+  nameWithType: Country.Andorra
+  fullName: HCMUtils.Types.Country.Andorra
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Andorra
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 7
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Andorra = 3
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Angola
+  commentId: F:HCMUtils.Types.Country.Angola
+  id: Angola
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Angola
+  nameWithType: Country.Angola
+  fullName: HCMUtils.Types.Country.Angola
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Angola
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 8
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Angola = 4
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.AntiguaAndBarbuda
+  commentId: F:HCMUtils.Types.Country.AntiguaAndBarbuda
+  id: AntiguaAndBarbuda
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: AntiguaAndBarbuda
+  nameWithType: Country.AntiguaAndBarbuda
+  fullName: HCMUtils.Types.Country.AntiguaAndBarbuda
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: AntiguaAndBarbuda
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 9
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: AntiguaAndBarbuda = 5
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.ArgentineRepublic
+  commentId: F:HCMUtils.Types.Country.ArgentineRepublic
+  id: ArgentineRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: ArgentineRepublic
+  nameWithType: Country.ArgentineRepublic
+  fullName: HCMUtils.Types.Country.ArgentineRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ArgentineRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 10
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: ArgentineRepublic = 6
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Armenia
+  commentId: F:HCMUtils.Types.Country.Armenia
+  id: Armenia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Armenia
+  nameWithType: Country.Armenia
+  fullName: HCMUtils.Types.Country.Armenia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Armenia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 11
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Armenia = 7
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Australia
+  commentId: F:HCMUtils.Types.Country.Australia
+  id: Australia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Australia
+  nameWithType: Country.Australia
+  fullName: HCMUtils.Types.Country.Australia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Australia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 12
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Australia = 8
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Austria
+  commentId: F:HCMUtils.Types.Country.Austria
+  id: Austria
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Austria
+  nameWithType: Country.Austria
+  fullName: HCMUtils.Types.Country.Austria
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Austria
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 13
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Austria = 9
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Azerbaijan
+  commentId: F:HCMUtils.Types.Country.Azerbaijan
+  id: Azerbaijan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Azerbaijan
+  nameWithType: Country.Azerbaijan
+  fullName: HCMUtils.Types.Country.Azerbaijan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Azerbaijan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 14
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Azerbaijan = 10
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Bahamas
+  commentId: F:HCMUtils.Types.Country.Bahamas
+  id: Bahamas
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Bahamas
+  nameWithType: Country.Bahamas
+  fullName: HCMUtils.Types.Country.Bahamas
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Bahamas
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 15
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Bahamas = 11
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Bahrain
+  commentId: F:HCMUtils.Types.Country.Bahrain
+  id: Bahrain
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Bahrain
+  nameWithType: Country.Bahrain
+  fullName: HCMUtils.Types.Country.Bahrain
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Bahrain
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 16
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Bahrain = 12
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Bangladesh
+  commentId: F:HCMUtils.Types.Country.Bangladesh
+  id: Bangladesh
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Bangladesh
+  nameWithType: Country.Bangladesh
+  fullName: HCMUtils.Types.Country.Bangladesh
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Bangladesh
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 17
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Bangladesh = 13
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Barbados
+  commentId: F:HCMUtils.Types.Country.Barbados
+  id: Barbados
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Barbados
+  nameWithType: Country.Barbados
+  fullName: HCMUtils.Types.Country.Barbados
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Barbados
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 18
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Barbados = 14
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Belarus
+  commentId: F:HCMUtils.Types.Country.Belarus
+  id: Belarus
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Belarus
+  nameWithType: Country.Belarus
+  fullName: HCMUtils.Types.Country.Belarus
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Belarus
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 19
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Belarus = 15
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Belgium
+  commentId: F:HCMUtils.Types.Country.Belgium
+  id: Belgium
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Belgium
+  nameWithType: Country.Belgium
+  fullName: HCMUtils.Types.Country.Belgium
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Belgium
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 20
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Belgium = 16
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Belize
+  commentId: F:HCMUtils.Types.Country.Belize
+  id: Belize
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Belize
+  nameWithType: Country.Belize
+  fullName: HCMUtils.Types.Country.Belize
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Belize
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 21
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Belize = 17
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Benin
+  commentId: F:HCMUtils.Types.Country.Benin
+  id: Benin
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Benin
+  nameWithType: Country.Benin
+  fullName: HCMUtils.Types.Country.Benin
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Benin
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 22
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Benin = 18
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Bhutan
+  commentId: F:HCMUtils.Types.Country.Bhutan
+  id: Bhutan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Bhutan
+  nameWithType: Country.Bhutan
+  fullName: HCMUtils.Types.Country.Bhutan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Bhutan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 23
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Bhutan = 19
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Bolivia
+  commentId: F:HCMUtils.Types.Country.Bolivia
+  id: Bolivia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Bolivia
+  nameWithType: Country.Bolivia
+  fullName: HCMUtils.Types.Country.Bolivia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Bolivia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 24
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Bolivia = 20
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.BosniaAndHerzegovina
+  commentId: F:HCMUtils.Types.Country.BosniaAndHerzegovina
+  id: BosniaAndHerzegovina
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: BosniaAndHerzegovina
+  nameWithType: Country.BosniaAndHerzegovina
+  fullName: HCMUtils.Types.Country.BosniaAndHerzegovina
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: BosniaAndHerzegovina
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 25
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: BosniaAndHerzegovina = 21
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Botswana
+  commentId: F:HCMUtils.Types.Country.Botswana
+  id: Botswana
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Botswana
+  nameWithType: Country.Botswana
+  fullName: HCMUtils.Types.Country.Botswana
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Botswana
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 26
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Botswana = 22
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Brazil
+  commentId: F:HCMUtils.Types.Country.Brazil
+  id: Brazil
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Brazil
+  nameWithType: Country.Brazil
+  fullName: HCMUtils.Types.Country.Brazil
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Brazil
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 27
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Brazil = 23
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.BruneiDarussalam
+  commentId: F:HCMUtils.Types.Country.BruneiDarussalam
+  id: BruneiDarussalam
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: BruneiDarussalam
+  nameWithType: Country.BruneiDarussalam
+  fullName: HCMUtils.Types.Country.BruneiDarussalam
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: BruneiDarussalam
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 28
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: BruneiDarussalam = 24
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Bulgaria
+  commentId: F:HCMUtils.Types.Country.Bulgaria
+  id: Bulgaria
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Bulgaria
+  nameWithType: Country.Bulgaria
+  fullName: HCMUtils.Types.Country.Bulgaria
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Bulgaria
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 29
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Bulgaria = 25
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.BurkinaFaso
+  commentId: F:HCMUtils.Types.Country.BurkinaFaso
+  id: BurkinaFaso
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: BurkinaFaso
+  nameWithType: Country.BurkinaFaso
+  fullName: HCMUtils.Types.Country.BurkinaFaso
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: BurkinaFaso
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 30
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: BurkinaFaso = 26
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Burundi
+  commentId: F:HCMUtils.Types.Country.Burundi
+  id: Burundi
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Burundi
+  nameWithType: Country.Burundi
+  fullName: HCMUtils.Types.Country.Burundi
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Burundi
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 31
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Burundi = 27
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.CaboVerde
+  commentId: F:HCMUtils.Types.Country.CaboVerde
+  id: CaboVerde
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: CaboVerde
+  nameWithType: Country.CaboVerde
+  fullName: HCMUtils.Types.Country.CaboVerde
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: CaboVerde
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 32
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: CaboVerde = 28
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Cambodia
+  commentId: F:HCMUtils.Types.Country.Cambodia
+  id: Cambodia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Cambodia
+  nameWithType: Country.Cambodia
+  fullName: HCMUtils.Types.Country.Cambodia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Cambodia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 33
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Cambodia = 29
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Cameroon
+  commentId: F:HCMUtils.Types.Country.Cameroon
+  id: Cameroon
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Cameroon
+  nameWithType: Country.Cameroon
+  fullName: HCMUtils.Types.Country.Cameroon
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Cameroon
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 34
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Cameroon = 30
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Canada
+  commentId: F:HCMUtils.Types.Country.Canada
+  id: Canada
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Canada
+  nameWithType: Country.Canada
+  fullName: HCMUtils.Types.Country.Canada
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Canada
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 35
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Canada = 31
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.CentralAfricanRepublic
+  commentId: F:HCMUtils.Types.Country.CentralAfricanRepublic
+  id: CentralAfricanRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: CentralAfricanRepublic
+  nameWithType: Country.CentralAfricanRepublic
+  fullName: HCMUtils.Types.Country.CentralAfricanRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: CentralAfricanRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 36
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: CentralAfricanRepublic = 32
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Chad
+  commentId: F:HCMUtils.Types.Country.Chad
+  id: Chad
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Chad
+  nameWithType: Country.Chad
+  fullName: HCMUtils.Types.Country.Chad
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Chad
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 37
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Chad = 33
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Chile
+  commentId: F:HCMUtils.Types.Country.Chile
+  id: Chile
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Chile
+  nameWithType: Country.Chile
+  fullName: HCMUtils.Types.Country.Chile
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Chile
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 38
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Chile = 34
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.China
+  commentId: F:HCMUtils.Types.Country.China
+  id: China
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: China
+  nameWithType: Country.China
+  fullName: HCMUtils.Types.Country.China
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: China
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 39
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: China = 35
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Colombia
+  commentId: F:HCMUtils.Types.Country.Colombia
+  id: Colombia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Colombia
+  nameWithType: Country.Colombia
+  fullName: HCMUtils.Types.Country.Colombia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Colombia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 40
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Colombia = 36
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Comoros
+  commentId: F:HCMUtils.Types.Country.Comoros
+  id: Comoros
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Comoros
+  nameWithType: Country.Comoros
+  fullName: HCMUtils.Types.Country.Comoros
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Comoros
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 41
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Comoros = 37
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Congo
+  commentId: F:HCMUtils.Types.Country.Congo
+  id: Congo
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Congo
+  nameWithType: Country.Congo
+  fullName: HCMUtils.Types.Country.Congo
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Congo
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 42
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Congo = 38
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.CostaRica
+  commentId: F:HCMUtils.Types.Country.CostaRica
+  id: CostaRica
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: CostaRica
+  nameWithType: Country.CostaRica
+  fullName: HCMUtils.Types.Country.CostaRica
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: CostaRica
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 43
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: CostaRica = 39
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.CoteDIvoire
+  commentId: F:HCMUtils.Types.Country.CoteDIvoire
+  id: CoteDIvoire
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: CoteDIvoire
+  nameWithType: Country.CoteDIvoire
+  fullName: HCMUtils.Types.Country.CoteDIvoire
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: CoteDIvoire
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 44
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: CoteDIvoire = 40
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Croatia
+  commentId: F:HCMUtils.Types.Country.Croatia
+  id: Croatia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Croatia
+  nameWithType: Country.Croatia
+  fullName: HCMUtils.Types.Country.Croatia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Croatia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 45
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Croatia = 41
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Cuba
+  commentId: F:HCMUtils.Types.Country.Cuba
+  id: Cuba
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Cuba
+  nameWithType: Country.Cuba
+  fullName: HCMUtils.Types.Country.Cuba
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Cuba
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 46
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Cuba = 42
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Cyprus
+  commentId: F:HCMUtils.Types.Country.Cyprus
+  id: Cyprus
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Cyprus
+  nameWithType: Country.Cyprus
+  fullName: HCMUtils.Types.Country.Cyprus
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Cyprus
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 47
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Cyprus = 43
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.CzechRepublic
+  commentId: F:HCMUtils.Types.Country.CzechRepublic
+  id: CzechRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: CzechRepublic
+  nameWithType: Country.CzechRepublic
+  fullName: HCMUtils.Types.Country.CzechRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: CzechRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 48
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: CzechRepublic = 44
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.DemocraticPeoplesRepublicofKorea
+  commentId: F:HCMUtils.Types.Country.DemocraticPeoplesRepublicofKorea
+  id: DemocraticPeoplesRepublicofKorea
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: DemocraticPeoplesRepublicofKorea
+  nameWithType: Country.DemocraticPeoplesRepublicofKorea
+  fullName: HCMUtils.Types.Country.DemocraticPeoplesRepublicofKorea
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DemocraticPeoplesRepublicofKorea
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 49
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: DemocraticPeoplesRepublicofKorea = 45
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.DemocraticRepublicOfTheCongo
+  commentId: F:HCMUtils.Types.Country.DemocraticRepublicOfTheCongo
+  id: DemocraticRepublicOfTheCongo
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: DemocraticRepublicOfTheCongo
+  nameWithType: Country.DemocraticRepublicOfTheCongo
+  fullName: HCMUtils.Types.Country.DemocraticRepublicOfTheCongo
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DemocraticRepublicOfTheCongo
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 50
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: DemocraticRepublicOfTheCongo = 46
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Denmark
+  commentId: F:HCMUtils.Types.Country.Denmark
+  id: Denmark
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Denmark
+  nameWithType: Country.Denmark
+  fullName: HCMUtils.Types.Country.Denmark
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Denmark
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 51
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Denmark = 47
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Djibouti
+  commentId: F:HCMUtils.Types.Country.Djibouti
+  id: Djibouti
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Djibouti
+  nameWithType: Country.Djibouti
+  fullName: HCMUtils.Types.Country.Djibouti
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Djibouti
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 52
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Djibouti = 48
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Dominica
+  commentId: F:HCMUtils.Types.Country.Dominica
+  id: Dominica
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Dominica
+  nameWithType: Country.Dominica
+  fullName: HCMUtils.Types.Country.Dominica
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Dominica
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 53
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Dominica = 49
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.DominicanRepublic
+  commentId: F:HCMUtils.Types.Country.DominicanRepublic
+  id: DominicanRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: DominicanRepublic
+  nameWithType: Country.DominicanRepublic
+  fullName: HCMUtils.Types.Country.DominicanRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DominicanRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 54
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: DominicanRepublic = 50
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Ecuador
+  commentId: F:HCMUtils.Types.Country.Ecuador
+  id: Ecuador
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Ecuador
+  nameWithType: Country.Ecuador
+  fullName: HCMUtils.Types.Country.Ecuador
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Ecuador
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 55
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Ecuador = 51
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Egypt
+  commentId: F:HCMUtils.Types.Country.Egypt
+  id: Egypt
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Egypt
+  nameWithType: Country.Egypt
+  fullName: HCMUtils.Types.Country.Egypt
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Egypt
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 56
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Egypt = 52
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.ElSalvador
+  commentId: F:HCMUtils.Types.Country.ElSalvador
+  id: ElSalvador
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: ElSalvador
+  nameWithType: Country.ElSalvador
+  fullName: HCMUtils.Types.Country.ElSalvador
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ElSalvador
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 57
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: ElSalvador = 53
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.EquatorialGuinea
+  commentId: F:HCMUtils.Types.Country.EquatorialGuinea
+  id: EquatorialGuinea
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: EquatorialGuinea
+  nameWithType: Country.EquatorialGuinea
+  fullName: HCMUtils.Types.Country.EquatorialGuinea
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: EquatorialGuinea
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 58
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: EquatorialGuinea = 54
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Eritrea
+  commentId: F:HCMUtils.Types.Country.Eritrea
+  id: Eritrea
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Eritrea
+  nameWithType: Country.Eritrea
+  fullName: HCMUtils.Types.Country.Eritrea
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Eritrea
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 59
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Eritrea = 55
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Estonia
+  commentId: F:HCMUtils.Types.Country.Estonia
+  id: Estonia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Estonia
+  nameWithType: Country.Estonia
+  fullName: HCMUtils.Types.Country.Estonia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Estonia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 60
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Estonia = 56
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Eswatini
+  commentId: F:HCMUtils.Types.Country.Eswatini
+  id: Eswatini
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Eswatini
+  nameWithType: Country.Eswatini
+  fullName: HCMUtils.Types.Country.Eswatini
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Eswatini
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 61
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Eswatini = 57
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Ethiopia
+  commentId: F:HCMUtils.Types.Country.Ethiopia
+  id: Ethiopia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Ethiopia
+  nameWithType: Country.Ethiopia
+  fullName: HCMUtils.Types.Country.Ethiopia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Ethiopia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 62
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Ethiopia = 58
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Fiji
+  commentId: F:HCMUtils.Types.Country.Fiji
+  id: Fiji
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Fiji
+  nameWithType: Country.Fiji
+  fullName: HCMUtils.Types.Country.Fiji
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Fiji
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 63
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Fiji = 59
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Finland
+  commentId: F:HCMUtils.Types.Country.Finland
+  id: Finland
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Finland
+  nameWithType: Country.Finland
+  fullName: HCMUtils.Types.Country.Finland
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Finland
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 64
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Finland = 60
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.France
+  commentId: F:HCMUtils.Types.Country.France
+  id: France
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: France
+  nameWithType: Country.France
+  fullName: HCMUtils.Types.Country.France
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: France
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 65
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: France = 61
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Gabon
+  commentId: F:HCMUtils.Types.Country.Gabon
+  id: Gabon
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Gabon
+  nameWithType: Country.Gabon
+  fullName: HCMUtils.Types.Country.Gabon
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Gabon
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 66
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Gabon = 62
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Gambia
+  commentId: F:HCMUtils.Types.Country.Gambia
+  id: Gambia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Gambia
+  nameWithType: Country.Gambia
+  fullName: HCMUtils.Types.Country.Gambia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Gambia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 67
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Gambia = 63
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Georgia
+  commentId: F:HCMUtils.Types.Country.Georgia
+  id: Georgia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Georgia
+  nameWithType: Country.Georgia
+  fullName: HCMUtils.Types.Country.Georgia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Georgia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 68
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Georgia = 64
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Germany
+  commentId: F:HCMUtils.Types.Country.Germany
+  id: Germany
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Germany
+  nameWithType: Country.Germany
+  fullName: HCMUtils.Types.Country.Germany
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Germany
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 69
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Germany = 65
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Ghana
+  commentId: F:HCMUtils.Types.Country.Ghana
+  id: Ghana
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Ghana
+  nameWithType: Country.Ghana
+  fullName: HCMUtils.Types.Country.Ghana
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Ghana
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 70
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Ghana = 66
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Greece
+  commentId: F:HCMUtils.Types.Country.Greece
+  id: Greece
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Greece
+  nameWithType: Country.Greece
+  fullName: HCMUtils.Types.Country.Greece
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Greece
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 71
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Greece = 67
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Grenada
+  commentId: F:HCMUtils.Types.Country.Grenada
+  id: Grenada
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Grenada
+  nameWithType: Country.Grenada
+  fullName: HCMUtils.Types.Country.Grenada
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Grenada
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 72
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Grenada = 68
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Guatemala
+  commentId: F:HCMUtils.Types.Country.Guatemala
+  id: Guatemala
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Guatemala
+  nameWithType: Country.Guatemala
+  fullName: HCMUtils.Types.Country.Guatemala
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Guatemala
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 73
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Guatemala = 69
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Guinea
+  commentId: F:HCMUtils.Types.Country.Guinea
+  id: Guinea
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Guinea
+  nameWithType: Country.Guinea
+  fullName: HCMUtils.Types.Country.Guinea
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Guinea
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 74
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Guinea = 70
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.GuineaBissau
+  commentId: F:HCMUtils.Types.Country.GuineaBissau
+  id: GuineaBissau
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: GuineaBissau
+  nameWithType: Country.GuineaBissau
+  fullName: HCMUtils.Types.Country.GuineaBissau
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: GuineaBissau
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 75
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: GuineaBissau = 71
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Guyana
+  commentId: F:HCMUtils.Types.Country.Guyana
+  id: Guyana
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Guyana
+  nameWithType: Country.Guyana
+  fullName: HCMUtils.Types.Country.Guyana
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Guyana
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 76
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Guyana = 72
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Haiti
+  commentId: F:HCMUtils.Types.Country.Haiti
+  id: Haiti
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Haiti
+  nameWithType: Country.Haiti
+  fullName: HCMUtils.Types.Country.Haiti
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Haiti
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 77
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Haiti = 73
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Honduras
+  commentId: F:HCMUtils.Types.Country.Honduras
+  id: Honduras
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Honduras
+  nameWithType: Country.Honduras
+  fullName: HCMUtils.Types.Country.Honduras
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Honduras
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 78
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Honduras = 74
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Hungary
+  commentId: F:HCMUtils.Types.Country.Hungary
+  id: Hungary
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Hungary
+  nameWithType: Country.Hungary
+  fullName: HCMUtils.Types.Country.Hungary
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Hungary
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 79
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Hungary = 75
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Iceland
+  commentId: F:HCMUtils.Types.Country.Iceland
+  id: Iceland
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Iceland
+  nameWithType: Country.Iceland
+  fullName: HCMUtils.Types.Country.Iceland
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Iceland
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 80
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Iceland = 76
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.India
+  commentId: F:HCMUtils.Types.Country.India
+  id: India
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: India
+  nameWithType: Country.India
+  fullName: HCMUtils.Types.Country.India
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: India
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 81
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: India = 77
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Indonesia
+  commentId: F:HCMUtils.Types.Country.Indonesia
+  id: Indonesia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Indonesia
+  nameWithType: Country.Indonesia
+  fullName: HCMUtils.Types.Country.Indonesia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Indonesia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 82
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Indonesia = 78
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Iran
+  commentId: F:HCMUtils.Types.Country.Iran
+  id: Iran
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Iran
+  nameWithType: Country.Iran
+  fullName: HCMUtils.Types.Country.Iran
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Iran
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 83
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Iran = 79
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Iraq
+  commentId: F:HCMUtils.Types.Country.Iraq
+  id: Iraq
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Iraq
+  nameWithType: Country.Iraq
+  fullName: HCMUtils.Types.Country.Iraq
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Iraq
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 84
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Iraq = 80
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Ireland
+  commentId: F:HCMUtils.Types.Country.Ireland
+  id: Ireland
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Ireland
+  nameWithType: Country.Ireland
+  fullName: HCMUtils.Types.Country.Ireland
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Ireland
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 85
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Ireland = 81
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Israel
+  commentId: F:HCMUtils.Types.Country.Israel
+  id: Israel
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Israel
+  nameWithType: Country.Israel
+  fullName: HCMUtils.Types.Country.Israel
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Israel
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 86
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Israel = 82
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Italy
+  commentId: F:HCMUtils.Types.Country.Italy
+  id: Italy
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Italy
+  nameWithType: Country.Italy
+  fullName: HCMUtils.Types.Country.Italy
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Italy
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 87
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Italy = 83
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Jamaica
+  commentId: F:HCMUtils.Types.Country.Jamaica
+  id: Jamaica
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Jamaica
+  nameWithType: Country.Jamaica
+  fullName: HCMUtils.Types.Country.Jamaica
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Jamaica
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 88
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Jamaica = 84
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Japan
+  commentId: F:HCMUtils.Types.Country.Japan
+  id: Japan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Japan
+  nameWithType: Country.Japan
+  fullName: HCMUtils.Types.Country.Japan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Japan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 89
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Japan = 85
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Jordan
+  commentId: F:HCMUtils.Types.Country.Jordan
+  id: Jordan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Jordan
+  nameWithType: Country.Jordan
+  fullName: HCMUtils.Types.Country.Jordan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Jordan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 90
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Jordan = 86
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Kazakhstan
+  commentId: F:HCMUtils.Types.Country.Kazakhstan
+  id: Kazakhstan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Kazakhstan
+  nameWithType: Country.Kazakhstan
+  fullName: HCMUtils.Types.Country.Kazakhstan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Kazakhstan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 91
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Kazakhstan = 87
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Kenya
+  commentId: F:HCMUtils.Types.Country.Kenya
+  id: Kenya
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Kenya
+  nameWithType: Country.Kenya
+  fullName: HCMUtils.Types.Country.Kenya
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Kenya
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 92
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Kenya = 88
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Kiribati
+  commentId: F:HCMUtils.Types.Country.Kiribati
+  id: Kiribati
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Kiribati
+  nameWithType: Country.Kiribati
+  fullName: HCMUtils.Types.Country.Kiribati
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Kiribati
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 93
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Kiribati = 89
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Korea
+  commentId: F:HCMUtils.Types.Country.Korea
+  id: Korea
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Korea
+  nameWithType: Country.Korea
+  fullName: HCMUtils.Types.Country.Korea
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Korea
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 94
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Korea = 90
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Kuwait
+  commentId: F:HCMUtils.Types.Country.Kuwait
+  id: Kuwait
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Kuwait
+  nameWithType: Country.Kuwait
+  fullName: HCMUtils.Types.Country.Kuwait
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Kuwait
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 95
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Kuwait = 91
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.KyrgyzRepublic
+  commentId: F:HCMUtils.Types.Country.KyrgyzRepublic
+  id: KyrgyzRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: KyrgyzRepublic
+  nameWithType: Country.KyrgyzRepublic
+  fullName: HCMUtils.Types.Country.KyrgyzRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: KyrgyzRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 96
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: KyrgyzRepublic = 92
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.LaoPeoplesDemocraticRepublic
+  commentId: F:HCMUtils.Types.Country.LaoPeoplesDemocraticRepublic
+  id: LaoPeoplesDemocraticRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: LaoPeoplesDemocraticRepublic
+  nameWithType: Country.LaoPeoplesDemocraticRepublic
+  fullName: HCMUtils.Types.Country.LaoPeoplesDemocraticRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: LaoPeoplesDemocraticRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 97
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: LaoPeoplesDemocraticRepublic = 93
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Latvia
+  commentId: F:HCMUtils.Types.Country.Latvia
+  id: Latvia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Latvia
+  nameWithType: Country.Latvia
+  fullName: HCMUtils.Types.Country.Latvia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Latvia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 98
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Latvia = 94
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Lebanon
+  commentId: F:HCMUtils.Types.Country.Lebanon
+  id: Lebanon
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Lebanon
+  nameWithType: Country.Lebanon
+  fullName: HCMUtils.Types.Country.Lebanon
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Lebanon
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 99
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Lebanon = 95
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Lesotho
+  commentId: F:HCMUtils.Types.Country.Lesotho
+  id: Lesotho
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Lesotho
+  nameWithType: Country.Lesotho
+  fullName: HCMUtils.Types.Country.Lesotho
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Lesotho
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 100
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Lesotho = 96
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Liberia
+  commentId: F:HCMUtils.Types.Country.Liberia
+  id: Liberia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Liberia
+  nameWithType: Country.Liberia
+  fullName: HCMUtils.Types.Country.Liberia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Liberia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 101
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Liberia = 97
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Libya
+  commentId: F:HCMUtils.Types.Country.Libya
+  id: Libya
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Libya
+  nameWithType: Country.Libya
+  fullName: HCMUtils.Types.Country.Libya
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Libya
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 102
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Libya = 98
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Liechtenstein
+  commentId: F:HCMUtils.Types.Country.Liechtenstein
+  id: Liechtenstein
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Liechtenstein
+  nameWithType: Country.Liechtenstein
+  fullName: HCMUtils.Types.Country.Liechtenstein
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Liechtenstein
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 103
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Liechtenstein = 99
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Lithuania
+  commentId: F:HCMUtils.Types.Country.Lithuania
+  id: Lithuania
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Lithuania
+  nameWithType: Country.Lithuania
+  fullName: HCMUtils.Types.Country.Lithuania
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Lithuania
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 104
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Lithuania = 100
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Luxembourg
+  commentId: F:HCMUtils.Types.Country.Luxembourg
+  id: Luxembourg
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Luxembourg
+  nameWithType: Country.Luxembourg
+  fullName: HCMUtils.Types.Country.Luxembourg
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Luxembourg
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 105
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Luxembourg = 101
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Madagascar
+  commentId: F:HCMUtils.Types.Country.Madagascar
+  id: Madagascar
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Madagascar
+  nameWithType: Country.Madagascar
+  fullName: HCMUtils.Types.Country.Madagascar
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Madagascar
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 106
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Madagascar = 102
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Malawi
+  commentId: F:HCMUtils.Types.Country.Malawi
+  id: Malawi
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Malawi
+  nameWithType: Country.Malawi
+  fullName: HCMUtils.Types.Country.Malawi
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Malawi
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 107
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Malawi = 103
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Malaysia
+  commentId: F:HCMUtils.Types.Country.Malaysia
+  id: Malaysia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Malaysia
+  nameWithType: Country.Malaysia
+  fullName: HCMUtils.Types.Country.Malaysia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Malaysia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 108
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Malaysia = 104
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Maldives
+  commentId: F:HCMUtils.Types.Country.Maldives
+  id: Maldives
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Maldives
+  nameWithType: Country.Maldives
+  fullName: HCMUtils.Types.Country.Maldives
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Maldives
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 109
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Maldives = 105
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Mali
+  commentId: F:HCMUtils.Types.Country.Mali
+  id: Mali
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Mali
+  nameWithType: Country.Mali
+  fullName: HCMUtils.Types.Country.Mali
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Mali
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 110
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Mali = 106
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Malta
+  commentId: F:HCMUtils.Types.Country.Malta
+  id: Malta
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Malta
+  nameWithType: Country.Malta
+  fullName: HCMUtils.Types.Country.Malta
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Malta
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 111
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Malta = 107
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.MarshallIslands
+  commentId: F:HCMUtils.Types.Country.MarshallIslands
+  id: MarshallIslands
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: MarshallIslands
+  nameWithType: Country.MarshallIslands
+  fullName: HCMUtils.Types.Country.MarshallIslands
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: MarshallIslands
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 112
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: MarshallIslands = 108
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Mauritania
+  commentId: F:HCMUtils.Types.Country.Mauritania
+  id: Mauritania
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Mauritania
+  nameWithType: Country.Mauritania
+  fullName: HCMUtils.Types.Country.Mauritania
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Mauritania
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 113
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Mauritania = 109
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Mauritius
+  commentId: F:HCMUtils.Types.Country.Mauritius
+  id: Mauritius
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Mauritius
+  nameWithType: Country.Mauritius
+  fullName: HCMUtils.Types.Country.Mauritius
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Mauritius
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 114
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Mauritius = 110
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Mexico
+  commentId: F:HCMUtils.Types.Country.Mexico
+  id: Mexico
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Mexico
+  nameWithType: Country.Mexico
+  fullName: HCMUtils.Types.Country.Mexico
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Mexico
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 115
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Mexico = 111
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Micronesia
+  commentId: F:HCMUtils.Types.Country.Micronesia
+  id: Micronesia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Micronesia
+  nameWithType: Country.Micronesia
+  fullName: HCMUtils.Types.Country.Micronesia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Micronesia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 116
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Micronesia = 112
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Moldova
+  commentId: F:HCMUtils.Types.Country.Moldova
+  id: Moldova
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Moldova
+  nameWithType: Country.Moldova
+  fullName: HCMUtils.Types.Country.Moldova
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Moldova
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 117
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Moldova = 113
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Monaco
+  commentId: F:HCMUtils.Types.Country.Monaco
+  id: Monaco
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Monaco
+  nameWithType: Country.Monaco
+  fullName: HCMUtils.Types.Country.Monaco
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Monaco
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 118
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Monaco = 114
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Mongolia
+  commentId: F:HCMUtils.Types.Country.Mongolia
+  id: Mongolia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Mongolia
+  nameWithType: Country.Mongolia
+  fullName: HCMUtils.Types.Country.Mongolia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Mongolia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 119
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Mongolia = 115
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Montenegro
+  commentId: F:HCMUtils.Types.Country.Montenegro
+  id: Montenegro
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Montenegro
+  nameWithType: Country.Montenegro
+  fullName: HCMUtils.Types.Country.Montenegro
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Montenegro
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 120
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Montenegro = 116
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Morocco
+  commentId: F:HCMUtils.Types.Country.Morocco
+  id: Morocco
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Morocco
+  nameWithType: Country.Morocco
+  fullName: HCMUtils.Types.Country.Morocco
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Morocco
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 121
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Morocco = 117
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Mozambique
+  commentId: F:HCMUtils.Types.Country.Mozambique
+  id: Mozambique
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Mozambique
+  nameWithType: Country.Mozambique
+  fullName: HCMUtils.Types.Country.Mozambique
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Mozambique
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 122
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Mozambique = 118
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Myanmar
+  commentId: F:HCMUtils.Types.Country.Myanmar
+  id: Myanmar
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Myanmar
+  nameWithType: Country.Myanmar
+  fullName: HCMUtils.Types.Country.Myanmar
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Myanmar
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 123
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Myanmar = 119
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Namibia
+  commentId: F:HCMUtils.Types.Country.Namibia
+  id: Namibia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Namibia
+  nameWithType: Country.Namibia
+  fullName: HCMUtils.Types.Country.Namibia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Namibia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 124
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Namibia = 120
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Nauru
+  commentId: F:HCMUtils.Types.Country.Nauru
+  id: Nauru
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Nauru
+  nameWithType: Country.Nauru
+  fullName: HCMUtils.Types.Country.Nauru
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Nauru
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 125
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Nauru = 121
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Nepal
+  commentId: F:HCMUtils.Types.Country.Nepal
+  id: Nepal
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Nepal
+  nameWithType: Country.Nepal
+  fullName: HCMUtils.Types.Country.Nepal
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Nepal
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 126
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Nepal = 122
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Netherlands
+  commentId: F:HCMUtils.Types.Country.Netherlands
+  id: Netherlands
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Netherlands
+  nameWithType: Country.Netherlands
+  fullName: HCMUtils.Types.Country.Netherlands
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Netherlands
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 127
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Netherlands = 123
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.NewZealand
+  commentId: F:HCMUtils.Types.Country.NewZealand
+  id: NewZealand
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: NewZealand
+  nameWithType: Country.NewZealand
+  fullName: HCMUtils.Types.Country.NewZealand
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: NewZealand
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 128
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: NewZealand = 124
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Nicaragua
+  commentId: F:HCMUtils.Types.Country.Nicaragua
+  id: Nicaragua
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Nicaragua
+  nameWithType: Country.Nicaragua
+  fullName: HCMUtils.Types.Country.Nicaragua
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Nicaragua
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 129
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Nicaragua = 125
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Niger
+  commentId: F:HCMUtils.Types.Country.Niger
+  id: Niger
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Niger
+  nameWithType: Country.Niger
+  fullName: HCMUtils.Types.Country.Niger
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Niger
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 130
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Niger = 126
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Nigeria
+  commentId: F:HCMUtils.Types.Country.Nigeria
+  id: Nigeria
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Nigeria
+  nameWithType: Country.Nigeria
+  fullName: HCMUtils.Types.Country.Nigeria
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Nigeria
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 131
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Nigeria = 127
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.NorthMacedonia
+  commentId: F:HCMUtils.Types.Country.NorthMacedonia
+  id: NorthMacedonia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: NorthMacedonia
+  nameWithType: Country.NorthMacedonia
+  fullName: HCMUtils.Types.Country.NorthMacedonia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: NorthMacedonia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 132
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: NorthMacedonia = 128
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Norway
+  commentId: F:HCMUtils.Types.Country.Norway
+  id: Norway
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Norway
+  nameWithType: Country.Norway
+  fullName: HCMUtils.Types.Country.Norway
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Norway
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 133
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Norway = 129
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Oman
+  commentId: F:HCMUtils.Types.Country.Oman
+  id: Oman
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Oman
+  nameWithType: Country.Oman
+  fullName: HCMUtils.Types.Country.Oman
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Oman
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 134
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Oman = 130
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Pakistan
+  commentId: F:HCMUtils.Types.Country.Pakistan
+  id: Pakistan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Pakistan
+  nameWithType: Country.Pakistan
+  fullName: HCMUtils.Types.Country.Pakistan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Pakistan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 135
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Pakistan = 131
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Palau
+  commentId: F:HCMUtils.Types.Country.Palau
+  id: Palau
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Palau
+  nameWithType: Country.Palau
+  fullName: HCMUtils.Types.Country.Palau
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Palau
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 136
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Palau = 132
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Panama
+  commentId: F:HCMUtils.Types.Country.Panama
+  id: Panama
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Panama
+  nameWithType: Country.Panama
+  fullName: HCMUtils.Types.Country.Panama
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Panama
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 137
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Panama = 133
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.PapuaNewGuinea
+  commentId: F:HCMUtils.Types.Country.PapuaNewGuinea
+  id: PapuaNewGuinea
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: PapuaNewGuinea
+  nameWithType: Country.PapuaNewGuinea
+  fullName: HCMUtils.Types.Country.PapuaNewGuinea
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: PapuaNewGuinea
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 138
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: PapuaNewGuinea = 134
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Paraguay
+  commentId: F:HCMUtils.Types.Country.Paraguay
+  id: Paraguay
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Paraguay
+  nameWithType: Country.Paraguay
+  fullName: HCMUtils.Types.Country.Paraguay
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Paraguay
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 139
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Paraguay = 135
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Peru
+  commentId: F:HCMUtils.Types.Country.Peru
+  id: Peru
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Peru
+  nameWithType: Country.Peru
+  fullName: HCMUtils.Types.Country.Peru
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Peru
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 140
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Peru = 136
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Philippines
+  commentId: F:HCMUtils.Types.Country.Philippines
+  id: Philippines
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Philippines
+  nameWithType: Country.Philippines
+  fullName: HCMUtils.Types.Country.Philippines
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Philippines
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 141
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Philippines = 137
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Poland
+  commentId: F:HCMUtils.Types.Country.Poland
+  id: Poland
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Poland
+  nameWithType: Country.Poland
+  fullName: HCMUtils.Types.Country.Poland
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Poland
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 142
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Poland = 138
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Portugal
+  commentId: F:HCMUtils.Types.Country.Portugal
+  id: Portugal
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Portugal
+  nameWithType: Country.Portugal
+  fullName: HCMUtils.Types.Country.Portugal
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Portugal
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 143
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Portugal = 139
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Qatar
+  commentId: F:HCMUtils.Types.Country.Qatar
+  id: Qatar
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Qatar
+  nameWithType: Country.Qatar
+  fullName: HCMUtils.Types.Country.Qatar
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Qatar
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 144
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Qatar = 140
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Romania
+  commentId: F:HCMUtils.Types.Country.Romania
+  id: Romania
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Romania
+  nameWithType: Country.Romania
+  fullName: HCMUtils.Types.Country.Romania
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Romania
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 145
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Romania = 141
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.RussianFederation
+  commentId: F:HCMUtils.Types.Country.RussianFederation
+  id: RussianFederation
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: RussianFederation
+  nameWithType: Country.RussianFederation
+  fullName: HCMUtils.Types.Country.RussianFederation
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RussianFederation
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 146
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: RussianFederation = 142
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Rwanda
+  commentId: F:HCMUtils.Types.Country.Rwanda
+  id: Rwanda
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Rwanda
+  nameWithType: Country.Rwanda
+  fullName: HCMUtils.Types.Country.Rwanda
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Rwanda
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 147
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Rwanda = 143
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SaintKittsAndNevis
+  commentId: F:HCMUtils.Types.Country.SaintKittsAndNevis
+  id: SaintKittsAndNevis
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SaintKittsAndNevis
+  nameWithType: Country.SaintKittsAndNevis
+  fullName: HCMUtils.Types.Country.SaintKittsAndNevis
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SaintKittsAndNevis
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 148
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SaintKittsAndNevis = 144
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SaintLucia
+  commentId: F:HCMUtils.Types.Country.SaintLucia
+  id: SaintLucia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SaintLucia
+  nameWithType: Country.SaintLucia
+  fullName: HCMUtils.Types.Country.SaintLucia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SaintLucia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 149
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SaintLucia = 145
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SaintVincentAndTheGrenadines
+  commentId: F:HCMUtils.Types.Country.SaintVincentAndTheGrenadines
+  id: SaintVincentAndTheGrenadines
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SaintVincentAndTheGrenadines
+  nameWithType: Country.SaintVincentAndTheGrenadines
+  fullName: HCMUtils.Types.Country.SaintVincentAndTheGrenadines
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SaintVincentAndTheGrenadines
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 150
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SaintVincentAndTheGrenadines = 146
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Samoa
+  commentId: F:HCMUtils.Types.Country.Samoa
+  id: Samoa
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Samoa
+  nameWithType: Country.Samoa
+  fullName: HCMUtils.Types.Country.Samoa
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Samoa
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 151
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Samoa = 147
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SanMarino
+  commentId: F:HCMUtils.Types.Country.SanMarino
+  id: SanMarino
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SanMarino
+  nameWithType: Country.SanMarino
+  fullName: HCMUtils.Types.Country.SanMarino
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SanMarino
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 152
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SanMarino = 148
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SaoTomeAndPrincipe
+  commentId: F:HCMUtils.Types.Country.SaoTomeAndPrincipe
+  id: SaoTomeAndPrincipe
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SaoTomeAndPrincipe
+  nameWithType: Country.SaoTomeAndPrincipe
+  fullName: HCMUtils.Types.Country.SaoTomeAndPrincipe
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SaoTomeAndPrincipe
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 153
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SaoTomeAndPrincipe = 149
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SaudiArabia
+  commentId: F:HCMUtils.Types.Country.SaudiArabia
+  id: SaudiArabia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SaudiArabia
+  nameWithType: Country.SaudiArabia
+  fullName: HCMUtils.Types.Country.SaudiArabia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SaudiArabia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 154
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SaudiArabia = 150
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Senegal
+  commentId: F:HCMUtils.Types.Country.Senegal
+  id: Senegal
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Senegal
+  nameWithType: Country.Senegal
+  fullName: HCMUtils.Types.Country.Senegal
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Senegal
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 155
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Senegal = 151
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Serbia
+  commentId: F:HCMUtils.Types.Country.Serbia
+  id: Serbia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Serbia
+  nameWithType: Country.Serbia
+  fullName: HCMUtils.Types.Country.Serbia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Serbia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 156
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Serbia = 152
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Seychelles
+  commentId: F:HCMUtils.Types.Country.Seychelles
+  id: Seychelles
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Seychelles
+  nameWithType: Country.Seychelles
+  fullName: HCMUtils.Types.Country.Seychelles
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Seychelles
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 157
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Seychelles = 153
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SierraLeone
+  commentId: F:HCMUtils.Types.Country.SierraLeone
+  id: SierraLeone
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SierraLeone
+  nameWithType: Country.SierraLeone
+  fullName: HCMUtils.Types.Country.SierraLeone
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SierraLeone
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 158
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SierraLeone = 154
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Singapore
+  commentId: F:HCMUtils.Types.Country.Singapore
+  id: Singapore
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Singapore
+  nameWithType: Country.Singapore
+  fullName: HCMUtils.Types.Country.Singapore
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Singapore
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 159
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Singapore = 155
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SlovakRepublic
+  commentId: F:HCMUtils.Types.Country.SlovakRepublic
+  id: SlovakRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SlovakRepublic
+  nameWithType: Country.SlovakRepublic
+  fullName: HCMUtils.Types.Country.SlovakRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SlovakRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 160
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SlovakRepublic = 156
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Slovenia
+  commentId: F:HCMUtils.Types.Country.Slovenia
+  id: Slovenia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Slovenia
+  nameWithType: Country.Slovenia
+  fullName: HCMUtils.Types.Country.Slovenia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Slovenia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 161
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Slovenia = 157
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SolomonIslands
+  commentId: F:HCMUtils.Types.Country.SolomonIslands
+  id: SolomonIslands
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SolomonIslands
+  nameWithType: Country.SolomonIslands
+  fullName: HCMUtils.Types.Country.SolomonIslands
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SolomonIslands
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 162
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SolomonIslands = 158
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Somalia
+  commentId: F:HCMUtils.Types.Country.Somalia
+  id: Somalia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Somalia
+  nameWithType: Country.Somalia
+  fullName: HCMUtils.Types.Country.Somalia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Somalia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 163
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Somalia = 159
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SouthAfrica
+  commentId: F:HCMUtils.Types.Country.SouthAfrica
+  id: SouthAfrica
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SouthAfrica
+  nameWithType: Country.SouthAfrica
+  fullName: HCMUtils.Types.Country.SouthAfrica
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SouthAfrica
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 164
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SouthAfrica = 160
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SouthSudan
+  commentId: F:HCMUtils.Types.Country.SouthSudan
+  id: SouthSudan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SouthSudan
+  nameWithType: Country.SouthSudan
+  fullName: HCMUtils.Types.Country.SouthSudan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SouthSudan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 165
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SouthSudan = 161
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Spain
+  commentId: F:HCMUtils.Types.Country.Spain
+  id: Spain
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Spain
+  nameWithType: Country.Spain
+  fullName: HCMUtils.Types.Country.Spain
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Spain
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 166
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Spain = 162
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SriLanka
+  commentId: F:HCMUtils.Types.Country.SriLanka
+  id: SriLanka
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SriLanka
+  nameWithType: Country.SriLanka
+  fullName: HCMUtils.Types.Country.SriLanka
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SriLanka
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 167
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SriLanka = 163
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Sudan
+  commentId: F:HCMUtils.Types.Country.Sudan
+  id: Sudan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Sudan
+  nameWithType: Country.Sudan
+  fullName: HCMUtils.Types.Country.Sudan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Sudan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 168
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Sudan = 164
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Suriname
+  commentId: F:HCMUtils.Types.Country.Suriname
+  id: Suriname
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Suriname
+  nameWithType: Country.Suriname
+  fullName: HCMUtils.Types.Country.Suriname
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Suriname
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 169
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Suriname = 165
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Sweden
+  commentId: F:HCMUtils.Types.Country.Sweden
+  id: Sweden
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Sweden
+  nameWithType: Country.Sweden
+  fullName: HCMUtils.Types.Country.Sweden
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Sweden
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 170
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Sweden = 166
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Switzerland
+  commentId: F:HCMUtils.Types.Country.Switzerland
+  id: Switzerland
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Switzerland
+  nameWithType: Country.Switzerland
+  fullName: HCMUtils.Types.Country.Switzerland
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Switzerland
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 171
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Switzerland = 167
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.SyrianArabRepublic
+  commentId: F:HCMUtils.Types.Country.SyrianArabRepublic
+  id: SyrianArabRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: SyrianArabRepublic
+  nameWithType: Country.SyrianArabRepublic
+  fullName: HCMUtils.Types.Country.SyrianArabRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SyrianArabRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 172
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: SyrianArabRepublic = 168
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Tajikistan
+  commentId: F:HCMUtils.Types.Country.Tajikistan
+  id: Tajikistan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Tajikistan
+  nameWithType: Country.Tajikistan
+  fullName: HCMUtils.Types.Country.Tajikistan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Tajikistan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 173
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Tajikistan = 169
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Tanzania
+  commentId: F:HCMUtils.Types.Country.Tanzania
+  id: Tanzania
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Tanzania
+  nameWithType: Country.Tanzania
+  fullName: HCMUtils.Types.Country.Tanzania
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Tanzania
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 174
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Tanzania = 170
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Thailand
+  commentId: F:HCMUtils.Types.Country.Thailand
+  id: Thailand
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Thailand
+  nameWithType: Country.Thailand
+  fullName: HCMUtils.Types.Country.Thailand
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Thailand
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 175
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Thailand = 171
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.TimorLeste
+  commentId: F:HCMUtils.Types.Country.TimorLeste
+  id: TimorLeste
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: TimorLeste
+  nameWithType: Country.TimorLeste
+  fullName: HCMUtils.Types.Country.TimorLeste
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TimorLeste
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 176
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: TimorLeste = 172
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.TogoleseRepublic
+  commentId: F:HCMUtils.Types.Country.TogoleseRepublic
+  id: TogoleseRepublic
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: TogoleseRepublic
+  nameWithType: Country.TogoleseRepublic
+  fullName: HCMUtils.Types.Country.TogoleseRepublic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TogoleseRepublic
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 177
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: TogoleseRepublic = 173
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Tonga
+  commentId: F:HCMUtils.Types.Country.Tonga
+  id: Tonga
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Tonga
+  nameWithType: Country.Tonga
+  fullName: HCMUtils.Types.Country.Tonga
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Tonga
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 178
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Tonga = 174
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.TrinidadAndTobago
+  commentId: F:HCMUtils.Types.Country.TrinidadAndTobago
+  id: TrinidadAndTobago
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: TrinidadAndTobago
+  nameWithType: Country.TrinidadAndTobago
+  fullName: HCMUtils.Types.Country.TrinidadAndTobago
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TrinidadAndTobago
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 179
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: TrinidadAndTobago = 175
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Tunisia
+  commentId: F:HCMUtils.Types.Country.Tunisia
+  id: Tunisia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Tunisia
+  nameWithType: Country.Tunisia
+  fullName: HCMUtils.Types.Country.Tunisia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Tunisia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 180
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Tunisia = 176
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Turkmenistan
+  commentId: F:HCMUtils.Types.Country.Turkmenistan
+  id: Turkmenistan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Turkmenistan
+  nameWithType: Country.Turkmenistan
+  fullName: HCMUtils.Types.Country.Turkmenistan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Turkmenistan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 181
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Turkmenistan = 177
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Tuvalu
+  commentId: F:HCMUtils.Types.Country.Tuvalu
+  id: Tuvalu
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Tuvalu
+  nameWithType: Country.Tuvalu
+  fullName: HCMUtils.Types.Country.Tuvalu
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Tuvalu
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 182
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Tuvalu = 178
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Türkiye
+  commentId: F:HCMUtils.Types.Country.Türkiye
+  id: Türkiye
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Türkiye
+  nameWithType: Country.Türkiye
+  fullName: HCMUtils.Types.Country.Türkiye
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Türkiye
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 183
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Türkiye = 179
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Uganda
+  commentId: F:HCMUtils.Types.Country.Uganda
+  id: Uganda
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Uganda
+  nameWithType: Country.Uganda
+  fullName: HCMUtils.Types.Country.Uganda
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Uganda
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 184
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Uganda = 180
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Ukraine
+  commentId: F:HCMUtils.Types.Country.Ukraine
+  id: Ukraine
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Ukraine
+  nameWithType: Country.Ukraine
+  fullName: HCMUtils.Types.Country.Ukraine
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Ukraine
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 185
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Ukraine = 181
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.UnitedArabEmirates
+  commentId: F:HCMUtils.Types.Country.UnitedArabEmirates
+  id: UnitedArabEmirates
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: UnitedArabEmirates
+  nameWithType: Country.UnitedArabEmirates
+  fullName: HCMUtils.Types.Country.UnitedArabEmirates
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: UnitedArabEmirates
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 186
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: UnitedArabEmirates = 182
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.UnitedKingdomOfGreatBritainAndNorthernIreland
+  commentId: F:HCMUtils.Types.Country.UnitedKingdomOfGreatBritainAndNorthernIreland
+  id: UnitedKingdomOfGreatBritainAndNorthernIreland
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: UnitedKingdomOfGreatBritainAndNorthernIreland
+  nameWithType: Country.UnitedKingdomOfGreatBritainAndNorthernIreland
+  fullName: HCMUtils.Types.Country.UnitedKingdomOfGreatBritainAndNorthernIreland
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: UnitedKingdomOfGreatBritainAndNorthernIreland
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 187
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: UnitedKingdomOfGreatBritainAndNorthernIreland = 183
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.UnitedStatesOfAmerica
+  commentId: F:HCMUtils.Types.Country.UnitedStatesOfAmerica
+  id: UnitedStatesOfAmerica
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: UnitedStatesOfAmerica
+  nameWithType: Country.UnitedStatesOfAmerica
+  fullName: HCMUtils.Types.Country.UnitedStatesOfAmerica
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: UnitedStatesOfAmerica
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 188
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: UnitedStatesOfAmerica = 184
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Uruguay
+  commentId: F:HCMUtils.Types.Country.Uruguay
+  id: Uruguay
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Uruguay
+  nameWithType: Country.Uruguay
+  fullName: HCMUtils.Types.Country.Uruguay
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Uruguay
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 189
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Uruguay = 185
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Uzbekistan
+  commentId: F:HCMUtils.Types.Country.Uzbekistan
+  id: Uzbekistan
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Uzbekistan
+  nameWithType: Country.Uzbekistan
+  fullName: HCMUtils.Types.Country.Uzbekistan
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Uzbekistan
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 190
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Uzbekistan = 186
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Vanuatu
+  commentId: F:HCMUtils.Types.Country.Vanuatu
+  id: Vanuatu
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Vanuatu
+  nameWithType: Country.Vanuatu
+  fullName: HCMUtils.Types.Country.Vanuatu
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Vanuatu
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 191
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Vanuatu = 187
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.VaticanCity
+  commentId: F:HCMUtils.Types.Country.VaticanCity
+  id: VaticanCity
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: VaticanCity
+  nameWithType: Country.VaticanCity
+  fullName: HCMUtils.Types.Country.VaticanCity
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: VaticanCity
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 192
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: VaticanCity = 188
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Venezuela
+  commentId: F:HCMUtils.Types.Country.Venezuela
+  id: Venezuela
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Venezuela
+  nameWithType: Country.Venezuela
+  fullName: HCMUtils.Types.Country.Venezuela
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Venezuela
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 193
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Venezuela = 189
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Vietnam
+  commentId: F:HCMUtils.Types.Country.Vietnam
+  id: Vietnam
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Vietnam
+  nameWithType: Country.Vietnam
+  fullName: HCMUtils.Types.Country.Vietnam
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Vietnam
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 194
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Vietnam = 190
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Yemen
+  commentId: F:HCMUtils.Types.Country.Yemen
+  id: Yemen
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Yemen
+  nameWithType: Country.Yemen
+  fullName: HCMUtils.Types.Country.Yemen
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Yemen
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 195
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Yemen = 191
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Zambia
+  commentId: F:HCMUtils.Types.Country.Zambia
+  id: Zambia
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Zambia
+  nameWithType: Country.Zambia
+  fullName: HCMUtils.Types.Country.Zambia
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Zambia
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 196
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Zambia = 192
+    return:
+      type: HCMUtils.Types.Country
+- uid: HCMUtils.Types.Country.Zimbabwe
+  commentId: F:HCMUtils.Types.Country.Zimbabwe
+  id: Zimbabwe
+  parent: HCMUtils.Types.Country
+  langs:
+  - csharp
+  - vb
+  name: Zimbabwe
+  nameWithType: Country.Zimbabwe
+  fullName: HCMUtils.Types.Country.Zimbabwe
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Country.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Zimbabwe
+    path: src/HCMUtils/Types/Country.cs
+    startLine: 197
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Zimbabwe = 193
+    return:
+      type: HCMUtils.Types.Country
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Country.html
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country

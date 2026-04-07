@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.StringHelpers
+  commentId: T:HCMUtils.StringHelpers
+  id: StringHelpers
+  parent: HCMUtils
+  children:
+  - HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  - HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  - HCMUtils.StringHelpers.GetSIMultiplier(HCMUtils.Types.SIPrefix)
+  - HCMUtils.StringHelpers.ParseBoolean(System.String)
+  - HCMUtils.StringHelpers.ParseCoordinates(System.String)
+  - HCMUtils.StringHelpers.ParseDMSString(System.String)
+  - HCMUtils.StringHelpers.ParseGainType(System.String)
+  - HCMUtils.StringHelpers.ParseModeType(System.String)
+  - HCMUtils.StringHelpers.ParseSINumber(System.String)
+  - HCMUtils.StringHelpers.ParseSIPrefix(System.String)
+  - HCMUtils.StringHelpers.ParseTemperature(System.String)
+  - HCMUtils.StringHelpers.ToBooleanString(System.Boolean)
+  - HCMUtils.StringHelpers.ToCoordinatesString(System.ValueTuple{System.Double,System.Double})
+  - HCMUtils.StringHelpers.ToDMSString(System.Double,System.Boolean)
+  - HCMUtils.StringHelpers.ToFrequencyString(System.Double,HCMUtils.Types.SIPrefix)
+  - HCMUtils.StringHelpers.ToGainTypeString(HCMUtils.Types.GainType)
+  - HCMUtils.StringHelpers.ToSIPrefixString(HCMUtils.Types.SIPrefix)
+  - HCMUtils.StringHelpers.ToTemperatureString(HCMUtils.Types.Temperature)
+  langs:
+  - csharp
+  - vb
+  name: StringHelpers
+  nameWithType: StringHelpers
+  fullName: HCMUtils.StringHelpers
+  type: Class
+  source:
+    id: StringHelpers
+    path: D:\projects\HCMUtils\src\HCMUtils\obj\Release\net10.0\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs
+    startLine: 56
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  syntax:
+    content: public class StringHelpers
+    content.vb: Public Class StringHelpers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HCMUtils.StringHelpers.ParseDMSString(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseDMSString(System.String)
+  id: ParseDMSString(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseDMSString(string)
+  nameWithType: StringHelpers.ParseDMSString(string)
+  fullName: HCMUtils.StringHelpers.ParseDMSString(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseDMSString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 17
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a string in the degrees-minutes-seconds format (`DD(N|E|S|W)MMSS`) used in HCM into a decimal representation.
+  example: []
+  syntax:
+    content: public static double ParseDMSString(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A DMS string, e.g. `51E2346`.
+    return:
+      type: System.Double
+      description: The decimal form of the DMS string.
+    content.vb: Public Shared Function ParseDMSString(input As String) As Double
+  overload: HCMUtils.StringHelpers.ParseDMSString*
+  nameWithType.vb: StringHelpers.ParseDMSString(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseDMSString(String)
+  name.vb: ParseDMSString(String)
+- uid: HCMUtils.StringHelpers.ParseCoordinates(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseCoordinates(System.String)
+  id: ParseCoordinates(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseCoordinates(string)
+  nameWithType: StringHelpers.ParseCoordinates(string)
+  fullName: HCMUtils.StringHelpers.ParseCoordinates(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseCoordinates
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 35
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a string with latitude and longitude parts in DMS format used in HCM into a tuple with decimal coordinates.
+  example: []
+  syntax:
+    content: public static (double Long, double Lat) ParseCoordinates(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A string with latitude and longitude components in DMS format, e.g. 8E123451N4223
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+      description: A tuple of the latitude and longitude in decimal form.
+    content.vb: Public Shared Function ParseCoordinates(input As String) As ([Long] As Double, Lat As Double)
+  overload: HCMUtils.StringHelpers.ParseCoordinates*
+  nameWithType.vb: StringHelpers.ParseCoordinates(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseCoordinates(String)
+  name.vb: ParseCoordinates(String)
+- uid: HCMUtils.StringHelpers.ParseSINumber(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseSINumber(System.String)
+  id: ParseSINumber(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseSINumber(string)
+  nameWithType: StringHelpers.ParseSINumber(string)
+  fullName: HCMUtils.StringHelpers.ParseSINumber(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseSINumber
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 54
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: >-
+    Parses a number with a SI prefix appended, e.g. 145.5M is 145500000.
+
+    Its confusingly called a prefix though it follows the number as usually a unit is prefixed with it.
+
+    Only Mega, Giga and kilo are supported.
+  example: []
+  syntax:
+    content: public static double ParseSINumber(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A string representing the number to parse
+    return:
+      type: System.Double
+      description: The number as a double
+    content.vb: Public Shared Function ParseSINumber(input As String) As Double
+  overload: HCMUtils.StringHelpers.ParseSINumber*
+  nameWithType.vb: StringHelpers.ParseSINumber(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseSINumber(String)
+  name.vb: ParseSINumber(String)
+- uid: HCMUtils.StringHelpers.ParseSIPrefix(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseSIPrefix(System.String)
+  id: ParseSIPrefix(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseSIPrefix(string)
+  nameWithType: StringHelpers.ParseSIPrefix(string)
+  fullName: HCMUtils.StringHelpers.ParseSIPrefix(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseSIPrefix
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 71
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses an input si prefix and returns an enum value
+  example: []
+  syntax:
+    content: public static SIPrefix ParseSIPrefix(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: an input string, such as `"G"`
+    return:
+      type: HCMUtils.Types.SIPrefix
+      description: The corresponding enum value, e.g. `SIPrefix.G`
+    content.vb: Public Shared Function ParseSIPrefix(input As String) As SIPrefix
+  overload: HCMUtils.StringHelpers.ParseSIPrefix*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+  nameWithType.vb: StringHelpers.ParseSIPrefix(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseSIPrefix(String)
+  name.vb: ParseSIPrefix(String)
+- uid: HCMUtils.StringHelpers.GetSIMultiplier(HCMUtils.Types.SIPrefix)
+  commentId: M:HCMUtils.StringHelpers.GetSIMultiplier(HCMUtils.Types.SIPrefix)
+  id: GetSIMultiplier(HCMUtils.Types.SIPrefix)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: GetSIMultiplier(SIPrefix)
+  nameWithType: StringHelpers.GetSIMultiplier(SIPrefix)
+  fullName: HCMUtils.StringHelpers.GetSIMultiplier(HCMUtils.Types.SIPrefix)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: GetSIMultiplier
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 85
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Returns the corresponding multiplier for an SIPrefix
+  example: []
+  syntax:
+    content: public static int GetSIMultiplier(SIPrefix input)
+    parameters:
+    - id: input
+      type: HCMUtils.Types.SIPrefix
+      description: The input, such as `SIPrefix.k`
+    return:
+      type: System.Int32
+      description: The corresponding multiplier, such as `1_000`
+    content.vb: Public Shared Function GetSIMultiplier(input As SIPrefix) As Integer
+  overload: HCMUtils.StringHelpers.GetSIMultiplier*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+- uid: HCMUtils.StringHelpers.ParseBoolean(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseBoolean(System.String)
+  id: ParseBoolean(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseBoolean(string)
+  nameWithType: StringHelpers.ParseBoolean(string)
+  fullName: HCMUtils.StringHelpers.ParseBoolean(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseBoolean
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 98
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a 0/N or 1/Y to its respective boolean (1/Y = true, everything else = false)
+  example: []
+  syntax:
+    content: public static bool ParseBoolean(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A string containing either a 0 or 1 or N or Y
+    return:
+      type: System.Boolean
+      description: The corresponding boolean
+    content.vb: Public Shared Function ParseBoolean(input As String) As Boolean
+  overload: HCMUtils.StringHelpers.ParseBoolean*
+  nameWithType.vb: StringHelpers.ParseBoolean(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseBoolean(String)
+  name.vb: ParseBoolean(String)
+- uid: HCMUtils.StringHelpers.ParseTemperature(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseTemperature(System.String)
+  id: ParseTemperature(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseTemperature(string)
+  nameWithType: StringHelpers.ParseTemperature(string)
+  fullName: HCMUtils.StringHelpers.ParseTemperature(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseTemperature
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 110
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a temperature string into a temperature.
+  example: []
+  syntax:
+    content: public static Temperature ParseTemperature(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: The input string, either "W" or "C" for warm or cold.
+    return:
+      type: HCMUtils.Types.Temperature
+      description: The parsed temperature
+    content.vb: Public Shared Function ParseTemperature(input As String) As Temperature
+  overload: HCMUtils.StringHelpers.ParseTemperature*
+  nameWithType.vb: StringHelpers.ParseTemperature(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseTemperature(String)
+  name.vb: ParseTemperature(String)
+- uid: HCMUtils.StringHelpers.ParseModeType(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseModeType(System.String)
+  id: ParseModeType(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseModeType(string)
+  nameWithType: StringHelpers.ParseModeType(string)
+  fullName: HCMUtils.StringHelpers.ParseModeType(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseModeType
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 122
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Get the mode type from a string.
+  example: []
+  syntax:
+    content: public static ModeType ParseModeType(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A string containing a mode, e.g. -10 or 1
+    return:
+      type: HCMUtils.Types.ModeType
+      description: The mode type corresponding with the mode described by the string
+    content.vb: Public Shared Function ParseModeType(input As String) As ModeType
+  overload: HCMUtils.StringHelpers.ParseModeType*
+  nameWithType.vb: StringHelpers.ParseModeType(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseModeType(String)
+  name.vb: ParseModeType(String)
+- uid: HCMUtils.StringHelpers.ParseGainType(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseGainType(System.String)
+  id: ParseGainType(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseGainType(string)
+  nameWithType: StringHelpers.ParseGainType(string)
+  fullName: HCMUtils.StringHelpers.ParseGainType(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseGainType
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 130
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Get the gain type of a string
+  example: []
+  syntax:
+    content: public static GainType ParseGainType(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A string, either "E" or "I"
+    return:
+      type: HCMUtils.Types.GainType
+      description: The corresponding gain type
+    content.vb: Public Shared Function ParseGainType(input As String) As GainType
+  overload: HCMUtils.StringHelpers.ParseGainType*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: StringHelpers.ParseGainType(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseGainType(String)
+  name.vb: ParseGainType(String)
+- uid: HCMUtils.StringHelpers.ToDMSString(System.Double,System.Boolean)
+  commentId: M:HCMUtils.StringHelpers.ToDMSString(System.Double,System.Boolean)
+  id: ToDMSString(System.Double,System.Boolean)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToDMSString(double, bool)
+  nameWithType: StringHelpers.ToDMSString(double, bool)
+  fullName: HCMUtils.StringHelpers.ToDMSString(double, bool)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToDMSString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 143
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Get a DMS string from a decimal degree number and the axis (lat or long)
+  example: []
+  syntax:
+    content: public static string ToDMSString(double degrees, bool isLatitude)
+    parameters:
+    - id: degrees
+      type: System.Double
+      description: A coordinate in decimal degree form
+    - id: isLatitude
+      type: System.Boolean
+      description: Whether the decimal is on the latitudinal or longitudinal axis
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ToDMSString(degrees As Double, isLatitude As Boolean) As String
+  overload: HCMUtils.StringHelpers.ToDMSString*
+  nameWithType.vb: StringHelpers.ToDMSString(Double, Boolean)
+  fullName.vb: HCMUtils.StringHelpers.ToDMSString(Double, Boolean)
+  name.vb: ToDMSString(Double, Boolean)
+- uid: HCMUtils.StringHelpers.ToCoordinatesString(System.ValueTuple{System.Double,System.Double})
+  commentId: M:HCMUtils.StringHelpers.ToCoordinatesString(System.ValueTuple{System.Double,System.Double})
+  id: ToCoordinatesString(System.ValueTuple{System.Double,System.Double})
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToCoordinatesString((double Long, double Lat))
+  nameWithType: StringHelpers.ToCoordinatesString((double Long, double Lat))
+  fullName: HCMUtils.StringHelpers.ToCoordinatesString((double Long, double Lat))
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToCoordinatesString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 166
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Get a coordinates string from a latitude and longitude in tupel form
+  example: []
+  syntax:
+    content: public static string ToCoordinatesString((double Long, double Lat) coordinates)
+    parameters:
+    - id: coordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: A tuple of coordinates
+    return:
+      type: System.String
+      description: The string representation in DMS form of the coordinate pair
+    content.vb: Public Shared Function ToCoordinatesString(coordinates As ([Long] As Double, Lat As Double)) As String
+  overload: HCMUtils.StringHelpers.ToCoordinatesString*
+  nameWithType.vb: StringHelpers.ToCoordinatesString((Long As Double, Lat As Double))
+  fullName.vb: HCMUtils.StringHelpers.ToCoordinatesString((Long As Double, Lat As Double))
+  name.vb: ToCoordinatesString((Long As Double, Lat As Double))
+- uid: HCMUtils.StringHelpers.ToGainTypeString(HCMUtils.Types.GainType)
+  commentId: M:HCMUtils.StringHelpers.ToGainTypeString(HCMUtils.Types.GainType)
+  id: ToGainTypeString(HCMUtils.Types.GainType)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToGainTypeString(GainType)
+  nameWithType: StringHelpers.ToGainTypeString(GainType)
+  fullName: HCMUtils.StringHelpers.ToGainTypeString(HCMUtils.Types.GainType)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToGainTypeString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 173
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Get a E/I char from a GainType
+  example: []
+  syntax:
+    content: public static char ToGainTypeString(GainType gainType)
+    parameters:
+    - id: gainType
+      type: HCMUtils.Types.GainType
+      description: The input GainType
+    return:
+      type: System.Char
+      description: E for dipole-based gain calculation, I for isotropic radiator-based gain calculation
+    content.vb: Public Shared Function ToGainTypeString(gainType As GainType) As Char
+  overload: HCMUtils.StringHelpers.ToGainTypeString*
+- uid: HCMUtils.StringHelpers.ToSIPrefixString(HCMUtils.Types.SIPrefix)
+  commentId: M:HCMUtils.StringHelpers.ToSIPrefixString(HCMUtils.Types.SIPrefix)
+  id: ToSIPrefixString(HCMUtils.Types.SIPrefix)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToSIPrefixString(SIPrefix)
+  nameWithType: StringHelpers.ToSIPrefixString(SIPrefix)
+  fullName: HCMUtils.StringHelpers.ToSIPrefixString(HCMUtils.Types.SIPrefix)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToSIPrefixString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 181
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Returns the associated SI prefix string
+  example: []
+  syntax:
+    content: public static string ToSIPrefixString(SIPrefix prefix)
+    parameters:
+    - id: prefix
+      type: HCMUtils.Types.SIPrefix
+      description: an SIPrefix
+    return:
+      type: System.String
+      description: the string representation of the input, e.g. `"G"`
+    content.vb: Public Shared Function ToSIPrefixString(prefix As SIPrefix) As String
+  overload: HCMUtils.StringHelpers.ToSIPrefixString*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+- uid: HCMUtils.StringHelpers.ToFrequencyString(System.Double,HCMUtils.Types.SIPrefix)
+  commentId: M:HCMUtils.StringHelpers.ToFrequencyString(System.Double,HCMUtils.Types.SIPrefix)
+  id: ToFrequencyString(System.Double,HCMUtils.Types.SIPrefix)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToFrequencyString(double, SIPrefix)
+  nameWithType: StringHelpers.ToFrequencyString(double, SIPrefix)
+  fullName: HCMUtils.StringHelpers.ToFrequencyString(double, HCMUtils.Types.SIPrefix)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToFrequencyString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 195
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Converts an input frequency as a number into a string frequency with a desired prefix
+  example: []
+  syntax:
+    content: public static string ToFrequencyString(double input, SIPrefix desiredPrefix)
+    parameters:
+    - id: input
+      type: System.Double
+      description: The input frequency to convert, e.g. 3_750_000_000
+    - id: desiredPrefix
+      type: HCMUtils.Types.SIPrefix
+      description: The desired prefix, e.g. G
+    return:
+      type: System.String
+      description: The frequency as a string including the desired prefix, e.g. 3.75000G
+    content.vb: Public Shared Function ToFrequencyString(input As Double, desiredPrefix As SIPrefix) As String
+  overload: HCMUtils.StringHelpers.ToFrequencyString*
+  nameWithType.vb: StringHelpers.ToFrequencyString(Double, SIPrefix)
+  fullName.vb: HCMUtils.StringHelpers.ToFrequencyString(Double, HCMUtils.Types.SIPrefix)
+  name.vb: ToFrequencyString(Double, SIPrefix)
+- uid: HCMUtils.StringHelpers.ToBooleanString(System.Boolean)
+  commentId: M:HCMUtils.StringHelpers.ToBooleanString(System.Boolean)
+  id: ToBooleanString(System.Boolean)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToBooleanString(bool)
+  nameWithType: StringHelpers.ToBooleanString(bool)
+  fullName: HCMUtils.StringHelpers.ToBooleanString(bool)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToBooleanString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 203
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Converts a boolean to a string
+  example: []
+  syntax:
+    content: public static string ToBooleanString(bool input)
+    parameters:
+    - id: input
+      type: System.Boolean
+      description: The input boolean, such as true
+    return:
+      type: System.String
+      description: The ouput string, e.g. "1"
+    content.vb: Public Shared Function ToBooleanString(input As Boolean) As String
+  overload: HCMUtils.StringHelpers.ToBooleanString*
+  nameWithType.vb: StringHelpers.ToBooleanString(Boolean)
+  fullName.vb: HCMUtils.StringHelpers.ToBooleanString(Boolean)
+  name.vb: ToBooleanString(Boolean)
+- uid: HCMUtils.StringHelpers.ToTemperatureString(HCMUtils.Types.Temperature)
+  commentId: M:HCMUtils.StringHelpers.ToTemperatureString(HCMUtils.Types.Temperature)
+  id: ToTemperatureString(HCMUtils.Types.Temperature)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ToTemperatureString(Temperature)
+  nameWithType: StringHelpers.ToTemperatureString(Temperature)
+  fullName: HCMUtils.StringHelpers.ToTemperatureString(HCMUtils.Types.Temperature)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ToTemperatureString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 205
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  syntax:
+    content: public static string ToTemperatureString(Temperature temperature)
+    parameters:
+    - id: temperature
+      type: HCMUtils.Types.Temperature
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToTemperatureString(temperature As Temperature) As String
+  overload: HCMUtils.StringHelpers.ToTemperatureString*
+- uid: HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  id: BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: BuildLegacyInputString((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, GainType, double, double, bool, Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, double?, int?, Country, Country, string, string, string, string?)
+  nameWithType: StringHelpers.BuildLegacyInputString((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, GainType, double, double, bool, Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, double?, int?, Country, Country, string, string, string, string?)
+  fullName: HCMUtils.StringHelpers.BuildLegacyInputString((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, HCMUtils.Types.GainType, double, double, bool, HCMUtils.Types.Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, HCMUtils.Types.GainType, double, double, double?, int?, HCMUtils.Types.Country, HCMUtils.Types.Country, string, string, string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: BuildLegacyInputString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 245
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Returns a legacy input string for point-to-point calculations
+  example: []
+  syntax:
+    content: public static string BuildLegacyInputString((double Lat, double Long) txCoordinates, (double Lat, double Long) rxCoordinates, int? txSiteHeight, int? rxSiteHeight, (string Horizontal, string Vertical) txAntennaType, double txAzimuth, double txElevation, int txAntennaHeight, int rxAntennaHeight, GainType txGainType, double txPower, double txFrequency, bool channelOccupation, Temperature? seaTemperature, int txServiceAreaRadius, int rxServiceAreaRadius, double? distanceOverSea, double rxFrequency, string rxEmissionDesignation, string txEmissionDesignation, (string Horizontal, string Vertical) rxAntennaType, double rxAzimuth, double rxElevation, GainType rxGainType, double rxGain, double depolarizationLoss, double? permissibleFieldStrength, int? frequencyDifferenceCorrectionFactor, Country rxCountry, Country txCountry, string topoPath, string borderPath, string morphoPath, string? debugOutputPath)
+    parameters:
+    - id: txCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: ''
+    - id: rxCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: ''
+    - id: txSiteHeight
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: rxSiteHeight
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: txAntennaType
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    - id: txAzimuth
+      type: System.Double
+      description: ''
+    - id: txElevation
+      type: System.Double
+      description: ''
+    - id: txAntennaHeight
+      type: System.Int32
+      description: ''
+    - id: rxAntennaHeight
+      type: System.Int32
+      description: ''
+    - id: txGainType
+      type: HCMUtils.Types.GainType
+      description: ''
+    - id: txPower
+      type: System.Double
+      description: ''
+    - id: txFrequency
+      type: System.Double
+      description: ''
+    - id: channelOccupation
+      type: System.Boolean
+      description: ''
+    - id: seaTemperature
+      type: System.Nullable{HCMUtils.Types.Temperature}
+      description: ''
+    - id: txServiceAreaRadius
+      type: System.Int32
+      description: ''
+    - id: rxServiceAreaRadius
+      type: System.Int32
+      description: ''
+    - id: distanceOverSea
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: rxFrequency
+      type: System.Double
+      description: ''
+    - id: rxEmissionDesignation
+      type: System.String
+      description: ''
+    - id: txEmissionDesignation
+      type: System.String
+      description: ''
+    - id: rxAntennaType
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    - id: rxAzimuth
+      type: System.Double
+      description: ''
+    - id: rxElevation
+      type: System.Double
+      description: ''
+    - id: rxGainType
+      type: HCMUtils.Types.GainType
+      description: ''
+    - id: rxGain
+      type: System.Double
+      description: ''
+    - id: depolarizationLoss
+      type: System.Double
+      description: ''
+    - id: permissibleFieldStrength
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: frequencyDifferenceCorrectionFactor
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: rxCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: txCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: topoPath
+      type: System.String
+      description: An absolute path where to find the topo data
+    - id: borderPath
+      type: System.String
+      description: An absolute path where to find the border data
+    - id: morphoPath
+      type: System.String
+      description: An absolute path where to find the morpho data
+    - id: debugOutputPath
+      type: System.String
+      description: An absolute path where a debug output will be placed
+    return:
+      type: System.String
+      description: The legacy input string
+    content.vb: Public Shared Function BuildLegacyInputString(txCoordinates As (Lat As Double, [Long] As Double), rxCoordinates As (Lat As Double, [Long] As Double), txSiteHeight As Integer?, rxSiteHeight As Integer?, txAntennaType As (Horizontal As String, Vertical As String), txAzimuth As Double, txElevation As Double, txAntennaHeight As Integer, rxAntennaHeight As Integer, txGainType As GainType, txPower As Double, txFrequency As Double, channelOccupation As Boolean, seaTemperature As Temperature?, txServiceAreaRadius As Integer, rxServiceAreaRadius As Integer, distanceOverSea As Double?, rxFrequency As Double, rxEmissionDesignation As String, txEmissionDesignation As String, rxAntennaType As (Horizontal As String, Vertical As String), rxAzimuth As Double, rxElevation As Double, rxGainType As GainType, rxGain As Double, depolarizationLoss As Double, permissibleFieldStrength As Double?, frequencyDifferenceCorrectionFactor As Integer?, rxCountry As Country, txCountry As Country, topoPath As String, borderPath As String, morphoPath As String, debugOutputPath As String) As String
+  overload: HCMUtils.StringHelpers.BuildLegacyInputString*
+  nameWithType.vb: StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Double?, Integer?, Country, Country, String, String, String, String)
+  fullName.vb: HCMUtils.StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, HCMUtils.Types.GainType, Double, Double, Boolean, HCMUtils.Types.Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, HCMUtils.Types.GainType, Double, Double, Double?, Integer?, HCMUtils.Types.Country, HCMUtils.Types.Country, String, String, String, String)
+  name.vb: BuildLegacyInputString((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Double?, Integer?, Country, Country, String, String, String, String)
+- uid: HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  id: BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: BuildLegacyInputString((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, GainType, double, double, bool, Temperature?, int, double?, string, double?, Country, Country, int, string, string, string, string?)
+  nameWithType: StringHelpers.BuildLegacyInputString((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, GainType, double, double, bool, Temperature?, int, double?, string, double?, Country, Country, int, string, string, string, string?)
+  fullName: HCMUtils.StringHelpers.BuildLegacyInputString((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, HCMUtils.Types.GainType, double, double, bool, HCMUtils.Types.Temperature?, int, double?, string, double?, HCMUtils.Types.Country, HCMUtils.Types.Country, int, string, string, string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: BuildLegacyInputString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 348
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Returns a legacy input string for point-to-line calculations
+  example: []
+  syntax:
+    content: public static string BuildLegacyInputString((double Lat, double Long) txCoordinates, int? txSiteHeight, (string Horizontal, string Vertical) txAntennaType, double txAzimuth, double txElevation, int txAntennaHeight, GainType txGainType, double txPower, double txFrequency, bool channelOccupation, Temperature? seaTemperature, int txServiceAreaRadius, double? distanceOverSea, string txEmissionDesignation, double? permissibleFieldStrength, Country targetCountry, Country txCountry, int maxCrossBorderRange, string topoPath, string borderPath, string morphoPath, string? debugOutputPath)
+    parameters:
+    - id: txCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: ''
+    - id: txSiteHeight
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: txAntennaType
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    - id: txAzimuth
+      type: System.Double
+      description: ''
+    - id: txElevation
+      type: System.Double
+      description: ''
+    - id: txAntennaHeight
+      type: System.Int32
+      description: ''
+    - id: txGainType
+      type: HCMUtils.Types.GainType
+      description: ''
+    - id: txPower
+      type: System.Double
+      description: ''
+    - id: txFrequency
+      type: System.Double
+      description: ''
+    - id: channelOccupation
+      type: System.Boolean
+      description: ''
+    - id: seaTemperature
+      type: System.Nullable{HCMUtils.Types.Temperature}
+      description: ''
+    - id: txServiceAreaRadius
+      type: System.Int32
+      description: ''
+    - id: distanceOverSea
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: txEmissionDesignation
+      type: System.String
+      description: ''
+    - id: permissibleFieldStrength
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: targetCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: txCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: maxCrossBorderRange
+      type: System.Int32
+      description: ''
+    - id: topoPath
+      type: System.String
+      description: An absolute path where to find the topo data
+    - id: borderPath
+      type: System.String
+      description: An absolute path where to find the border data
+    - id: morphoPath
+      type: System.String
+      description: An absolute path where to find the morpho data
+    - id: debugOutputPath
+      type: System.String
+      description: An absolute path where a debug output will be placed
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function BuildLegacyInputString(txCoordinates As (Lat As Double, [Long] As Double), txSiteHeight As Integer?, txAntennaType As (Horizontal As String, Vertical As String), txAzimuth As Double, txElevation As Double, txAntennaHeight As Integer, txGainType As GainType, txPower As Double, txFrequency As Double, channelOccupation As Boolean, seaTemperature As Temperature?, txServiceAreaRadius As Integer, distanceOverSea As Double?, txEmissionDesignation As String, permissibleFieldStrength As Double?, targetCountry As Country, txCountry As Country, maxCrossBorderRange As Integer, topoPath As String, borderPath As String, morphoPath As String, debugOutputPath As String) As String
+  overload: HCMUtils.StringHelpers.BuildLegacyInputString*
+  nameWithType.vb: StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Double?, String, Double?, Country, Country, Integer, String, String, String, String)
+  fullName.vb: HCMUtils.StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, HCMUtils.Types.GainType, Double, Double, Boolean, HCMUtils.Types.Temperature?, Integer, Double?, String, Double?, HCMUtils.Types.Country, HCMUtils.Types.Country, Integer, String, String, String, String)
+  name.vb: BuildLegacyInputString((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Double?, String, Double?, Country, Country, Integer, String, String, String, String)
+references:
+- uid: HCMUtils
+  commentId: N:HCMUtils
+  href: HCMUtils.html
+  name: HCMUtils
+  nameWithType: HCMUtils
+  fullName: HCMUtils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMUtils.StringHelpers.ParseDMSString*
+  commentId: Overload:HCMUtils.StringHelpers.ParseDMSString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseDMSString_System_String_
+  name: ParseDMSString
+  nameWithType: StringHelpers.ParseDMSString
+  fullName: HCMUtils.StringHelpers.ParseDMSString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: HCMUtils.StringHelpers.ParseCoordinates*
+  commentId: Overload:HCMUtils.StringHelpers.ParseCoordinates
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseCoordinates_System_String_
+  name: ParseCoordinates
+  nameWithType: StringHelpers.ParseCoordinates
+  fullName: HCMUtils.StringHelpers.ParseCoordinates
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double Long, double Lat)
+  nameWithType: (double Long, double Lat)
+  fullName: (double Long, double Lat)
+  nameWithType.vb: (Long As Double, Lat As Double)
+  fullName.vb: (Long As Double, Lat As Double)
+  name.vb: (Long As Double, Lat As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: HCMUtils.StringHelpers.ParseSINumber*
+  commentId: Overload:HCMUtils.StringHelpers.ParseSINumber
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseSINumber_System_String_
+  name: ParseSINumber
+  nameWithType: StringHelpers.ParseSINumber
+  fullName: HCMUtils.StringHelpers.ParseSINumber
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: HCMUtils.StringHelpers.ParseSIPrefix*
+  commentId: Overload:HCMUtils.StringHelpers.ParseSIPrefix
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseSIPrefix_System_String_
+  name: ParseSIPrefix
+  nameWithType: StringHelpers.ParseSIPrefix
+  fullName: HCMUtils.StringHelpers.ParseSIPrefix
+- uid: HCMUtils.Types.SIPrefix
+  commentId: T:HCMUtils.Types.SIPrefix
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.SIPrefix.html
+  name: SIPrefix
+  nameWithType: SIPrefix
+  fullName: HCMUtils.Types.SIPrefix
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: HCMUtils.StringHelpers.GetSIMultiplier*
+  commentId: Overload:HCMUtils.StringHelpers.GetSIMultiplier
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_GetSIMultiplier_HCMUtils_Types_SIPrefix_
+  name: GetSIMultiplier
+  nameWithType: StringHelpers.GetSIMultiplier
+  fullName: HCMUtils.StringHelpers.GetSIMultiplier
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HCMUtils.StringHelpers.ParseBoolean*
+  commentId: Overload:HCMUtils.StringHelpers.ParseBoolean
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseBoolean_System_String_
+  name: ParseBoolean
+  nameWithType: StringHelpers.ParseBoolean
+  fullName: HCMUtils.StringHelpers.ParseBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: HCMUtils.StringHelpers.ParseTemperature*
+  commentId: Overload:HCMUtils.StringHelpers.ParseTemperature
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseTemperature_System_String_
+  name: ParseTemperature
+  nameWithType: StringHelpers.ParseTemperature
+  fullName: HCMUtils.StringHelpers.ParseTemperature
+- uid: HCMUtils.Types.Temperature
+  commentId: T:HCMUtils.Types.Temperature
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature
+  nameWithType: Temperature
+  fullName: HCMUtils.Types.Temperature
+- uid: HCMUtils.StringHelpers.ParseModeType*
+  commentId: Overload:HCMUtils.StringHelpers.ParseModeType
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseModeType_System_String_
+  name: ParseModeType
+  nameWithType: StringHelpers.ParseModeType
+  fullName: HCMUtils.StringHelpers.ParseModeType
+- uid: HCMUtils.Types.ModeType
+  commentId: T:HCMUtils.Types.ModeType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.ModeType.html
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMUtils.Types.ModeType
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: HCMUtils.StringHelpers.ParseGainType*
+  commentId: Overload:HCMUtils.StringHelpers.ParseGainType
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseGainType_System_String_
+  name: ParseGainType
+  nameWithType: StringHelpers.ParseGainType
+  fullName: HCMUtils.StringHelpers.ParseGainType
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.GainType.html
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType
+- uid: HCMUtils.StringHelpers.ToDMSString*
+  commentId: Overload:HCMUtils.StringHelpers.ToDMSString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToDMSString_System_Double_System_Boolean_
+  name: ToDMSString
+  nameWithType: StringHelpers.ToDMSString
+  fullName: HCMUtils.StringHelpers.ToDMSString
+- uid: HCMUtils.StringHelpers.ToCoordinatesString*
+  commentId: Overload:HCMUtils.StringHelpers.ToCoordinatesString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToCoordinatesString_System_ValueTuple_System_Double_System_Double__
+  name: ToCoordinatesString
+  nameWithType: StringHelpers.ToCoordinatesString
+  fullName: HCMUtils.StringHelpers.ToCoordinatesString
+- uid: HCMUtils.StringHelpers.ToGainTypeString*
+  commentId: Overload:HCMUtils.StringHelpers.ToGainTypeString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToGainTypeString_HCMUtils_Types_GainType_
+  name: ToGainTypeString
+  nameWithType: StringHelpers.ToGainTypeString
+  fullName: HCMUtils.StringHelpers.ToGainTypeString
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: HCMUtils.StringHelpers.ToSIPrefixString*
+  commentId: Overload:HCMUtils.StringHelpers.ToSIPrefixString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToSIPrefixString_HCMUtils_Types_SIPrefix_
+  name: ToSIPrefixString
+  nameWithType: StringHelpers.ToSIPrefixString
+  fullName: HCMUtils.StringHelpers.ToSIPrefixString
+- uid: HCMUtils.StringHelpers.ToFrequencyString*
+  commentId: Overload:HCMUtils.StringHelpers.ToFrequencyString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToFrequencyString_System_Double_HCMUtils_Types_SIPrefix_
+  name: ToFrequencyString
+  nameWithType: StringHelpers.ToFrequencyString
+  fullName: HCMUtils.StringHelpers.ToFrequencyString
+- uid: HCMUtils.StringHelpers.ToBooleanString*
+  commentId: Overload:HCMUtils.StringHelpers.ToBooleanString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToBooleanString_System_Boolean_
+  name: ToBooleanString
+  nameWithType: StringHelpers.ToBooleanString
+  fullName: HCMUtils.StringHelpers.ToBooleanString
+- uid: HCMUtils.StringHelpers.ToTemperatureString*
+  commentId: Overload:HCMUtils.StringHelpers.ToTemperatureString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToTemperatureString_HCMUtils_Types_Temperature_
+  name: ToTemperatureString
+  nameWithType: StringHelpers.ToTemperatureString
+  fullName: HCMUtils.StringHelpers.ToTemperatureString
+- uid: HCMUtils.StringHelpers.BuildLegacyInputString*
+  commentId: Overload:HCMUtils.StringHelpers.BuildLegacyInputString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_BuildLegacyInputString_System_ValueTuple_System_Double_System_Double__System_ValueTuple_System_Double_System_Double__System_Nullable_System_Int32__System_Nullable_System_Int32__System_ValueTuple_System_String_System_String__System_Double_System_Double_System_Int32_System_Int32_HCMUtils_Types_GainType_System_Double_System_Double_System_Boolean_System_Nullable_HCMUtils_Types_Temperature__System_Int32_System_Int32_System_Nullable_System_Double__System_Double_System_String_System_String_System_ValueTuple_System_String_System_String__System_Double_System_Double_HCMUtils_Types_GainType_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Int32__HCMUtils_Types_Country_HCMUtils_Types_Country_System_String_System_String_System_String_System_String_
+  name: BuildLegacyInputString
+  nameWithType: StringHelpers.BuildLegacyInputString
+  fullName: HCMUtils.StringHelpers.BuildLegacyInputString
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.ValueTuple{System.String,System.String}
+  commentId: T:System.ValueTuple{System.String,System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string Horizontal, string Vertical)
+  nameWithType: (string Horizontal, string Vertical)
+  fullName: (string Horizontal, string Vertical)
+  nameWithType.vb: (Horizontal As String, Vertical As String)
+  fullName.vb: (Horizontal As String, Vertical As String)
+  name.vb: (Horizontal As String, Vertical As String)
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Nullable{HCMUtils.Types.Temperature}
+  commentId: T:System.Nullable{HCMUtils.Types.Temperature}
+  parent: System
+  definition: System.Nullable`1
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature?
+  nameWithType: Temperature?
+  fullName: HCMUtils.Types.Temperature?
+  spec.csharp:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+  spec.vb:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Country.html
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

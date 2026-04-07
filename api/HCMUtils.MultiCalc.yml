@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.MultiCalc
+  commentId: N:HCMUtils.MultiCalc
+  id: HCMUtils.MultiCalc
+  children:
+  - HCMUtils.MultiCalc.Helpers
+  - HCMUtils.MultiCalc.Input
+  - HCMUtils.MultiCalc.PointToLineInput
+  - HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: HCMUtils.MultiCalc
+  nameWithType: HCMUtils.MultiCalc
+  fullName: HCMUtils.MultiCalc
+  type: Namespace
+  assemblies:
+  - HCMUtils
+references:
+- uid: HCMUtils.MultiCalc.Helpers
+  commentId: T:HCMUtils.MultiCalc.Helpers
+  href: HCMUtils.MultiCalc.Helpers.html
+  name: Helpers
+  nameWithType: Helpers
+  fullName: HCMUtils.MultiCalc.Helpers
+- uid: HCMUtils.MultiCalc.Input
+  commentId: T:HCMUtils.MultiCalc.Input
+  parent: HCMUtils.MultiCalc
+  href: HCMUtils.MultiCalc.Input.html
+  name: Input
+  nameWithType: Input
+  fullName: HCMUtils.MultiCalc.Input
+- uid: HCMUtils.MultiCalc.PointToLineInput
+  commentId: T:HCMUtils.MultiCalc.PointToLineInput
+  href: HCMUtils.MultiCalc.PointToLineInput.html
+  name: PointToLineInput
+  nameWithType: PointToLineInput
+  fullName: HCMUtils.MultiCalc.PointToLineInput
+- uid: HCMUtils.MultiCalc.PointToPointInput
+  commentId: T:HCMUtils.MultiCalc.PointToPointInput
+  href: HCMUtils.MultiCalc.PointToPointInput.html
+  name: PointToPointInput
+  nameWithType: PointToPointInput
+  fullName: HCMUtils.MultiCalc.PointToPointInput
+- uid: HCMUtils.MultiCalc
+  commentId: N:HCMUtils.MultiCalc
+  href: HCMUtils.html
+  name: HCMUtils.MultiCalc
+  nameWithType: HCMUtils.MultiCalc
+  fullName: HCMUtils.MultiCalc
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.MultiCalc
+    name: MultiCalc
+    href: HCMUtils.MultiCalc.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.MultiCalc
+    name: MultiCalc
+    href: HCMUtils.MultiCalc.html

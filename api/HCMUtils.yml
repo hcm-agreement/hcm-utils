@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils
+  commentId: N:HCMUtils
+  id: HCMUtils
+  children:
+  - HCMUtils.ITUHelpers
+  - HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: HCMUtils
+  nameWithType: HCMUtils
+  fullName: HCMUtils
+  type: Namespace
+  assemblies:
+  - HCMUtils
+references:
+- uid: HCMUtils.ITUHelpers
+  commentId: T:HCMUtils.ITUHelpers
+  href: HCMUtils.ITUHelpers.html
+  name: ITUHelpers
+  nameWithType: ITUHelpers
+  fullName: HCMUtils.ITUHelpers
+- uid: HCMUtils.StringHelpers
+  commentId: T:HCMUtils.StringHelpers
+  href: HCMUtils.StringHelpers.html
+  name: StringHelpers
+  nameWithType: StringHelpers
+  fullName: HCMUtils.StringHelpers

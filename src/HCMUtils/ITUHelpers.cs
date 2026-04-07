@@ -7,6 +7,12 @@ using HCMUtils.Types;
 public class ITUHelpers
 {
 
+    /// <summary>
+    /// Convert a `Country` to its corresponding string representation (ITU letter code)
+    /// </summary>
+    /// <param name="input">An input `Country`, such as `Country.Germany`</param>
+    /// <returns>The string representation, e.g. `"D"`</returns>
+    /// <exception cref="ArgumentException"></exception>
     [ExcludeFromCodeCoverage]
     public static string ToITULetterCodeString(Country input) => input switch
     {
@@ -207,6 +213,12 @@ public class ITUHelpers
         _ => throw new ArgumentException($"Unable to convert country to ITU letter code: {input}")
     };
 
+    /// <summary>
+    /// Parse an input string into a ITU country (`Country`)
+    /// </summary>
+    /// <param name="input">An input string, such as "D__" or "D"</param>
+    /// <returns>The corresponding ITU country, such as `Country.Germany`</returns>
+    /// <exception cref="ArgumentException"></exception>
     [ExcludeFromCodeCoverage]
     public static Country ParseCountry(string input) => input.ToUpper(CultureInfo.InvariantCulture).Trim("_").Trim() switch
     {

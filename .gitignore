@@ -400,4 +400,14 @@ FodyWeavers.xsd
 *.sln.iml
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
+
 CoverageReport
+
+# Created by https://www.toptal.com/developers/gitignore/api/docfx
+# Edit at https://www.toptal.com/developers/gitignore?templates=docfx
+
+### DocFx ###
+.cache
+/**/_site/
+
+# End of https://www.toptal.com/developers/gitignore/api/docfx

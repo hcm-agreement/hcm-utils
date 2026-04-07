@@ -7,6 +7,11 @@ namespace HCMUtils.MultiCalc;
 
 public class Helpers
 {
+    /// <summary>
+    /// Reads a bunch of lines in MultiCalc format into an enumerable of Inputs
+    /// </summary>
+    /// <param name="inputLines">The input strings, e.g. read from a File using `File.ReadLines`</param>
+    /// <returns>The corresponding enumerable of `Input`s (`PointToPointInput` or `PointToLineInput`)</returns>
     public static IEnumerable<Input> ParseMultiCalc(IEnumerable<string> inputLines)
     {
         var groupedInputLines = GroupInputLines(inputLines);
