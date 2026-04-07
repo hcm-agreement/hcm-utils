@@ -1,7 +1,7 @@
 <Configuration>
   <MTP.CodeCoverage>
     <ExcludeAssemblies>
-      <Regex>System.Text.RegularExpressions.Generator</Regex>
+      <Regex>*System.Text.RegularExpressions.Generator*</Regex>
     </ExcludeAssemblies>
   </MTP.CodeCoverage>
 </Configuration>
