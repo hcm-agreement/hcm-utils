@@ -1,11 +1,13 @@
 namespace HCMUtils;
 
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using HCMUtils.Types;
 
 public class ITUHelpers
 {
 
+    [ExcludeFromCodeCoverage]
     public static string ToITULetterCodeString(Country input) => input switch
     {
         Country.Afghanistan => "AFG",
@@ -204,6 +206,8 @@ public class ITUHelpers
         Country.Zimbabwe => "ZWE",
         _ => throw new ArgumentException($"Unable to convert country to ITU letter code: {input}")
     };
+
+    [ExcludeFromCodeCoverage]
     public static Country ParseCountry(string input) => input.ToUpper(CultureInfo.InvariantCulture).Trim("_").Trim() switch
     {
         "AFG" => Country.Afghanistan,
