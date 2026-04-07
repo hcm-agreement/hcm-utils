@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  id: GainType
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.GainType.Dipole
+  - HCMUtils.Types.GainType.Isotropic
+  langs:
+  - csharp
+  - vb
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType
+  type: Enum
+  source:
+    remote:
+      path: src/HCMUtils/Types/GainType.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: GainType
+    path: src/HCMUtils/Types/GainType.cs
+    startLine: 2
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: public enum GainType
+    content.vb: Public Enum GainType
+- uid: HCMUtils.Types.GainType.Dipole
+  commentId: F:HCMUtils.Types.GainType.Dipole
+  id: Dipole
+  parent: HCMUtils.Types.GainType
+  langs:
+  - csharp
+  - vb
+  name: Dipole
+  nameWithType: GainType.Dipole
+  fullName: HCMUtils.Types.GainType.Dipole
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/GainType.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Dipole
+    path: src/HCMUtils/Types/GainType.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Dipole = 0
+    return:
+      type: HCMUtils.Types.GainType
+- uid: HCMUtils.Types.GainType.Isotropic
+  commentId: F:HCMUtils.Types.GainType.Isotropic
+  id: Isotropic
+  parent: HCMUtils.Types.GainType
+  langs:
+  - csharp
+  - vb
+  name: Isotropic
+  nameWithType: GainType.Isotropic
+  fullName: HCMUtils.Types.GainType.Isotropic
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/GainType.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Isotropic
+    path: src/HCMUtils/Types/GainType.cs
+    startLine: 5
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Isotropic = 1
+    return:
+      type: HCMUtils.Types.GainType
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.GainType.html
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType

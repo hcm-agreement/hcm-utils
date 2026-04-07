@@ -1,0 +1,6 @@
+name: Docs
+items:
+- name: Cookbook
+  items:
+  - name: Calling the legacy HCM calculation from modern .NET
+    href: cookbook/legacy.md

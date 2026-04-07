@@ -205,6 +205,44 @@ public partial class StringHelpers
 
     public static string ToTemperatureString(Temperature temperature) => temperature == Temperature.Warm ? "W" : "C";
 
+    /// <summary>
+    /// Returns a legacy input string for point-to-point calculations
+    /// </summary>
+    /// <param name="txCoordinates"></param>
+    /// <param name="rxCoordinates"></param>
+    /// <param name="txSiteHeight"></param>
+    /// <param name="rxSiteHeight"></param>
+    /// <param name="txAntennaType"></param>
+    /// <param name="txAzimuth"></param>
+    /// <param name="txElevation"></param>
+    /// <param name="txAntennaHeight"></param>
+    /// <param name="rxAntennaHeight"></param>
+    /// <param name="txGainType"></param>
+    /// <param name="txPower"></param>
+    /// <param name="txFrequency"></param>
+    /// <param name="channelOccupation"></param>
+    /// <param name="seaTemperature"></param>
+    /// <param name="txServiceAreaRadius"></param>
+    /// <param name="rxServiceAreaRadius"></param>
+    /// <param name="distanceOverSea"></param>
+    /// <param name="rxFrequency"></param>
+    /// <param name="rxEmissionDesignation"></param>
+    /// <param name="txEmissionDesignation"></param>
+    /// <param name="rxAntennaType"></param>
+    /// <param name="rxAzimuth"></param>
+    /// <param name="rxElevation"></param>
+    /// <param name="rxGainType"></param>
+    /// <param name="rxGain"></param>
+    /// <param name="depolarizationLoss"></param>
+    /// <param name="permissibleFieldStrength"></param>
+    /// <param name="frequencyDifferenceCorrectionFactor"></param>
+    /// <param name="rxCountry"></param>
+    /// <param name="txCountry"></param>
+    /// <param name="topoPath">An absolute path where to find the topo data</param>
+    /// <param name="borderPath">An absolute path where to find the border data</param>
+    /// <param name="morphoPath">An absolute path where to find the morpho data</param>
+    /// <param name="debugOutputPath">An absolute path where a debug output will be placed</param>
+    /// <returns>The legacy input string</returns>
     public static string BuildLegacyInputString(
         (double Lat, double Long) txCoordinates,
         (double Lat, double Long) rxCoordinates,
@@ -282,6 +320,32 @@ public partial class StringHelpers
           "".PadLeft(15) +
           debugOutputPath;
 
+    /// <summary>
+    /// Returns a legacy input string for point-to-line calculations
+    /// </summary>
+    /// <param name="txCoordinates"></param>
+    /// <param name="txSiteHeight"></param>
+    /// <param name="txAntennaType"></param>
+    /// <param name="txAzimuth"></param>
+    /// <param name="txElevation"></param>
+    /// <param name="txAntennaHeight"></param>
+    /// <param name="txGainType"></param>
+    /// <param name="txPower"></param>
+    /// <param name="txFrequency"></param>
+    /// <param name="channelOccupation"></param>
+    /// <param name="seaTemperature"></param>
+    /// <param name="txServiceAreaRadius"></param>
+    /// <param name="distanceOverSea"></param>
+    /// <param name="txEmissionDesignation"></param>
+    /// <param name="permissibleFieldStrength"></param>
+    /// <param name="targetCountry"></param>
+    /// <param name="txCountry"></param>
+    /// <param name="maxCrossBorderRange"></param>
+    /// <param name="topoPath">An absolute path where to find the topo data</param>
+    /// <param name="borderPath">An absolute path where to find the border data</param>
+    /// <param name="morphoPath">An absolute path where to find the morpho data</param>
+    /// <param name="debugOutputPath">An absolute path where a debug output will be placed</param>
+    /// <returns></returns>
     public static string BuildLegacyInputString(
         (double Lat, double Long) txCoordinates,
         int? txSiteHeight,

@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.SIPrefix
+  commentId: T:HCMUtils.SIPrefix
+  id: SIPrefix
+  parent: HCMUtils
+  children:
+  - HCMUtils.SIPrefix.G
+  - HCMUtils.SIPrefix.M
+  - HCMUtils.SIPrefix.k
+  langs:
+  - csharp
+  - vb
+  name: SIPrefix
+  nameWithType: SIPrefix
+  fullName: HCMUtils.SIPrefix
+  type: Enum
+  source:
+    remote:
+      path: src/HCMUtils/Types/SIPrefix.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: SIPrefix
+    path: src/HCMUtils/Types/SIPrefix.cs
+    startLine: 2
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  syntax:
+    content: public enum SIPrefix
+    content.vb: Public Enum SIPrefix
+- uid: HCMUtils.SIPrefix.k
+  commentId: F:HCMUtils.SIPrefix.k
+  id: k
+  parent: HCMUtils.SIPrefix
+  langs:
+  - csharp
+  - vb
+  name: k
+  nameWithType: SIPrefix.k
+  fullName: HCMUtils.SIPrefix.k
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/SIPrefix.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: k
+    path: src/HCMUtils/Types/SIPrefix.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  syntax:
+    content: k = 0
+    return:
+      type: HCMUtils.SIPrefix
+- uid: HCMUtils.SIPrefix.M
+  commentId: F:HCMUtils.SIPrefix.M
+  id: M
+  parent: HCMUtils.SIPrefix
+  langs:
+  - csharp
+  - vb
+  name: M
+  nameWithType: SIPrefix.M
+  fullName: HCMUtils.SIPrefix.M
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/SIPrefix.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: M
+    path: src/HCMUtils/Types/SIPrefix.cs
+    startLine: 5
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  syntax:
+    content: M = 1
+    return:
+      type: HCMUtils.SIPrefix
+- uid: HCMUtils.SIPrefix.G
+  commentId: F:HCMUtils.SIPrefix.G
+  id: G
+  parent: HCMUtils.SIPrefix
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: SIPrefix.G
+  fullName: HCMUtils.SIPrefix.G
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/SIPrefix.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: G
+    path: src/HCMUtils/Types/SIPrefix.cs
+    startLine: 6
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  syntax:
+    content: G = 2
+    return:
+      type: HCMUtils.SIPrefix
+references:
+- uid: HCMUtils
+  commentId: N:HCMUtils
+  href: HCMUtils.html
+  name: HCMUtils
+  nameWithType: HCMUtils
+  fullName: HCMUtils
+- uid: HCMUtils.SIPrefix
+  commentId: T:HCMUtils.SIPrefix
+  parent: HCMUtils
+  href: HCMUtils.SIPrefix.html
+  name: SIPrefix
+  nameWithType: SIPrefix
+  fullName: HCMUtils.SIPrefix

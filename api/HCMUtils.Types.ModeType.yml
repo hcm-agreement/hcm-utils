@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.ModeType
+  commentId: T:HCMUtils.Types.ModeType
+  id: ModeType
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.ModeType.PointToLine
+  - HCMUtils.Types.ModeType.PointToPoint
+  langs:
+  - csharp
+  - vb
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMUtils.Types.ModeType
+  type: Enum
+  source:
+    remote:
+      path: src/HCMUtils/Types/ModeType.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ModeType
+    path: src/HCMUtils/Types/ModeType.cs
+    startLine: 2
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: public enum ModeType
+    content.vb: Public Enum ModeType
+- uid: HCMUtils.Types.ModeType.PointToPoint
+  commentId: F:HCMUtils.Types.ModeType.PointToPoint
+  id: PointToPoint
+  parent: HCMUtils.Types.ModeType
+  langs:
+  - csharp
+  - vb
+  name: PointToPoint
+  nameWithType: ModeType.PointToPoint
+  fullName: HCMUtils.Types.ModeType.PointToPoint
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/ModeType.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: PointToPoint
+    path: src/HCMUtils/Types/ModeType.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: PointToPoint = 0
+    return:
+      type: HCMUtils.Types.ModeType
+- uid: HCMUtils.Types.ModeType.PointToLine
+  commentId: F:HCMUtils.Types.ModeType.PointToLine
+  id: PointToLine
+  parent: HCMUtils.Types.ModeType
+  langs:
+  - csharp
+  - vb
+  name: PointToLine
+  nameWithType: ModeType.PointToLine
+  fullName: HCMUtils.Types.ModeType.PointToLine
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/ModeType.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: PointToLine
+    path: src/HCMUtils/Types/ModeType.cs
+    startLine: 5
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: PointToLine = 1
+    return:
+      type: HCMUtils.Types.ModeType
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: HCMUtils.Types.ModeType
+  commentId: T:HCMUtils.Types.ModeType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.ModeType.html
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMUtils.Types.ModeType

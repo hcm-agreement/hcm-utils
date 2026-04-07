@@ -1,0 +1,1450 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.MultiCalc.PointToPointInput
+  commentId: T:HCMUtils.MultiCalc.PointToPointInput
+  id: PointToPointInput
+  parent: HCMUtils.MultiCalc
+  children:
+  - HCMUtils.MultiCalc.PointToPointInput.#ctor(System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Double,HCMUtils.Types.GainType,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Nullable{System.Double},System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Int32,HCMUtils.Types.Country,HCMUtils.Types.Country,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Int32},System.Int32)
+  - HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss
+  - HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor
+  - HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight
+  - HCMUtils.MultiCalc.PointToPointInput.RxAntennaType
+  - HCMUtils.MultiCalc.PointToPointInput.RxAzimuth
+  - HCMUtils.MultiCalc.PointToPointInput.RxCoordinates
+  - HCMUtils.MultiCalc.PointToPointInput.RxCountry
+  - HCMUtils.MultiCalc.PointToPointInput.RxElevation
+  - HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation
+  - HCMUtils.MultiCalc.PointToPointInput.RxFrequency
+  - HCMUtils.MultiCalc.PointToPointInput.RxGain
+  - HCMUtils.MultiCalc.PointToPointInput.RxGainType
+  - HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius
+  - HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight
+  langs:
+  - csharp
+  - vb
+  name: PointToPointInput
+  nameWithType: PointToPointInput
+  fullName: HCMUtils.MultiCalc.PointToPointInput
+  type: Class
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: PointToPointInput
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: 'public record PointToPointInput : Input, IEquatable<Input>, IEquatable<PointToPointInput>'
+    content.vb: Public Class PointToPointInput Inherits Input Implements IEquatable(Of Input), IEquatable(Of PointToPointInput)
+  inheritance:
+  - System.Object
+  - HCMUtils.MultiCalc.Input
+  implements:
+  - System.IEquatable{HCMUtils.MultiCalc.Input}
+  - System.IEquatable{HCMUtils.MultiCalc.PointToPointInput}
+  inheritedMembers:
+  - HCMUtils.MultiCalc.Input.Mode
+  - HCMUtils.MultiCalc.Input.TxCoordinates
+  - HCMUtils.MultiCalc.Input.TxSiteHeight
+  - HCMUtils.MultiCalc.Input.TxAntennaType
+  - HCMUtils.MultiCalc.Input.TxAzimuth
+  - HCMUtils.MultiCalc.Input.TxElevation
+  - HCMUtils.MultiCalc.Input.TxAntennaHeight
+  - HCMUtils.MultiCalc.Input.TxPower
+  - HCMUtils.MultiCalc.Input.TxGainType
+  - HCMUtils.MultiCalc.Input.TxFrequency
+  - HCMUtils.MultiCalc.Input.ChannelOccupation
+  - HCMUtils.MultiCalc.Input.SeaTemperature
+  - HCMUtils.MultiCalc.Input.DistanceOverSea
+  - HCMUtils.MultiCalc.Input.TxServiceAreaRadius
+  - HCMUtils.MultiCalc.Input.TxCountry
+  - HCMUtils.MultiCalc.Input.PermissibleFieldStrength
+  - HCMUtils.MultiCalc.Input.TxEmissionDesignation
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HCMUtils.MultiCalc.PointToPointInput.#ctor(System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Double,HCMUtils.Types.GainType,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Nullable{System.Double},System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Int32,HCMUtils.Types.Country,HCMUtils.Types.Country,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Int32},System.Int32)
+  commentId: M:HCMUtils.MultiCalc.PointToPointInput.#ctor(System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Double,HCMUtils.Types.GainType,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Nullable{System.Double},System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Int32,HCMUtils.Types.Country,HCMUtils.Types.Country,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Int32},System.Int32)
+  id: '#ctor(System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Double,HCMUtils.Types.GainType,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Nullable{System.Double},System.Int32,System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Int32,HCMUtils.Types.Country,HCMUtils.Types.Country,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Int32},System.Int32)'
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: PointToPointInput(int, (double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, double, GainType, double, bool, Temperature?, double?, int, (double Lat, double Long), int?, int, Country, Country, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, int?, int)
+  nameWithType: PointToPointInput.PointToPointInput(int, (double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, double, GainType, double, bool, Temperature?, double?, int, (double Lat, double Long), int?, int, Country, Country, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, int?, int)
+  fullName: HCMUtils.MultiCalc.PointToPointInput.PointToPointInput(int, (double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, double, HCMUtils.Types.GainType, double, bool, HCMUtils.Types.Temperature?, double?, int, (double Lat, double Long), int?, int, HCMUtils.Types.Country, HCMUtils.Types.Country, double?, double, string, string, (string Horizontal, string Vertical), double, double, HCMUtils.Types.GainType, double, double, int?, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: .ctor
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public PointToPointInput(int Mode, (double Lat, double Long) TxCoordinates, int? TxSiteHeight, (string Horizontal, string Vertical) TxAntennaType, double TxAzimuth, double TxElevation, int TxAntennaHeight, double TxPower, GainType TxGainType, double TxFrequency, bool ChannelOccupation, Temperature? SeaTemperature, double? DistanceOverSea, int TxServiceAreaRadius, (double Lat, double Long) RxCoordinates, int? RxSiteHeight, int RxAntennaHeight, Country TxCountry, Country RxCountry, double? PermissibleFieldStrength, double RxFrequency, string TxEmissionDesignation, string RxEmissionDesignation, (string Horizontal, string Vertical) RxAntennaType, double RxAzimuth, double RxElevation, GainType RxGainType, double RxGain, double DepolarizationLoss, int? FrequencyDifferenceCorrectionFactor, int RxServiceAreaRadius)
+    parameters:
+    - id: Mode
+      type: System.Int32
+    - id: TxCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+    - id: TxSiteHeight
+      type: System.Nullable{System.Int32}
+    - id: TxAntennaType
+      type: System.ValueTuple{System.String,System.String}
+    - id: TxAzimuth
+      type: System.Double
+    - id: TxElevation
+      type: System.Double
+    - id: TxAntennaHeight
+      type: System.Int32
+    - id: TxPower
+      type: System.Double
+    - id: TxGainType
+      type: HCMUtils.Types.GainType
+    - id: TxFrequency
+      type: System.Double
+    - id: ChannelOccupation
+      type: System.Boolean
+    - id: SeaTemperature
+      type: System.Nullable{HCMUtils.Types.Temperature}
+    - id: DistanceOverSea
+      type: System.Nullable{System.Double}
+    - id: TxServiceAreaRadius
+      type: System.Int32
+    - id: RxCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+    - id: RxSiteHeight
+      type: System.Nullable{System.Int32}
+    - id: RxAntennaHeight
+      type: System.Int32
+    - id: TxCountry
+      type: HCMUtils.Types.Country
+    - id: RxCountry
+      type: HCMUtils.Types.Country
+    - id: PermissibleFieldStrength
+      type: System.Nullable{System.Double}
+    - id: RxFrequency
+      type: System.Double
+    - id: TxEmissionDesignation
+      type: System.String
+    - id: RxEmissionDesignation
+      type: System.String
+    - id: RxAntennaType
+      type: System.ValueTuple{System.String,System.String}
+    - id: RxAzimuth
+      type: System.Double
+    - id: RxElevation
+      type: System.Double
+    - id: RxGainType
+      type: HCMUtils.Types.GainType
+    - id: RxGain
+      type: System.Double
+    - id: DepolarizationLoss
+      type: System.Double
+    - id: FrequencyDifferenceCorrectionFactor
+      type: System.Nullable{System.Int32}
+    - id: RxServiceAreaRadius
+      type: System.Int32
+    content.vb: Public Sub New(Mode As Integer, TxCoordinates As (Lat As Double, [Long] As Double), TxSiteHeight As Integer?, TxAntennaType As (Horizontal As String, Vertical As String), TxAzimuth As Double, TxElevation As Double, TxAntennaHeight As Integer, TxPower As Double, TxGainType As GainType, TxFrequency As Double, ChannelOccupation As Boolean, SeaTemperature As Temperature?, DistanceOverSea As Double?, TxServiceAreaRadius As Integer, RxCoordinates As (Lat As Double, [Long] As Double), RxSiteHeight As Integer?, RxAntennaHeight As Integer, TxCountry As Country, RxCountry As Country, PermissibleFieldStrength As Double?, RxFrequency As Double, TxEmissionDesignation As String, RxEmissionDesignation As String, RxAntennaType As (Horizontal As String, Vertical As String), RxAzimuth As Double, RxElevation As Double, RxGainType As GainType, RxGain As Double, DepolarizationLoss As Double, FrequencyDifferenceCorrectionFactor As Integer?, RxServiceAreaRadius As Integer)
+  overload: HCMUtils.MultiCalc.PointToPointInput.#ctor*
+  nameWithType.vb: PointToPointInput.New(Integer, (Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, GainType, Double, Boolean, Temperature?, Double?, Integer, (Lat As Double, Long As Double), Integer?, Integer, Country, Country, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Integer?, Integer)
+  fullName.vb: HCMUtils.MultiCalc.PointToPointInput.New(Integer, (Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, HCMUtils.Types.GainType, Double, Boolean, HCMUtils.Types.Temperature?, Double?, Integer, (Lat As Double, Long As Double), Integer?, Integer, HCMUtils.Types.Country, HCMUtils.Types.Country, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, HCMUtils.Types.GainType, Double, Double, Integer?, Integer)
+  name.vb: New(Integer, (Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, GainType, Double, Boolean, Temperature?, Double?, Integer, (Lat As Double, Long As Double), Integer?, Integer, Country, Country, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Integer?, Integer)
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxCoordinates
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxCoordinates
+  id: RxCoordinates
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxCoordinates
+  nameWithType: PointToPointInput.RxCoordinates
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxCoordinates
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxCoordinates
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 19
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public (double Lat, double Long) RxCoordinates { get; init; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+    content.vb: Public Property RxCoordinates As (Lat As Double, [Long] As Double)
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxCoordinates*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight
+  id: RxSiteHeight
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxSiteHeight
+  nameWithType: PointToPointInput.RxSiteHeight
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxSiteHeight
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 20
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public int? RxSiteHeight { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property RxSiteHeight As Integer?
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight
+  id: RxAntennaHeight
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxAntennaHeight
+  nameWithType: PointToPointInput.RxAntennaHeight
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxAntennaHeight
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 21
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public int RxAntennaHeight { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RxAntennaHeight As Integer
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxCountry
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxCountry
+  id: RxCountry
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxCountry
+  nameWithType: PointToPointInput.RxCountry
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxCountry
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxCountry
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 23
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public Country RxCountry { get; init; }
+    parameters: []
+    return:
+      type: HCMUtils.Types.Country
+    content.vb: Public Property RxCountry As Country
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxCountry*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxFrequency
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxFrequency
+  id: RxFrequency
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxFrequency
+  nameWithType: PointToPointInput.RxFrequency
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxFrequency
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxFrequency
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 25
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public double RxFrequency { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxFrequency As Double
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxFrequency*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation
+  id: RxEmissionDesignation
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxEmissionDesignation
+  nameWithType: PointToPointInput.RxEmissionDesignation
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxEmissionDesignation
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 27
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public string RxEmissionDesignation { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RxEmissionDesignation As String
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxAntennaType
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxAntennaType
+  id: RxAntennaType
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxAntennaType
+  nameWithType: PointToPointInput.RxAntennaType
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxAntennaType
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxAntennaType
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 28
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public (string Horizontal, string Vertical) RxAntennaType { get; init; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.String,System.String}
+    content.vb: Public Property RxAntennaType As (Horizontal As String, Vertical As String)
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxAntennaType*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxAzimuth
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxAzimuth
+  id: RxAzimuth
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxAzimuth
+  nameWithType: PointToPointInput.RxAzimuth
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxAzimuth
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxAzimuth
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 29
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public double RxAzimuth { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxAzimuth As Double
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxAzimuth*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxElevation
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxElevation
+  id: RxElevation
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxElevation
+  nameWithType: PointToPointInput.RxElevation
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxElevation
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxElevation
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 30
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public double RxElevation { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxElevation As Double
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxElevation*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxGainType
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxGainType
+  id: RxGainType
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxGainType
+  nameWithType: PointToPointInput.RxGainType
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxGainType
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxGainType
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 31
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public GainType RxGainType { get; init; }
+    parameters: []
+    return:
+      type: HCMUtils.Types.GainType
+    content.vb: Public Property RxGainType As GainType
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxGainType*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxGain
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxGain
+  id: RxGain
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxGain
+  nameWithType: PointToPointInput.RxGain
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxGain
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxGain
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 32
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public double RxGain { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxGain As Double
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxGain*
+- uid: HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss
+  id: DepolarizationLoss
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: DepolarizationLoss
+  nameWithType: PointToPointInput.DepolarizationLoss
+  fullName: HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DepolarizationLoss
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 33
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public double DepolarizationLoss { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DepolarizationLoss As Double
+  overload: HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss*
+- uid: HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor
+  id: FrequencyDifferenceCorrectionFactor
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: FrequencyDifferenceCorrectionFactor
+  nameWithType: PointToPointInput.FrequencyDifferenceCorrectionFactor
+  fullName: HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FrequencyDifferenceCorrectionFactor
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 34
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public int? FrequencyDifferenceCorrectionFactor { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property FrequencyDifferenceCorrectionFactor As Integer?
+  overload: HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor*
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius
+  commentId: P:HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius
+  id: RxServiceAreaRadius
+  parent: HCMUtils.MultiCalc.PointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxServiceAreaRadius
+  nameWithType: PointToPointInput.RxServiceAreaRadius
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxServiceAreaRadius
+    path: src/HCMUtils/MultiCalc/PointToPointInput.cs
+    startLine: 35
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public int RxServiceAreaRadius { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RxServiceAreaRadius As Integer
+  overload: HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius*
+references:
+- uid: HCMUtils.MultiCalc
+  commentId: N:HCMUtils.MultiCalc
+  href: HCMUtils.html
+  name: HCMUtils.MultiCalc
+  nameWithType: HCMUtils.MultiCalc
+  fullName: HCMUtils.MultiCalc
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.MultiCalc
+    name: MultiCalc
+    href: HCMUtils.MultiCalc.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.MultiCalc
+    name: MultiCalc
+    href: HCMUtils.MultiCalc.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HCMUtils.MultiCalc.Input
+  commentId: T:HCMUtils.MultiCalc.Input
+  parent: HCMUtils.MultiCalc
+  href: HCMUtils.MultiCalc.Input.html
+  name: Input
+  nameWithType: Input
+  fullName: HCMUtils.MultiCalc.Input
+- uid: System.IEquatable{HCMUtils.MultiCalc.Input}
+  commentId: T:System.IEquatable{HCMUtils.MultiCalc.Input}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Input>
+  nameWithType: IEquatable<Input>
+  fullName: System.IEquatable<HCMUtils.MultiCalc.Input>
+  nameWithType.vb: IEquatable(Of Input)
+  fullName.vb: System.IEquatable(Of HCMUtils.MultiCalc.Input)
+  name.vb: IEquatable(Of Input)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.MultiCalc.Input
+    name: Input
+    href: HCMUtils.MultiCalc.Input.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.MultiCalc.Input
+    name: Input
+    href: HCMUtils.MultiCalc.Input.html
+  - name: )
+- uid: System.IEquatable{HCMUtils.MultiCalc.PointToPointInput}
+  commentId: T:System.IEquatable{HCMUtils.MultiCalc.PointToPointInput}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<PointToPointInput>
+  nameWithType: IEquatable<PointToPointInput>
+  fullName: System.IEquatable<HCMUtils.MultiCalc.PointToPointInput>
+  nameWithType.vb: IEquatable(Of PointToPointInput)
+  fullName.vb: System.IEquatable(Of HCMUtils.MultiCalc.PointToPointInput)
+  name.vb: IEquatable(Of PointToPointInput)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.MultiCalc.PointToPointInput
+    name: PointToPointInput
+    href: HCMUtils.MultiCalc.PointToPointInput.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.MultiCalc.PointToPointInput
+    name: PointToPointInput
+    href: HCMUtils.MultiCalc.PointToPointInput.html
+  - name: )
+- uid: HCMUtils.MultiCalc.Input.Mode
+  commentId: P:HCMUtils.MultiCalc.Input.Mode
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_Mode
+  name: Mode
+  nameWithType: Input.Mode
+  fullName: HCMUtils.MultiCalc.Input.Mode
+- uid: HCMUtils.MultiCalc.Input.TxCoordinates
+  commentId: P:HCMUtils.MultiCalc.Input.TxCoordinates
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxCoordinates
+  name: TxCoordinates
+  nameWithType: Input.TxCoordinates
+  fullName: HCMUtils.MultiCalc.Input.TxCoordinates
+- uid: HCMUtils.MultiCalc.Input.TxSiteHeight
+  commentId: P:HCMUtils.MultiCalc.Input.TxSiteHeight
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxSiteHeight
+  name: TxSiteHeight
+  nameWithType: Input.TxSiteHeight
+  fullName: HCMUtils.MultiCalc.Input.TxSiteHeight
+- uid: HCMUtils.MultiCalc.Input.TxAntennaType
+  commentId: P:HCMUtils.MultiCalc.Input.TxAntennaType
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxAntennaType
+  name: TxAntennaType
+  nameWithType: Input.TxAntennaType
+  fullName: HCMUtils.MultiCalc.Input.TxAntennaType
+- uid: HCMUtils.MultiCalc.Input.TxAzimuth
+  commentId: P:HCMUtils.MultiCalc.Input.TxAzimuth
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxAzimuth
+  name: TxAzimuth
+  nameWithType: Input.TxAzimuth
+  fullName: HCMUtils.MultiCalc.Input.TxAzimuth
+- uid: HCMUtils.MultiCalc.Input.TxElevation
+  commentId: P:HCMUtils.MultiCalc.Input.TxElevation
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxElevation
+  name: TxElevation
+  nameWithType: Input.TxElevation
+  fullName: HCMUtils.MultiCalc.Input.TxElevation
+- uid: HCMUtils.MultiCalc.Input.TxAntennaHeight
+  commentId: P:HCMUtils.MultiCalc.Input.TxAntennaHeight
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxAntennaHeight
+  name: TxAntennaHeight
+  nameWithType: Input.TxAntennaHeight
+  fullName: HCMUtils.MultiCalc.Input.TxAntennaHeight
+- uid: HCMUtils.MultiCalc.Input.TxPower
+  commentId: P:HCMUtils.MultiCalc.Input.TxPower
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxPower
+  name: TxPower
+  nameWithType: Input.TxPower
+  fullName: HCMUtils.MultiCalc.Input.TxPower
+- uid: HCMUtils.MultiCalc.Input.TxGainType
+  commentId: P:HCMUtils.MultiCalc.Input.TxGainType
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxGainType
+  name: TxGainType
+  nameWithType: Input.TxGainType
+  fullName: HCMUtils.MultiCalc.Input.TxGainType
+- uid: HCMUtils.MultiCalc.Input.TxFrequency
+  commentId: P:HCMUtils.MultiCalc.Input.TxFrequency
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxFrequency
+  name: TxFrequency
+  nameWithType: Input.TxFrequency
+  fullName: HCMUtils.MultiCalc.Input.TxFrequency
+- uid: HCMUtils.MultiCalc.Input.ChannelOccupation
+  commentId: P:HCMUtils.MultiCalc.Input.ChannelOccupation
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_ChannelOccupation
+  name: ChannelOccupation
+  nameWithType: Input.ChannelOccupation
+  fullName: HCMUtils.MultiCalc.Input.ChannelOccupation
+- uid: HCMUtils.MultiCalc.Input.SeaTemperature
+  commentId: P:HCMUtils.MultiCalc.Input.SeaTemperature
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_SeaTemperature
+  name: SeaTemperature
+  nameWithType: Input.SeaTemperature
+  fullName: HCMUtils.MultiCalc.Input.SeaTemperature
+- uid: HCMUtils.MultiCalc.Input.DistanceOverSea
+  commentId: P:HCMUtils.MultiCalc.Input.DistanceOverSea
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_DistanceOverSea
+  name: DistanceOverSea
+  nameWithType: Input.DistanceOverSea
+  fullName: HCMUtils.MultiCalc.Input.DistanceOverSea
+- uid: HCMUtils.MultiCalc.Input.TxServiceAreaRadius
+  commentId: P:HCMUtils.MultiCalc.Input.TxServiceAreaRadius
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxServiceAreaRadius
+  name: TxServiceAreaRadius
+  nameWithType: Input.TxServiceAreaRadius
+  fullName: HCMUtils.MultiCalc.Input.TxServiceAreaRadius
+- uid: HCMUtils.MultiCalc.Input.TxCountry
+  commentId: P:HCMUtils.MultiCalc.Input.TxCountry
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxCountry
+  name: TxCountry
+  nameWithType: Input.TxCountry
+  fullName: HCMUtils.MultiCalc.Input.TxCountry
+- uid: HCMUtils.MultiCalc.Input.PermissibleFieldStrength
+  commentId: P:HCMUtils.MultiCalc.Input.PermissibleFieldStrength
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_PermissibleFieldStrength
+  name: PermissibleFieldStrength
+  nameWithType: Input.PermissibleFieldStrength
+  fullName: HCMUtils.MultiCalc.Input.PermissibleFieldStrength
+- uid: HCMUtils.MultiCalc.Input.TxEmissionDesignation
+  commentId: P:HCMUtils.MultiCalc.Input.TxEmissionDesignation
+  parent: HCMUtils.MultiCalc.Input
+  href: HCMUtils.MultiCalc.Input.html#HCMUtils_MultiCalc_Input_TxEmissionDesignation
+  name: TxEmissionDesignation
+  nameWithType: Input.TxEmissionDesignation
+  fullName: HCMUtils.MultiCalc.Input.TxEmissionDesignation
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.MultiCalc.PointToPointInput.#ctor*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.#ctor
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput__ctor_System_Int32_System_ValueTuple_System_Double_System_Double__System_Nullable_System_Int32__System_ValueTuple_System_String_System_String__System_Double_System_Double_System_Int32_System_Double_HCMUtils_Types_GainType_System_Double_System_Boolean_System_Nullable_HCMUtils_Types_Temperature__System_Nullable_System_Double__System_Int32_System_ValueTuple_System_Double_System_Double__System_Nullable_System_Int32__System_Int32_HCMUtils_Types_Country_HCMUtils_Types_Country_System_Nullable_System_Double__System_Double_System_String_System_String_System_ValueTuple_System_String_System_String__System_Double_System_Double_HCMUtils_Types_GainType_System_Double_System_Double_System_Nullable_System_Int32__System_Int32_
+  name: PointToPointInput
+  nameWithType: PointToPointInput.PointToPointInput
+  fullName: HCMUtils.MultiCalc.PointToPointInput.PointToPointInput
+  nameWithType.vb: PointToPointInput.New
+  fullName.vb: HCMUtils.MultiCalc.PointToPointInput.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double Long, double Lat)
+  nameWithType: (double Long, double Lat)
+  fullName: (double Long, double Lat)
+  nameWithType.vb: (Long As Double, Lat As Double)
+  fullName.vb: (Long As Double, Lat As Double)
+  name.vb: (Long As Double, Lat As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.ValueTuple{System.String,System.String}
+  commentId: T:System.ValueTuple{System.String,System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string Horizontal, string Vertical)
+  nameWithType: (string Horizontal, string Vertical)
+  fullName: (string Horizontal, string Vertical)
+  nameWithType.vb: (Horizontal As String, Vertical As String)
+  fullName.vb: (Horizontal As String, Vertical As String)
+  name.vb: (Horizontal As String, Vertical As String)
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.GainType.html
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable{HCMUtils.Types.Temperature}
+  commentId: T:System.Nullable{HCMUtils.Types.Temperature}
+  parent: System
+  definition: System.Nullable`1
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature?
+  nameWithType: Temperature?
+  fullName: HCMUtils.Types.Temperature?
+  spec.csharp:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+  spec.vb:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Country.html
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxCoordinates*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxCoordinates
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxCoordinates
+  name: RxCoordinates
+  nameWithType: PointToPointInput.RxCoordinates
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxCoordinates
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxSiteHeight
+  name: RxSiteHeight
+  nameWithType: PointToPointInput.RxSiteHeight
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxSiteHeight
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxAntennaHeight
+  name: RxAntennaHeight
+  nameWithType: PointToPointInput.RxAntennaHeight
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxAntennaHeight
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxCountry*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxCountry
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxCountry
+  name: RxCountry
+  nameWithType: PointToPointInput.RxCountry
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxCountry
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxFrequency*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxFrequency
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxFrequency
+  name: RxFrequency
+  nameWithType: PointToPointInput.RxFrequency
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxFrequency
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxEmissionDesignation
+  name: RxEmissionDesignation
+  nameWithType: PointToPointInput.RxEmissionDesignation
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxEmissionDesignation
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxAntennaType*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxAntennaType
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxAntennaType
+  name: RxAntennaType
+  nameWithType: PointToPointInput.RxAntennaType
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxAntennaType
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxAzimuth*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxAzimuth
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxAzimuth
+  name: RxAzimuth
+  nameWithType: PointToPointInput.RxAzimuth
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxAzimuth
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxElevation*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxElevation
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxElevation
+  name: RxElevation
+  nameWithType: PointToPointInput.RxElevation
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxElevation
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxGainType*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxGainType
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxGainType
+  name: RxGainType
+  nameWithType: PointToPointInput.RxGainType
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxGainType
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxGain*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxGain
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxGain
+  name: RxGain
+  nameWithType: PointToPointInput.RxGain
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxGain
+- uid: HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_DepolarizationLoss
+  name: DepolarizationLoss
+  nameWithType: PointToPointInput.DepolarizationLoss
+  fullName: HCMUtils.MultiCalc.PointToPointInput.DepolarizationLoss
+- uid: HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_FrequencyDifferenceCorrectionFactor
+  name: FrequencyDifferenceCorrectionFactor
+  nameWithType: PointToPointInput.FrequencyDifferenceCorrectionFactor
+  fullName: HCMUtils.MultiCalc.PointToPointInput.FrequencyDifferenceCorrectionFactor
+- uid: HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius*
+  commentId: Overload:HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius
+  href: HCMUtils.MultiCalc.PointToPointInput.html#HCMUtils_MultiCalc_PointToPointInput_RxServiceAreaRadius
+  name: RxServiceAreaRadius
+  nameWithType: PointToPointInput.RxServiceAreaRadius
+  fullName: HCMUtils.MultiCalc.PointToPointInput.RxServiceAreaRadius

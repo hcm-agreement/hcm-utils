@@ -1,4 +1,4 @@
-namespace HCMUtils;
+namespace HCMUtils.Types;
 
 public enum Temperature
 {

@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  id: HCMUtils.Types
+  children:
+  - HCMUtils.Types.Country
+  - HCMUtils.Types.GainType
+  - HCMUtils.Types.ModeType
+  - HCMUtils.Types.SIPrefix
+  - HCMUtils.Types.Temperature
+  langs:
+  - csharp
+  - vb
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  type: Namespace
+  assemblies:
+  - HCMUtils
+references:
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Country.html
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.GainType.html
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType
+- uid: HCMUtils.Types.ModeType
+  commentId: T:HCMUtils.Types.ModeType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.ModeType.html
+  name: ModeType
+  nameWithType: ModeType
+  fullName: HCMUtils.Types.ModeType
+- uid: HCMUtils.Types.SIPrefix
+  commentId: T:HCMUtils.Types.SIPrefix
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.SIPrefix.html
+  name: SIPrefix
+  nameWithType: SIPrefix
+  fullName: HCMUtils.Types.SIPrefix
+- uid: HCMUtils.Types.Temperature
+  commentId: T:HCMUtils.Types.Temperature
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature
+  nameWithType: Temperature
+  fullName: HCMUtils.Types.Temperature
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html

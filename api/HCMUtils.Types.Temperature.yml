@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.Temperature
+  commentId: T:HCMUtils.Types.Temperature
+  id: Temperature
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.Temperature.Cold
+  - HCMUtils.Types.Temperature.Warm
+  langs:
+  - csharp
+  - vb
+  name: Temperature
+  nameWithType: Temperature
+  fullName: HCMUtils.Types.Temperature
+  type: Enum
+  source:
+    remote:
+      path: src/HCMUtils/Types/Temperature.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Temperature
+    path: src/HCMUtils/Types/Temperature.cs
+    startLine: 2
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: public enum Temperature
+    content.vb: Public Enum Temperature
+- uid: HCMUtils.Types.Temperature.Warm
+  commentId: F:HCMUtils.Types.Temperature.Warm
+  id: Warm
+  parent: HCMUtils.Types.Temperature
+  langs:
+  - csharp
+  - vb
+  name: Warm
+  nameWithType: Temperature.Warm
+  fullName: HCMUtils.Types.Temperature.Warm
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Temperature.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Warm
+    path: src/HCMUtils/Types/Temperature.cs
+    startLine: 4
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Warm = 0
+    return:
+      type: HCMUtils.Types.Temperature
+- uid: HCMUtils.Types.Temperature.Cold
+  commentId: F:HCMUtils.Types.Temperature.Cold
+  id: Cold
+  parent: HCMUtils.Types.Temperature
+  langs:
+  - csharp
+  - vb
+  name: Cold
+  nameWithType: Temperature.Cold
+  fullName: HCMUtils.Types.Temperature.Cold
+  type: Field
+  source:
+    remote:
+      path: src/HCMUtils/Types/Temperature.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Cold
+    path: src/HCMUtils/Types/Temperature.cs
+    startLine: 5
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: Cold = 1
+    return:
+      type: HCMUtils.Types.Temperature
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: HCMUtils.Types.Temperature
+  commentId: T:HCMUtils.Types.Temperature
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature
+  nameWithType: Temperature
+  fullName: HCMUtils.Types.Temperature

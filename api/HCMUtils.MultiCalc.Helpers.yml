@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.MultiCalc.Helpers
+  commentId: T:HCMUtils.MultiCalc.Helpers
+  id: Helpers
+  parent: HCMUtils.MultiCalc
+  children:
+  - HCMUtils.MultiCalc.Helpers.GroupInputLines(System.Collections.Generic.IEnumerable{System.String})
+  - HCMUtils.MultiCalc.Helpers.ParseMultiCalc(System.Collections.Generic.IEnumerable{System.String})
+  langs:
+  - csharp
+  - vb
+  name: Helpers
+  nameWithType: Helpers
+  fullName: HCMUtils.MultiCalc.Helpers
+  type: Class
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/Helpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: Helpers
+    path: src/HCMUtils/MultiCalc/Helpers.cs
+    startLine: 7
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: public class Helpers
+    content.vb: Public Class Helpers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HCMUtils.MultiCalc.Helpers.ParseMultiCalc(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:HCMUtils.MultiCalc.Helpers.ParseMultiCalc(System.Collections.Generic.IEnumerable{System.String})
+  id: ParseMultiCalc(System.Collections.Generic.IEnumerable{System.String})
+  parent: HCMUtils.MultiCalc.Helpers
+  langs:
+  - csharp
+  - vb
+  name: ParseMultiCalc(IEnumerable<string>)
+  nameWithType: Helpers.ParseMultiCalc(IEnumerable<string>)
+  fullName: HCMUtils.MultiCalc.Helpers.ParseMultiCalc(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/Helpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseMultiCalc
+    path: src/HCMUtils/MultiCalc/Helpers.cs
+    startLine: 14
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  summary: Reads a bunch of lines in MultiCalc format into an enumerable of Inputs
+  example: []
+  syntax:
+    content: public static IEnumerable<Input> ParseMultiCalc(IEnumerable<string> inputLines)
+    parameters:
+    - id: inputLines
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The input strings, e.g. read from a File using `File.ReadLines`
+    return:
+      type: System.Collections.Generic.IEnumerable{HCMUtils.MultiCalc.Input}
+      description: The corresponding enumerable of `Input`s (`PointToPointInput` or `PointToLineInput`)
+    content.vb: Public Shared Function ParseMultiCalc(inputLines As IEnumerable(Of String)) As IEnumerable(Of Input)
+  overload: HCMUtils.MultiCalc.Helpers.ParseMultiCalc*
+  nameWithType.vb: Helpers.ParseMultiCalc(IEnumerable(Of String))
+  fullName.vb: HCMUtils.MultiCalc.Helpers.ParseMultiCalc(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: ParseMultiCalc(IEnumerable(Of String))
+- uid: HCMUtils.MultiCalc.Helpers.GroupInputLines(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:HCMUtils.MultiCalc.Helpers.GroupInputLines(System.Collections.Generic.IEnumerable{System.String})
+  id: GroupInputLines(System.Collections.Generic.IEnumerable{System.String})
+  parent: HCMUtils.MultiCalc.Helpers
+  langs:
+  - csharp
+  - vb
+  name: GroupInputLines(IEnumerable<string>)
+  nameWithType: Helpers.GroupInputLines(IEnumerable<string>)
+  fullName: HCMUtils.MultiCalc.Helpers.GroupInputLines(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/MultiCalc/Helpers.cs
+      branch: add-docs
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: GroupInputLines
+    path: src/HCMUtils/MultiCalc/Helpers.cs
+    startLine: 22
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.MultiCalc
+  syntax:
+    content: protected static List<List<string>> GroupInputLines(IEnumerable<string> inputLines)
+    parameters:
+    - id: inputLines
+      type: System.Collections.Generic.IEnumerable{System.String}
+    return:
+      type: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+    content.vb: Protected Shared Function GroupInputLines(inputLines As IEnumerable(Of String)) As List(Of List(Of String))
+  overload: HCMUtils.MultiCalc.Helpers.GroupInputLines*
+  nameWithType.vb: Helpers.GroupInputLines(IEnumerable(Of String))
+  fullName.vb: HCMUtils.MultiCalc.Helpers.GroupInputLines(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: GroupInputLines(IEnumerable(Of String))
+references:
+- uid: HCMUtils.MultiCalc
+  commentId: N:HCMUtils.MultiCalc
+  href: HCMUtils.html
+  name: HCMUtils.MultiCalc
+  nameWithType: HCMUtils.MultiCalc
+  fullName: HCMUtils.MultiCalc
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.MultiCalc
+    name: MultiCalc
+    href: HCMUtils.MultiCalc.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.MultiCalc
+    name: MultiCalc
+    href: HCMUtils.MultiCalc.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: HCMUtils.MultiCalc.Helpers.ParseMultiCalc*
+  commentId: Overload:HCMUtils.MultiCalc.Helpers.ParseMultiCalc
+  href: HCMUtils.MultiCalc.Helpers.html#HCMUtils_MultiCalc_Helpers_ParseMultiCalc_System_Collections_Generic_IEnumerable_System_String__
+  name: ParseMultiCalc
+  nameWithType: Helpers.ParseMultiCalc
+  fullName: HCMUtils.MultiCalc.Helpers.ParseMultiCalc
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{HCMUtils.MultiCalc.Input}
+  commentId: T:System.Collections.Generic.IEnumerable{HCMUtils.MultiCalc.Input}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Input>
+  nameWithType: IEnumerable<Input>
+  fullName: System.Collections.Generic.IEnumerable<HCMUtils.MultiCalc.Input>
+  nameWithType.vb: IEnumerable(Of Input)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of HCMUtils.MultiCalc.Input)
+  name.vb: IEnumerable(Of Input)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: HCMUtils.MultiCalc.Input
+    name: Input
+    href: HCMUtils.MultiCalc.Input.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.MultiCalc.Input
+    name: Input
+    href: HCMUtils.MultiCalc.Input.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: HCMUtils.MultiCalc.Helpers.GroupInputLines*
+  commentId: Overload:HCMUtils.MultiCalc.Helpers.GroupInputLines
+  href: HCMUtils.MultiCalc.Helpers.html#HCMUtils_MultiCalc_Helpers_GroupInputLines_System_Collections_Generic_IEnumerable_System_String__
+  name: GroupInputLines
+  nameWithType: Helpers.GroupInputLines
+  fullName: HCMUtils.MultiCalc.Helpers.GroupInputLines
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<List<string>>
+  nameWithType: List<List<string>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<string>>
+  nameWithType.vb: List(Of List(Of String))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of String))
+  name.vb: List(Of List(Of String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
