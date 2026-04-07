@@ -4,6 +4,13 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+      - run: dotnet tool update -g docfx
+      - run: docfx docfx.json
   test:
     runs-on: ubuntu-latest
     permissions:
