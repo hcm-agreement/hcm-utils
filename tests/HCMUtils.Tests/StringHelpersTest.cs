@@ -194,34 +194,61 @@ public class StringHelpersTest
             new BuildLegacyInputStringPointToPointInput(
                 (8.22, 51.7625),
                 (18.22, 52.7625),
-                10_000, // too much
-                -1000, // too little
-                ("000ND001", "x123AB56"), // both too long
-                123.45, // too much
-                -100.98, // too little
-                10_000, // too much
-                -1_000, // too little
+                10_000,
+                -1000,
+                ("000ND001", "x123AB56"),
+                123.45,
+                -100.98,
+                10_000,
+                -1_000,
                 GainType.Isotropic,
-                1126.22, // too much
-                400_300_800_000_000, // too much
+                1126.22,
+                400_300_800_000_000,
                 true,
                 Temperature.Warm,
-                112_320, // too much
-                -18_123, // too little
-                1210.2, // too much
-                -1, // too little
-                "13M00G7WEF", // too long
-                "15M00G7WEF", // too long
-                ("A000ND00", "1000ND00"), // both too long
-                -112.4, // too little
-                1_239.2, // too much
+                112_320,
+                -18_123,
+                1210.2,
+                -1,
+                "13M00G7WEF",
+                "15M00G7WEF",
+                ("A000ND00", "1000ND00"),
+                -112.4,
+                1_239.2,
                 GainType.Dipole,
-                110.0, // too much
-                122.0, // too much
-                -2.1, // too little
-                12_345, // too much
+                110.0,
+                122.0,
+                -2.1,
+                12_345,
                 Country.Austria,
                 Country.Germany,
+                "D:\\TOPO\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "D:\\BORDER\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "D:\\MORPHO\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            )
+        ));
+
+        Assert.Throws<ValidationException>(() => StringHelpers.BuildLegacyInputString(
+            new BuildLegacyInputStringPointToLineInput(
+                (8.22, 51.7625),
+                10_000,
+                ("x000ND00", "x123AB56"),
+                1000.0,
+                -100.0,
+                10_000,
+                GainType.Isotropic,
+                1000.22,
+                400_300_800_000_000,
+                true,
+                Temperature.Warm,
+                10000,
+                10000.0,
+                "x5M00G7WEF",
+                10_000.0,
+                Country.Austria,
+                Country.Germany,
+                10_000,
                 "D:\\TOPO\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
                 "D:\\BORDER\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
                 "D:\\MORPHO\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -237,28 +264,30 @@ public class StringHelpersTest
         Assert.Equal(
             "008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
             StringHelpers.BuildLegacyInputString(
-                (8.22, 51.7625),
-                24,
-                ("000ND00", "123AB56"),
-                23.45,
-                -10.98,
-                2,
-                GainType.Isotropic,
-                26.22,
-                3_800_000_000,
-                true,
-                Temperature.Warm,
-                20,
-                10.2,
-                "5M00G7WEF",
-                2.1,
-                Country.Austria,
-                Country.Germany,
-                2,
-                "D:\\TOPO",
-                "D:\\BORDER",
-                "D:\\MORPHO",
-                "C:\\"
+                new BuildLegacyInputStringPointToLineInput(
+                    (8.22, 51.7625),
+                    24,
+                    ("000ND00", "123AB56"),
+                    23.45,
+                    -10.98,
+                    2,
+                    GainType.Isotropic,
+                    26.22,
+                    3_800_000_000,
+                    true,
+                    Temperature.Warm,
+                    20,
+                    10.2,
+                    "5M00G7WEF",
+                    2.1,
+                    Country.Austria,
+                    Country.Germany,
+                    2,
+                    "D:\\TOPO",
+                    "D:\\BORDER",
+                    "D:\\MORPHO",
+                    "C:\\"
+                )
             )
         );
 
@@ -310,28 +339,30 @@ public class StringHelpersTest
         Assert.Equal(
             "008E131251N4545                       000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1    20                               5M00G7WEF                                          AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
             StringHelpers.BuildLegacyInputString(
-                (8.22, 51.7625),
-                null,
-                ("000ND00", "123AB56"),
-                23.45,
-                -10.98,
-                2,
-                GainType.Isotropic,
-                26.22,
-                3_800_000_000,
-                true,
-                null,
-                20,
-                null,
-                "5M00G7WEF",
-                null,
-                Country.Austria,
-                Country.Germany,
-                2,
-                "D:\\TOPO",
-                "D:\\BORDER",
-                "D:\\MORPHO",
-                null
+                new BuildLegacyInputStringPointToLineInput(
+                    (8.22, 51.7625),
+                    null,
+                    ("000ND00", "123AB56"),
+                    23.45,
+                    -10.98,
+                    2,
+                    GainType.Isotropic,
+                    26.22,
+                    3_800_000_000,
+                    true,
+                    null,
+                    20,
+                    null,
+                    "5M00G7WEF",
+                    null,
+                    Country.Austria,
+                    Country.Germany,
+                    2,
+                    "D:\\TOPO",
+                    "D:\\BORDER",
+                    "D:\\MORPHO",
+                    null
+                )
             )
         );
 

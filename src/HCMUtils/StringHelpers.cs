@@ -264,93 +264,61 @@ public partial class StringHelpers
             "".PadLeft(15) +
             input.DebugOutputPath;
     }
+
     /// <summary>
     /// Returns a legacy input string for point-to-line calculations
     /// </summary>
-    /// <param name="txCoordinates"></param>
-    /// <param name="txSiteHeight"></param>
-    /// <param name="txAntennaType"></param>
-    /// <param name="txAzimuth"></param>
-    /// <param name="txElevation"></param>
-    /// <param name="txAntennaHeight"></param>
-    /// <param name="txGainType"></param>
-    /// <param name="txPower"></param>
-    /// <param name="txFrequency"></param>
-    /// <param name="channelOccupation"></param>
-    /// <param name="seaTemperature"></param>
-    /// <param name="txServiceAreaRadius"></param>
-    /// <param name="distanceOverSea"></param>
-    /// <param name="txEmissionDesignation"></param>
-    /// <param name="permissibleFieldStrength"></param>
-    /// <param name="targetCountry"></param>
-    /// <param name="txCountry"></param>
-    /// <param name="maxCrossBorderRange"></param>
-    /// <param name="topoPath">An absolute path where to find the topo data</param>
-    /// <param name="borderPath">An absolute path where to find the border data</param>
-    /// <param name="morphoPath">An absolute path where to find the morpho data</param>
-    /// <param name="debugOutputPath">An absolute path where a debug output will be placed</param>
-    /// <returns></returns>
+    /// <param name="input">The input data to build the string</param>
+    /// <returns>The legacy input string</returns>
     public static string BuildLegacyInputString(
-        (double Lat, double Long) txCoordinates,
-        int? txSiteHeight,
-        (string Horizontal, string Vertical) txAntennaType,
-        double txAzimuth,
-        double txElevation,
-        int txAntennaHeight,
-        GainType txGainType,
-        double txPower,
-        double txFrequency,
-        bool channelOccupation,
-        Temperature? seaTemperature,
-        int txServiceAreaRadius,
-        double? distanceOverSea,
-        string txEmissionDesignation,
-        double? permissibleFieldStrength,
-        Country targetCountry,
-        Country txCountry,
-        int maxCrossBorderRange,
-        string topoPath,
-        string borderPath,
-        string morphoPath,
-        string? debugOutputPath
-    ) => ToCoordinatesString(txCoordinates) +
+        BuildLegacyInputStringPointToLineInput input
+    )
+    {
+        new BuildLegacyInputStringPointToLineInputValidator().Validate(input, options =>
+        {
+            options.IncludeAllRuleSets();
+            options.ThrowOnFailures();
+        });
+
+        return ToCoordinatesString(input.TxCoordinates) +
           "".PadLeft(15) +
-          (txSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+          (input.TxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
           "".PadLeft(4) +
-          txAntennaType.Horizontal.PadLeft(7) +
-          txAntennaType.Vertical.PadLeft(7) +
-          txAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          txElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          txAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
+          input.TxAntennaType.Horizontal.PadLeft(7) +
+          input.TxAntennaType.Vertical.PadLeft(7) +
+          input.TxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          input.TxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          input.TxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
           "".PadLeft(4) +
-          ToGainTypeString(txGainType) +
-          txPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
-          ToFrequencyString(txFrequency, SIPrefix.M).PadLeft(12) +
-          ToBooleanString(channelOccupation) +
-          (seaTemperature == null ? " " : ToTemperatureString((Temperature)seaTemperature)) + // waiting until they fixed dotnet/csharplang#33
-          txServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+          ToGainTypeString(input.TxGainType) +
+          input.TxPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
+          ToFrequencyString(input.TxFrequency, SIPrefix.M).PadLeft(12) +
+          ToBooleanString(input.ChannelOccupation) +
+          (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
+          input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
           "".PadLeft(5) +
-          (distanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           "".PadLeft(12) +
           "".PadLeft(9) +
-          txEmissionDesignation.PadLeft(9) +
+          input.TxEmissionDesignation.PadLeft(9) +
           "".PadLeft(14) +
           "".PadLeft(5) +
           "".PadLeft(5) +
           " " +
           "".PadLeft(4) +
           "".PadLeft(4) +
-          (permissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          (input.PermissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           "".PadLeft(4) +
-          ITUHelpers.ToITULetterCodeString(targetCountry).PadRight(3, '_') +
-          ITUHelpers.ToITULetterCodeString(txCountry).PadRight(3, '_') +
-          maxCrossBorderRange.ToString(CultureInfo.InvariantCulture).PadLeft(3) +
-          topoPath.PadRight(63) +
-          borderPath.PadRight(63) +
-          morphoPath.PadRight(63) +
+          ITUHelpers.ToITULetterCodeString(input.TargetCountry).PadRight(3, '_') +
+          ITUHelpers.ToITULetterCodeString(input.TxCountry).PadRight(3, '_') +
+          input.MaxCrossBorderRange.ToString(CultureInfo.InvariantCulture).PadLeft(3) +
+          input.TopoPath.PadRight(63) +
+          input.BorderPath.PadRight(63) +
+          input.MorphoPath.PadRight(63) +
           "".PadLeft(6) +
           "".PadLeft(20) +
           "".PadLeft(15) +
           "".PadLeft(15) +
-          debugOutputPath;
+          input.DebugOutputPath;
+    }
 }
