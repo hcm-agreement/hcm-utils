@@ -48,4 +48,25 @@ public record BuildLegacyInputStringPointToLineInput(
     string BorderPath,
     string MorphoPath,
     string? DebugOutputPath
+) : BuildLegacyInputStringInput(
+    TxCoordinates,
+    TxSiteHeight,
+    TxAntennaType,
+    TxAzimuth,
+    TxElevation,
+    TxAntennaHeight,
+    TxGainType,
+    TxPower,
+    TxFrequency,
+    ChannelOccupation,
+    SeaTemperature,
+    TxServiceAreaRadius,
+    DistanceOverSea,
+    TxEmissionDesignation,
+    PermissibleFieldStrength,
+    TxCountry,
+    TopoPath,
+    BorderPath,
+    MorphoPath,
+    DebugOutputPath
 );

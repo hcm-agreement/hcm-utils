@@ -37,37 +37,7 @@ public class BuildLegacyInputStringPointToLineInputValidatorTest
         var validator = new BuildLegacyInputStringPointToLineInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxSiteHeight)
-            .WithErrorMessage("'Tx Site Height' must be between -1000 and 10000 (exclusive). You entered 10000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAntennaType.Horizontal)
-            .WithErrorMessage("The length of 'Tx Antenna Type Item1' must be 7 characters or fewer. You entered 8 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAntennaType.Vertical)
-            .WithErrorMessage("The length of 'Tx Antenna Type Item2' must be 7 characters or fewer. You entered 8 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAzimuth)
-            .WithErrorMessage("'Tx Azimuth' must be between -100 and 1000 (exclusive). You entered 1000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxElevation)
-            .WithErrorMessage("'Tx Elevation' must be between -100 and 1000 (exclusive). You entered -100.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAntennaHeight)
-            .WithErrorMessage("'Tx Antenna Height' must be between 0 and 10000 (exclusive). You entered 10000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxPower)
-            .WithErrorMessage("'Tx Power' must be between 0 and 1000 (exclusive). You entered 1000.22.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxFrequency)
-            .WithErrorMessage("'Tx Frequency' must be less than '100000000000000'.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxServiceAreaRadius)
-            .WithErrorMessage("'Tx Service Area Radius' must be between 0 and 9999. You entered 10000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.DistanceOverSea)
-            .WithErrorMessage("'Distance Over Sea' must be between 0 and 10000 (exclusive). You entered 10000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxEmissionDesignation)
-            .WithErrorMessage("The length of 'Tx Emission Designation' must be 9 characters or fewer. You entered 10 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.PermissibleFieldStrength)
-            .WithErrorMessage("'Permissible Field Strength' must be between -100 and 1000 (exclusive). You entered 10000.");
         validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange)
             .WithErrorMessage("'Max Cross Border Range' must be between -100 and 1000 (exclusive). You entered 10000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TopoPath)
-            .WithErrorMessage("The length of 'Topo Path' must be 63 characters or fewer. You entered 115 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.BorderPath)
-            .WithErrorMessage("The length of 'Border Path' must be 63 characters or fewer. You entered 117 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.MorphoPath)
-            .WithErrorMessage("The length of 'Morpho Path' must be 63 characters or fewer. You entered 117 characters.");
     }
 }

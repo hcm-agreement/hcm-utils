@@ -49,38 +49,16 @@ public class BuildLegacyInputStringPointToPointInputValidatorTest
         var validator = new BuildLegacyInputStringPointToPointInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxSiteHeight)
-            .WithErrorMessage("'Tx Site Height' must be between -1000 and 10000 (exclusive). You entered 10000.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxSiteHeight)
             .WithErrorMessage("'Rx Site Height' must be between -1000 and 10000 (exclusive). You entered -1000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAntennaType.Horizontal)
-            .WithErrorMessage("The length of 'Tx Antenna Type Item1' must be 7 characters or fewer. You entered 8 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAntennaType.Vertical)
-            .WithErrorMessage("The length of 'Tx Antenna Type Item2' must be 7 characters or fewer. You entered 8 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAzimuth)
-            .WithErrorMessage("'Tx Azimuth' must be between -100 and 1000 (exclusive). You entered 1000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxElevation)
-            .WithErrorMessage("'Tx Elevation' must be between -100 and 1000 (exclusive). You entered -100.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxAntennaHeight)
-            .WithErrorMessage("'Tx Antenna Height' must be between 0 and 10000 (exclusive). You entered 10000.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaHeight)
             .WithErrorMessage("'Rx Antenna Height' must be between 0 and 10000 (exclusive). You entered -1000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxPower)
-            .WithErrorMessage("'Tx Power' must be between 0 and 1000 (exclusive). You entered 1000.22.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxFrequency)
-            .WithErrorMessage("'Tx Frequency' must be less than '100000000000000'.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxServiceAreaRadius)
-            .WithErrorMessage("'Tx Service Area Radius' must be between 0 and 9999. You entered 10000.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxServiceAreaRadius)
             .WithErrorMessage("'Rx Service Area Radius' must be between 0 and 9999. You entered -1.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.DistanceOverSea)
-            .WithErrorMessage("'Distance Over Sea' must be between 0 and 10000 (exclusive). You entered 10000.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxFrequency)
             .WithErrorMessage("'Rx Frequency' must be greater than or equal to '1'.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxEmissionDesignation)
             .WithErrorMessage("The length of 'Rx Emission Designation' must be 9 characters or fewer. You entered 10 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TxEmissionDesignation)
-            .WithErrorMessage("The length of 'Tx Emission Designation' must be 9 characters or fewer. You entered 10 characters.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaType.Horizontal)
             .WithErrorMessage("The length of 'Rx Antenna Type Item1' must be 7 characters or fewer. You entered 8 characters.");
         validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaType.Vertical)
@@ -93,17 +71,7 @@ public class BuildLegacyInputStringPointToPointInputValidatorTest
             .WithErrorMessage("'Rx Gain' must be between -10 and 100 (exclusive). You entered 110.");
         validationResult.ShouldHaveValidationErrorFor(input => input.DepolarizationLoss)
             .WithErrorMessage("'Depolarization Loss' must be between -10 and 100 (exclusive). You entered 122.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.PermissibleFieldStrength)
-            .WithErrorMessage("'Permissible Field Strength' must be between -100 and 1000 (exclusive). You entered 10000.");
         validationResult.ShouldHaveValidationErrorFor(input => input.FrequencyDifferenceCorrectionFactor)
             .WithErrorMessage("'Frequency Difference Correction Factor' must be between -1000 and 10000 (exclusive). You entered 12345.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.FrequencyDifferenceCorrectionFactor)
-            .WithErrorMessage("'Frequency Difference Correction Factor' must be between -1000 and 10000 (exclusive). You entered 12345.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.TopoPath)
-            .WithErrorMessage("The length of 'Topo Path' must be 63 characters or fewer. You entered 115 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.BorderPath)
-            .WithErrorMessage("The length of 'Border Path' must be 63 characters or fewer. You entered 117 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.MorphoPath)
-            .WithErrorMessage("The length of 'Morpho Path' must be 63 characters or fewer. You entered 117 characters.");
     }
 }
