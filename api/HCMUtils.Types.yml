@@ -4,6 +4,9 @@ items:
   commentId: N:HCMUtils.Types
   id: HCMUtils.Types
   children:
+  - HCMUtils.Types.BuildLegacyInputStringInput
+  - HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput
   - HCMUtils.Types.Country
   - HCMUtils.Types.GainType
   - HCMUtils.Types.ModeType
@@ -19,6 +22,27 @@ items:
   assemblies:
   - HCMUtils
 references:
+- uid: HCMUtils.Types.BuildLegacyInputStringInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html
+  name: BuildLegacyInputStringInput
+  nameWithType: BuildLegacyInputStringInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.BuildLegacyInputStringPointToLineInput.html
+  name: BuildLegacyInputStringPointToLineInput
+  nameWithType: BuildLegacyInputStringPointToLineInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html
+  name: BuildLegacyInputStringPointToPointInput
+  nameWithType: BuildLegacyInputStringPointToPointInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
 - uid: HCMUtils.Types.Country
   commentId: T:HCMUtils.Types.Country
   parent: HCMUtils.Types

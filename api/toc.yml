@@ -30,6 +30,15 @@ items:
   name: HCMUtils.Types
   type: Namespace
   items:
+  - uid: HCMUtils.Types.BuildLegacyInputStringInput
+    name: BuildLegacyInputStringInput
+    type: Class
+  - uid: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+    name: BuildLegacyInputStringPointToLineInput
+    type: Class
+  - uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+    name: BuildLegacyInputStringPointToPointInput
+    type: Class
   - uid: HCMUtils.Types.Country
     name: Country
     type: Enum
@@ -45,4 +54,17 @@ items:
   - uid: HCMUtils.Types.Temperature
     name: Temperature
     type: Enum
+- uid: HCMUtils.Validators
+  name: HCMUtils.Validators
+  type: Namespace
+  items:
+  - uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
+    name: BuildLegacyInputStringInputValidator<TCalculationType>
+    type: Class
+  - uid: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
+    name: BuildLegacyInputStringPointToLineInputValidator
+    type: Class
+  - uid: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
+    name: BuildLegacyInputStringPointToPointInputValidator
+    type: Class
 memberLayout: SamePage

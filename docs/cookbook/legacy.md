@@ -101,4 +101,6 @@ HCM.HCMMS_V7_DLL(
     inputOutputStringPointer,
     inputOutputString.Length
 );
+
+Marshal.FreeHGlobal(inputOutputStringPointer);
 ```

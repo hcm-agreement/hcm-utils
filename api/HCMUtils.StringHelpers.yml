@@ -5,8 +5,8 @@ items:
   id: StringHelpers
   parent: HCMUtils
   children:
-  - HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
-  - HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  - HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
+  - HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
   - HCMUtils.StringHelpers.GetSIMultiplier(HCMUtils.Types.SIPrefix)
   - HCMUtils.StringHelpers.ParseBoolean(System.String)
   - HCMUtils.StringHelpers.ParseCoordinates(System.String)
@@ -64,11 +64,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseDMSString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -102,11 +102,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseCoordinates
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -140,11 +140,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseSINumber
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -183,11 +183,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseSIPrefix
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 71
+    startLine: 73
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -225,11 +225,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: GetSIMultiplier
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 85
+    startLine: 87
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -264,11 +264,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseBoolean
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 98
+    startLine: 100
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -302,11 +302,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseTemperature
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 110
+    startLine: 112
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -340,11 +340,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseModeType
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 122
+    startLine: 124
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -378,11 +378,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseGainType
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 130
+    startLine: 132
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -420,11 +420,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToDMSString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 143
+    startLine: 145
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -461,11 +461,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToCoordinatesString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 166
+    startLine: 168
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -499,11 +499,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToGainTypeString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 173
+    startLine: 175
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -534,11 +534,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToSIPrefixString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 181
+    startLine: 183
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -573,11 +573,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToFrequencyString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 195
+    startLine: 197
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -614,11 +614,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToBooleanString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 203
+    startLine: 205
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -652,11 +652,11 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToTemperatureString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 205
+    startLine: 207
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -669,244 +669,76 @@ items:
       type: System.String
     content.vb: Public Shared Function ToTemperatureString(temperature As Temperature) As String
   overload: HCMUtils.StringHelpers.ToTemperatureString*
-- uid: HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
-  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
-  id: BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+- uid: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
+  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
+  id: BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
   parent: HCMUtils.StringHelpers
   langs:
   - csharp
   - vb
-  name: BuildLegacyInputString((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, GainType, double, double, bool, Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, double?, int?, Country, Country, string, string, string, string?)
-  nameWithType: StringHelpers.BuildLegacyInputString((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, GainType, double, double, bool, Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, double?, int?, Country, Country, string, string, string, string?)
-  fullName: HCMUtils.StringHelpers.BuildLegacyInputString((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, HCMUtils.Types.GainType, double, double, bool, HCMUtils.Types.Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, HCMUtils.Types.GainType, double, double, double?, int?, HCMUtils.Types.Country, HCMUtils.Types.Country, string, string, string, string?)
+  name: BuildLegacyInputString(BuildLegacyInputStringPointToPointInput)
+  nameWithType: StringHelpers.BuildLegacyInputString(BuildLegacyInputStringPointToPointInput)
+  fullName: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
   type: Method
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BuildLegacyInputString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 245
+    startLine: 214
   assemblies:
   - HCMUtils
   namespace: HCMUtils
   summary: Returns a legacy input string for point-to-point calculations
   example: []
   syntax:
-    content: public static string BuildLegacyInputString((double Lat, double Long) txCoordinates, (double Lat, double Long) rxCoordinates, int? txSiteHeight, int? rxSiteHeight, (string Horizontal, string Vertical) txAntennaType, double txAzimuth, double txElevation, int txAntennaHeight, int rxAntennaHeight, GainType txGainType, double txPower, double txFrequency, bool channelOccupation, Temperature? seaTemperature, int txServiceAreaRadius, int rxServiceAreaRadius, double? distanceOverSea, double rxFrequency, string rxEmissionDesignation, string txEmissionDesignation, (string Horizontal, string Vertical) rxAntennaType, double rxAzimuth, double rxElevation, GainType rxGainType, double rxGain, double depolarizationLoss, double? permissibleFieldStrength, int? frequencyDifferenceCorrectionFactor, Country rxCountry, Country txCountry, string topoPath, string borderPath, string morphoPath, string? debugOutputPath)
+    content: public static string BuildLegacyInputString(BuildLegacyInputStringPointToPointInput input)
     parameters:
-    - id: txCoordinates
-      type: System.ValueTuple{System.Double,System.Double}
-      description: ''
-    - id: rxCoordinates
-      type: System.ValueTuple{System.Double,System.Double}
-      description: ''
-    - id: txSiteHeight
-      type: System.Nullable{System.Int32}
-      description: ''
-    - id: rxSiteHeight
-      type: System.Nullable{System.Int32}
-      description: ''
-    - id: txAntennaType
-      type: System.ValueTuple{System.String,System.String}
-      description: ''
-    - id: txAzimuth
-      type: System.Double
-      description: ''
-    - id: txElevation
-      type: System.Double
-      description: ''
-    - id: txAntennaHeight
-      type: System.Int32
-      description: ''
-    - id: rxAntennaHeight
-      type: System.Int32
-      description: ''
-    - id: txGainType
-      type: HCMUtils.Types.GainType
-      description: ''
-    - id: txPower
-      type: System.Double
-      description: ''
-    - id: txFrequency
-      type: System.Double
-      description: ''
-    - id: channelOccupation
-      type: System.Boolean
-      description: ''
-    - id: seaTemperature
-      type: System.Nullable{HCMUtils.Types.Temperature}
-      description: ''
-    - id: txServiceAreaRadius
-      type: System.Int32
-      description: ''
-    - id: rxServiceAreaRadius
-      type: System.Int32
-      description: ''
-    - id: distanceOverSea
-      type: System.Nullable{System.Double}
-      description: ''
-    - id: rxFrequency
-      type: System.Double
-      description: ''
-    - id: rxEmissionDesignation
-      type: System.String
-      description: ''
-    - id: txEmissionDesignation
-      type: System.String
-      description: ''
-    - id: rxAntennaType
-      type: System.ValueTuple{System.String,System.String}
-      description: ''
-    - id: rxAzimuth
-      type: System.Double
-      description: ''
-    - id: rxElevation
-      type: System.Double
-      description: ''
-    - id: rxGainType
-      type: HCMUtils.Types.GainType
-      description: ''
-    - id: rxGain
-      type: System.Double
-      description: ''
-    - id: depolarizationLoss
-      type: System.Double
-      description: ''
-    - id: permissibleFieldStrength
-      type: System.Nullable{System.Double}
-      description: ''
-    - id: frequencyDifferenceCorrectionFactor
-      type: System.Nullable{System.Int32}
-      description: ''
-    - id: rxCountry
-      type: HCMUtils.Types.Country
-      description: ''
-    - id: txCountry
-      type: HCMUtils.Types.Country
-      description: ''
-    - id: topoPath
-      type: System.String
-      description: An absolute path where to find the topo data
-    - id: borderPath
-      type: System.String
-      description: An absolute path where to find the border data
-    - id: morphoPath
-      type: System.String
-      description: An absolute path where to find the morpho data
-    - id: debugOutputPath
-      type: System.String
-      description: An absolute path where a debug output will be placed
+    - id: input
+      type: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+      description: The input data to build the string
     return:
       type: System.String
       description: The legacy input string
-    content.vb: Public Shared Function BuildLegacyInputString(txCoordinates As (Lat As Double, [Long] As Double), rxCoordinates As (Lat As Double, [Long] As Double), txSiteHeight As Integer?, rxSiteHeight As Integer?, txAntennaType As (Horizontal As String, Vertical As String), txAzimuth As Double, txElevation As Double, txAntennaHeight As Integer, rxAntennaHeight As Integer, txGainType As GainType, txPower As Double, txFrequency As Double, channelOccupation As Boolean, seaTemperature As Temperature?, txServiceAreaRadius As Integer, rxServiceAreaRadius As Integer, distanceOverSea As Double?, rxFrequency As Double, rxEmissionDesignation As String, txEmissionDesignation As String, rxAntennaType As (Horizontal As String, Vertical As String), rxAzimuth As Double, rxElevation As Double, rxGainType As GainType, rxGain As Double, depolarizationLoss As Double, permissibleFieldStrength As Double?, frequencyDifferenceCorrectionFactor As Integer?, rxCountry As Country, txCountry As Country, topoPath As String, borderPath As String, morphoPath As String, debugOutputPath As String) As String
+    content.vb: Public Shared Function BuildLegacyInputString(input As BuildLegacyInputStringPointToPointInput) As String
   overload: HCMUtils.StringHelpers.BuildLegacyInputString*
-  nameWithType.vb: StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Double?, Integer?, Country, Country, String, String, String, String)
-  fullName.vb: HCMUtils.StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, HCMUtils.Types.GainType, Double, Double, Boolean, HCMUtils.Types.Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, HCMUtils.Types.GainType, Double, Double, Double?, Integer?, HCMUtils.Types.Country, HCMUtils.Types.Country, String, String, String, String)
-  name.vb: BuildLegacyInputString((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Double?, Integer?, Country, Country, String, String, String, String)
-- uid: HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
-  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
-  id: BuildLegacyInputString(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+- uid: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
+  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
+  id: BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
   parent: HCMUtils.StringHelpers
   langs:
   - csharp
   - vb
-  name: BuildLegacyInputString((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, GainType, double, double, bool, Temperature?, int, double?, string, double?, Country, Country, int, string, string, string, string?)
-  nameWithType: StringHelpers.BuildLegacyInputString((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, GainType, double, double, bool, Temperature?, int, double?, string, double?, Country, Country, int, string, string, string, string?)
-  fullName: HCMUtils.StringHelpers.BuildLegacyInputString((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, HCMUtils.Types.GainType, double, double, bool, HCMUtils.Types.Temperature?, int, double?, string, double?, HCMUtils.Types.Country, HCMUtils.Types.Country, int, string, string, string, string?)
+  name: BuildLegacyInputString(BuildLegacyInputStringPointToLineInput)
+  nameWithType: StringHelpers.BuildLegacyInputString(BuildLegacyInputStringPointToLineInput)
+  fullName: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
   type: Method
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BuildLegacyInputString
     path: src/HCMUtils/StringHelpers.cs
-    startLine: 348
+    startLine: 272
   assemblies:
   - HCMUtils
   namespace: HCMUtils
   summary: Returns a legacy input string for point-to-line calculations
   example: []
   syntax:
-    content: public static string BuildLegacyInputString((double Lat, double Long) txCoordinates, int? txSiteHeight, (string Horizontal, string Vertical) txAntennaType, double txAzimuth, double txElevation, int txAntennaHeight, GainType txGainType, double txPower, double txFrequency, bool channelOccupation, Temperature? seaTemperature, int txServiceAreaRadius, double? distanceOverSea, string txEmissionDesignation, double? permissibleFieldStrength, Country targetCountry, Country txCountry, int maxCrossBorderRange, string topoPath, string borderPath, string morphoPath, string? debugOutputPath)
+    content: public static string BuildLegacyInputString(BuildLegacyInputStringPointToLineInput input)
     parameters:
-    - id: txCoordinates
-      type: System.ValueTuple{System.Double,System.Double}
-      description: ''
-    - id: txSiteHeight
-      type: System.Nullable{System.Int32}
-      description: ''
-    - id: txAntennaType
-      type: System.ValueTuple{System.String,System.String}
-      description: ''
-    - id: txAzimuth
-      type: System.Double
-      description: ''
-    - id: txElevation
-      type: System.Double
-      description: ''
-    - id: txAntennaHeight
-      type: System.Int32
-      description: ''
-    - id: txGainType
-      type: HCMUtils.Types.GainType
-      description: ''
-    - id: txPower
-      type: System.Double
-      description: ''
-    - id: txFrequency
-      type: System.Double
-      description: ''
-    - id: channelOccupation
-      type: System.Boolean
-      description: ''
-    - id: seaTemperature
-      type: System.Nullable{HCMUtils.Types.Temperature}
-      description: ''
-    - id: txServiceAreaRadius
-      type: System.Int32
-      description: ''
-    - id: distanceOverSea
-      type: System.Nullable{System.Double}
-      description: ''
-    - id: txEmissionDesignation
-      type: System.String
-      description: ''
-    - id: permissibleFieldStrength
-      type: System.Nullable{System.Double}
-      description: ''
-    - id: targetCountry
-      type: HCMUtils.Types.Country
-      description: ''
-    - id: txCountry
-      type: HCMUtils.Types.Country
-      description: ''
-    - id: maxCrossBorderRange
-      type: System.Int32
-      description: ''
-    - id: topoPath
-      type: System.String
-      description: An absolute path where to find the topo data
-    - id: borderPath
-      type: System.String
-      description: An absolute path where to find the border data
-    - id: morphoPath
-      type: System.String
-      description: An absolute path where to find the morpho data
-    - id: debugOutputPath
-      type: System.String
-      description: An absolute path where a debug output will be placed
+    - id: input
+      type: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+      description: The input data to build the string
     return:
       type: System.String
-      description: ''
-    content.vb: Public Shared Function BuildLegacyInputString(txCoordinates As (Lat As Double, [Long] As Double), txSiteHeight As Integer?, txAntennaType As (Horizontal As String, Vertical As String), txAzimuth As Double, txElevation As Double, txAntennaHeight As Integer, txGainType As GainType, txPower As Double, txFrequency As Double, channelOccupation As Boolean, seaTemperature As Temperature?, txServiceAreaRadius As Integer, distanceOverSea As Double?, txEmissionDesignation As String, permissibleFieldStrength As Double?, targetCountry As Country, txCountry As Country, maxCrossBorderRange As Integer, topoPath As String, borderPath As String, morphoPath As String, debugOutputPath As String) As String
+      description: The legacy input string
+    content.vb: Public Shared Function BuildLegacyInputString(input As BuildLegacyInputStringPointToLineInput) As String
   overload: HCMUtils.StringHelpers.BuildLegacyInputString*
-  nameWithType.vb: StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Double?, String, Double?, Country, Country, Integer, String, String, String, String)
-  fullName.vb: HCMUtils.StringHelpers.BuildLegacyInputString((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, HCMUtils.Types.GainType, Double, Double, Boolean, HCMUtils.Types.Temperature?, Integer, Double?, String, Double?, HCMUtils.Types.Country, HCMUtils.Types.Country, Integer, String, String, String, String)
-  name.vb: BuildLegacyInputString((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Double?, String, Double?, Country, Country, Integer, String, String, String, String)
 references:
 - uid: HCMUtils
   commentId: N:HCMUtils
@@ -1444,163 +1276,21 @@ references:
   fullName: HCMUtils.StringHelpers.ToTemperatureString
 - uid: HCMUtils.StringHelpers.BuildLegacyInputString*
   commentId: Overload:HCMUtils.StringHelpers.BuildLegacyInputString
-  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_BuildLegacyInputString_System_ValueTuple_System_Double_System_Double__System_ValueTuple_System_Double_System_Double__System_Nullable_System_Int32__System_Nullable_System_Int32__System_ValueTuple_System_String_System_String__System_Double_System_Double_System_Int32_System_Int32_HCMUtils_Types_GainType_System_Double_System_Double_System_Boolean_System_Nullable_HCMUtils_Types_Temperature__System_Int32_System_Int32_System_Nullable_System_Double__System_Double_System_String_System_String_System_ValueTuple_System_String_System_String__System_Double_System_Double_HCMUtils_Types_GainType_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Int32__HCMUtils_Types_Country_HCMUtils_Types_Country_System_String_System_String_System_String_System_String_
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_BuildLegacyInputString_HCMUtils_Types_BuildLegacyInputStringPointToPointInput_
   name: BuildLegacyInputString
   nameWithType: StringHelpers.BuildLegacyInputString
   fullName: HCMUtils.StringHelpers.BuildLegacyInputString
-- uid: System.Nullable{System.Int32}
-  commentId: T:System.Nullable{System.Int32}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int?
-  nameWithType: int?
-  fullName: int?
-  nameWithType.vb: Integer?
-  fullName.vb: Integer?
-  name.vb: Integer?
-  spec.csharp:
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: '?'
-  spec.vb:
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: '?'
-- uid: System.ValueTuple{System.String,System.String}
-  commentId: T:System.ValueTuple{System.String,System.String}
-  parent: System
-  definition: System.ValueTuple`2
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: (string Horizontal, string Vertical)
-  nameWithType: (string Horizontal, string Vertical)
-  fullName: (string Horizontal, string Vertical)
-  nameWithType.vb: (Horizontal As String, Vertical As String)
-  fullName.vb: (Horizontal As String, Vertical As String)
-  name.vb: (Horizontal As String, Vertical As String)
-  spec.csharp:
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.String}.Horizontal
-    name: Horizontal
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.String}.Vertical
-    name: Vertical
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
-  - name: )
-  spec.vb:
-  - name: (
-  - uid: System.ValueTuple{System.String,System.String}.Horizontal
-    name: Horizontal
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.ValueTuple{System.String,System.String}.Vertical
-    name: Vertical
-    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
-  - name: " "
-  - name: As
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: System.Nullable{HCMUtils.Types.Temperature}
-  commentId: T:System.Nullable{HCMUtils.Types.Temperature}
-  parent: System
-  definition: System.Nullable`1
-  href: HCMUtils.Types.Temperature.html
-  name: Temperature?
-  nameWithType: Temperature?
-  fullName: HCMUtils.Types.Temperature?
-  spec.csharp:
-  - uid: HCMUtils.Types.Temperature
-    name: Temperature
-    href: HCMUtils.Types.Temperature.html
-  - name: '?'
-  spec.vb:
-  - uid: HCMUtils.Types.Temperature
-    name: Temperature
-    href: HCMUtils.Types.Temperature.html
-  - name: '?'
-- uid: System.Nullable{System.Double}
-  commentId: T:System.Nullable{System.Double}
-  parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double?
-  nameWithType: double?
-  fullName: double?
-  nameWithType.vb: Double?
-  fullName.vb: Double?
-  name.vb: Double?
-  spec.csharp:
-  - uid: System.Double
-    name: double
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.double
-  - name: '?'
-  spec.vb:
-  - uid: System.Double
-    name: Double
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.double
-  - name: '?'
-- uid: HCMUtils.Types.Country
-  commentId: T:HCMUtils.Types.Country
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToPointInput
   parent: HCMUtils.Types
-  href: HCMUtils.Types.Country.html
-  name: Country
-  nameWithType: Country
-  fullName: HCMUtils.Types.Country
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html
+  name: BuildLegacyInputStringPointToPointInput
+  nameWithType: BuildLegacyInputStringPointToPointInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.BuildLegacyInputStringPointToLineInput.html
+  name: BuildLegacyInputStringPointToLineInput
+  nameWithType: BuildLegacyInputStringPointToLineInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToLineInput

@@ -33,7 +33,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Input
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: .ctor
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mode
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxCoordinates
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxSiteHeight
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxAntennaType
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxAzimuth
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -282,7 +282,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxElevation
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxAntennaHeight
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxPower
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxGainType
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -398,7 +398,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxFrequency
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -427,7 +427,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ChannelOccupation
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -456,7 +456,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SeaTemperature
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -485,7 +485,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: DistanceOverSea
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -514,7 +514,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxServiceAreaRadius
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -543,7 +543,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxCountry
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -572,7 +572,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: PermissibleFieldStrength
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -601,7 +601,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxEmissionDesignation
     path: src/HCMUtils/MultiCalc/Input.cs
