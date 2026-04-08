@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Helpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Helpers
     path: src/HCMUtils/MultiCalc/Helpers.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Helpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseMultiCalc
     path: src/HCMUtils/MultiCalc/Helpers.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Helpers.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: GroupInputLines
     path: src/HCMUtils/MultiCalc/Helpers.cs

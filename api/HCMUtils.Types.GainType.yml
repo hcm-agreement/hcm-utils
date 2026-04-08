@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/GainType.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: GainType
     path: src/HCMUtils/Types/GainType.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/GainType.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Dipole
     path: src/HCMUtils/Types/GainType.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/GainType.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Isotropic
     path: src/HCMUtils/Types/GainType.cs

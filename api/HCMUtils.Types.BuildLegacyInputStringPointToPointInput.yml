@@ -1,0 +1,1524 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  id: BuildLegacyInputStringPointToPointInput
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.#ctor(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  - HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  langs:
+  - csharp
+  - vb
+  name: BuildLegacyInputStringPointToPointInput
+  nameWithType: BuildLegacyInputStringPointToPointInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  type: Class
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: BuildLegacyInputStringPointToPointInput
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 39
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Used as an input to StringHelpers.BuildLegacyInputString
+  example: []
+  syntax:
+    content: 'public record BuildLegacyInputStringPointToPointInput : BuildLegacyInputStringInput, IEquatable<BuildLegacyInputStringInput>, IEquatable<BuildLegacyInputStringPointToPointInput>'
+    content.vb: Public Class BuildLegacyInputStringPointToPointInput Inherits BuildLegacyInputStringInput Implements IEquatable(Of BuildLegacyInputStringInput), IEquatable(Of BuildLegacyInputStringPointToPointInput)
+  inheritance:
+  - System.Object
+  - HCMUtils.Types.BuildLegacyInputStringInput
+  implements:
+  - System.IEquatable{HCMUtils.Types.BuildLegacyInputStringInput}
+  - System.IEquatable{HCMUtils.Types.BuildLegacyInputStringPointToPointInput}
+  inheritedMembers:
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxCoordinates
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxSiteHeight
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaType
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxAzimuth
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxElevation
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaHeight
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxGainType
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxPower
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxFrequency
+  - HCMUtils.Types.BuildLegacyInputStringInput.ChannelOccupation
+  - HCMUtils.Types.BuildLegacyInputStringInput.SeaTemperature
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxServiceAreaRadius
+  - HCMUtils.Types.BuildLegacyInputStringInput.DistanceOverSea
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxEmissionDesignation
+  - HCMUtils.Types.BuildLegacyInputStringInput.PermissibleFieldStrength
+  - HCMUtils.Types.BuildLegacyInputStringInput.TxCountry
+  - HCMUtils.Types.BuildLegacyInputStringInput.TopoPath
+  - HCMUtils.Types.BuildLegacyInputStringInput.BorderPath
+  - HCMUtils.Types.BuildLegacyInputStringInput.MorphoPath
+  - HCMUtils.Types.BuildLegacyInputStringInput.DebugOutputPath
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.#ctor(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  commentId: M:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.#ctor(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.ValueTuple{System.Double,System.Double},System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Int32,System.Nullable{System.Double},System.Double,System.String,System.String,System.ValueTuple{System.String,System.String},System.Double,System.Double,HCMUtils.Types.GainType,System.Double,System.Double,System.Nullable{System.Double},System.Nullable{System.Int32},HCMUtils.Types.Country,HCMUtils.Types.Country,System.String,System.String,System.String,System.String)'
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: BuildLegacyInputStringPointToPointInput((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, GainType, double, double, bool, Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, double?, int?, Country, Country, string, string, string, string?)
+  nameWithType: BuildLegacyInputStringPointToPointInput.BuildLegacyInputStringPointToPointInput((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, GainType, double, double, bool, Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, GainType, double, double, double?, int?, Country, Country, string, string, string, string?)
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.BuildLegacyInputStringPointToPointInput((double Lat, double Long), (double Lat, double Long), int?, int?, (string Horizontal, string Vertical), double, double, int, int, HCMUtils.Types.GainType, double, double, bool, HCMUtils.Types.Temperature?, int, int, double?, double, string, string, (string Horizontal, string Vertical), double, double, HCMUtils.Types.GainType, double, double, double?, int?, HCMUtils.Types.Country, HCMUtils.Types.Country, string, string, string, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: .ctor
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 39
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Used as an input to StringHelpers.BuildLegacyInputString
+  example: []
+  syntax:
+    content: public BuildLegacyInputStringPointToPointInput((double Lat, double Long) TxCoordinates, (double Lat, double Long) RxCoordinates, int? TxSiteHeight, int? RxSiteHeight, (string Horizontal, string Vertical) TxAntennaType, double TxAzimuth, double TxElevation, int TxAntennaHeight, int RxAntennaHeight, GainType TxGainType, double TxPower, double TxFrequency, bool ChannelOccupation, Temperature? SeaTemperature, int TxServiceAreaRadius, int RxServiceAreaRadius, double? DistanceOverSea, double RxFrequency, string RxEmissionDesignation, string TxEmissionDesignation, (string Horizontal, string Vertical) RxAntennaType, double RxAzimuth, double RxElevation, GainType RxGainType, double RxGain, double DepolarizationLoss, double? PermissibleFieldStrength, int? FrequencyDifferenceCorrectionFactor, Country RxCountry, Country TxCountry, string TopoPath, string BorderPath, string MorphoPath, string? DebugOutputPath)
+    parameters:
+    - id: TxCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: ''
+    - id: RxCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: ''
+    - id: TxSiteHeight
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: RxSiteHeight
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: TxAntennaType
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    - id: TxAzimuth
+      type: System.Double
+      description: ''
+    - id: TxElevation
+      type: System.Double
+      description: ''
+    - id: TxAntennaHeight
+      type: System.Int32
+      description: ''
+    - id: RxAntennaHeight
+      type: System.Int32
+      description: ''
+    - id: TxGainType
+      type: HCMUtils.Types.GainType
+      description: ''
+    - id: TxPower
+      type: System.Double
+      description: ''
+    - id: TxFrequency
+      type: System.Double
+      description: ''
+    - id: ChannelOccupation
+      type: System.Boolean
+      description: ''
+    - id: SeaTemperature
+      type: System.Nullable{HCMUtils.Types.Temperature}
+      description: ''
+    - id: TxServiceAreaRadius
+      type: System.Int32
+      description: ''
+    - id: RxServiceAreaRadius
+      type: System.Int32
+      description: ''
+    - id: DistanceOverSea
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: RxFrequency
+      type: System.Double
+      description: ''
+    - id: RxEmissionDesignation
+      type: System.String
+      description: ''
+    - id: TxEmissionDesignation
+      type: System.String
+      description: ''
+    - id: RxAntennaType
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    - id: RxAzimuth
+      type: System.Double
+      description: ''
+    - id: RxElevation
+      type: System.Double
+      description: ''
+    - id: RxGainType
+      type: HCMUtils.Types.GainType
+      description: ''
+    - id: RxGain
+      type: System.Double
+      description: ''
+    - id: DepolarizationLoss
+      type: System.Double
+      description: ''
+    - id: PermissibleFieldStrength
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: FrequencyDifferenceCorrectionFactor
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: RxCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: TxCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: TopoPath
+      type: System.String
+      description: An absolute path where to find the topo data
+    - id: BorderPath
+      type: System.String
+      description: An absolute path where to find the border data
+    - id: MorphoPath
+      type: System.String
+      description: An absolute path where to find the morpho data
+    - id: DebugOutputPath
+      type: System.String
+      description: An absolute path where a debug output will be placed
+    content.vb: Public Sub New(TxCoordinates As (Lat As Double, [Long] As Double), RxCoordinates As (Lat As Double, [Long] As Double), TxSiteHeight As Integer?, RxSiteHeight As Integer?, TxAntennaType As (Horizontal As String, Vertical As String), TxAzimuth As Double, TxElevation As Double, TxAntennaHeight As Integer, RxAntennaHeight As Integer, TxGainType As GainType, TxPower As Double, TxFrequency As Double, ChannelOccupation As Boolean, SeaTemperature As Temperature?, TxServiceAreaRadius As Integer, RxServiceAreaRadius As Integer, DistanceOverSea As Double?, RxFrequency As Double, RxEmissionDesignation As String, TxEmissionDesignation As String, RxAntennaType As (Horizontal As String, Vertical As String), RxAzimuth As Double, RxElevation As Double, RxGainType As GainType, RxGain As Double, DepolarizationLoss As Double, PermissibleFieldStrength As Double?, FrequencyDifferenceCorrectionFactor As Integer?, RxCountry As Country, TxCountry As Country, TopoPath As String, BorderPath As String, MorphoPath As String, DebugOutputPath As String)
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.#ctor*
+  nameWithType.vb: BuildLegacyInputStringPointToPointInput.New((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Double?, Integer?, Country, Country, String, String, String, String)
+  fullName.vb: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.New((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, HCMUtils.Types.GainType, Double, Double, Boolean, HCMUtils.Types.Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, HCMUtils.Types.GainType, Double, Double, Double?, Integer?, HCMUtils.Types.Country, HCMUtils.Types.Country, String, String, String, String)
+  name.vb: New((Lat As Double, Long As Double), (Lat As Double, Long As Double), Integer?, Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Integer, Double?, Double, String, String, (Horizontal As String, Vertical As String), Double, Double, GainType, Double, Double, Double?, Integer?, Country, Country, String, String, String, String)
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates
+  id: RxCoordinates
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxCoordinates
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxCoordinates
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxCoordinates
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 41
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public (double Lat, double Long) RxCoordinates { get; init; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.Double,System.Double}
+    content.vb: Public Property RxCoordinates As (Lat As Double, [Long] As Double)
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  id: RxSiteHeight
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxSiteHeight
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxSiteHeight
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 43
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public int? RxSiteHeight { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property RxSiteHeight As Integer?
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  id: RxAntennaHeight
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxAntennaHeight
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxAntennaHeight
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 48
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public int RxAntennaHeight { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RxAntennaHeight As Integer
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  id: RxServiceAreaRadius
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxServiceAreaRadius
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxServiceAreaRadius
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 55
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public int RxServiceAreaRadius { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RxServiceAreaRadius As Integer
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency
+  id: RxFrequency
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxFrequency
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxFrequency
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxFrequency
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 57
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public double RxFrequency { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxFrequency As Double
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  id: RxEmissionDesignation
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxEmissionDesignation
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxEmissionDesignation
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 58
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public string RxEmissionDesignation { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RxEmissionDesignation As String
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType
+  id: RxAntennaType
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxAntennaType
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxAntennaType
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxAntennaType
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 60
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public (string Horizontal, string Vertical) RxAntennaType { get; init; }
+    parameters: []
+    return:
+      type: System.ValueTuple{System.String,System.String}
+    content.vb: Public Property RxAntennaType As (Horizontal As String, Vertical As String)
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth
+  id: RxAzimuth
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxAzimuth
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxAzimuth
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxAzimuth
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 61
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public double RxAzimuth { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxAzimuth As Double
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation
+  id: RxElevation
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxElevation
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxElevation
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxElevation
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 62
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public double RxElevation { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxElevation As Double
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType
+  id: RxGainType
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxGainType
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxGainType
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxGainType
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 63
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public GainType RxGainType { get; init; }
+    parameters: []
+    return:
+      type: HCMUtils.Types.GainType
+    content.vb: Public Property RxGainType As GainType
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain
+  id: RxGain
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxGain
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxGain
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxGain
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 64
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public double RxGain { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property RxGain As Double
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  id: DepolarizationLoss
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: DepolarizationLoss
+  nameWithType: BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DepolarizationLoss
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 65
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public double DepolarizationLoss { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DepolarizationLoss As Double
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  id: FrequencyDifferenceCorrectionFactor
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: FrequencyDifferenceCorrectionFactor
+  nameWithType: BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FrequencyDifferenceCorrectionFactor
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 67
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public int? FrequencyDifferenceCorrectionFactor { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property FrequencyDifferenceCorrectionFactor As Integer?
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor*
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry
+  id: RxCountry
+  parent: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+  langs:
+  - csharp
+  - vb
+  name: RxCountry
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxCountry
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+      branch: validate-legacy-string-input
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxCountry
+    path: src/HCMUtils/Types/BuildLegacyInputStringPointToPointInput.cs
+    startLine: 68
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public Country RxCountry { get; init; }
+    parameters: []
+    return:
+      type: HCMUtils.Types.Country
+    content.vb: Public Property RxCountry As Country
+  overload: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry*
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HCMUtils.Types.BuildLegacyInputStringInput
+  commentId: T:HCMUtils.Types.BuildLegacyInputStringInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html
+  name: BuildLegacyInputStringInput
+  nameWithType: BuildLegacyInputStringInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput
+- uid: System.IEquatable{HCMUtils.Types.BuildLegacyInputStringInput}
+  commentId: T:System.IEquatable{HCMUtils.Types.BuildLegacyInputStringInput}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BuildLegacyInputStringInput>
+  nameWithType: IEquatable<BuildLegacyInputStringInput>
+  fullName: System.IEquatable<HCMUtils.Types.BuildLegacyInputStringInput>
+  nameWithType.vb: IEquatable(Of BuildLegacyInputStringInput)
+  fullName.vb: System.IEquatable(Of HCMUtils.Types.BuildLegacyInputStringInput)
+  name.vb: IEquatable(Of BuildLegacyInputStringInput)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.Types.BuildLegacyInputStringInput
+    name: BuildLegacyInputStringInput
+    href: HCMUtils.Types.BuildLegacyInputStringInput.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.Types.BuildLegacyInputStringInput
+    name: BuildLegacyInputStringInput
+    href: HCMUtils.Types.BuildLegacyInputStringInput.html
+  - name: )
+- uid: System.IEquatable{HCMUtils.Types.BuildLegacyInputStringPointToPointInput}
+  commentId: T:System.IEquatable{HCMUtils.Types.BuildLegacyInputStringPointToPointInput}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BuildLegacyInputStringPointToPointInput>
+  nameWithType: IEquatable<BuildLegacyInputStringPointToPointInput>
+  fullName: System.IEquatable<HCMUtils.Types.BuildLegacyInputStringPointToPointInput>
+  nameWithType.vb: IEquatable(Of BuildLegacyInputStringPointToPointInput)
+  fullName.vb: System.IEquatable(Of HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
+  name.vb: IEquatable(Of BuildLegacyInputStringPointToPointInput)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+    name: BuildLegacyInputStringPointToPointInput
+    href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+    name: BuildLegacyInputStringPointToPointInput
+    href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html
+  - name: )
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxCoordinates
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxCoordinates
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxCoordinates
+  name: TxCoordinates
+  nameWithType: BuildLegacyInputStringInput.TxCoordinates
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxCoordinates
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxSiteHeight
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxSiteHeight
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxSiteHeight
+  name: TxSiteHeight
+  nameWithType: BuildLegacyInputStringInput.TxSiteHeight
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxSiteHeight
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaType
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaType
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxAntennaType
+  name: TxAntennaType
+  nameWithType: BuildLegacyInputStringInput.TxAntennaType
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaType
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxAzimuth
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxAzimuth
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxAzimuth
+  name: TxAzimuth
+  nameWithType: BuildLegacyInputStringInput.TxAzimuth
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxAzimuth
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxElevation
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxElevation
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxElevation
+  name: TxElevation
+  nameWithType: BuildLegacyInputStringInput.TxElevation
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxElevation
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaHeight
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaHeight
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxAntennaHeight
+  name: TxAntennaHeight
+  nameWithType: BuildLegacyInputStringInput.TxAntennaHeight
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxAntennaHeight
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxGainType
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxGainType
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxGainType
+  name: TxGainType
+  nameWithType: BuildLegacyInputStringInput.TxGainType
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxGainType
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxPower
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxPower
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxPower
+  name: TxPower
+  nameWithType: BuildLegacyInputStringInput.TxPower
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxPower
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxFrequency
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxFrequency
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxFrequency
+  name: TxFrequency
+  nameWithType: BuildLegacyInputStringInput.TxFrequency
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxFrequency
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.ChannelOccupation
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.ChannelOccupation
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_ChannelOccupation
+  name: ChannelOccupation
+  nameWithType: BuildLegacyInputStringInput.ChannelOccupation
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.ChannelOccupation
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.SeaTemperature
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.SeaTemperature
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_SeaTemperature
+  name: SeaTemperature
+  nameWithType: BuildLegacyInputStringInput.SeaTemperature
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.SeaTemperature
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxServiceAreaRadius
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxServiceAreaRadius
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxServiceAreaRadius
+  name: TxServiceAreaRadius
+  nameWithType: BuildLegacyInputStringInput.TxServiceAreaRadius
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxServiceAreaRadius
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.DistanceOverSea
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.DistanceOverSea
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_DistanceOverSea
+  name: DistanceOverSea
+  nameWithType: BuildLegacyInputStringInput.DistanceOverSea
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.DistanceOverSea
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxEmissionDesignation
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxEmissionDesignation
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxEmissionDesignation
+  name: TxEmissionDesignation
+  nameWithType: BuildLegacyInputStringInput.TxEmissionDesignation
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxEmissionDesignation
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.PermissibleFieldStrength
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.PermissibleFieldStrength
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_PermissibleFieldStrength
+  name: PermissibleFieldStrength
+  nameWithType: BuildLegacyInputStringInput.PermissibleFieldStrength
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.PermissibleFieldStrength
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TxCountry
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TxCountry
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TxCountry
+  name: TxCountry
+  nameWithType: BuildLegacyInputStringInput.TxCountry
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TxCountry
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.TopoPath
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.TopoPath
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_TopoPath
+  name: TopoPath
+  nameWithType: BuildLegacyInputStringInput.TopoPath
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.TopoPath
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.BorderPath
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.BorderPath
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_BorderPath
+  name: BorderPath
+  nameWithType: BuildLegacyInputStringInput.BorderPath
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.BorderPath
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.MorphoPath
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.MorphoPath
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_MorphoPath
+  name: MorphoPath
+  nameWithType: BuildLegacyInputStringInput.MorphoPath
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.MorphoPath
+- uid: HCMUtils.Types.BuildLegacyInputStringInput.DebugOutputPath
+  commentId: P:HCMUtils.Types.BuildLegacyInputStringInput.DebugOutputPath
+  parent: HCMUtils.Types.BuildLegacyInputStringInput
+  href: HCMUtils.Types.BuildLegacyInputStringInput.html#HCMUtils_Types_BuildLegacyInputStringInput_DebugOutputPath
+  name: DebugOutputPath
+  nameWithType: BuildLegacyInputStringInput.DebugOutputPath
+  fullName: HCMUtils.Types.BuildLegacyInputStringInput.DebugOutputPath
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.#ctor*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.#ctor
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput__ctor_System_ValueTuple_System_Double_System_Double__System_ValueTuple_System_Double_System_Double__System_Nullable_System_Int32__System_Nullable_System_Int32__System_ValueTuple_System_String_System_String__System_Double_System_Double_System_Int32_System_Int32_HCMUtils_Types_GainType_System_Double_System_Double_System_Boolean_System_Nullable_HCMUtils_Types_Temperature__System_Int32_System_Int32_System_Nullable_System_Double__System_Double_System_String_System_String_System_ValueTuple_System_String_System_String__System_Double_System_Double_HCMUtils_Types_GainType_System_Double_System_Double_System_Nullable_System_Double__System_Nullable_System_Int32__HCMUtils_Types_Country_HCMUtils_Types_Country_System_String_System_String_System_String_System_String_
+  name: BuildLegacyInputStringPointToPointInput
+  nameWithType: BuildLegacyInputStringPointToPointInput.BuildLegacyInputStringPointToPointInput
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.BuildLegacyInputStringPointToPointInput
+  nameWithType.vb: BuildLegacyInputStringPointToPointInput.New
+  fullName.vb: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.New
+  name.vb: New
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double Long, double Lat)
+  nameWithType: (double Long, double Lat)
+  fullName: (double Long, double Lat)
+  nameWithType.vb: (Long As Double, Lat As Double)
+  fullName.vb: (Long As Double, Lat As Double)
+  name.vb: (Long As Double, Lat As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.ValueTuple{System.String,System.String}
+  commentId: T:System.ValueTuple{System.String,System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string Horizontal, string Vertical)
+  nameWithType: (string Horizontal, string Vertical)
+  fullName: (string Horizontal, string Vertical)
+  nameWithType.vb: (Horizontal As String, Vertical As String)
+  fullName.vb: (Horizontal As String, Vertical As String)
+  name.vb: (Horizontal As String, Vertical As String)
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.GainType.html
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable{HCMUtils.Types.Temperature}
+  commentId: T:System.Nullable{HCMUtils.Types.Temperature}
+  parent: System
+  definition: System.Nullable`1
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature?
+  nameWithType: Temperature?
+  fullName: HCMUtils.Types.Temperature?
+  spec.csharp:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+  spec.vb:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Country.html
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxCoordinates
+  name: RxCoordinates
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxCoordinates
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCoordinates
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxSiteHeight
+  name: RxSiteHeight
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxSiteHeight
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxSiteHeight
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxAntennaHeight
+  name: RxAntennaHeight
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaHeight
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxServiceAreaRadius
+  name: RxServiceAreaRadius
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxServiceAreaRadius
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxFrequency
+  name: RxFrequency
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxFrequency
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxFrequency
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxEmissionDesignation
+  name: RxEmissionDesignation
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxEmissionDesignation
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxAntennaType
+  name: RxAntennaType
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxAntennaType
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAntennaType
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxAzimuth
+  name: RxAzimuth
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxAzimuth
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxAzimuth
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxElevation
+  name: RxElevation
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxElevation
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxElevation
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxGainType
+  name: RxGainType
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxGainType
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGainType
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxGain
+  name: RxGain
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxGain
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxGain
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_DepolarizationLoss
+  name: DepolarizationLoss
+  nameWithType: BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.DepolarizationLoss
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_FrequencyDifferenceCorrectionFactor
+  name: FrequencyDifferenceCorrectionFactor
+  nameWithType: BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.FrequencyDifferenceCorrectionFactor
+- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry*
+  commentId: Overload:HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry
+  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html#HCMUtils_Types_BuildLegacyInputStringPointToPointInput_RxCountry
+  name: RxCountry
+  nameWithType: BuildLegacyInputStringPointToPointInput.RxCountry
+  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.RxCountry

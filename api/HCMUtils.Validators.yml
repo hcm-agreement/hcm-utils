@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Validators
+  commentId: N:HCMUtils.Validators
+  id: HCMUtils.Validators
+  children:
+  - HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
+  - HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
+  - HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
+  langs:
+  - csharp
+  - vb
+  name: HCMUtils.Validators
+  nameWithType: HCMUtils.Validators
+  fullName: HCMUtils.Validators
+  type: Namespace
+  assemblies:
+  - HCMUtils
+references:
+- uid: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
+  commentId: T:HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
+  href: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator.html
+  name: BuildLegacyInputStringPointToLineInputValidator
+  nameWithType: BuildLegacyInputStringPointToLineInputValidator
+  fullName: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
+- uid: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
+  commentId: T:HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
+  href: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator.html
+  name: BuildLegacyInputStringPointToPointInputValidator
+  nameWithType: BuildLegacyInputStringPointToPointInputValidator
+  fullName: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
+- uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
+  commentId: T:HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
+  href: HCMUtils.Validators.BuildLegacyInputStringInputValidator-1.html
+  name: BuildLegacyInputStringInputValidator<TCalculationType>
+  nameWithType: BuildLegacyInputStringInputValidator<TCalculationType>
+  fullName: HCMUtils.Validators.BuildLegacyInputStringInputValidator<TCalculationType>
+  nameWithType.vb: BuildLegacyInputStringInputValidator(Of TCalculationType)
+  fullName.vb: HCMUtils.Validators.BuildLegacyInputStringInputValidator(Of TCalculationType)
+  name.vb: BuildLegacyInputStringInputValidator(Of TCalculationType)
+  spec.csharp:
+  - uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
+    name: BuildLegacyInputStringInputValidator
+    href: HCMUtils.Validators.BuildLegacyInputStringInputValidator-1.html
+  - name: <
+  - name: TCalculationType
+  - name: '>'
+  spec.vb:
+  - uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
+    name: BuildLegacyInputStringInputValidator
+    href: HCMUtils.Validators.BuildLegacyInputStringInputValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCalculationType
+  - name: )

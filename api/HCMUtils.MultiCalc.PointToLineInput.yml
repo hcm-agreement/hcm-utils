@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/PointToLineInput.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: PointToLineInput
     path: src/HCMUtils/MultiCalc/PointToLineInput.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/PointToLineInput.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: .ctor
     path: src/HCMUtils/MultiCalc/PointToLineInput.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/PointToLineInput.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: DistanceToBorderline
     path: src/HCMUtils/MultiCalc/PointToLineInput.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/PointToLineInput.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TargetCountry
     path: src/HCMUtils/MultiCalc/PointToLineInput.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/PointToLineInput.cs
-      branch: main
+      branch: validate-legacy-string-input
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: MaxCrossBorderRange
     path: src/HCMUtils/MultiCalc/PointToLineInput.cs
