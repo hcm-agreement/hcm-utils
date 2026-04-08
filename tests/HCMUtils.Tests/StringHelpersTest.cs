@@ -1,5 +1,6 @@
 namespace HCMUtils.Tests;
 
+using FluentValidation;
 using HCMUtils;
 using HCMUtils.Types;
 
@@ -184,6 +185,49 @@ public class StringHelpersTest
     {
         Assert.Equal("W", StringHelpers.ToTemperatureString(Temperature.Warm));
         Assert.Equal("C", StringHelpers.ToTemperatureString(Temperature.Cold));
+    }
+
+    [Fact]
+    public void ValidatesLegacyInputStringInputsCorrectly()
+    {
+        Assert.Throws<ValidationException>(() => StringHelpers.BuildLegacyInputString(
+            new BuildLegacyInputStringPointToPointInput(
+                (8.22, 51.7625),
+                (18.22, 52.7625),
+                10_000, // too much
+                -1000, // too little
+                ("000ND001", "x123AB56"), // both too long
+                123.45, // too much
+                -100.98, // too little
+                10_000, // too much
+                -1_000, // too little
+                GainType.Isotropic,
+                1126.22, // too much
+                400_300_800_000_000, // too much
+                true,
+                Temperature.Warm,
+                112_320, // too much
+                -18_123, // too little
+                1210.2, // too much
+                -1, // too little
+                "13M00G7WEF", // too long
+                "15M00G7WEF", // too long
+                ("A000ND00", "1000ND00"), // both too long
+                -112.4, // too little
+                1_239.2, // too much
+                GainType.Dipole,
+                110.0, // too much
+                122.0, // too much
+                -2.1, // too little
+                12_345, // too much
+                Country.Austria,
+                Country.Germany,
+                "D:\\TOPO\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "D:\\BORDER\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "D:\\MORPHO\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            )
+        ));
     }
 
     [Fact]

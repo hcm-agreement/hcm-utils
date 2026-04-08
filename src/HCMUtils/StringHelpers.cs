@@ -2,7 +2,9 @@ namespace HCMUtils;
 
 using System.Globalization;
 using System.Text.RegularExpressions;
+using FluentValidation;
 using HCMUtils.Types;
+using HCMUtils.Validators;
 
 public partial class StringHelpers
 {
@@ -212,48 +214,56 @@ public partial class StringHelpers
     /// <returns>The legacy input string</returns>
     public static string BuildLegacyInputString(
         BuildLegacyInputStringPointToPointInput input
-    ) => ToCoordinatesString(input.TxCoordinates) +
-          ToCoordinatesString(input.RxCoordinates) +
-          (input.TxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
-          (input.RxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
-          input.TxAntennaType.Horizontal.PadLeft(7) +
-          input.TxAntennaType.Vertical.PadLeft(7) +
-          input.TxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          input.TxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          input.TxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
-          input.RxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
-          ToGainTypeString(input.TxGainType) +
-          input.TxPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
-          ToFrequencyString(input.TxFrequency, SIPrefix.M).PadLeft(12) +
-          ToBooleanString(input.ChannelOccupation) +
-          (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
-          input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
-          input.RxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
-          (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
-          ToFrequencyString(input.RxFrequency, SIPrefix.M).PadLeft(12) +
-          input.RxEmissionDesignation.PadLeft(9) +
-          input.TxEmissionDesignation.PadLeft(9) +
-          input.RxAntennaType.Horizontal.PadLeft(7) +
-          input.RxAntennaType.Vertical.PadLeft(7) +
-          input.RxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          input.RxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          ToGainTypeString(input.RxGainType) +
-          input.RxGain.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
-          input.DepolarizationLoss.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
-          (input.PermissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
-          (input.FrequencyDifferenceCorrectionFactor?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
-          ITUHelpers.ToITULetterCodeString(input.RxCountry).PadRight(3, '_') +
-          ITUHelpers.ToITULetterCodeString(input.TxCountry).PadRight(3, '_') +
-          "".PadLeft(3) +
-          input.TopoPath.PadRight(63) +
-          input.BorderPath.PadRight(63) +
-          input.MorphoPath.PadRight(63) +
-          "".PadLeft(6) +
-          "".PadLeft(20) +
-          "".PadLeft(15) +
-          "".PadLeft(15) +
-          input.DebugOutputPath;
+    )
+    {
+        new BuildLegacyInputStringPointToPointInputValidator().Validate(input, options =>
+        {
+            options.IncludeAllRuleSets();
+            options.ThrowOnFailures();
+        });
 
+        return ToCoordinatesString(input.TxCoordinates) +
+            ToCoordinatesString(input.RxCoordinates) +
+            (input.TxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+            (input.RxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+            input.TxAntennaType.Horizontal.PadLeft(7) +
+            input.TxAntennaType.Vertical.PadLeft(7) +
+            input.TxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+            input.TxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+            input.TxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
+            input.RxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
+            ToGainTypeString(input.TxGainType) +
+            input.TxPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
+            ToFrequencyString(input.TxFrequency, SIPrefix.M).PadLeft(12) +
+            ToBooleanString(input.ChannelOccupation) +
+            (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
+            input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+            input.RxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+            (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+            ToFrequencyString(input.RxFrequency, SIPrefix.M).PadLeft(12) +
+            input.RxEmissionDesignation.PadLeft(9) +
+            input.TxEmissionDesignation.PadLeft(9) +
+            input.RxAntennaType.Horizontal.PadLeft(7) +
+            input.RxAntennaType.Vertical.PadLeft(7) +
+            input.RxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+            input.RxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+            ToGainTypeString(input.RxGainType) +
+            input.RxGain.ToString("##.0", CultureInfo.InvariantCulture).PadLeft(4) +
+            input.DepolarizationLoss.ToString("##.0", CultureInfo.InvariantCulture).PadLeft(4) +
+            (input.PermissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+            (input.FrequencyDifferenceCorrectionFactor?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+            ITUHelpers.ToITULetterCodeString(input.RxCountry).PadRight(3, '_') +
+            ITUHelpers.ToITULetterCodeString(input.TxCountry).PadRight(3, '_') +
+            "".PadLeft(3) +
+            input.TopoPath.PadRight(63) +
+            input.BorderPath.PadRight(63) +
+            input.MorphoPath.PadRight(63) +
+            "".PadLeft(6) +
+            "".PadLeft(20) +
+            "".PadLeft(15) +
+            "".PadLeft(15) +
+            input.DebugOutputPath;
+    }
     /// <summary>
     /// Returns a legacy input string for point-to-line calculations
     /// </summary>
