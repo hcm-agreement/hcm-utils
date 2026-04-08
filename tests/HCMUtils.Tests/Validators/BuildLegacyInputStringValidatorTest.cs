@@ -1,8 +1,8 @@
 namespace HCMUtils.Tests;
 
+using FluentValidation.TestHelper;
 using HCMUtils.Types;
 using HCMUtils.Validators;
-using FluentValidation.TestHelper;
 
 public class BuildLegacyInputStringInputValidatorTest
 {
