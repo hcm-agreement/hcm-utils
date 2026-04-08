@@ -244,81 +244,48 @@ public partial class StringHelpers
     /// <param name="debugOutputPath">An absolute path where a debug output will be placed</param>
     /// <returns>The legacy input string</returns>
     public static string BuildLegacyInputString(
-        (double Lat, double Long) txCoordinates,
-        (double Lat, double Long) rxCoordinates,
-        int? txSiteHeight,
-        int? rxSiteHeight,
-        (string Horizontal, string Vertical) txAntennaType,
-        double txAzimuth,
-        double txElevation,
-        int txAntennaHeight,
-        int rxAntennaHeight,
-        GainType txGainType,
-        double txPower,
-        double txFrequency,
-        bool channelOccupation,
-        Temperature? seaTemperature,
-        int txServiceAreaRadius,
-        int rxServiceAreaRadius,
-        double? distanceOverSea,
-        double rxFrequency,
-        string rxEmissionDesignation,
-        string txEmissionDesignation,
-        (string Horizontal, string Vertical) rxAntennaType,
-        double rxAzimuth,
-        double rxElevation,
-        GainType rxGainType,
-        double rxGain,
-        double depolarizationLoss,
-        double? permissibleFieldStrength,
-        int? frequencyDifferenceCorrectionFactor,
-        Country rxCountry,
-        Country txCountry,
-        string topoPath,
-        string borderPath,
-        string morphoPath,
-        string? debugOutputPath
-    ) => ToCoordinatesString(txCoordinates) +
-          ToCoordinatesString(rxCoordinates) +
-          (txSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
-          (rxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
-          txAntennaType.Horizontal.PadLeft(7) +
-          txAntennaType.Vertical.PadLeft(7) +
-          txAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          txElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          txAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
-          rxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
-          ToGainTypeString(txGainType) +
-          txPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
-          ToFrequencyString(txFrequency, SIPrefix.M).PadLeft(12) +
-          ToBooleanString(channelOccupation) +
-          (seaTemperature == null ? " " : ToTemperatureString((Temperature)seaTemperature)) + // waiting until they fixed dotnet/csharplang#33
-          txServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
-          rxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
-          (distanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
-          ToFrequencyString(rxFrequency, SIPrefix.M).PadLeft(12) +
-          rxEmissionDesignation.PadLeft(9) +
-          txEmissionDesignation.PadLeft(9) +
-          rxAntennaType.Horizontal.PadLeft(7) +
-          rxAntennaType.Vertical.PadLeft(7) +
-          rxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          rxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
-          ToGainTypeString(rxGainType) +
-          rxGain.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
-          depolarizationLoss.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
-          (permissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
-          (frequencyDifferenceCorrectionFactor?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
-          ITUHelpers.ToITULetterCodeString(rxCountry).PadRight(3, '_') +
-          ITUHelpers.ToITULetterCodeString(txCountry).PadRight(3, '_') +
+        BuildLegacyStringPointToPointInput input
+    ) => ToCoordinatesString(input.TxCoordinates) +
+          ToCoordinatesString(input.RxCoordinates) +
+          (input.TxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+          (input.RxSiteHeight?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+          input.TxAntennaType.Horizontal.PadLeft(7) +
+          input.TxAntennaType.Vertical.PadLeft(7) +
+          input.TxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          input.TxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          input.TxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
+          input.RxAntennaHeight.ToString(CultureInfo.InvariantCulture).PadLeft(4) +
+          ToGainTypeString(input.TxGainType) +
+          input.TxPower.ToString("###.00", CultureInfo.InvariantCulture).PadLeft(6) +
+          ToFrequencyString(input.TxFrequency, SIPrefix.M).PadLeft(12) +
+          ToBooleanString(input.ChannelOccupation) +
+          (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
+          input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+          input.RxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
+          (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          ToFrequencyString(input.RxFrequency, SIPrefix.M).PadLeft(12) +
+          input.RxEmissionDesignation.PadLeft(9) +
+          input.TxEmissionDesignation.PadLeft(9) +
+          input.RxAntennaType.Horizontal.PadLeft(7) +
+          input.RxAntennaType.Vertical.PadLeft(7) +
+          input.RxAzimuth.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          input.RxElevation.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) +
+          ToGainTypeString(input.RxGainType) +
+          input.RxGain.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
+          input.DepolarizationLoss.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(4) +
+          (input.PermissibleFieldStrength?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          (input.FrequencyDifferenceCorrectionFactor?.ToString(CultureInfo.InvariantCulture).PadLeft(4) ?? "    ") +
+          ITUHelpers.ToITULetterCodeString(input.RxCountry).PadRight(3, '_') +
+          ITUHelpers.ToITULetterCodeString(input.TxCountry).PadRight(3, '_') +
           "".PadLeft(3) +
-          topoPath.PadRight(63) +
-          borderPath.PadRight(63) +
-          morphoPath.PadRight(63) +
+          input.TopoPath.PadRight(63) +
+          input.BorderPath.PadRight(63) +
+          input.MorphoPath.PadRight(63) +
           "".PadLeft(6) +
           "".PadLeft(20) +
           "".PadLeft(15) +
           "".PadLeft(15) +
-          debugOutputPath;
+          input.DebugOutputPath;
 
     /// <summary>
     /// Returns a legacy input string for point-to-line calculations
