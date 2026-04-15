@@ -4,12 +4,12 @@ using FluentValidation.TestHelper;
 using HCMUtils.Types;
 using HCMUtils.Validators;
 
-public class BuildLegacyStringInputValidatorTest
+public class LegacyInputStringValidatorTest
 {
     [Fact]
     public void ValidatesInputCorrectly()
     {
-        var input = new BuildLegacyInputStringInput(
+        var input = new LegacyInputString(
             (8.22, 51.7625),
             10_000,
             ("x000ND00", "x123AB56"),
@@ -32,7 +32,7 @@ public class BuildLegacyStringInputValidatorTest
             "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         );
 
-        var validator = new BuildLegacyStringInputValidator<BuildLegacyInputStringInput>();
+        var validator = new LegacyInputStringInputValidator<LegacyInputString>();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
         validationResult.ShouldHaveValidationErrorFor(input => input.TxSiteHeight)

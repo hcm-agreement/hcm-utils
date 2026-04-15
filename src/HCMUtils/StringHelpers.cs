@@ -213,10 +213,10 @@ public partial class StringHelpers
     /// <param name="input">The input data to build the string</param>
     /// <returns>The legacy string</returns>
     public static string ToLegacyString(
-        BuildLegacyInputStringPointToPointInput input
+        LegacyPointToPointInputString input
     )
     {
-        new BuildLegacyStringPointToPointInputValidator().Validate(input, options =>
+        new LegacyPointToPointInputStringValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();
@@ -271,10 +271,10 @@ public partial class StringHelpers
     /// <param name="input">The input data to build the string</param>
     /// <returns>The legacy string</returns>
     public static string ToLegacyString(
-        BuildLegacyInputStringPointToLineInput input
+        LegacyPointToLineInputString input
     )
     {
-        new BuildLegacyStringPointToLineInputValidator().Validate(input, options =>
+        new LegacyPointToLineInputStringValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();

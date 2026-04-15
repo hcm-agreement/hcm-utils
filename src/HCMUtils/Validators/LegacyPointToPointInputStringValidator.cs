@@ -3,9 +3,9 @@ namespace HCMUtils.Validators;
 using FluentValidation;
 using HCMUtils.Types;
 
-public class BuildLegacyStringPointToPointInputValidator : BuildLegacyStringInputValidator<BuildLegacyInputStringPointToPointInput>
+public class LegacyPointToPointInputStringValidator : LegacyInputStringInputValidator<LegacyPointToPointInputString>
 {
-    public BuildLegacyStringPointToPointInputValidator()
+    public LegacyPointToPointInputStringValidator()
     {
         this.RuleFor(input => input.RxSiteHeight)
             .ExclusiveBetween(-1_000, 10_000)

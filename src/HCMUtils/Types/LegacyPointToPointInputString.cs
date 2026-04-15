@@ -1,7 +1,7 @@
 namespace HCMUtils.Types;
 
 /// <summary>
-/// Used as an input to StringHelpers.BuildLegacyInputString
+/// Used as an input to StringHelpers.ToLegacyString
 /// </summary>
 /// <param name="TxCoordinates"></param>
 /// <param name="RxCoordinates"></param>
@@ -37,7 +37,7 @@ namespace HCMUtils.Types;
 /// <param name="BorderPath">An absolute path where to find the border data</param>
 /// <param name="MorphoPath">An absolute path where to find the morpho data</param>
 /// <param name="DebugOutputPath">An absolute path where a debug output will be placed</param>
-public record BuildLegacyInputStringPointToPointInput(
+public record LegacyPointToPointInputString(
     (double Lat, double Long) TxCoordinates,
     (double Lat, double Long) RxCoordinates,
     int? TxSiteHeight,
@@ -72,7 +72,7 @@ public record BuildLegacyInputStringPointToPointInput(
     string BorderPath,
     string MorphoPath,
     string? DebugOutputPath
-) : BuildLegacyInputStringInput(
+) : LegacyInputString(
     TxCoordinates,
     TxSiteHeight,
     TxAntennaType,

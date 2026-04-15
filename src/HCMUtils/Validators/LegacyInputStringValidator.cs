@@ -3,9 +3,9 @@ namespace HCMUtils.Validators;
 using FluentValidation;
 using HCMUtils.Types;
 
-public class BuildLegacyStringInputValidator<TCalculationType> : AbstractValidator<TCalculationType> where TCalculationType : BuildLegacyInputStringInput
+public class LegacyInputStringInputValidator<TCalculationType> : AbstractValidator<TCalculationType> where TCalculationType : LegacyInputString
 {
-    public BuildLegacyStringInputValidator()
+    public LegacyInputStringInputValidator()
     {
         this.RuleFor(input => input.TxSiteHeight)
             .ExclusiveBetween(-1_000, 10_000)

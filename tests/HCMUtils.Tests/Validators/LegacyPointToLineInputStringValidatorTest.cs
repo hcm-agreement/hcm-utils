@@ -4,12 +4,12 @@ using FluentValidation.TestHelper;
 using HCMUtils.Types;
 using HCMUtils.Validators;
 
-public class BuildLegacyStringPointToLineInputValidatorTest
+public class LegacyPointToLineInputStringValidatorTest
 {
     [Fact]
     public void ValidatesInputCorrectly()
     {
-        var input = new BuildLegacyInputStringPointToLineInput(
+        var input = new LegacyPointToLineInputString(
             (8.22, 51.7625),
             10_000,
             ("x000ND00", "x123AB56"),
@@ -34,7 +34,7 @@ public class BuildLegacyStringPointToLineInputValidatorTest
             "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         );
 
-        var validator = new BuildLegacyStringPointToLineInputValidator();
+        var validator = new LegacyPointToLineInputStringValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
         validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange)
