@@ -208,15 +208,15 @@ public partial class StringHelpers
     public static string ToTemperatureString(Temperature temperature) => temperature == Temperature.Warm ? "W" : "C";
 
     /// <summary>
-    /// Returns a legacy input string for point-to-point calculations
+    /// Returns a legacy string for point-to-point calculations
     /// </summary>
     /// <param name="input">The input data to build the string</param>
-    /// <returns>The legacy input string</returns>
-    public static string BuildLegacyInputString(
+    /// <returns>The legacy string</returns>
+    public static string ToLegacyString(
         BuildLegacyInputStringPointToPointInput input
     )
     {
-        new BuildLegacyInputStringPointToPointInputValidator().Validate(input, options =>
+        new BuildLegacyStringPointToPointInputValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();
@@ -266,15 +266,15 @@ public partial class StringHelpers
     }
 
     /// <summary>
-    /// Returns a legacy input string for point-to-line calculations
+    /// Returns a legacy string for point-to-line calculations
     /// </summary>
     /// <param name="input">The input data to build the string</param>
-    /// <returns>The legacy input string</returns>
-    public static string BuildLegacyInputString(
+    /// <returns>The legacy string</returns>
+    public static string ToLegacyString(
         BuildLegacyInputStringPointToLineInput input
     )
     {
-        new BuildLegacyInputStringPointToLineInputValidator().Validate(input, options =>
+        new BuildLegacyStringPointToLineInputValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();

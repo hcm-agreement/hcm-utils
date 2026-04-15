@@ -4,7 +4,7 @@ using FluentValidation.TestHelper;
 using HCMUtils.Types;
 using HCMUtils.Validators;
 
-public class BuildLegacyInputStringPointToLineInputValidatorTest
+public class BuildLegacyStringPointToLineInputValidatorTest
 {
     [Fact]
     public void ValidatesInputCorrectly()
@@ -34,7 +34,7 @@ public class BuildLegacyInputStringPointToLineInputValidatorTest
             "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         );
 
-        var validator = new BuildLegacyInputStringPointToLineInputValidator();
+        var validator = new BuildLegacyStringPointToLineInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
         validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange)

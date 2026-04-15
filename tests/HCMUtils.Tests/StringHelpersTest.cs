@@ -188,9 +188,9 @@ public class StringHelpersTest
     }
 
     [Fact]
-    public void ValidatesLegacyInputStringInputsCorrectly()
+    public void ValidatesLegacyStringInputsCorrectly()
     {
-        Assert.Throws<ValidationException>(() => StringHelpers.BuildLegacyInputString(
+        Assert.Throws<ValidationException>(() => StringHelpers.ToLegacyString(
             new BuildLegacyInputStringPointToPointInput(
                 (8.22, 51.7625),
                 (18.22, 52.7625),
@@ -229,7 +229,7 @@ public class StringHelpersTest
             )
         ));
 
-        Assert.Throws<ValidationException>(() => StringHelpers.BuildLegacyInputString(
+        Assert.Throws<ValidationException>(() => StringHelpers.ToLegacyString(
             new BuildLegacyInputStringPointToLineInput(
                 (8.22, 51.7625),
                 10_000,
@@ -258,12 +258,12 @@ public class StringHelpersTest
     }
 
     [Fact]
-    public void BuildsLegacyStringsCorrectly()
+    public void ConvertsLegacyStringsCorrectly()
     {
         // point to line
         Assert.Equal(
             "008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
-            StringHelpers.BuildLegacyInputString(
+            StringHelpers.ToLegacyString(
                 new BuildLegacyInputStringPointToLineInput(
                     (8.22, 51.7625),
                     24,
@@ -294,7 +294,7 @@ public class StringHelpersTest
         // point to point
         Assert.Equal(
             "008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
-            StringHelpers.BuildLegacyInputString(
+            StringHelpers.ToLegacyString(
                 new BuildLegacyInputStringPointToPointInput(
                     (8.22, 51.7625),
                     (18.22, 52.7625),
@@ -338,7 +338,7 @@ public class StringHelpersTest
         // point to line
         Assert.Equal(
             "008E131251N4545                       000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1    20                               5M00G7WEF                                          AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
-            StringHelpers.BuildLegacyInputString(
+            StringHelpers.ToLegacyString(
                 new BuildLegacyInputStringPointToLineInput(
                     (8.22, 51.7625),
                     null,
@@ -369,7 +369,7 @@ public class StringHelpersTest
         // point to point
         Assert.Equal(
             "008E131251N4545018E131252N4545        000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1    20   18      8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0         AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
-            StringHelpers.BuildLegacyInputString(
+            StringHelpers.ToLegacyString(
                 new BuildLegacyInputStringPointToPointInput(
                     (8.22, 51.7625),
                     (18.22, 52.7625),

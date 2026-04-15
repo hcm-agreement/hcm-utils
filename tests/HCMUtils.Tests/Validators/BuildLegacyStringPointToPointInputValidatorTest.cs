@@ -4,7 +4,7 @@ using FluentValidation.TestHelper;
 using HCMUtils.Types;
 using HCMUtils.Validators;
 
-public class BuildLegacyInputStringPointToPointInputValidatorTest
+public class BuildLegacyStringPointToPointInputValidatorTest
 {
     [Fact]
     public void ValidatesInputCorrectly()
@@ -46,7 +46,7 @@ public class BuildLegacyInputStringPointToPointInputValidatorTest
             "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         );
 
-        var validator = new BuildLegacyInputStringPointToPointInputValidator();
+        var validator = new BuildLegacyStringPointToPointInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
         validationResult.ShouldHaveValidationErrorFor(input => input.RxSiteHeight)
