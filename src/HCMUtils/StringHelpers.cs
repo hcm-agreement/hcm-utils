@@ -213,10 +213,10 @@ public partial class StringHelpers
     /// <param name="input">The input data to build the string</param>
     /// <returns>The legacy string</returns>
     public static string ToLegacyString(
-        LegacyPointToPointInputString input
+        LegacyPointToPointInput input
     )
     {
-        new LegacyPointToPointInputStringValidator().Validate(input, options =>
+        new LegacyPointToPointInputValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();
@@ -271,10 +271,10 @@ public partial class StringHelpers
     /// <param name="input">The input data to build the string</param>
     /// <returns>The legacy string</returns>
     public static string ToLegacyString(
-        LegacyPointToLineInputString input
+        LegacyPointToLineInput input
     )
     {
-        new LegacyPointToLineInputStringValidator().Validate(input, options =>
+        new LegacyPointToLineInputValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();
@@ -320,5 +320,78 @@ public partial class StringHelpers
           "".PadLeft(15) +
           "".PadLeft(15) +
           input.DebugOutputPath;
+    }
+
+    public static LegacyInput ParseLegacyInputString(string input)
+    {
+        // TODO validate
+
+        if (input[15..31].Trim().Length == 0)
+        {
+            return new LegacyPointToLineInput(
+                ParseCoordinates(input[..15]),
+                int.TryParse(input[30..34], CultureInfo.InvariantCulture, out var txSiteHeight) ? txSiteHeight : null,
+                (input[38..45], input[45..52]),
+                double.Parse(input[52..57], CultureInfo.InvariantCulture),
+                double.Parse(input[57..62], CultureInfo.InvariantCulture),
+                int.Parse(input[62..66], CultureInfo.InvariantCulture),
+                ParseGainType(input[70..71]),
+                double.Parse(input[71..77], CultureInfo.InvariantCulture),
+                ParseSINumber(input[77..89]),
+                ParseBoolean(input[89..90]),
+                input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
+                int.Parse(input[91..96], CultureInfo.InvariantCulture),
+                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                input[127..136],
+                double.TryParse(input[169..174], CultureInfo.InvariantCulture, out var permissibleFieldStrength) ? permissibleFieldStrength : null,
+                ITUHelpers.ParseCountry(input[178..181]),
+                ITUHelpers.ParseCountry(input[181..184]),
+                int.Parse(input[184..187], CultureInfo.InvariantCulture),
+                input[187..250].Trim(),
+                input[250..313].Trim(),
+                input[313..376].Trim(),
+                input[432..].Trim().Length > 0 ? input[423..].Trim() : null
+            );
+        }
+        else
+        {
+            return new LegacyPointToPointInput(
+                ParseCoordinates(input[..15]),
+                ParseCoordinates(input[15..30]),
+                int.TryParse(input[30..34], CultureInfo.InvariantCulture, out var txSiteHeight) ? txSiteHeight : null,
+                int.TryParse(input[34..38], CultureInfo.InvariantCulture, out var rxSiteHeight) ? rxSiteHeight : null,
+                (input[38..45], input[45..52]),
+                double.Parse(input[52..57], CultureInfo.InvariantCulture),
+                double.Parse(input[57..62], CultureInfo.InvariantCulture),
+                int.Parse(input[62..66], CultureInfo.InvariantCulture),
+                int.Parse(input[66..70], CultureInfo.InvariantCulture),
+                ParseGainType(input[70..71]),
+                double.Parse(input[71..77], CultureInfo.InvariantCulture),
+                ParseSINumber(input[77..89]),
+                ParseBoolean(input[89..90]),
+                input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
+                int.Parse(input[91..96], CultureInfo.InvariantCulture),
+                int.Parse(input[96..101], CultureInfo.InvariantCulture),
+                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                ParseSINumber(input[106..118]),
+                input[118..127],
+                input[127..136],
+                (input[136..143], input[143..150]),
+                double.Parse(input[150..155], CultureInfo.InvariantCulture),
+                double.Parse(input[155..160], CultureInfo.InvariantCulture),
+                ParseGainType(input[160..161]),
+                double.Parse(input[161..165], CultureInfo.InvariantCulture),
+                double.Parse(input[165..169], CultureInfo.InvariantCulture),
+                double.TryParse(input[169..174], CultureInfo.InvariantCulture, out var permissibleFieldStrength) ? permissibleFieldStrength : null,
+                int.TryParse(input[174..178], CultureInfo.InvariantCulture, out var frequencyDifferenceCorrectionFactor) ? frequencyDifferenceCorrectionFactor : null,
+                ITUHelpers.ParseCountry(input[178..181]),
+                ITUHelpers.ParseCountry(input[181..184]),
+                input[187..250].Trim(),
+                input[250..313].Trim(),
+                input[313..376].Trim(),
+                input[432..].Trim().Length > 0 ? input[423..].Trim() : null
+            );
+        }
+
     }
 }

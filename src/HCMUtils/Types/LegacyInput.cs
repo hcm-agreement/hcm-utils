@@ -25,7 +25,7 @@ namespace HCMUtils.Types;
 /// <param name="BorderPath">An absolute path where to find the border data</param>
 /// <param name="MorphoPath">An absolute path where to find the morpho data</param>
 /// <param name="DebugOutputPath">An absolute path where a debug output will be placed</param>
-public record LegacyInputString(
+public record LegacyInput(
     (double Lat, double Long) TxCoordinates,
     int? TxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
