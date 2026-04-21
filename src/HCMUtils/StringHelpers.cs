@@ -322,6 +322,68 @@ public partial class StringHelpers
           input.DebugOutputPath;
     }
 
+    [GeneratedRegex(@"(?<txSiteHeightFromDatabase>F|T)(?<txSiteHeightDifferentFromDatabase>F|T)(?<txSiteHeightLargeDifferenceFromDatabase>F|T)(?<frequencyOutOfRange>F|T)(?<permissibleFieldStrengthInputUsed>F|T)(?<maxCrossBorderRangeInputUsed>F|T)(?<serviceAreasOverlapping>F|T)(?<rxSiteHeightFromDatabase>F|T)(?<rxSiteHeightDifferentFromDatabase>F|T)(?<rxSiteHeightLargeDifferenceFromDatabase>F|T)(?<freeSpaceFieldStrengthUsedBecauseSmallDistance>F|T)(?<freeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree>F|T)(?<distanceOverSeaLargerThanDistanceBetweenTxRx>F|T)(?<frequencyDifferenceCorrectionFactorInputUsed>F|T)(?<frequencyDifferenceOutOfRange>F|T)(?<distanceOverSeaReset>F|T)(?<txChannelSpacingOutOfRange>F|T)(?<correctionFactors380400Used>F|T)")]
+    internal static partial Regex InfoValuesRegex();
+
+    /// <summary>
+    /// Parses a string of info values
+    /// </summary>
+    /// <param name="input">A string of at least 18 characters being either `T` or `F`</param>
+    /// <returns>The parsed info values</returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static InfoValues ParseInfoValues(string input)
+    {
+        var match = InfoValuesRegex().Match(input.ToUpperInvariant());
+        if (!match.Success)
+        {
+            throw new ArgumentException($"Unable to parse input: `{input}`");
+        }
+
+        return new InfoValues(
+            match.Groups["txSiteHeightFromDatabase"].Value == "T",
+            match.Groups["txSiteHeightDifferentFromDatabase"].Value == "T",
+            match.Groups["txSiteHeightLargeDifferenceFromDatabase"].Value == "T",
+            match.Groups["frequencyOutOfRange"].Value == "T",
+            match.Groups["permissibleFieldStrengthInputUsed"].Value == "T",
+            match.Groups["maxCrossBorderRangeInputUsed"].Value == "T",
+            match.Groups["serviceAreasOverlapping"].Value == "T",
+            match.Groups["rxSiteHeightFromDatabase"].Value == "T",
+            match.Groups["rxSiteHeightDifferentFromDatabase"].Value == "T",
+            match.Groups["rxSiteHeightLargeDifferenceFromDatabase"].Value == "T",
+            match.Groups["freeSpaceFieldStrengthUsedBecauseSmallDistance"].Value == "T",
+            match.Groups["freeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree"].Value == "T",
+            match.Groups["distanceOverSeaLargerThanDistanceBetweenTxRx"].Value == "T",
+            match.Groups["frequencyDifferenceCorrectionFactorInputUsed"].Value == "T",
+            match.Groups["frequencyDifferenceOutOfRange"].Value == "T",
+            match.Groups["distanceOverSeaReset"].Value == "T",
+            match.Groups["txChannelSpacingOutOfRange"].Value == "T",
+            match.Groups["correctionFactors380400Used"].Value == "T"
+        );
+    }
+
+    /// <summary>
+    /// Parses a legacy output string, including the calculated tx/rx coordinates, version and info values
+    /// </summary>
+    /// <param name="outputString"></param>
+    /// <returns>The parsed output string including the input it was read out of</returns>
+    public static LegacyOutput ParseLegacyOutputString(string outputString)
+    {
+        var input = ParseLegacyInputString(outputString);
+
+        return new LegacyOutput(
+            input,
+            outputString[376..382].Trim(),
+            ParseCoordinates(outputString[402..417]),
+            ParseCoordinates(outputString[417..432]),
+            ParseInfoValues(outputString[382..402])
+        );
+    }
+
+    /// <summary>
+    /// Parses a legacy input string
+    /// </summary>
+    /// <param name="input">The legacy input string</param>
+    /// <returns>A legacy input containing the parsed values</returns>
     public static LegacyInput ParseLegacyInputString(string input)
     {
         // TODO validate
@@ -350,7 +412,7 @@ public partial class StringHelpers
                 input[187..250].Trim(),
                 input[250..313].Trim(),
                 input[313..376].Trim(),
-                input[432..].Trim().Length > 0 ? input[423..].Trim() : null
+                input[432..].Trim().Length > 0 ? input[432..].Trim() : null
             );
         }
         else
@@ -389,7 +451,7 @@ public partial class StringHelpers
                 input[187..250].Trim(),
                 input[250..313].Trim(),
                 input[313..376].Trim(),
-                input[432..].Trim().Length > 0 ? input[423..].Trim() : null
+                input[432..].Trim().Length > 0 ? input[432..].Trim() : null
             );
         }
 

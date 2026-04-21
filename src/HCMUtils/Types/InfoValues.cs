@@ -6,7 +6,7 @@ namespace HCMUtils.Types;
 /// <param name="TxSiteHeightFromDatabase">No height of Tx site is given or Tx is mobile; height is taken from the terrain database</param>
 /// <param name="TxSiteHeightDifferentFromDatabase">Height of Tx site differs from height of terrain database</param>
 /// <param name="TxSiteHeightLargeDifferenceFromDatabase">Height of Tx site differs more than 10%, calculated values may be (extremely) wrong!</param>
-/// <param name="FrequencyOutOfRangeAnnex">Frequency out of range of table in Annex 1</param>
+/// <param name="FrequencyOutOfRange">Frequency out of range of table in Annex 1</param>
 /// <param name="PermissibleFieldStrengthInputUsed">Input value of permissible field strength is used</param>
 /// <param name="MaxCrossBorderRangeInputUsed">Input value of maximum cross border range is used</param>
 /// <param name="ServiceAreasOverlapping">Distance between Tx and Rx is less than both service area radiuses; field strength is set to 999.9</param>
@@ -25,7 +25,7 @@ public record InfoValues(
     bool TxSiteHeightFromDatabase,
     bool TxSiteHeightDifferentFromDatabase,
     bool TxSiteHeightLargeDifferenceFromDatabase,
-    bool FrequencyOutOfRangeAnnex,
+    bool FrequencyOutOfRange,
     bool PermissibleFieldStrengthInputUsed,
     bool MaxCrossBorderRangeInputUsed,
     bool ServiceAreasOverlapping,
