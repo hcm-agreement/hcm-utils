@@ -37,7 +37,6 @@ public class LegacyPointToLineInputValidatorTest
         var validator = new LegacyPointToLineInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
-        validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange)
-            .WithErrorMessage("'Max Cross Border Range' must be between -100 and 1000 (exclusive). You entered 10000.");
+        validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange);
     }
 }

@@ -22,7 +22,7 @@ public class LegacyInputValidator<TLegacyInput> : AbstractValidator<TLegacyInput
         this.RuleFor(input => input.TxElevation)
             .ExclusiveBetween(-100.0, 1_000.0);
         this.RuleFor(input => input.TxAntennaHeight)
-            .ExclusiveBetween(0, 10_000);
+            .InclusiveBetween(0, 9_999);
         this.RuleFor(input => input.TxPower)
             .ExclusiveBetween(0, 1000.00);
         this.RuleFor(input => input.TxFrequency)

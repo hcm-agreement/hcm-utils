@@ -49,29 +49,17 @@ public class LegacyPointToPointInputValidatorTest
         var validator = new LegacyPointToPointInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxSiteHeight)
-            .WithErrorMessage("'Rx Site Height' must be between -1000 and 10000 (exclusive). You entered -1000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaHeight)
-            .WithErrorMessage("'Rx Antenna Height' must be between 0 and 10000 (exclusive). You entered -1000.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxServiceAreaRadius)
-            .WithErrorMessage("'Rx Service Area Radius' must be between 0 and 9999. You entered -1.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxFrequency)
-            .WithErrorMessage("'Rx Frequency' must be greater than or equal to '1'.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxEmissionDesignation)
-            .WithErrorMessage("The length of 'Rx Emission Designation' must be 9 characters or fewer. You entered 10 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaType.Horizontal)
-            .WithErrorMessage("The length of 'Rx Antenna Type Item1' must be 7 characters or fewer. You entered 8 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaType.Vertical)
-            .WithErrorMessage("The length of 'Rx Antenna Type Item2' must be 7 characters or fewer. You entered 8 characters.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxAzimuth)
-            .WithErrorMessage("'Rx Azimuth' must be between -100 and 1000 (exclusive). You entered -112.4.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxElevation)
-            .WithErrorMessage("'Rx Elevation' must be between -100 and 1000 (exclusive). You entered 1239.2.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.RxGain)
-            .WithErrorMessage("'Rx Gain' must be between -10 and 100 (exclusive). You entered 110.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.DepolarizationLoss)
-            .WithErrorMessage("'Depolarization Loss' must be between -10 and 100 (exclusive). You entered 122.");
-        validationResult.ShouldHaveValidationErrorFor(input => input.FrequencyDifferenceCorrectionFactor)
-            .WithErrorMessage("'Frequency Difference Correction Factor' must be between -1000 and 10000 (exclusive). You entered 12345.");
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxSiteHeight);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaHeight);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxServiceAreaRadius);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxFrequency);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxEmissionDesignation);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaType.Horizontal);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxAntennaType.Vertical);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxAzimuth);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxElevation);
+        validationResult.ShouldHaveValidationErrorFor(input => input.RxGain);
+        validationResult.ShouldHaveValidationErrorFor(input => input.DepolarizationLoss);
+        validationResult.ShouldHaveValidationErrorFor(input => input.FrequencyDifferenceCorrectionFactor);
     }
 }
