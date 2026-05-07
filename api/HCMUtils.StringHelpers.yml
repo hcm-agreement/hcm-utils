@@ -5,13 +5,14 @@ items:
   id: StringHelpers
   parent: HCMUtils
   children:
-  - HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
-  - HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
   - HCMUtils.StringHelpers.GetSIMultiplier(HCMUtils.Types.SIPrefix)
   - HCMUtils.StringHelpers.ParseBoolean(System.String)
   - HCMUtils.StringHelpers.ParseCoordinates(System.String)
   - HCMUtils.StringHelpers.ParseDMSString(System.String)
   - HCMUtils.StringHelpers.ParseGainType(System.String)
+  - HCMUtils.StringHelpers.ParseInfoValues(System.String)
+  - HCMUtils.StringHelpers.ParseLegacyInputString(System.String)
+  - HCMUtils.StringHelpers.ParseLegacyOutputString(System.String)
   - HCMUtils.StringHelpers.ParseModeType(System.String)
   - HCMUtils.StringHelpers.ParseSINumber(System.String)
   - HCMUtils.StringHelpers.ParseSIPrefix(System.String)
@@ -21,6 +22,8 @@ items:
   - HCMUtils.StringHelpers.ToDMSString(System.Double,System.Boolean)
   - HCMUtils.StringHelpers.ToFrequencyString(System.Double,HCMUtils.Types.SIPrefix)
   - HCMUtils.StringHelpers.ToGainTypeString(HCMUtils.Types.GainType)
+  - HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToLineInput)
+  - HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToPointInput)
   - HCMUtils.StringHelpers.ToSIPrefixString(HCMUtils.Types.SIPrefix)
   - HCMUtils.StringHelpers.ToTemperatureString(HCMUtils.Types.Temperature)
   langs:
@@ -33,7 +36,7 @@ items:
   source:
     id: StringHelpers
     path: D:\projects\HCMUtils\src\HCMUtils\obj\Release\net10.0\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs
-    startLine: 56
+    startLine: 78
   assemblies:
   - HCMUtils
   namespace: HCMUtils
@@ -64,7 +67,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseDMSString
     path: src/HCMUtils/StringHelpers.cs
@@ -102,7 +105,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseCoordinates
     path: src/HCMUtils/StringHelpers.cs
@@ -140,7 +143,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseSINumber
     path: src/HCMUtils/StringHelpers.cs
@@ -183,7 +186,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseSIPrefix
     path: src/HCMUtils/StringHelpers.cs
@@ -225,7 +228,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: GetSIMultiplier
     path: src/HCMUtils/StringHelpers.cs
@@ -264,7 +267,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseBoolean
     path: src/HCMUtils/StringHelpers.cs
@@ -302,7 +305,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseTemperature
     path: src/HCMUtils/StringHelpers.cs
@@ -340,7 +343,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseModeType
     path: src/HCMUtils/StringHelpers.cs
@@ -378,7 +381,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseGainType
     path: src/HCMUtils/StringHelpers.cs
@@ -420,7 +423,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToDMSString
     path: src/HCMUtils/StringHelpers.cs
@@ -461,7 +464,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToCoordinatesString
     path: src/HCMUtils/StringHelpers.cs
@@ -499,7 +502,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToGainTypeString
     path: src/HCMUtils/StringHelpers.cs
@@ -534,7 +537,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToSIPrefixString
     path: src/HCMUtils/StringHelpers.cs
@@ -573,7 +576,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToFrequencyString
     path: src/HCMUtils/StringHelpers.cs
@@ -614,7 +617,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToBooleanString
     path: src/HCMUtils/StringHelpers.cs
@@ -652,7 +655,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToTemperatureString
     path: src/HCMUtils/StringHelpers.cs
@@ -669,76 +672,194 @@ items:
       type: System.String
     content.vb: Public Shared Function ToTemperatureString(temperature As Temperature) As String
   overload: HCMUtils.StringHelpers.ToTemperatureString*
-- uid: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
-  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
-  id: BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
+- uid: HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToPointInput)
+  commentId: M:HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToPointInput)
+  id: ToLegacyString(HCMUtils.Types.LegacyPointToPointInput)
   parent: HCMUtils.StringHelpers
   langs:
   - csharp
   - vb
-  name: BuildLegacyInputString(BuildLegacyInputStringPointToPointInput)
-  nameWithType: StringHelpers.BuildLegacyInputString(BuildLegacyInputStringPointToPointInput)
-  fullName: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToPointInput)
+  name: ToLegacyString(LegacyPointToPointInput)
+  nameWithType: StringHelpers.ToLegacyString(LegacyPointToPointInput)
+  fullName: HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToPointInput)
   type: Method
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
-    id: BuildLegacyInputString
+    id: ToLegacyString
     path: src/HCMUtils/StringHelpers.cs
     startLine: 214
   assemblies:
   - HCMUtils
   namespace: HCMUtils
-  summary: Returns a legacy input string for point-to-point calculations
+  summary: Returns a legacy string for point-to-point calculations
   example: []
   syntax:
-    content: public static string BuildLegacyInputString(BuildLegacyInputStringPointToPointInput input)
+    content: public static string ToLegacyString(LegacyPointToPointInput input)
     parameters:
     - id: input
-      type: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+      type: HCMUtils.Types.LegacyPointToPointInput
       description: The input data to build the string
     return:
       type: System.String
-      description: The legacy input string
-    content.vb: Public Shared Function BuildLegacyInputString(input As BuildLegacyInputStringPointToPointInput) As String
-  overload: HCMUtils.StringHelpers.BuildLegacyInputString*
-- uid: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
-  commentId: M:HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
-  id: BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
+      description: The legacy string
+    content.vb: Public Shared Function ToLegacyString(input As LegacyPointToPointInput) As String
+  overload: HCMUtils.StringHelpers.ToLegacyString*
+- uid: HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToLineInput)
+  commentId: M:HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToLineInput)
+  id: ToLegacyString(HCMUtils.Types.LegacyPointToLineInput)
   parent: HCMUtils.StringHelpers
   langs:
   - csharp
   - vb
-  name: BuildLegacyInputString(BuildLegacyInputStringPointToLineInput)
-  nameWithType: StringHelpers.BuildLegacyInputString(BuildLegacyInputStringPointToLineInput)
-  fullName: HCMUtils.StringHelpers.BuildLegacyInputString(HCMUtils.Types.BuildLegacyInputStringPointToLineInput)
+  name: ToLegacyString(LegacyPointToLineInput)
+  nameWithType: StringHelpers.ToLegacyString(LegacyPointToLineInput)
+  fullName: HCMUtils.StringHelpers.ToLegacyString(HCMUtils.Types.LegacyPointToLineInput)
   type: Method
   source:
     remote:
       path: src/HCMUtils/StringHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
-    id: BuildLegacyInputString
+    id: ToLegacyString
     path: src/HCMUtils/StringHelpers.cs
     startLine: 272
   assemblies:
   - HCMUtils
   namespace: HCMUtils
-  summary: Returns a legacy input string for point-to-line calculations
+  summary: Returns a legacy string for point-to-line calculations
   example: []
   syntax:
-    content: public static string BuildLegacyInputString(BuildLegacyInputStringPointToLineInput input)
+    content: public static string ToLegacyString(LegacyPointToLineInput input)
     parameters:
     - id: input
-      type: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+      type: HCMUtils.Types.LegacyPointToLineInput
       description: The input data to build the string
     return:
       type: System.String
+      description: The legacy string
+    content.vb: Public Shared Function ToLegacyString(input As LegacyPointToLineInput) As String
+  overload: HCMUtils.StringHelpers.ToLegacyString*
+- uid: HCMUtils.StringHelpers.ParseInfoValues(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseInfoValues(System.String)
+  id: ParseInfoValues(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseInfoValues(string)
+  nameWithType: StringHelpers.ParseInfoValues(string)
+  fullName: HCMUtils.StringHelpers.ParseInfoValues(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseInfoValues
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 333
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a string of info values
+  example: []
+  syntax:
+    content: public static InfoValues ParseInfoValues(string input)
+    parameters:
+    - id: input
+      type: System.String
+      description: A string of at least 18 characters being either `T` or `F`
+    return:
+      type: HCMUtils.Types.InfoValues
+      description: The parsed info values
+    content.vb: Public Shared Function ParseInfoValues(input As String) As InfoValues
+  overload: HCMUtils.StringHelpers.ParseInfoValues*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: ''
+  nameWithType.vb: StringHelpers.ParseInfoValues(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseInfoValues(String)
+  name.vb: ParseInfoValues(String)
+- uid: HCMUtils.StringHelpers.ParseLegacyOutputString(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseLegacyOutputString(System.String)
+  id: ParseLegacyOutputString(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseLegacyOutputString(string)
+  nameWithType: StringHelpers.ParseLegacyOutputString(string)
+  fullName: HCMUtils.StringHelpers.ParseLegacyOutputString(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseLegacyOutputString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 368
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a legacy output string, including the calculated tx/rx coordinates, version and info values
+  example: []
+  syntax:
+    content: public static LegacyOutput ParseLegacyOutputString(string outputString)
+    parameters:
+    - id: outputString
+      type: System.String
+      description: ''
+    return:
+      type: HCMUtils.Types.LegacyOutput
+      description: The parsed output string including the input it was read out of
+    content.vb: Public Shared Function ParseLegacyOutputString(outputString As String) As LegacyOutput
+  overload: HCMUtils.StringHelpers.ParseLegacyOutputString*
+  nameWithType.vb: StringHelpers.ParseLegacyOutputString(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseLegacyOutputString(String)
+  name.vb: ParseLegacyOutputString(String)
+- uid: HCMUtils.StringHelpers.ParseLegacyInputString(System.String)
+  commentId: M:HCMUtils.StringHelpers.ParseLegacyInputString(System.String)
+  id: ParseLegacyInputString(System.String)
+  parent: HCMUtils.StringHelpers
+  langs:
+  - csharp
+  - vb
+  name: ParseLegacyInputString(string)
+  nameWithType: StringHelpers.ParseLegacyInputString(string)
+  fullName: HCMUtils.StringHelpers.ParseLegacyInputString(string)
+  type: Method
+  source:
+    remote:
+      path: src/HCMUtils/StringHelpers.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ParseLegacyInputString
+    path: src/HCMUtils/StringHelpers.cs
+    startLine: 386
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils
+  summary: Parses a legacy input string
+  example: []
+  syntax:
+    content: public static LegacyInput ParseLegacyInputString(string input)
+    parameters:
+    - id: input
+      type: System.String
       description: The legacy input string
-    content.vb: Public Shared Function BuildLegacyInputString(input As BuildLegacyInputStringPointToLineInput) As String
-  overload: HCMUtils.StringHelpers.BuildLegacyInputString*
+    return:
+      type: HCMUtils.Types.LegacyInput
+      description: A legacy input containing the parsed values
+    content.vb: Public Shared Function ParseLegacyInputString(input As String) As LegacyInput
+  overload: HCMUtils.StringHelpers.ParseLegacyInputString*
+  nameWithType.vb: StringHelpers.ParseLegacyInputString(String)
+  fullName.vb: HCMUtils.StringHelpers.ParseLegacyInputString(String)
+  name.vb: ParseLegacyInputString(String)
 references:
 - uid: HCMUtils
   commentId: N:HCMUtils
@@ -1274,23 +1395,62 @@ references:
   name: ToTemperatureString
   nameWithType: StringHelpers.ToTemperatureString
   fullName: HCMUtils.StringHelpers.ToTemperatureString
-- uid: HCMUtils.StringHelpers.BuildLegacyInputString*
-  commentId: Overload:HCMUtils.StringHelpers.BuildLegacyInputString
-  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_BuildLegacyInputString_HCMUtils_Types_BuildLegacyInputStringPointToPointInput_
-  name: BuildLegacyInputString
-  nameWithType: StringHelpers.BuildLegacyInputString
-  fullName: HCMUtils.StringHelpers.BuildLegacyInputString
-- uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
-  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToPointInput
+- uid: HCMUtils.StringHelpers.ToLegacyString*
+  commentId: Overload:HCMUtils.StringHelpers.ToLegacyString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ToLegacyString_HCMUtils_Types_LegacyPointToPointInput_
+  name: ToLegacyString
+  nameWithType: StringHelpers.ToLegacyString
+  fullName: HCMUtils.StringHelpers.ToLegacyString
+- uid: HCMUtils.Types.LegacyPointToPointInput
+  commentId: T:HCMUtils.Types.LegacyPointToPointInput
   parent: HCMUtils.Types
-  href: HCMUtils.Types.BuildLegacyInputStringPointToPointInput.html
-  name: BuildLegacyInputStringPointToPointInput
-  nameWithType: BuildLegacyInputStringPointToPointInput
-  fullName: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
-- uid: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
-  commentId: T:HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  href: HCMUtils.Types.LegacyPointToPointInput.html
+  name: LegacyPointToPointInput
+  nameWithType: LegacyPointToPointInput
+  fullName: HCMUtils.Types.LegacyPointToPointInput
+- uid: HCMUtils.Types.LegacyPointToLineInput
+  commentId: T:HCMUtils.Types.LegacyPointToLineInput
   parent: HCMUtils.Types
-  href: HCMUtils.Types.BuildLegacyInputStringPointToLineInput.html
-  name: BuildLegacyInputStringPointToLineInput
-  nameWithType: BuildLegacyInputStringPointToLineInput
-  fullName: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
+  href: HCMUtils.Types.LegacyPointToLineInput.html
+  name: LegacyPointToLineInput
+  nameWithType: LegacyPointToLineInput
+  fullName: HCMUtils.Types.LegacyPointToLineInput
+- uid: HCMUtils.StringHelpers.ParseInfoValues*
+  commentId: Overload:HCMUtils.StringHelpers.ParseInfoValues
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseInfoValues_System_String_
+  name: ParseInfoValues
+  nameWithType: StringHelpers.ParseInfoValues
+  fullName: HCMUtils.StringHelpers.ParseInfoValues
+- uid: HCMUtils.Types.InfoValues
+  commentId: T:HCMUtils.Types.InfoValues
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.InfoValues.html
+  name: InfoValues
+  nameWithType: InfoValues
+  fullName: HCMUtils.Types.InfoValues
+- uid: HCMUtils.StringHelpers.ParseLegacyOutputString*
+  commentId: Overload:HCMUtils.StringHelpers.ParseLegacyOutputString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseLegacyOutputString_System_String_
+  name: ParseLegacyOutputString
+  nameWithType: StringHelpers.ParseLegacyOutputString
+  fullName: HCMUtils.StringHelpers.ParseLegacyOutputString
+- uid: HCMUtils.Types.LegacyOutput
+  commentId: T:HCMUtils.Types.LegacyOutput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.LegacyOutput.html
+  name: LegacyOutput
+  nameWithType: LegacyOutput
+  fullName: HCMUtils.Types.LegacyOutput
+- uid: HCMUtils.StringHelpers.ParseLegacyInputString*
+  commentId: Overload:HCMUtils.StringHelpers.ParseLegacyInputString
+  href: HCMUtils.StringHelpers.html#HCMUtils_StringHelpers_ParseLegacyInputString_System_String_
+  name: ParseLegacyInputString
+  nameWithType: StringHelpers.ParseLegacyInputString
+  fullName: HCMUtils.StringHelpers.ParseLegacyInputString
+- uid: HCMUtils.Types.LegacyInput
+  commentId: T:HCMUtils.Types.LegacyInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.LegacyInput.html
+  name: LegacyInput
+  nameWithType: LegacyInput
+  fullName: HCMUtils.Types.LegacyInput

@@ -1,0 +1,1032 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.LegacyPointToLineInput
+  commentId: T:HCMUtils.Types.LegacyPointToLineInput
+  id: LegacyPointToLineInput
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.LegacyPointToLineInput.#ctor(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  - HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange
+  - HCMUtils.Types.LegacyPointToLineInput.TargetCountry
+  langs:
+  - csharp
+  - vb
+  name: LegacyPointToLineInput
+  nameWithType: LegacyPointToLineInput
+  fullName: HCMUtils.Types.LegacyPointToLineInput
+  type: Class
+  source:
+    remote:
+      path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: LegacyPointToLineInput
+    path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+    startLine: 27
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Used as an input to StringHelpers.ToLegacyString
+  example: []
+  syntax:
+    content: 'public record LegacyPointToLineInput : LegacyInput, IEquatable<LegacyInput>, IEquatable<LegacyPointToLineInput>'
+    content.vb: Public Class LegacyPointToLineInput Inherits LegacyInput Implements IEquatable(Of LegacyInput), IEquatable(Of LegacyPointToLineInput)
+  inheritance:
+  - System.Object
+  - HCMUtils.Types.LegacyInput
+  implements:
+  - System.IEquatable{HCMUtils.Types.LegacyInput}
+  - System.IEquatable{HCMUtils.Types.LegacyPointToLineInput}
+  inheritedMembers:
+  - HCMUtils.Types.LegacyInput.TxCoordinates
+  - HCMUtils.Types.LegacyInput.TxSiteHeight
+  - HCMUtils.Types.LegacyInput.TxAntennaType
+  - HCMUtils.Types.LegacyInput.TxAzimuth
+  - HCMUtils.Types.LegacyInput.TxElevation
+  - HCMUtils.Types.LegacyInput.TxAntennaHeight
+  - HCMUtils.Types.LegacyInput.TxGainType
+  - HCMUtils.Types.LegacyInput.TxPower
+  - HCMUtils.Types.LegacyInput.TxFrequency
+  - HCMUtils.Types.LegacyInput.ChannelOccupation
+  - HCMUtils.Types.LegacyInput.SeaTemperature
+  - HCMUtils.Types.LegacyInput.TxServiceAreaRadius
+  - HCMUtils.Types.LegacyInput.DistanceOverSea
+  - HCMUtils.Types.LegacyInput.TxEmissionDesignation
+  - HCMUtils.Types.LegacyInput.PermissibleFieldStrength
+  - HCMUtils.Types.LegacyInput.TxCountry
+  - HCMUtils.Types.LegacyInput.TopoPath
+  - HCMUtils.Types.LegacyInput.BorderPath
+  - HCMUtils.Types.LegacyInput.MorphoPath
+  - HCMUtils.Types.LegacyInput.DebugOutputPath
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HCMUtils.Types.LegacyPointToLineInput.#ctor(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  commentId: M:HCMUtils.Types.LegacyPointToLineInput.#ctor(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.ValueTuple{System.Double,System.Double},System.Nullable{System.Int32},System.ValueTuple{System.String,System.String},System.Double,System.Double,System.Int32,HCMUtils.Types.GainType,System.Double,System.Double,System.Boolean,System.Nullable{HCMUtils.Types.Temperature},System.Int32,System.Nullable{System.Double},System.String,System.Nullable{System.Double},HCMUtils.Types.Country,HCMUtils.Types.Country,System.Int32,System.String,System.String,System.String,System.String)'
+  parent: HCMUtils.Types.LegacyPointToLineInput
+  langs:
+  - csharp
+  - vb
+  name: LegacyPointToLineInput((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, GainType, double, double, bool, Temperature?, int, double?, string, double?, Country, Country, int, string, string, string, string?)
+  nameWithType: LegacyPointToLineInput.LegacyPointToLineInput((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, GainType, double, double, bool, Temperature?, int, double?, string, double?, Country, Country, int, string, string, string, string?)
+  fullName: HCMUtils.Types.LegacyPointToLineInput.LegacyPointToLineInput((double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, HCMUtils.Types.GainType, double, double, bool, HCMUtils.Types.Temperature?, int, double?, string, double?, HCMUtils.Types.Country, HCMUtils.Types.Country, int, string, string, string, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: .ctor
+    path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+    startLine: 27
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Used as an input to StringHelpers.ToLegacyString
+  example: []
+  syntax:
+    content: public LegacyPointToLineInput((double Lat, double Long) TxCoordinates, int? TxSiteHeight, (string Horizontal, string Vertical) TxAntennaType, double TxAzimuth, double TxElevation, int TxAntennaHeight, GainType TxGainType, double TxPower, double TxFrequency, bool ChannelOccupation, Temperature? SeaTemperature, int TxServiceAreaRadius, double? DistanceOverSea, string TxEmissionDesignation, double? PermissibleFieldStrength, Country TargetCountry, Country TxCountry, int MaxCrossBorderRange, string TopoPath, string BorderPath, string MorphoPath, string? DebugOutputPath)
+    parameters:
+    - id: TxCoordinates
+      type: System.ValueTuple{System.Double,System.Double}
+      description: ''
+    - id: TxSiteHeight
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: TxAntennaType
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    - id: TxAzimuth
+      type: System.Double
+      description: ''
+    - id: TxElevation
+      type: System.Double
+      description: ''
+    - id: TxAntennaHeight
+      type: System.Int32
+      description: ''
+    - id: TxGainType
+      type: HCMUtils.Types.GainType
+      description: ''
+    - id: TxPower
+      type: System.Double
+      description: ''
+    - id: TxFrequency
+      type: System.Double
+      description: ''
+    - id: ChannelOccupation
+      type: System.Boolean
+      description: ''
+    - id: SeaTemperature
+      type: System.Nullable{HCMUtils.Types.Temperature}
+      description: ''
+    - id: TxServiceAreaRadius
+      type: System.Int32
+      description: ''
+    - id: DistanceOverSea
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: TxEmissionDesignation
+      type: System.String
+      description: ''
+    - id: PermissibleFieldStrength
+      type: System.Nullable{System.Double}
+      description: ''
+    - id: TargetCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: TxCountry
+      type: HCMUtils.Types.Country
+      description: ''
+    - id: MaxCrossBorderRange
+      type: System.Int32
+      description: ''
+    - id: TopoPath
+      type: System.String
+      description: An absolute path where to find the topo data
+    - id: BorderPath
+      type: System.String
+      description: An absolute path where to find the border data
+    - id: MorphoPath
+      type: System.String
+      description: An absolute path where to find the morpho data
+    - id: DebugOutputPath
+      type: System.String
+      description: An absolute path where a debug output will be placed
+    content.vb: Public Sub New(TxCoordinates As (Lat As Double, [Long] As Double), TxSiteHeight As Integer?, TxAntennaType As (Horizontal As String, Vertical As String), TxAzimuth As Double, TxElevation As Double, TxAntennaHeight As Integer, TxGainType As GainType, TxPower As Double, TxFrequency As Double, ChannelOccupation As Boolean, SeaTemperature As Temperature?, TxServiceAreaRadius As Integer, DistanceOverSea As Double?, TxEmissionDesignation As String, PermissibleFieldStrength As Double?, TargetCountry As Country, TxCountry As Country, MaxCrossBorderRange As Integer, TopoPath As String, BorderPath As String, MorphoPath As String, DebugOutputPath As String)
+  overload: HCMUtils.Types.LegacyPointToLineInput.#ctor*
+  nameWithType.vb: LegacyPointToLineInput.New((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Double?, String, Double?, Country, Country, Integer, String, String, String, String)
+  fullName.vb: HCMUtils.Types.LegacyPointToLineInput.New((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, HCMUtils.Types.GainType, Double, Double, Boolean, HCMUtils.Types.Temperature?, Integer, Double?, String, Double?, HCMUtils.Types.Country, HCMUtils.Types.Country, Integer, String, String, String, String)
+  name.vb: New((Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, GainType, Double, Double, Boolean, Temperature?, Integer, Double?, String, Double?, Country, Country, Integer, String, String, String, String)
+- uid: HCMUtils.Types.LegacyPointToLineInput.TargetCountry
+  commentId: P:HCMUtils.Types.LegacyPointToLineInput.TargetCountry
+  id: TargetCountry
+  parent: HCMUtils.Types.LegacyPointToLineInput
+  langs:
+  - csharp
+  - vb
+  name: TargetCountry
+  nameWithType: LegacyPointToLineInput.TargetCountry
+  fullName: HCMUtils.Types.LegacyPointToLineInput.TargetCountry
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TargetCountry
+    path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+    startLine: 43
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public Country TargetCountry { get; init; }
+    parameters: []
+    return:
+      type: HCMUtils.Types.Country
+    content.vb: Public Property TargetCountry As Country
+  overload: HCMUtils.Types.LegacyPointToLineInput.TargetCountry*
+- uid: HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange
+  commentId: P:HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange
+  id: MaxCrossBorderRange
+  parent: HCMUtils.Types.LegacyPointToLineInput
+  langs:
+  - csharp
+  - vb
+  name: MaxCrossBorderRange
+  nameWithType: LegacyPointToLineInput.MaxCrossBorderRange
+  fullName: HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: MaxCrossBorderRange
+    path: src/HCMUtils/Types/LegacyPointToLineInput.cs
+    startLine: 45
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: ''
+  example: []
+  syntax:
+    content: public int MaxCrossBorderRange { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxCrossBorderRange As Integer
+  overload: HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange*
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: HCMUtils.Types.LegacyInput
+  commentId: T:HCMUtils.Types.LegacyInput
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.LegacyInput.html
+  name: LegacyInput
+  nameWithType: LegacyInput
+  fullName: HCMUtils.Types.LegacyInput
+- uid: System.IEquatable{HCMUtils.Types.LegacyInput}
+  commentId: T:System.IEquatable{HCMUtils.Types.LegacyInput}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LegacyInput>
+  nameWithType: IEquatable<LegacyInput>
+  fullName: System.IEquatable<HCMUtils.Types.LegacyInput>
+  nameWithType.vb: IEquatable(Of LegacyInput)
+  fullName.vb: System.IEquatable(Of HCMUtils.Types.LegacyInput)
+  name.vb: IEquatable(Of LegacyInput)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.Types.LegacyInput
+    name: LegacyInput
+    href: HCMUtils.Types.LegacyInput.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.Types.LegacyInput
+    name: LegacyInput
+    href: HCMUtils.Types.LegacyInput.html
+  - name: )
+- uid: System.IEquatable{HCMUtils.Types.LegacyPointToLineInput}
+  commentId: T:System.IEquatable{HCMUtils.Types.LegacyPointToLineInput}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LegacyPointToLineInput>
+  nameWithType: IEquatable<LegacyPointToLineInput>
+  fullName: System.IEquatable<HCMUtils.Types.LegacyPointToLineInput>
+  nameWithType.vb: IEquatable(Of LegacyPointToLineInput)
+  fullName.vb: System.IEquatable(Of HCMUtils.Types.LegacyPointToLineInput)
+  name.vb: IEquatable(Of LegacyPointToLineInput)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.Types.LegacyPointToLineInput
+    name: LegacyPointToLineInput
+    href: HCMUtils.Types.LegacyPointToLineInput.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.Types.LegacyPointToLineInput
+    name: LegacyPointToLineInput
+    href: HCMUtils.Types.LegacyPointToLineInput.html
+  - name: )
+- uid: HCMUtils.Types.LegacyInput.TxCoordinates
+  commentId: P:HCMUtils.Types.LegacyInput.TxCoordinates
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxCoordinates
+  name: TxCoordinates
+  nameWithType: LegacyInput.TxCoordinates
+  fullName: HCMUtils.Types.LegacyInput.TxCoordinates
+- uid: HCMUtils.Types.LegacyInput.TxSiteHeight
+  commentId: P:HCMUtils.Types.LegacyInput.TxSiteHeight
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxSiteHeight
+  name: TxSiteHeight
+  nameWithType: LegacyInput.TxSiteHeight
+  fullName: HCMUtils.Types.LegacyInput.TxSiteHeight
+- uid: HCMUtils.Types.LegacyInput.TxAntennaType
+  commentId: P:HCMUtils.Types.LegacyInput.TxAntennaType
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxAntennaType
+  name: TxAntennaType
+  nameWithType: LegacyInput.TxAntennaType
+  fullName: HCMUtils.Types.LegacyInput.TxAntennaType
+- uid: HCMUtils.Types.LegacyInput.TxAzimuth
+  commentId: P:HCMUtils.Types.LegacyInput.TxAzimuth
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxAzimuth
+  name: TxAzimuth
+  nameWithType: LegacyInput.TxAzimuth
+  fullName: HCMUtils.Types.LegacyInput.TxAzimuth
+- uid: HCMUtils.Types.LegacyInput.TxElevation
+  commentId: P:HCMUtils.Types.LegacyInput.TxElevation
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxElevation
+  name: TxElevation
+  nameWithType: LegacyInput.TxElevation
+  fullName: HCMUtils.Types.LegacyInput.TxElevation
+- uid: HCMUtils.Types.LegacyInput.TxAntennaHeight
+  commentId: P:HCMUtils.Types.LegacyInput.TxAntennaHeight
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxAntennaHeight
+  name: TxAntennaHeight
+  nameWithType: LegacyInput.TxAntennaHeight
+  fullName: HCMUtils.Types.LegacyInput.TxAntennaHeight
+- uid: HCMUtils.Types.LegacyInput.TxGainType
+  commentId: P:HCMUtils.Types.LegacyInput.TxGainType
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxGainType
+  name: TxGainType
+  nameWithType: LegacyInput.TxGainType
+  fullName: HCMUtils.Types.LegacyInput.TxGainType
+- uid: HCMUtils.Types.LegacyInput.TxPower
+  commentId: P:HCMUtils.Types.LegacyInput.TxPower
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxPower
+  name: TxPower
+  nameWithType: LegacyInput.TxPower
+  fullName: HCMUtils.Types.LegacyInput.TxPower
+- uid: HCMUtils.Types.LegacyInput.TxFrequency
+  commentId: P:HCMUtils.Types.LegacyInput.TxFrequency
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxFrequency
+  name: TxFrequency
+  nameWithType: LegacyInput.TxFrequency
+  fullName: HCMUtils.Types.LegacyInput.TxFrequency
+- uid: HCMUtils.Types.LegacyInput.ChannelOccupation
+  commentId: P:HCMUtils.Types.LegacyInput.ChannelOccupation
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_ChannelOccupation
+  name: ChannelOccupation
+  nameWithType: LegacyInput.ChannelOccupation
+  fullName: HCMUtils.Types.LegacyInput.ChannelOccupation
+- uid: HCMUtils.Types.LegacyInput.SeaTemperature
+  commentId: P:HCMUtils.Types.LegacyInput.SeaTemperature
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_SeaTemperature
+  name: SeaTemperature
+  nameWithType: LegacyInput.SeaTemperature
+  fullName: HCMUtils.Types.LegacyInput.SeaTemperature
+- uid: HCMUtils.Types.LegacyInput.TxServiceAreaRadius
+  commentId: P:HCMUtils.Types.LegacyInput.TxServiceAreaRadius
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxServiceAreaRadius
+  name: TxServiceAreaRadius
+  nameWithType: LegacyInput.TxServiceAreaRadius
+  fullName: HCMUtils.Types.LegacyInput.TxServiceAreaRadius
+- uid: HCMUtils.Types.LegacyInput.DistanceOverSea
+  commentId: P:HCMUtils.Types.LegacyInput.DistanceOverSea
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_DistanceOverSea
+  name: DistanceOverSea
+  nameWithType: LegacyInput.DistanceOverSea
+  fullName: HCMUtils.Types.LegacyInput.DistanceOverSea
+- uid: HCMUtils.Types.LegacyInput.TxEmissionDesignation
+  commentId: P:HCMUtils.Types.LegacyInput.TxEmissionDesignation
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxEmissionDesignation
+  name: TxEmissionDesignation
+  nameWithType: LegacyInput.TxEmissionDesignation
+  fullName: HCMUtils.Types.LegacyInput.TxEmissionDesignation
+- uid: HCMUtils.Types.LegacyInput.PermissibleFieldStrength
+  commentId: P:HCMUtils.Types.LegacyInput.PermissibleFieldStrength
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_PermissibleFieldStrength
+  name: PermissibleFieldStrength
+  nameWithType: LegacyInput.PermissibleFieldStrength
+  fullName: HCMUtils.Types.LegacyInput.PermissibleFieldStrength
+- uid: HCMUtils.Types.LegacyInput.TxCountry
+  commentId: P:HCMUtils.Types.LegacyInput.TxCountry
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TxCountry
+  name: TxCountry
+  nameWithType: LegacyInput.TxCountry
+  fullName: HCMUtils.Types.LegacyInput.TxCountry
+- uid: HCMUtils.Types.LegacyInput.TopoPath
+  commentId: P:HCMUtils.Types.LegacyInput.TopoPath
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_TopoPath
+  name: TopoPath
+  nameWithType: LegacyInput.TopoPath
+  fullName: HCMUtils.Types.LegacyInput.TopoPath
+- uid: HCMUtils.Types.LegacyInput.BorderPath
+  commentId: P:HCMUtils.Types.LegacyInput.BorderPath
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_BorderPath
+  name: BorderPath
+  nameWithType: LegacyInput.BorderPath
+  fullName: HCMUtils.Types.LegacyInput.BorderPath
+- uid: HCMUtils.Types.LegacyInput.MorphoPath
+  commentId: P:HCMUtils.Types.LegacyInput.MorphoPath
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_MorphoPath
+  name: MorphoPath
+  nameWithType: LegacyInput.MorphoPath
+  fullName: HCMUtils.Types.LegacyInput.MorphoPath
+- uid: HCMUtils.Types.LegacyInput.DebugOutputPath
+  commentId: P:HCMUtils.Types.LegacyInput.DebugOutputPath
+  parent: HCMUtils.Types.LegacyInput
+  href: HCMUtils.Types.LegacyInput.html#HCMUtils_Types_LegacyInput_DebugOutputPath
+  name: DebugOutputPath
+  nameWithType: LegacyInput.DebugOutputPath
+  fullName: HCMUtils.Types.LegacyInput.DebugOutputPath
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.Types.LegacyPointToLineInput.#ctor*
+  commentId: Overload:HCMUtils.Types.LegacyPointToLineInput.#ctor
+  href: HCMUtils.Types.LegacyPointToLineInput.html#HCMUtils_Types_LegacyPointToLineInput__ctor_System_ValueTuple_System_Double_System_Double__System_Nullable_System_Int32__System_ValueTuple_System_String_System_String__System_Double_System_Double_System_Int32_HCMUtils_Types_GainType_System_Double_System_Double_System_Boolean_System_Nullable_HCMUtils_Types_Temperature__System_Int32_System_Nullable_System_Double__System_String_System_Nullable_System_Double__HCMUtils_Types_Country_HCMUtils_Types_Country_System_Int32_System_String_System_String_System_String_System_String_
+  name: LegacyPointToLineInput
+  nameWithType: LegacyPointToLineInput.LegacyPointToLineInput
+  fullName: HCMUtils.Types.LegacyPointToLineInput.LegacyPointToLineInput
+  nameWithType.vb: LegacyPointToLineInput.New
+  fullName.vb: HCMUtils.Types.LegacyPointToLineInput.New
+  name.vb: New
+- uid: System.ValueTuple{System.Double,System.Double}
+  commentId: T:System.ValueTuple{System.Double,System.Double}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double Long, double Lat)
+  nameWithType: (double Long, double Lat)
+  fullName: (double Long, double Lat)
+  nameWithType.vb: (Long As Double, Lat As Double)
+  fullName.vb: (Long As Double, Lat As Double)
+  name.vb: (Long As Double, Lat As Double)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double}.Long
+    name: Long
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.long
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double}.Lat
+    name: Lat
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.lat
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.ValueTuple{System.String,System.String}
+  commentId: T:System.ValueTuple{System.String,System.String}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string Horizontal, string Vertical)
+  nameWithType: (string Horizontal, string Vertical)
+  fullName: (string Horizontal, string Vertical)
+  nameWithType.vb: (Horizontal As String, Vertical As String)
+  fullName.vb: (Horizontal As String, Vertical As String)
+  name.vb: (Horizontal As String, Vertical As String)
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.Horizontal
+    name: Horizontal
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.horizontal
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.Vertical
+    name: Vertical
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.vertical
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: HCMUtils.Types.GainType
+  commentId: T:HCMUtils.Types.GainType
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.GainType.html
+  name: GainType
+  nameWithType: GainType
+  fullName: HCMUtils.Types.GainType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable{HCMUtils.Types.Temperature}
+  commentId: T:System.Nullable{HCMUtils.Types.Temperature}
+  parent: System
+  definition: System.Nullable`1
+  href: HCMUtils.Types.Temperature.html
+  name: Temperature?
+  nameWithType: Temperature?
+  fullName: HCMUtils.Types.Temperature?
+  spec.csharp:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+  spec.vb:
+  - uid: HCMUtils.Types.Temperature
+    name: Temperature
+    href: HCMUtils.Types.Temperature.html
+  - name: '?'
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: HCMUtils.Types.Country
+  commentId: T:HCMUtils.Types.Country
+  parent: HCMUtils.Types
+  href: HCMUtils.Types.Country.html
+  name: Country
+  nameWithType: Country
+  fullName: HCMUtils.Types.Country
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.Types.LegacyPointToLineInput.TargetCountry*
+  commentId: Overload:HCMUtils.Types.LegacyPointToLineInput.TargetCountry
+  href: HCMUtils.Types.LegacyPointToLineInput.html#HCMUtils_Types_LegacyPointToLineInput_TargetCountry
+  name: TargetCountry
+  nameWithType: LegacyPointToLineInput.TargetCountry
+  fullName: HCMUtils.Types.LegacyPointToLineInput.TargetCountry
+- uid: HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange*
+  commentId: Overload:HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange
+  href: HCMUtils.Types.LegacyPointToLineInput.html#HCMUtils_Types_LegacyPointToLineInput_MaxCrossBorderRange
+  name: MaxCrossBorderRange
+  nameWithType: LegacyPointToLineInput.MaxCrossBorderRange
+  fullName: HCMUtils.Types.LegacyPointToLineInput.MaxCrossBorderRange

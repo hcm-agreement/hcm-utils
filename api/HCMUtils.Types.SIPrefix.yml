@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/SIPrefix.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SIPrefix
     path: src/HCMUtils/Types/SIPrefix.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/SIPrefix.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: k
     path: src/HCMUtils/Types/SIPrefix.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/SIPrefix.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: M
     path: src/HCMUtils/Types/SIPrefix.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/SIPrefix.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: G
     path: src/HCMUtils/Types/SIPrefix.cs

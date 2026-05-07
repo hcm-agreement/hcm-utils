@@ -1,0 +1,1130 @@
+### YamlMime:ManagedReference
+items:
+- uid: HCMUtils.Types.InfoValues
+  commentId: T:HCMUtils.Types.InfoValues
+  id: InfoValues
+  parent: HCMUtils.Types
+  children:
+  - HCMUtils.Types.InfoValues.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - HCMUtils.Types.InfoValues.CorrectionFactors380400Used
+  - HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  - HCMUtils.Types.InfoValues.DistanceOverSeaReset
+  - HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  - HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  - HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  - HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange
+  - HCMUtils.Types.InfoValues.FrequencyOutOfRange
+  - HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed
+  - HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed
+  - HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase
+  - HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase
+  - HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  - HCMUtils.Types.InfoValues.ServiceAreasOverlapping
+  - HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange
+  - HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase
+  - HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase
+  - HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  langs:
+  - csharp
+  - vb
+  name: InfoValues
+  nameWithType: InfoValues
+  fullName: HCMUtils.Types.InfoValues
+  type: Class
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: InfoValues
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 23
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: 'public record InfoValues : IEquatable<InfoValues>'
+    content.vb: Public Class InfoValues Implements IEquatable(Of InfoValues)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{HCMUtils.Types.InfoValues}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: HCMUtils.Types.InfoValues.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:HCMUtils.Types.InfoValues.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)'
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: InfoValues(bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool)
+  nameWithType: InfoValues.InfoValues(bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool)
+  fullName: HCMUtils.Types.InfoValues.InfoValues(bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: .ctor
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 23
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: public InfoValues(bool TxSiteHeightFromDatabase, bool TxSiteHeightDifferentFromDatabase, bool TxSiteHeightLargeDifferenceFromDatabase, bool FrequencyOutOfRange, bool PermissibleFieldStrengthInputUsed, bool MaxCrossBorderRangeInputUsed, bool ServiceAreasOverlapping, bool RxSiteHeightFromDatabase, bool RxSiteHeightDifferentFromDatabase, bool RxSiteHeightLargeDifferenceFromDatabase, bool FreeSpaceFieldStrengthUsedBecauseSmallDistance, bool FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree, bool DistanceOverSeaLargerThanDistanceBetweenTxRx, bool FrequencyDifferenceCorrectionFactorInputUsed, bool FrequencyDifferenceOutOfRange, bool DistanceOverSeaReset, bool TxChannelSpacingOutOfRange, bool CorrectionFactors380400Used)
+    parameters:
+    - id: TxSiteHeightFromDatabase
+      type: System.Boolean
+    - id: TxSiteHeightDifferentFromDatabase
+      type: System.Boolean
+    - id: TxSiteHeightLargeDifferenceFromDatabase
+      type: System.Boolean
+    - id: FrequencyOutOfRange
+      type: System.Boolean
+    - id: PermissibleFieldStrengthInputUsed
+      type: System.Boolean
+    - id: MaxCrossBorderRangeInputUsed
+      type: System.Boolean
+    - id: ServiceAreasOverlapping
+      type: System.Boolean
+    - id: RxSiteHeightFromDatabase
+      type: System.Boolean
+    - id: RxSiteHeightDifferentFromDatabase
+      type: System.Boolean
+    - id: RxSiteHeightLargeDifferenceFromDatabase
+      type: System.Boolean
+    - id: FreeSpaceFieldStrengthUsedBecauseSmallDistance
+      type: System.Boolean
+    - id: FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+      type: System.Boolean
+    - id: DistanceOverSeaLargerThanDistanceBetweenTxRx
+      type: System.Boolean
+    - id: FrequencyDifferenceCorrectionFactorInputUsed
+      type: System.Boolean
+    - id: FrequencyDifferenceOutOfRange
+      type: System.Boolean
+    - id: DistanceOverSeaReset
+      type: System.Boolean
+    - id: TxChannelSpacingOutOfRange
+      type: System.Boolean
+    - id: CorrectionFactors380400Used
+      type: System.Boolean
+    content.vb: Public Sub New(TxSiteHeightFromDatabase As Boolean, TxSiteHeightDifferentFromDatabase As Boolean, TxSiteHeightLargeDifferenceFromDatabase As Boolean, FrequencyOutOfRange As Boolean, PermissibleFieldStrengthInputUsed As Boolean, MaxCrossBorderRangeInputUsed As Boolean, ServiceAreasOverlapping As Boolean, RxSiteHeightFromDatabase As Boolean, RxSiteHeightDifferentFromDatabase As Boolean, RxSiteHeightLargeDifferenceFromDatabase As Boolean, FreeSpaceFieldStrengthUsedBecauseSmallDistance As Boolean, FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree As Boolean, DistanceOverSeaLargerThanDistanceBetweenTxRx As Boolean, FrequencyDifferenceCorrectionFactorInputUsed As Boolean, FrequencyDifferenceOutOfRange As Boolean, DistanceOverSeaReset As Boolean, TxChannelSpacingOutOfRange As Boolean, CorrectionFactors380400Used As Boolean)
+  overload: HCMUtils.Types.InfoValues.#ctor*
+  nameWithType.vb: InfoValues.New(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: HCMUtils.Types.InfoValues.New(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+  name.vb: New(Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean)
+- uid: HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase
+  commentId: P:HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase
+  id: TxSiteHeightFromDatabase
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: TxSiteHeightFromDatabase
+  nameWithType: InfoValues.TxSiteHeightFromDatabase
+  fullName: HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TxSiteHeightFromDatabase
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 24
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: No height of Tx site is given or Tx is mobile; height is taken from the terrain database
+  example: []
+  syntax:
+    content: public bool TxSiteHeightFromDatabase { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TxSiteHeightFromDatabase As Boolean
+  overload: HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase*
+- uid: HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase
+  commentId: P:HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase
+  id: TxSiteHeightDifferentFromDatabase
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: TxSiteHeightDifferentFromDatabase
+  nameWithType: InfoValues.TxSiteHeightDifferentFromDatabase
+  fullName: HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TxSiteHeightDifferentFromDatabase
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 25
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Height of Tx site differs from height of terrain database
+  example: []
+  syntax:
+    content: public bool TxSiteHeightDifferentFromDatabase { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TxSiteHeightDifferentFromDatabase As Boolean
+  overload: HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase*
+- uid: HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  commentId: P:HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  id: TxSiteHeightLargeDifferenceFromDatabase
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: TxSiteHeightLargeDifferenceFromDatabase
+  nameWithType: InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  fullName: HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TxSiteHeightLargeDifferenceFromDatabase
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 26
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Height of Tx site differs more than 10%, calculated values may be (extremely) wrong!
+  example: []
+  syntax:
+    content: public bool TxSiteHeightLargeDifferenceFromDatabase { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TxSiteHeightLargeDifferenceFromDatabase As Boolean
+  overload: HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase*
+- uid: HCMUtils.Types.InfoValues.FrequencyOutOfRange
+  commentId: P:HCMUtils.Types.InfoValues.FrequencyOutOfRange
+  id: FrequencyOutOfRange
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: FrequencyOutOfRange
+  nameWithType: InfoValues.FrequencyOutOfRange
+  fullName: HCMUtils.Types.InfoValues.FrequencyOutOfRange
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FrequencyOutOfRange
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 27
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Frequency out of range of table in Annex 1
+  example: []
+  syntax:
+    content: public bool FrequencyOutOfRange { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FrequencyOutOfRange As Boolean
+  overload: HCMUtils.Types.InfoValues.FrequencyOutOfRange*
+- uid: HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed
+  commentId: P:HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed
+  id: PermissibleFieldStrengthInputUsed
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: PermissibleFieldStrengthInputUsed
+  nameWithType: InfoValues.PermissibleFieldStrengthInputUsed
+  fullName: HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: PermissibleFieldStrengthInputUsed
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 28
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Input value of permissible field strength is used
+  example: []
+  syntax:
+    content: public bool PermissibleFieldStrengthInputUsed { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PermissibleFieldStrengthInputUsed As Boolean
+  overload: HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed*
+- uid: HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed
+  commentId: P:HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed
+  id: MaxCrossBorderRangeInputUsed
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: MaxCrossBorderRangeInputUsed
+  nameWithType: InfoValues.MaxCrossBorderRangeInputUsed
+  fullName: HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: MaxCrossBorderRangeInputUsed
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 29
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Input value of maximum cross border range is used
+  example: []
+  syntax:
+    content: public bool MaxCrossBorderRangeInputUsed { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property MaxCrossBorderRangeInputUsed As Boolean
+  overload: HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed*
+- uid: HCMUtils.Types.InfoValues.ServiceAreasOverlapping
+  commentId: P:HCMUtils.Types.InfoValues.ServiceAreasOverlapping
+  id: ServiceAreasOverlapping
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: ServiceAreasOverlapping
+  nameWithType: InfoValues.ServiceAreasOverlapping
+  fullName: HCMUtils.Types.InfoValues.ServiceAreasOverlapping
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: ServiceAreasOverlapping
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 30
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Distance between Tx and Rx is less than both service area radiuses; field strength is set to 999.9
+  example: []
+  syntax:
+    content: public bool ServiceAreasOverlapping { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ServiceAreasOverlapping As Boolean
+  overload: HCMUtils.Types.InfoValues.ServiceAreasOverlapping*
+- uid: HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase
+  commentId: P:HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase
+  id: RxSiteHeightFromDatabase
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: RxSiteHeightFromDatabase
+  nameWithType: InfoValues.RxSiteHeightFromDatabase
+  fullName: HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxSiteHeightFromDatabase
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 31
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: No height of Rx site is given or Rx is mobile/line, height is from the terrain database
+  example: []
+  syntax:
+    content: public bool RxSiteHeightFromDatabase { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RxSiteHeightFromDatabase As Boolean
+  overload: HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase*
+- uid: HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase
+  commentId: P:HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase
+  id: RxSiteHeightDifferentFromDatabase
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: RxSiteHeightDifferentFromDatabase
+  nameWithType: InfoValues.RxSiteHeightDifferentFromDatabase
+  fullName: HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxSiteHeightDifferentFromDatabase
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 32
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Height of Rx site differs from height of terrain data
+  example: []
+  syntax:
+    content: public bool RxSiteHeightDifferentFromDatabase { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RxSiteHeightDifferentFromDatabase As Boolean
+  overload: HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase*
+- uid: HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  commentId: P:HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  id: RxSiteHeightLargeDifferenceFromDatabase
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: RxSiteHeightLargeDifferenceFromDatabase
+  nameWithType: InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  fullName: HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: RxSiteHeightLargeDifferenceFromDatabase
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 33
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Rx site height differs more than 10%, calculated values may be (extremely) wrong!
+  example: []
+  syntax:
+    content: public bool RxSiteHeightLargeDifferenceFromDatabase { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RxSiteHeightLargeDifferenceFromDatabase As Boolean
+  overload: HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase*
+- uid: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  commentId: P:HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  id: FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  nameWithType: InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  fullName: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FreeSpaceFieldStrengthUsedBecauseSmallDistance
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 34
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  syntax:
+    content: public bool FreeSpaceFieldStrengthUsedBecauseSmallDistance { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FreeSpaceFieldStrengthUsedBecauseSmallDistance As Boolean
+  overload: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance*
+- uid: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  commentId: P:HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  id: FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  nameWithType: InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  fullName: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 35
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Free space field strength is used, because 1st Fresnel zone is free
+  example: []
+  syntax:
+    content: public bool FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree As Boolean
+  overload: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree*
+- uid: HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  commentId: P:HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  id: DistanceOverSeaLargerThanDistanceBetweenTxRx
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: DistanceOverSeaLargerThanDistanceBetweenTxRx
+  nameWithType: InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  fullName: HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DistanceOverSeaLargerThanDistanceBetweenTxRx
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 36
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Distance over sea is greater than total distance. Distance between Tx and Rx is used!
+  example: []
+  syntax:
+    content: public bool DistanceOverSeaLargerThanDistanceBetweenTxRx { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DistanceOverSeaLargerThanDistanceBetweenTxRx As Boolean
+  overload: HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx*
+- uid: HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  commentId: P:HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  id: FrequencyDifferenceCorrectionFactorInputUsed
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: FrequencyDifferenceCorrectionFactorInputUsed
+  nameWithType: InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  fullName: HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FrequencyDifferenceCorrectionFactorInputUsed
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 37
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Input value of correction factor according frequency difference is used
+  example: []
+  syntax:
+    content: public bool FrequencyDifferenceCorrectionFactorInputUsed { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FrequencyDifferenceCorrectionFactorInputUsed As Boolean
+  overload: HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed*
+- uid: HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange
+  commentId: P:HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange
+  id: FrequencyDifferenceOutOfRange
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: FrequencyDifferenceOutOfRange
+  nameWithType: InfoValues.FrequencyDifferenceOutOfRange
+  fullName: HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: FrequencyDifferenceOutOfRange
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 38
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Frequency difference outside definition range; 82 dB is used
+  example: []
+  syntax:
+    content: public bool FrequencyDifferenceOutOfRange { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FrequencyDifferenceOutOfRange As Boolean
+  overload: HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange*
+- uid: HCMUtils.Types.InfoValues.DistanceOverSeaReset
+  commentId: P:HCMUtils.Types.InfoValues.DistanceOverSeaReset
+  id: DistanceOverSeaReset
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: DistanceOverSeaReset
+  nameWithType: InfoValues.DistanceOverSeaReset
+  fullName: HCMUtils.Types.InfoValues.DistanceOverSeaReset
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: DistanceOverSeaReset
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 39
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Calculated distance over sea is set to 0 because of missing morphological data
+  example: []
+  syntax:
+    content: public bool DistanceOverSeaReset { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DistanceOverSeaReset As Boolean
+  overload: HCMUtils.Types.InfoValues.DistanceOverSeaReset*
+- uid: HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange
+  commentId: P:HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange
+  id: TxChannelSpacingOutOfRange
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: TxChannelSpacingOutOfRange
+  nameWithType: InfoValues.TxChannelSpacingOutOfRange
+  fullName: HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: TxChannelSpacingOutOfRange
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 40
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Tx channel spacing outside definition range, 25 kHz is used!
+  example: []
+  syntax:
+    content: public bool TxChannelSpacingOutOfRange { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property TxChannelSpacingOutOfRange As Boolean
+  overload: HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange*
+- uid: HCMUtils.Types.InfoValues.CorrectionFactors380400Used
+  commentId: P:HCMUtils.Types.InfoValues.CorrectionFactors380400Used
+  id: CorrectionFactors380400Used
+  parent: HCMUtils.Types.InfoValues
+  langs:
+  - csharp
+  - vb
+  name: CorrectionFactors380400Used
+  nameWithType: InfoValues.CorrectionFactors380400Used
+  fullName: HCMUtils.Types.InfoValues.CorrectionFactors380400Used
+  type: Property
+  source:
+    remote:
+      path: src/HCMUtils/Types/InfoValues.cs
+      branch: parse-io-string
+      repo: git@github.com:hcm-agreement/hcm-utils.git
+    id: CorrectionFactors380400Used
+    path: src/HCMUtils/Types/InfoValues.cs
+    startLine: 41
+  assemblies:
+  - HCMUtils
+  namespace: HCMUtils.Types
+  summary: Correction factors for the band 380 - 400 MHz are used.
+  example: []
+  syntax:
+    content: public bool CorrectionFactors380400Used { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CorrectionFactors380400Used As Boolean
+  overload: HCMUtils.Types.InfoValues.CorrectionFactors380400Used*
+references:
+- uid: HCMUtils.Types
+  commentId: N:HCMUtils.Types
+  href: HCMUtils.html
+  name: HCMUtils.Types
+  nameWithType: HCMUtils.Types
+  fullName: HCMUtils.Types
+  spec.csharp:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+  spec.vb:
+  - uid: HCMUtils
+    name: HCMUtils
+    href: HCMUtils.html
+  - name: .
+  - uid: HCMUtils.Types
+    name: Types
+    href: HCMUtils.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{HCMUtils.Types.InfoValues}
+  commentId: T:System.IEquatable{HCMUtils.Types.InfoValues}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<InfoValues>
+  nameWithType: IEquatable<InfoValues>
+  fullName: System.IEquatable<HCMUtils.Types.InfoValues>
+  nameWithType.vb: IEquatable(Of InfoValues)
+  fullName.vb: System.IEquatable(Of HCMUtils.Types.InfoValues)
+  name.vb: IEquatable(Of InfoValues)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: HCMUtils.Types.InfoValues
+    name: InfoValues
+    href: HCMUtils.Types.InfoValues.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: HCMUtils.Types.InfoValues
+    name: InfoValues
+    href: HCMUtils.Types.InfoValues.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: HCMUtils.Types.InfoValues.#ctor*
+  commentId: Overload:HCMUtils.Types.InfoValues.#ctor
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: InfoValues
+  nameWithType: InfoValues.InfoValues
+  fullName: HCMUtils.Types.InfoValues.InfoValues
+  nameWithType.vb: InfoValues.New
+  fullName.vb: HCMUtils.Types.InfoValues.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase*
+  commentId: Overload:HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_TxSiteHeightFromDatabase
+  name: TxSiteHeightFromDatabase
+  nameWithType: InfoValues.TxSiteHeightFromDatabase
+  fullName: HCMUtils.Types.InfoValues.TxSiteHeightFromDatabase
+- uid: HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase*
+  commentId: Overload:HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_TxSiteHeightDifferentFromDatabase
+  name: TxSiteHeightDifferentFromDatabase
+  nameWithType: InfoValues.TxSiteHeightDifferentFromDatabase
+  fullName: HCMUtils.Types.InfoValues.TxSiteHeightDifferentFromDatabase
+- uid: HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase*
+  commentId: Overload:HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_TxSiteHeightLargeDifferenceFromDatabase
+  name: TxSiteHeightLargeDifferenceFromDatabase
+  nameWithType: InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+  fullName: HCMUtils.Types.InfoValues.TxSiteHeightLargeDifferenceFromDatabase
+- uid: HCMUtils.Types.InfoValues.FrequencyOutOfRange*
+  commentId: Overload:HCMUtils.Types.InfoValues.FrequencyOutOfRange
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_FrequencyOutOfRange
+  name: FrequencyOutOfRange
+  nameWithType: InfoValues.FrequencyOutOfRange
+  fullName: HCMUtils.Types.InfoValues.FrequencyOutOfRange
+- uid: HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed*
+  commentId: Overload:HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_PermissibleFieldStrengthInputUsed
+  name: PermissibleFieldStrengthInputUsed
+  nameWithType: InfoValues.PermissibleFieldStrengthInputUsed
+  fullName: HCMUtils.Types.InfoValues.PermissibleFieldStrengthInputUsed
+- uid: HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed*
+  commentId: Overload:HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_MaxCrossBorderRangeInputUsed
+  name: MaxCrossBorderRangeInputUsed
+  nameWithType: InfoValues.MaxCrossBorderRangeInputUsed
+  fullName: HCMUtils.Types.InfoValues.MaxCrossBorderRangeInputUsed
+- uid: HCMUtils.Types.InfoValues.ServiceAreasOverlapping*
+  commentId: Overload:HCMUtils.Types.InfoValues.ServiceAreasOverlapping
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_ServiceAreasOverlapping
+  name: ServiceAreasOverlapping
+  nameWithType: InfoValues.ServiceAreasOverlapping
+  fullName: HCMUtils.Types.InfoValues.ServiceAreasOverlapping
+- uid: HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase*
+  commentId: Overload:HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_RxSiteHeightFromDatabase
+  name: RxSiteHeightFromDatabase
+  nameWithType: InfoValues.RxSiteHeightFromDatabase
+  fullName: HCMUtils.Types.InfoValues.RxSiteHeightFromDatabase
+- uid: HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase*
+  commentId: Overload:HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_RxSiteHeightDifferentFromDatabase
+  name: RxSiteHeightDifferentFromDatabase
+  nameWithType: InfoValues.RxSiteHeightDifferentFromDatabase
+  fullName: HCMUtils.Types.InfoValues.RxSiteHeightDifferentFromDatabase
+- uid: HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase*
+  commentId: Overload:HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_RxSiteHeightLargeDifferenceFromDatabase
+  name: RxSiteHeightLargeDifferenceFromDatabase
+  nameWithType: InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+  fullName: HCMUtils.Types.InfoValues.RxSiteHeightLargeDifferenceFromDatabase
+- uid: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance*
+  commentId: Overload:HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  name: FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  nameWithType: InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+  fullName: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseSmallDistance
+- uid: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree*
+  commentId: Overload:HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  name: FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  nameWithType: InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+  fullName: HCMUtils.Types.InfoValues.FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree
+- uid: HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx*
+  commentId: Overload:HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_DistanceOverSeaLargerThanDistanceBetweenTxRx
+  name: DistanceOverSeaLargerThanDistanceBetweenTxRx
+  nameWithType: InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+  fullName: HCMUtils.Types.InfoValues.DistanceOverSeaLargerThanDistanceBetweenTxRx
+- uid: HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed*
+  commentId: Overload:HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_FrequencyDifferenceCorrectionFactorInputUsed
+  name: FrequencyDifferenceCorrectionFactorInputUsed
+  nameWithType: InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+  fullName: HCMUtils.Types.InfoValues.FrequencyDifferenceCorrectionFactorInputUsed
+- uid: HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange*
+  commentId: Overload:HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_FrequencyDifferenceOutOfRange
+  name: FrequencyDifferenceOutOfRange
+  nameWithType: InfoValues.FrequencyDifferenceOutOfRange
+  fullName: HCMUtils.Types.InfoValues.FrequencyDifferenceOutOfRange
+- uid: HCMUtils.Types.InfoValues.DistanceOverSeaReset*
+  commentId: Overload:HCMUtils.Types.InfoValues.DistanceOverSeaReset
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_DistanceOverSeaReset
+  name: DistanceOverSeaReset
+  nameWithType: InfoValues.DistanceOverSeaReset
+  fullName: HCMUtils.Types.InfoValues.DistanceOverSeaReset
+- uid: HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange*
+  commentId: Overload:HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_TxChannelSpacingOutOfRange
+  name: TxChannelSpacingOutOfRange
+  nameWithType: InfoValues.TxChannelSpacingOutOfRange
+  fullName: HCMUtils.Types.InfoValues.TxChannelSpacingOutOfRange
+- uid: HCMUtils.Types.InfoValues.CorrectionFactors380400Used*
+  commentId: Overload:HCMUtils.Types.InfoValues.CorrectionFactors380400Used
+  href: HCMUtils.Types.InfoValues.html#HCMUtils_Types_InfoValues_CorrectionFactors380400Used
+  name: CorrectionFactors380400Used
+  nameWithType: InfoValues.CorrectionFactors380400Used
+  fullName: HCMUtils.Types.InfoValues.CorrectionFactors380400Used

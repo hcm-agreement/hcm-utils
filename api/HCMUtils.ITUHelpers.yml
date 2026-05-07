@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/ITUHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ITUHelpers
     path: src/HCMUtils/ITUHelpers.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/ITUHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ToITULetterCodeString
     path: src/HCMUtils/ITUHelpers.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/ITUHelpers.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ParseCountry
     path: src/HCMUtils/ITUHelpers.cs
