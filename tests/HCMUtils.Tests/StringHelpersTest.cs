@@ -188,10 +188,10 @@ public class StringHelpersTest
     }
 
     [Fact]
-    public void ValidatesLegacyInputStringInputsCorrectly()
+    public void ValidatesLegacyStringInputsCorrectly()
     {
-        Assert.Throws<ValidationException>(() => StringHelpers.BuildLegacyInputString(
-            new BuildLegacyInputStringPointToPointInput(
+        Assert.Throws<ValidationException>(() => StringHelpers.ToLegacyString(
+            new LegacyPointToPointInput(
                 (8.22, 51.7625),
                 (18.22, 52.7625),
                 10_000,
@@ -229,8 +229,8 @@ public class StringHelpersTest
             )
         ));
 
-        Assert.Throws<ValidationException>(() => StringHelpers.BuildLegacyInputString(
-            new BuildLegacyInputStringPointToLineInput(
+        Assert.Throws<ValidationException>(() => StringHelpers.ToLegacyString(
+            new LegacyPointToLineInput(
                 (8.22, 51.7625),
                 10_000,
                 ("x000ND00", "x123AB56"),
@@ -258,13 +258,13 @@ public class StringHelpersTest
     }
 
     [Fact]
-    public void BuildsLegacyStringsCorrectly()
+    public void ConvertsLegacyStringsCorrectly()
     {
         // point to line
         Assert.Equal(
             "008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
-            StringHelpers.BuildLegacyInputString(
-                new BuildLegacyInputStringPointToLineInput(
+            StringHelpers.ToLegacyString(
+                new LegacyPointToLineInput(
                     (8.22, 51.7625),
                     24,
                     ("000ND00", "123AB56"),
@@ -294,8 +294,8 @@ public class StringHelpersTest
         // point to point
         Assert.Equal(
             "008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
-            StringHelpers.BuildLegacyInputString(
-                new BuildLegacyInputStringPointToPointInput(
+            StringHelpers.ToLegacyString(
+                new LegacyPointToPointInput(
                     (8.22, 51.7625),
                     (18.22, 52.7625),
                     24,
@@ -338,8 +338,8 @@ public class StringHelpersTest
         // point to line
         Assert.Equal(
             "008E131251N4545                       000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1    20                               5M00G7WEF                                          AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
-            StringHelpers.BuildLegacyInputString(
-                new BuildLegacyInputStringPointToLineInput(
+            StringHelpers.ToLegacyString(
+                new LegacyPointToLineInput(
                     (8.22, 51.7625),
                     null,
                     ("000ND00", "123AB56"),
@@ -369,8 +369,8 @@ public class StringHelpersTest
         // point to point
         Assert.Equal(
             "008E131251N4545018E131252N4545        000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1    20   18      8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0         AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              ",
-            StringHelpers.BuildLegacyInputString(
-                new BuildLegacyInputStringPointToPointInput(
+            StringHelpers.ToLegacyString(
+                new LegacyPointToPointInput(
                     (8.22, 51.7625),
                     (18.22, 52.7625),
                     null,
@@ -408,5 +408,203 @@ public class StringHelpersTest
                 )
             )
         );
+    }
+
+    [Fact]
+    public void ParsesLegacyInputStringsCorrectly()
+    {
+        // point to line
+        Assert.Equal(new LegacyPointToLineInput(
+            (8.22, 51.7625),
+            24,
+            ("000ND00", "123AB56"),
+            23.5,
+            -11.0,
+            2,
+            GainType.Isotropic,
+            26.22,
+            3_800_000_000,
+            true,
+            Temperature.Warm,
+            20,
+            10.2,
+            "5M00G7WEF",
+            2.1,
+            Country.Austria,
+            Country.Germany,
+            2,
+            "D:\\TOPO",
+            "D:\\BORDER",
+            "D:\\MORPHO",
+            "C:\\"
+        ), StringHelpers.ParseLegacyInputString("008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\"));
+
+        // point to point
+        Assert.Equal(new LegacyPointToPointInput(
+            (8.22, 51.7625),
+            (18.22, 52.7625),
+            24,
+            22,
+            ("000ND00", "123AB56"),
+            23.5,
+            -11.0,
+            2,
+            4,
+            GainType.Isotropic,
+            26.22,
+            3_800_000_000,
+            true,
+            Temperature.Warm,
+            20,
+            18,
+            10.2,
+            8_800_000_000,
+            "3M00G7WEF",
+            "5M00G7WEF",
+            ("000ND00", "000ND00"),
+            12.4,
+            -9.2,
+            GainType.Dipole,
+            10.0,
+            2.0,
+            2.1,
+            1,
+            Country.Austria,
+            Country.Germany,
+            "D:\\TOPO",
+            "D:\\BORDER",
+            "D:\\MORPHO",
+            "C:\\"
+        ), StringHelpers.ParseLegacyInputString("008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\"));
+
+        // test null parameters
+        // point to line
+        Assert.Equal(
+            new LegacyPointToLineInput(
+                (8.22, 51.7625),
+                null,
+                ("000ND00", "123AB56"),
+                23.5,
+                -11.0,
+                2,
+                GainType.Isotropic,
+                26.22,
+                3_800_000_000,
+                true,
+                null,
+                20,
+                null,
+                "5M00G7WEF",
+                null,
+                Country.Austria,
+                Country.Germany,
+                2,
+                "D:\\TOPO",
+                "D:\\BORDER",
+                "D:\\MORPHO",
+                null
+            ), StringHelpers.ParseLegacyInputString("008E131251N4545                       000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1    20                               5M00G7WEF                                          AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              "));
+
+        // point to point
+        Assert.Equal(
+            new LegacyPointToPointInput(
+                (8.22, 51.7625),
+                (18.22, 52.7625),
+                null,
+                null,
+                ("000ND00", "123AB56"),
+                23.5,
+                -11.0,
+                2,
+                4,
+                GainType.Isotropic,
+                26.22,
+                3_800_000_000,
+                true,
+                null,
+                20,
+                18,
+                null,
+                8_800_000_000,
+                "3M00G7WEF",
+                "5M00G7WEF",
+                ("000ND00", "000ND00"),
+                12.4,
+                -9.2,
+                GainType.Dipole,
+                10.0,
+                2.0,
+                null,
+                null,
+                Country.Austria,
+                Country.Germany,
+                "D:\\TOPO",
+                "D:\\BORDER",
+                "D:\\MORPHO",
+                null
+            ), StringHelpers.ParseLegacyInputString("008E131251N4545018E131252N4545        000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1    20   18      8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0         AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              "));
+    }
+
+    [Fact]
+    public void ParsesLegacyOutputStringsCorrectly() =>
+        // point to line
+        Assert.Equal(new LegacyOutput(
+            new LegacyPointToLineInput(
+                (8.22, 51.7625),
+                24,
+                ("000ND00", "123AB56"),
+                23.5,
+                -11.0,
+                2,
+                GainType.Isotropic,
+                26.22,
+                3_800_000_000,
+                true,
+                Temperature.Warm,
+                20,
+                10.2,
+                "5M00G7WEF",
+                2.1,
+                Country.Austria,
+                Country.Germany,
+                2,
+                "D:\\TOPO",
+                "D:\\BORDER",
+                "D:\\MORPHO",
+                "C:\\"
+            ),
+            "1.3.37",
+            (8.36, 51.36027777777778),
+            (7.693333333333333, 72.69083333333333),
+            new InfoValues(
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            )
+        ), StringHelpers.ParseLegacyOutputString("008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                      1.3.37TTTTTTTTTTTTTTTTTT  008E213651N2137007E413672N4127C:\\"));
+
+    [Fact]
+    public void ParsesInfoValuesCorrectly()
+    {
+        Assert.Equal(new InfoValues(false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false), StringHelpers.ParseInfoValues("FFFFFFFFFFFFFFFFFF"));
+        Assert.Equal(new InfoValues(true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true), StringHelpers.ParseInfoValues("TTTTTTTTTTTTTTTTTT"));
+        Assert.Equal(new InfoValues(true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false), StringHelpers.ParseInfoValues("TFTFTFTFTFTFTFTFTF"));
+        Assert.Equal(new InfoValues(false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true), StringHelpers.ParseInfoValues("FTFTFTFTFTFTFTFTFT"));
+        Assert.Throws<ArgumentException>(() => StringHelpers.ParseInfoValues("TRÖT"));
     }
 }

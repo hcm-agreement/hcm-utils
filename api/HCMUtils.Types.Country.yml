@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Country
     path: src/HCMUtils/Types/Country.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Afghanistan
     path: src/HCMUtils/Types/Country.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Albania
     path: src/HCMUtils/Types/Country.cs
@@ -286,7 +286,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Algeria
     path: src/HCMUtils/Types/Country.cs
@@ -312,7 +312,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Andorra
     path: src/HCMUtils/Types/Country.cs
@@ -338,7 +338,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Angola
     path: src/HCMUtils/Types/Country.cs
@@ -364,7 +364,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: AntiguaAndBarbuda
     path: src/HCMUtils/Types/Country.cs
@@ -390,7 +390,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ArgentineRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -416,7 +416,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Armenia
     path: src/HCMUtils/Types/Country.cs
@@ -442,7 +442,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Australia
     path: src/HCMUtils/Types/Country.cs
@@ -468,7 +468,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Austria
     path: src/HCMUtils/Types/Country.cs
@@ -494,7 +494,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Azerbaijan
     path: src/HCMUtils/Types/Country.cs
@@ -520,7 +520,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Bahamas
     path: src/HCMUtils/Types/Country.cs
@@ -546,7 +546,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Bahrain
     path: src/HCMUtils/Types/Country.cs
@@ -572,7 +572,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Bangladesh
     path: src/HCMUtils/Types/Country.cs
@@ -598,7 +598,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Barbados
     path: src/HCMUtils/Types/Country.cs
@@ -624,7 +624,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Belarus
     path: src/HCMUtils/Types/Country.cs
@@ -650,7 +650,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Belgium
     path: src/HCMUtils/Types/Country.cs
@@ -676,7 +676,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Belize
     path: src/HCMUtils/Types/Country.cs
@@ -702,7 +702,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Benin
     path: src/HCMUtils/Types/Country.cs
@@ -728,7 +728,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Bhutan
     path: src/HCMUtils/Types/Country.cs
@@ -754,7 +754,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Bolivia
     path: src/HCMUtils/Types/Country.cs
@@ -780,7 +780,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BosniaAndHerzegovina
     path: src/HCMUtils/Types/Country.cs
@@ -806,7 +806,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Botswana
     path: src/HCMUtils/Types/Country.cs
@@ -832,7 +832,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Brazil
     path: src/HCMUtils/Types/Country.cs
@@ -858,7 +858,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BruneiDarussalam
     path: src/HCMUtils/Types/Country.cs
@@ -884,7 +884,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Bulgaria
     path: src/HCMUtils/Types/Country.cs
@@ -910,7 +910,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: BurkinaFaso
     path: src/HCMUtils/Types/Country.cs
@@ -936,7 +936,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Burundi
     path: src/HCMUtils/Types/Country.cs
@@ -962,7 +962,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: CaboVerde
     path: src/HCMUtils/Types/Country.cs
@@ -988,7 +988,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Cambodia
     path: src/HCMUtils/Types/Country.cs
@@ -1014,7 +1014,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Cameroon
     path: src/HCMUtils/Types/Country.cs
@@ -1040,7 +1040,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Canada
     path: src/HCMUtils/Types/Country.cs
@@ -1066,7 +1066,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: CentralAfricanRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -1092,7 +1092,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Chad
     path: src/HCMUtils/Types/Country.cs
@@ -1118,7 +1118,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Chile
     path: src/HCMUtils/Types/Country.cs
@@ -1144,7 +1144,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: China
     path: src/HCMUtils/Types/Country.cs
@@ -1170,7 +1170,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Colombia
     path: src/HCMUtils/Types/Country.cs
@@ -1196,7 +1196,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Comoros
     path: src/HCMUtils/Types/Country.cs
@@ -1222,7 +1222,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Congo
     path: src/HCMUtils/Types/Country.cs
@@ -1248,7 +1248,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: CostaRica
     path: src/HCMUtils/Types/Country.cs
@@ -1274,7 +1274,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: CoteDIvoire
     path: src/HCMUtils/Types/Country.cs
@@ -1300,7 +1300,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Croatia
     path: src/HCMUtils/Types/Country.cs
@@ -1326,7 +1326,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Cuba
     path: src/HCMUtils/Types/Country.cs
@@ -1352,7 +1352,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Cyprus
     path: src/HCMUtils/Types/Country.cs
@@ -1378,7 +1378,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: CzechRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -1404,7 +1404,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: DemocraticPeoplesRepublicofKorea
     path: src/HCMUtils/Types/Country.cs
@@ -1430,7 +1430,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: DemocraticRepublicOfTheCongo
     path: src/HCMUtils/Types/Country.cs
@@ -1456,7 +1456,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Denmark
     path: src/HCMUtils/Types/Country.cs
@@ -1482,7 +1482,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Djibouti
     path: src/HCMUtils/Types/Country.cs
@@ -1508,7 +1508,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Dominica
     path: src/HCMUtils/Types/Country.cs
@@ -1534,7 +1534,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: DominicanRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -1560,7 +1560,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Ecuador
     path: src/HCMUtils/Types/Country.cs
@@ -1586,7 +1586,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Egypt
     path: src/HCMUtils/Types/Country.cs
@@ -1612,7 +1612,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ElSalvador
     path: src/HCMUtils/Types/Country.cs
@@ -1638,7 +1638,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: EquatorialGuinea
     path: src/HCMUtils/Types/Country.cs
@@ -1664,7 +1664,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Eritrea
     path: src/HCMUtils/Types/Country.cs
@@ -1690,7 +1690,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Estonia
     path: src/HCMUtils/Types/Country.cs
@@ -1716,7 +1716,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Eswatini
     path: src/HCMUtils/Types/Country.cs
@@ -1742,7 +1742,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Ethiopia
     path: src/HCMUtils/Types/Country.cs
@@ -1768,7 +1768,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Fiji
     path: src/HCMUtils/Types/Country.cs
@@ -1794,7 +1794,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Finland
     path: src/HCMUtils/Types/Country.cs
@@ -1820,7 +1820,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: France
     path: src/HCMUtils/Types/Country.cs
@@ -1846,7 +1846,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Gabon
     path: src/HCMUtils/Types/Country.cs
@@ -1872,7 +1872,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Gambia
     path: src/HCMUtils/Types/Country.cs
@@ -1898,7 +1898,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Georgia
     path: src/HCMUtils/Types/Country.cs
@@ -1924,7 +1924,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Germany
     path: src/HCMUtils/Types/Country.cs
@@ -1950,7 +1950,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Ghana
     path: src/HCMUtils/Types/Country.cs
@@ -1976,7 +1976,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Greece
     path: src/HCMUtils/Types/Country.cs
@@ -2002,7 +2002,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Grenada
     path: src/HCMUtils/Types/Country.cs
@@ -2028,7 +2028,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Guatemala
     path: src/HCMUtils/Types/Country.cs
@@ -2054,7 +2054,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Guinea
     path: src/HCMUtils/Types/Country.cs
@@ -2080,7 +2080,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: GuineaBissau
     path: src/HCMUtils/Types/Country.cs
@@ -2106,7 +2106,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Guyana
     path: src/HCMUtils/Types/Country.cs
@@ -2132,7 +2132,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Haiti
     path: src/HCMUtils/Types/Country.cs
@@ -2158,7 +2158,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Honduras
     path: src/HCMUtils/Types/Country.cs
@@ -2184,7 +2184,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Hungary
     path: src/HCMUtils/Types/Country.cs
@@ -2210,7 +2210,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Iceland
     path: src/HCMUtils/Types/Country.cs
@@ -2236,7 +2236,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: India
     path: src/HCMUtils/Types/Country.cs
@@ -2262,7 +2262,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Indonesia
     path: src/HCMUtils/Types/Country.cs
@@ -2288,7 +2288,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Iran
     path: src/HCMUtils/Types/Country.cs
@@ -2314,7 +2314,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Iraq
     path: src/HCMUtils/Types/Country.cs
@@ -2340,7 +2340,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Ireland
     path: src/HCMUtils/Types/Country.cs
@@ -2366,7 +2366,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Israel
     path: src/HCMUtils/Types/Country.cs
@@ -2392,7 +2392,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Italy
     path: src/HCMUtils/Types/Country.cs
@@ -2418,7 +2418,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Jamaica
     path: src/HCMUtils/Types/Country.cs
@@ -2444,7 +2444,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Japan
     path: src/HCMUtils/Types/Country.cs
@@ -2470,7 +2470,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Jordan
     path: src/HCMUtils/Types/Country.cs
@@ -2496,7 +2496,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Kazakhstan
     path: src/HCMUtils/Types/Country.cs
@@ -2522,7 +2522,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Kenya
     path: src/HCMUtils/Types/Country.cs
@@ -2548,7 +2548,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Kiribati
     path: src/HCMUtils/Types/Country.cs
@@ -2574,7 +2574,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Korea
     path: src/HCMUtils/Types/Country.cs
@@ -2600,7 +2600,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Kuwait
     path: src/HCMUtils/Types/Country.cs
@@ -2626,7 +2626,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: KyrgyzRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -2652,7 +2652,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: LaoPeoplesDemocraticRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -2678,7 +2678,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Latvia
     path: src/HCMUtils/Types/Country.cs
@@ -2704,7 +2704,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Lebanon
     path: src/HCMUtils/Types/Country.cs
@@ -2730,7 +2730,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Lesotho
     path: src/HCMUtils/Types/Country.cs
@@ -2756,7 +2756,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Liberia
     path: src/HCMUtils/Types/Country.cs
@@ -2782,7 +2782,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Libya
     path: src/HCMUtils/Types/Country.cs
@@ -2808,7 +2808,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Liechtenstein
     path: src/HCMUtils/Types/Country.cs
@@ -2834,7 +2834,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Lithuania
     path: src/HCMUtils/Types/Country.cs
@@ -2860,7 +2860,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Luxembourg
     path: src/HCMUtils/Types/Country.cs
@@ -2886,7 +2886,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Madagascar
     path: src/HCMUtils/Types/Country.cs
@@ -2912,7 +2912,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Malawi
     path: src/HCMUtils/Types/Country.cs
@@ -2938,7 +2938,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Malaysia
     path: src/HCMUtils/Types/Country.cs
@@ -2964,7 +2964,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Maldives
     path: src/HCMUtils/Types/Country.cs
@@ -2990,7 +2990,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mali
     path: src/HCMUtils/Types/Country.cs
@@ -3016,7 +3016,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Malta
     path: src/HCMUtils/Types/Country.cs
@@ -3042,7 +3042,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: MarshallIslands
     path: src/HCMUtils/Types/Country.cs
@@ -3068,7 +3068,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mauritania
     path: src/HCMUtils/Types/Country.cs
@@ -3094,7 +3094,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mauritius
     path: src/HCMUtils/Types/Country.cs
@@ -3120,7 +3120,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mexico
     path: src/HCMUtils/Types/Country.cs
@@ -3146,7 +3146,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Micronesia
     path: src/HCMUtils/Types/Country.cs
@@ -3172,7 +3172,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Moldova
     path: src/HCMUtils/Types/Country.cs
@@ -3198,7 +3198,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Monaco
     path: src/HCMUtils/Types/Country.cs
@@ -3224,7 +3224,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mongolia
     path: src/HCMUtils/Types/Country.cs
@@ -3250,7 +3250,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Montenegro
     path: src/HCMUtils/Types/Country.cs
@@ -3276,7 +3276,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Morocco
     path: src/HCMUtils/Types/Country.cs
@@ -3302,7 +3302,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mozambique
     path: src/HCMUtils/Types/Country.cs
@@ -3328,7 +3328,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Myanmar
     path: src/HCMUtils/Types/Country.cs
@@ -3354,7 +3354,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Namibia
     path: src/HCMUtils/Types/Country.cs
@@ -3380,7 +3380,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Nauru
     path: src/HCMUtils/Types/Country.cs
@@ -3406,7 +3406,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Nepal
     path: src/HCMUtils/Types/Country.cs
@@ -3432,7 +3432,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Netherlands
     path: src/HCMUtils/Types/Country.cs
@@ -3458,7 +3458,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: NewZealand
     path: src/HCMUtils/Types/Country.cs
@@ -3484,7 +3484,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Nicaragua
     path: src/HCMUtils/Types/Country.cs
@@ -3510,7 +3510,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Niger
     path: src/HCMUtils/Types/Country.cs
@@ -3536,7 +3536,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Nigeria
     path: src/HCMUtils/Types/Country.cs
@@ -3562,7 +3562,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: NorthMacedonia
     path: src/HCMUtils/Types/Country.cs
@@ -3588,7 +3588,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Norway
     path: src/HCMUtils/Types/Country.cs
@@ -3614,7 +3614,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Oman
     path: src/HCMUtils/Types/Country.cs
@@ -3640,7 +3640,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Pakistan
     path: src/HCMUtils/Types/Country.cs
@@ -3666,7 +3666,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Palau
     path: src/HCMUtils/Types/Country.cs
@@ -3692,7 +3692,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Panama
     path: src/HCMUtils/Types/Country.cs
@@ -3718,7 +3718,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: PapuaNewGuinea
     path: src/HCMUtils/Types/Country.cs
@@ -3744,7 +3744,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Paraguay
     path: src/HCMUtils/Types/Country.cs
@@ -3770,7 +3770,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Peru
     path: src/HCMUtils/Types/Country.cs
@@ -3796,7 +3796,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Philippines
     path: src/HCMUtils/Types/Country.cs
@@ -3822,7 +3822,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Poland
     path: src/HCMUtils/Types/Country.cs
@@ -3848,7 +3848,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Portugal
     path: src/HCMUtils/Types/Country.cs
@@ -3874,7 +3874,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Qatar
     path: src/HCMUtils/Types/Country.cs
@@ -3900,7 +3900,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Romania
     path: src/HCMUtils/Types/Country.cs
@@ -3926,7 +3926,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: RussianFederation
     path: src/HCMUtils/Types/Country.cs
@@ -3952,7 +3952,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Rwanda
     path: src/HCMUtils/Types/Country.cs
@@ -3978,7 +3978,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SaintKittsAndNevis
     path: src/HCMUtils/Types/Country.cs
@@ -4004,7 +4004,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SaintLucia
     path: src/HCMUtils/Types/Country.cs
@@ -4030,7 +4030,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SaintVincentAndTheGrenadines
     path: src/HCMUtils/Types/Country.cs
@@ -4056,7 +4056,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Samoa
     path: src/HCMUtils/Types/Country.cs
@@ -4082,7 +4082,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SanMarino
     path: src/HCMUtils/Types/Country.cs
@@ -4108,7 +4108,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SaoTomeAndPrincipe
     path: src/HCMUtils/Types/Country.cs
@@ -4134,7 +4134,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SaudiArabia
     path: src/HCMUtils/Types/Country.cs
@@ -4160,7 +4160,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Senegal
     path: src/HCMUtils/Types/Country.cs
@@ -4186,7 +4186,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Serbia
     path: src/HCMUtils/Types/Country.cs
@@ -4212,7 +4212,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Seychelles
     path: src/HCMUtils/Types/Country.cs
@@ -4238,7 +4238,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SierraLeone
     path: src/HCMUtils/Types/Country.cs
@@ -4264,7 +4264,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Singapore
     path: src/HCMUtils/Types/Country.cs
@@ -4290,7 +4290,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SlovakRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -4316,7 +4316,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Slovenia
     path: src/HCMUtils/Types/Country.cs
@@ -4342,7 +4342,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SolomonIslands
     path: src/HCMUtils/Types/Country.cs
@@ -4368,7 +4368,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Somalia
     path: src/HCMUtils/Types/Country.cs
@@ -4394,7 +4394,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SouthAfrica
     path: src/HCMUtils/Types/Country.cs
@@ -4420,7 +4420,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SouthSudan
     path: src/HCMUtils/Types/Country.cs
@@ -4446,7 +4446,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Spain
     path: src/HCMUtils/Types/Country.cs
@@ -4472,7 +4472,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SriLanka
     path: src/HCMUtils/Types/Country.cs
@@ -4498,7 +4498,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Sudan
     path: src/HCMUtils/Types/Country.cs
@@ -4524,7 +4524,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Suriname
     path: src/HCMUtils/Types/Country.cs
@@ -4550,7 +4550,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Sweden
     path: src/HCMUtils/Types/Country.cs
@@ -4576,7 +4576,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Switzerland
     path: src/HCMUtils/Types/Country.cs
@@ -4602,7 +4602,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SyrianArabRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -4628,7 +4628,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Tajikistan
     path: src/HCMUtils/Types/Country.cs
@@ -4654,7 +4654,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Tanzania
     path: src/HCMUtils/Types/Country.cs
@@ -4680,7 +4680,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Thailand
     path: src/HCMUtils/Types/Country.cs
@@ -4706,7 +4706,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TimorLeste
     path: src/HCMUtils/Types/Country.cs
@@ -4732,7 +4732,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TogoleseRepublic
     path: src/HCMUtils/Types/Country.cs
@@ -4758,7 +4758,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Tonga
     path: src/HCMUtils/Types/Country.cs
@@ -4784,7 +4784,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TrinidadAndTobago
     path: src/HCMUtils/Types/Country.cs
@@ -4810,7 +4810,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Tunisia
     path: src/HCMUtils/Types/Country.cs
@@ -4836,7 +4836,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Turkmenistan
     path: src/HCMUtils/Types/Country.cs
@@ -4862,7 +4862,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Tuvalu
     path: src/HCMUtils/Types/Country.cs
@@ -4888,7 +4888,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Türkiye
     path: src/HCMUtils/Types/Country.cs
@@ -4914,7 +4914,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Uganda
     path: src/HCMUtils/Types/Country.cs
@@ -4940,7 +4940,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Ukraine
     path: src/HCMUtils/Types/Country.cs
@@ -4966,7 +4966,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: UnitedArabEmirates
     path: src/HCMUtils/Types/Country.cs
@@ -4992,7 +4992,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: UnitedKingdomOfGreatBritainAndNorthernIreland
     path: src/HCMUtils/Types/Country.cs
@@ -5018,7 +5018,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: UnitedStatesOfAmerica
     path: src/HCMUtils/Types/Country.cs
@@ -5044,7 +5044,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Uruguay
     path: src/HCMUtils/Types/Country.cs
@@ -5070,7 +5070,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Uzbekistan
     path: src/HCMUtils/Types/Country.cs
@@ -5096,7 +5096,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Vanuatu
     path: src/HCMUtils/Types/Country.cs
@@ -5122,7 +5122,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: VaticanCity
     path: src/HCMUtils/Types/Country.cs
@@ -5148,7 +5148,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Venezuela
     path: src/HCMUtils/Types/Country.cs
@@ -5174,7 +5174,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Vietnam
     path: src/HCMUtils/Types/Country.cs
@@ -5200,7 +5200,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Yemen
     path: src/HCMUtils/Types/Country.cs
@@ -5226,7 +5226,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Zambia
     path: src/HCMUtils/Types/Country.cs
@@ -5252,7 +5252,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/Types/Country.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Zimbabwe
     path: src/HCMUtils/Types/Country.cs

@@ -3,9 +3,9 @@ namespace HCMUtils.Validators;
 using FluentValidation;
 using HCMUtils.Types;
 
-public class BuildLegacyInputStringInputValidator<TCalculationType> : AbstractValidator<TCalculationType> where TCalculationType : BuildLegacyInputStringInput
+public class LegacyInputValidator<TLegacyInput> : AbstractValidator<TLegacyInput> where TLegacyInput : LegacyInput
 {
-    public BuildLegacyInputStringInputValidator()
+    public LegacyInputValidator()
     {
         this.RuleFor(input => input.TxSiteHeight)
             .ExclusiveBetween(-1_000, 10_000)
@@ -22,7 +22,7 @@ public class BuildLegacyInputStringInputValidator<TCalculationType> : AbstractVa
         this.RuleFor(input => input.TxElevation)
             .ExclusiveBetween(-100.0, 1_000.0);
         this.RuleFor(input => input.TxAntennaHeight)
-            .ExclusiveBetween(0, 10_000);
+            .InclusiveBetween(0, 9_999);
         this.RuleFor(input => input.TxPower)
             .ExclusiveBetween(0, 1000.00);
         this.RuleFor(input => input.TxFrequency)

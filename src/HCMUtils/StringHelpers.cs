@@ -208,15 +208,15 @@ public partial class StringHelpers
     public static string ToTemperatureString(Temperature temperature) => temperature == Temperature.Warm ? "W" : "C";
 
     /// <summary>
-    /// Returns a legacy input string for point-to-point calculations
+    /// Returns a legacy string for point-to-point calculations
     /// </summary>
     /// <param name="input">The input data to build the string</param>
-    /// <returns>The legacy input string</returns>
-    public static string BuildLegacyInputString(
-        BuildLegacyInputStringPointToPointInput input
+    /// <returns>The legacy string</returns>
+    public static string ToLegacyString(
+        LegacyPointToPointInput input
     )
     {
-        new BuildLegacyInputStringPointToPointInputValidator().Validate(input, options =>
+        new LegacyPointToPointInputValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();
@@ -266,15 +266,15 @@ public partial class StringHelpers
     }
 
     /// <summary>
-    /// Returns a legacy input string for point-to-line calculations
+    /// Returns a legacy string for point-to-line calculations
     /// </summary>
     /// <param name="input">The input data to build the string</param>
-    /// <returns>The legacy input string</returns>
-    public static string BuildLegacyInputString(
-        BuildLegacyInputStringPointToLineInput input
+    /// <returns>The legacy string</returns>
+    public static string ToLegacyString(
+        LegacyPointToLineInput input
     )
     {
-        new BuildLegacyInputStringPointToLineInputValidator().Validate(input, options =>
+        new LegacyPointToLineInputValidator().Validate(input, options =>
         {
             options.IncludeAllRuleSets();
             options.ThrowOnFailures();
@@ -320,5 +320,140 @@ public partial class StringHelpers
           "".PadLeft(15) +
           "".PadLeft(15) +
           input.DebugOutputPath;
+    }
+
+    [GeneratedRegex(@"(?<txSiteHeightFromDatabase>F|T)(?<txSiteHeightDifferentFromDatabase>F|T)(?<txSiteHeightLargeDifferenceFromDatabase>F|T)(?<frequencyOutOfRange>F|T)(?<permissibleFieldStrengthInputUsed>F|T)(?<maxCrossBorderRangeInputUsed>F|T)(?<serviceAreasOverlapping>F|T)(?<rxSiteHeightFromDatabase>F|T)(?<rxSiteHeightDifferentFromDatabase>F|T)(?<rxSiteHeightLargeDifferenceFromDatabase>F|T)(?<freeSpaceFieldStrengthUsedBecauseSmallDistance>F|T)(?<freeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree>F|T)(?<distanceOverSeaLargerThanDistanceBetweenTxRx>F|T)(?<frequencyDifferenceCorrectionFactorInputUsed>F|T)(?<frequencyDifferenceOutOfRange>F|T)(?<distanceOverSeaReset>F|T)(?<txChannelSpacingOutOfRange>F|T)(?<correctionFactors380400Used>F|T)")]
+    internal static partial Regex InfoValuesRegex();
+
+    /// <summary>
+    /// Parses a string of info values
+    /// </summary>
+    /// <param name="input">A string of at least 18 characters being either `T` or `F`</param>
+    /// <returns>The parsed info values</returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static InfoValues ParseInfoValues(string input)
+    {
+        var match = InfoValuesRegex().Match(input.ToUpperInvariant());
+        if (!match.Success)
+        {
+            throw new ArgumentException($"Unable to parse input: `{input}`");
+        }
+
+        return new InfoValues(
+            match.Groups["txSiteHeightFromDatabase"].Value == "T",
+            match.Groups["txSiteHeightDifferentFromDatabase"].Value == "T",
+            match.Groups["txSiteHeightLargeDifferenceFromDatabase"].Value == "T",
+            match.Groups["frequencyOutOfRange"].Value == "T",
+            match.Groups["permissibleFieldStrengthInputUsed"].Value == "T",
+            match.Groups["maxCrossBorderRangeInputUsed"].Value == "T",
+            match.Groups["serviceAreasOverlapping"].Value == "T",
+            match.Groups["rxSiteHeightFromDatabase"].Value == "T",
+            match.Groups["rxSiteHeightDifferentFromDatabase"].Value == "T",
+            match.Groups["rxSiteHeightLargeDifferenceFromDatabase"].Value == "T",
+            match.Groups["freeSpaceFieldStrengthUsedBecauseSmallDistance"].Value == "T",
+            match.Groups["freeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree"].Value == "T",
+            match.Groups["distanceOverSeaLargerThanDistanceBetweenTxRx"].Value == "T",
+            match.Groups["frequencyDifferenceCorrectionFactorInputUsed"].Value == "T",
+            match.Groups["frequencyDifferenceOutOfRange"].Value == "T",
+            match.Groups["distanceOverSeaReset"].Value == "T",
+            match.Groups["txChannelSpacingOutOfRange"].Value == "T",
+            match.Groups["correctionFactors380400Used"].Value == "T"
+        );
+    }
+
+    /// <summary>
+    /// Parses a legacy output string, including the calculated tx/rx coordinates, version and info values
+    /// </summary>
+    /// <param name="outputString"></param>
+    /// <returns>The parsed output string including the input it was read out of</returns>
+    public static LegacyOutput ParseLegacyOutputString(string outputString)
+    {
+        var input = ParseLegacyInputString(outputString);
+
+        return new LegacyOutput(
+            input,
+            outputString[376..382].Trim(),
+            ParseCoordinates(outputString[402..417]),
+            ParseCoordinates(outputString[417..432]),
+            ParseInfoValues(outputString[382..402])
+        );
+    }
+
+    /// <summary>
+    /// Parses a legacy input string
+    /// </summary>
+    /// <param name="input">The legacy input string</param>
+    /// <returns>A legacy input containing the parsed values</returns>
+    public static LegacyInput ParseLegacyInputString(string input)
+    {
+        // TODO validate
+
+        if (input[15..31].Trim().Length == 0)
+        {
+            return new LegacyPointToLineInput(
+                ParseCoordinates(input[..15]),
+                int.TryParse(input[30..34], CultureInfo.InvariantCulture, out var txSiteHeight) ? txSiteHeight : null,
+                (input[38..45], input[45..52]),
+                double.Parse(input[52..57], CultureInfo.InvariantCulture),
+                double.Parse(input[57..62], CultureInfo.InvariantCulture),
+                int.Parse(input[62..66], CultureInfo.InvariantCulture),
+                ParseGainType(input[70..71]),
+                double.Parse(input[71..77], CultureInfo.InvariantCulture),
+                ParseSINumber(input[77..89]),
+                ParseBoolean(input[89..90]),
+                input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
+                int.Parse(input[91..96], CultureInfo.InvariantCulture),
+                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                input[127..136],
+                double.TryParse(input[169..174], CultureInfo.InvariantCulture, out var permissibleFieldStrength) ? permissibleFieldStrength : null,
+                ITUHelpers.ParseCountry(input[178..181]),
+                ITUHelpers.ParseCountry(input[181..184]),
+                int.Parse(input[184..187], CultureInfo.InvariantCulture),
+                input[187..250].Trim(),
+                input[250..313].Trim(),
+                input[313..376].Trim(),
+                input[432..].Trim().Length > 0 ? input[432..].Trim() : null
+            );
+        }
+        else
+        {
+            return new LegacyPointToPointInput(
+                ParseCoordinates(input[..15]),
+                ParseCoordinates(input[15..30]),
+                int.TryParse(input[30..34], CultureInfo.InvariantCulture, out var txSiteHeight) ? txSiteHeight : null,
+                int.TryParse(input[34..38], CultureInfo.InvariantCulture, out var rxSiteHeight) ? rxSiteHeight : null,
+                (input[38..45], input[45..52]),
+                double.Parse(input[52..57], CultureInfo.InvariantCulture),
+                double.Parse(input[57..62], CultureInfo.InvariantCulture),
+                int.Parse(input[62..66], CultureInfo.InvariantCulture),
+                int.Parse(input[66..70], CultureInfo.InvariantCulture),
+                ParseGainType(input[70..71]),
+                double.Parse(input[71..77], CultureInfo.InvariantCulture),
+                ParseSINumber(input[77..89]),
+                ParseBoolean(input[89..90]),
+                input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
+                int.Parse(input[91..96], CultureInfo.InvariantCulture),
+                int.Parse(input[96..101], CultureInfo.InvariantCulture),
+                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                ParseSINumber(input[106..118]),
+                input[118..127],
+                input[127..136],
+                (input[136..143], input[143..150]),
+                double.Parse(input[150..155], CultureInfo.InvariantCulture),
+                double.Parse(input[155..160], CultureInfo.InvariantCulture),
+                ParseGainType(input[160..161]),
+                double.Parse(input[161..165], CultureInfo.InvariantCulture),
+                double.Parse(input[165..169], CultureInfo.InvariantCulture),
+                double.TryParse(input[169..174], CultureInfo.InvariantCulture, out var permissibleFieldStrength) ? permissibleFieldStrength : null,
+                int.TryParse(input[174..178], CultureInfo.InvariantCulture, out var frequencyDifferenceCorrectionFactor) ? frequencyDifferenceCorrectionFactor : null,
+                ITUHelpers.ParseCountry(input[178..181]),
+                ITUHelpers.ParseCountry(input[181..184]),
+                input[187..250].Trim(),
+                input[250..313].Trim(),
+                input[313..376].Trim(),
+                input[432..].Trim().Length > 0 ? input[432..].Trim() : null
+            );
+        }
+
     }
 }

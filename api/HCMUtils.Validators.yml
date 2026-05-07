@@ -4,9 +4,9 @@ items:
   commentId: N:HCMUtils.Validators
   id: HCMUtils.Validators
   children:
-  - HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
-  - HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
-  - HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
+  - HCMUtils.Validators.LegacyInputValidator`1
+  - HCMUtils.Validators.LegacyPointToLineInputValidator
+  - HCMUtils.Validators.LegacyPointToPointInputValidator
   langs:
   - csharp
   - vb
@@ -17,40 +17,40 @@ items:
   assemblies:
   - HCMUtils
 references:
-- uid: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
-  commentId: T:HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
-  href: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator.html
-  name: BuildLegacyInputStringPointToLineInputValidator
-  nameWithType: BuildLegacyInputStringPointToLineInputValidator
-  fullName: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
-- uid: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
-  commentId: T:HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
-  href: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator.html
-  name: BuildLegacyInputStringPointToPointInputValidator
-  nameWithType: BuildLegacyInputStringPointToPointInputValidator
-  fullName: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
-- uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
-  commentId: T:HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
-  href: HCMUtils.Validators.BuildLegacyInputStringInputValidator-1.html
-  name: BuildLegacyInputStringInputValidator<TCalculationType>
-  nameWithType: BuildLegacyInputStringInputValidator<TCalculationType>
-  fullName: HCMUtils.Validators.BuildLegacyInputStringInputValidator<TCalculationType>
-  nameWithType.vb: BuildLegacyInputStringInputValidator(Of TCalculationType)
-  fullName.vb: HCMUtils.Validators.BuildLegacyInputStringInputValidator(Of TCalculationType)
-  name.vb: BuildLegacyInputStringInputValidator(Of TCalculationType)
+- uid: HCMUtils.Validators.LegacyInputValidator`1
+  commentId: T:HCMUtils.Validators.LegacyInputValidator`1
+  href: HCMUtils.Validators.LegacyInputValidator-1.html
+  name: LegacyInputValidator<TLegacyInput>
+  nameWithType: LegacyInputValidator<TLegacyInput>
+  fullName: HCMUtils.Validators.LegacyInputValidator<TLegacyInput>
+  nameWithType.vb: LegacyInputValidator(Of TLegacyInput)
+  fullName.vb: HCMUtils.Validators.LegacyInputValidator(Of TLegacyInput)
+  name.vb: LegacyInputValidator(Of TLegacyInput)
   spec.csharp:
-  - uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
-    name: BuildLegacyInputStringInputValidator
-    href: HCMUtils.Validators.BuildLegacyInputStringInputValidator-1.html
+  - uid: HCMUtils.Validators.LegacyInputValidator`1
+    name: LegacyInputValidator
+    href: HCMUtils.Validators.LegacyInputValidator-1.html
   - name: <
-  - name: TCalculationType
+  - name: TLegacyInput
   - name: '>'
   spec.vb:
-  - uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
-    name: BuildLegacyInputStringInputValidator
-    href: HCMUtils.Validators.BuildLegacyInputStringInputValidator-1.html
+  - uid: HCMUtils.Validators.LegacyInputValidator`1
+    name: LegacyInputValidator
+    href: HCMUtils.Validators.LegacyInputValidator-1.html
   - name: (
   - name: Of
   - name: " "
-  - name: TCalculationType
+  - name: TLegacyInput
   - name: )
+- uid: HCMUtils.Validators.LegacyPointToLineInputValidator
+  commentId: T:HCMUtils.Validators.LegacyPointToLineInputValidator
+  href: HCMUtils.Validators.LegacyPointToLineInputValidator.html
+  name: LegacyPointToLineInputValidator
+  nameWithType: LegacyPointToLineInputValidator
+  fullName: HCMUtils.Validators.LegacyPointToLineInputValidator
+- uid: HCMUtils.Validators.LegacyPointToPointInputValidator
+  commentId: T:HCMUtils.Validators.LegacyPointToPointInputValidator
+  href: HCMUtils.Validators.LegacyPointToPointInputValidator.html
+  name: LegacyPointToPointInputValidator
+  nameWithType: LegacyPointToPointInputValidator
+  fullName: HCMUtils.Validators.LegacyPointToPointInputValidator

@@ -33,7 +33,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Input
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -66,14 +66,14 @@ items:
   langs:
   - csharp
   - vb
-  name: Input(int, (double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, double, GainType, double, bool, Temperature?, double?, int, Country, double?, string)
-  nameWithType: Input.Input(int, (double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, double, GainType, double, bool, Temperature?, double?, int, Country, double?, string)
-  fullName: HCMUtils.MultiCalc.Input.Input(int, (double Lat, double Long), int?, (string Horizontal, string Vertical), double, double, int, double, HCMUtils.Types.GainType, double, bool, HCMUtils.Types.Temperature?, double?, int, HCMUtils.Types.Country, double?, string)
+  name: Input(int, (double Long, double Lat), int?, (string Horizontal, string Vertical), double, double, int, double, GainType, double, bool, Temperature?, double?, int, Country, double?, string)
+  nameWithType: Input.Input(int, (double Long, double Lat), int?, (string Horizontal, string Vertical), double, double, int, double, GainType, double, bool, Temperature?, double?, int, Country, double?, string)
+  fullName: HCMUtils.MultiCalc.Input.Input(int, (double Long, double Lat), int?, (string Horizontal, string Vertical), double, double, int, double, HCMUtils.Types.GainType, double, bool, HCMUtils.Types.Temperature?, double?, int, HCMUtils.Types.Country, double?, string)
   type: Constructor
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: .ctor
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -82,7 +82,7 @@ items:
   - HCMUtils
   namespace: HCMUtils.MultiCalc
   syntax:
-    content: public Input(int Mode, (double Lat, double Long) TxCoordinates, int? TxSiteHeight, (string Horizontal, string Vertical) TxAntennaType, double TxAzimuth, double TxElevation, int TxAntennaHeight, double TxPower, GainType TxGainType, double TxFrequency, bool ChannelOccupation, Temperature? SeaTemperature, double? DistanceOverSea, int TxServiceAreaRadius, Country TxCountry, double? PermissibleFieldStrength, string TxEmissionDesignation)
+    content: public Input(int Mode, (double Long, double Lat) TxCoordinates, int? TxSiteHeight, (string Horizontal, string Vertical) TxAntennaType, double TxAzimuth, double TxElevation, int TxAntennaHeight, double TxPower, GainType TxGainType, double TxFrequency, bool ChannelOccupation, Temperature? SeaTemperature, double? DistanceOverSea, int TxServiceAreaRadius, Country TxCountry, double? PermissibleFieldStrength, string TxEmissionDesignation)
     parameters:
     - id: Mode
       type: System.Int32
@@ -118,11 +118,11 @@ items:
       type: System.Nullable{System.Double}
     - id: TxEmissionDesignation
       type: System.String
-    content.vb: Public Sub New(Mode As Integer, TxCoordinates As (Lat As Double, [Long] As Double), TxSiteHeight As Integer?, TxAntennaType As (Horizontal As String, Vertical As String), TxAzimuth As Double, TxElevation As Double, TxAntennaHeight As Integer, TxPower As Double, TxGainType As GainType, TxFrequency As Double, ChannelOccupation As Boolean, SeaTemperature As Temperature?, DistanceOverSea As Double?, TxServiceAreaRadius As Integer, TxCountry As Country, PermissibleFieldStrength As Double?, TxEmissionDesignation As String)
+    content.vb: Public Sub New(Mode As Integer, TxCoordinates As ([Long] As Double, Lat As Double), TxSiteHeight As Integer?, TxAntennaType As (Horizontal As String, Vertical As String), TxAzimuth As Double, TxElevation As Double, TxAntennaHeight As Integer, TxPower As Double, TxGainType As GainType, TxFrequency As Double, ChannelOccupation As Boolean, SeaTemperature As Temperature?, DistanceOverSea As Double?, TxServiceAreaRadius As Integer, TxCountry As Country, PermissibleFieldStrength As Double?, TxEmissionDesignation As String)
   overload: HCMUtils.MultiCalc.Input.#ctor*
-  nameWithType.vb: Input.New(Integer, (Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, GainType, Double, Boolean, Temperature?, Double?, Integer, Country, Double?, String)
-  fullName.vb: HCMUtils.MultiCalc.Input.New(Integer, (Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, HCMUtils.Types.GainType, Double, Boolean, HCMUtils.Types.Temperature?, Double?, Integer, HCMUtils.Types.Country, Double?, String)
-  name.vb: New(Integer, (Lat As Double, Long As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, GainType, Double, Boolean, Temperature?, Double?, Integer, Country, Double?, String)
+  nameWithType.vb: Input.New(Integer, (Long As Double, Lat As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, GainType, Double, Boolean, Temperature?, Double?, Integer, Country, Double?, String)
+  fullName.vb: HCMUtils.MultiCalc.Input.New(Integer, (Long As Double, Lat As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, HCMUtils.Types.GainType, Double, Boolean, HCMUtils.Types.Temperature?, Double?, Integer, HCMUtils.Types.Country, Double?, String)
+  name.vb: New(Integer, (Long As Double, Lat As Double), Integer?, (Horizontal As String, Vertical As String), Double, Double, Integer, Double, GainType, Double, Boolean, Temperature?, Double?, Integer, Country, Double?, String)
 - uid: HCMUtils.MultiCalc.Input.Mode
   commentId: P:HCMUtils.MultiCalc.Input.Mode
   id: Mode
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: Mode
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxCoordinates
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -175,11 +175,11 @@ items:
   - HCMUtils
   namespace: HCMUtils.MultiCalc
   syntax:
-    content: public (double Lat, double Long) TxCoordinates { get; init; }
+    content: public (double Long, double Lat) TxCoordinates { get; init; }
     parameters: []
     return:
       type: System.ValueTuple{System.Double,System.Double}
-    content.vb: Public Property TxCoordinates As (Lat As Double, [Long] As Double)
+    content.vb: Public Property TxCoordinates As ([Long] As Double, Lat As Double)
   overload: HCMUtils.MultiCalc.Input.TxCoordinates*
 - uid: HCMUtils.MultiCalc.Input.TxSiteHeight
   commentId: P:HCMUtils.MultiCalc.Input.TxSiteHeight
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxSiteHeight
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxAntennaType
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxAzimuth
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -282,7 +282,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxElevation
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxAntennaHeight
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxPower
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxGainType
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -398,7 +398,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxFrequency
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -427,7 +427,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: ChannelOccupation
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -456,7 +456,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: SeaTemperature
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -485,7 +485,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: DistanceOverSea
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -514,7 +514,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxServiceAreaRadius
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -543,7 +543,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxCountry
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -572,7 +572,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: PermissibleFieldStrength
     path: src/HCMUtils/MultiCalc/Input.cs
@@ -601,7 +601,7 @@ items:
   source:
     remote:
       path: src/HCMUtils/MultiCalc/Input.cs
-      branch: validate-legacy-string-input
+      branch: parse-io-string
       repo: git@github.com:hcm-agreement/hcm-utils.git
     id: TxEmissionDesignation
     path: src/HCMUtils/MultiCalc/Input.cs

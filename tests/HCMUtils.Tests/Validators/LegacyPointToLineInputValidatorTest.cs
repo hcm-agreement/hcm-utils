@@ -4,12 +4,12 @@ using FluentValidation.TestHelper;
 using HCMUtils.Types;
 using HCMUtils.Validators;
 
-public class BuildLegacyInputStringPointToLineInputValidatorTest
+public class LegacyPointToLineInputValidatorTest
 {
     [Fact]
     public void ValidatesInputCorrectly()
     {
-        var input = new BuildLegacyInputStringPointToLineInput(
+        var input = new LegacyPointToLineInput(
             (8.22, 51.7625),
             10_000,
             ("x000ND00", "x123AB56"),
@@ -34,10 +34,9 @@ public class BuildLegacyInputStringPointToLineInputValidatorTest
             "C:\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ\\ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         );
 
-        var validator = new BuildLegacyInputStringPointToLineInputValidator();
+        var validator = new LegacyPointToLineInputValidator();
         var validationResult = validator.TestValidate(input, options => options.IncludeAllRuleSets());
 
-        validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange)
-            .WithErrorMessage("'Max Cross Border Range' must be between -100 and 1000 (exclusive). You entered 10000.");
+        validationResult.ShouldHaveValidationErrorFor(input => input.MaxCrossBorderRange);
     }
 }

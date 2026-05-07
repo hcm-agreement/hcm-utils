@@ -30,21 +30,27 @@ items:
   name: HCMUtils.Types
   type: Namespace
   items:
-  - uid: HCMUtils.Types.BuildLegacyInputStringInput
-    name: BuildLegacyInputStringInput
-    type: Class
-  - uid: HCMUtils.Types.BuildLegacyInputStringPointToLineInput
-    name: BuildLegacyInputStringPointToLineInput
-    type: Class
-  - uid: HCMUtils.Types.BuildLegacyInputStringPointToPointInput
-    name: BuildLegacyInputStringPointToPointInput
-    type: Class
   - uid: HCMUtils.Types.Country
     name: Country
     type: Enum
   - uid: HCMUtils.Types.GainType
     name: GainType
     type: Enum
+  - uid: HCMUtils.Types.InfoValues
+    name: InfoValues
+    type: Class
+  - uid: HCMUtils.Types.LegacyInput
+    name: LegacyInput
+    type: Class
+  - uid: HCMUtils.Types.LegacyOutput
+    name: LegacyOutput
+    type: Class
+  - uid: HCMUtils.Types.LegacyPointToLineInput
+    name: LegacyPointToLineInput
+    type: Class
+  - uid: HCMUtils.Types.LegacyPointToPointInput
+    name: LegacyPointToPointInput
+    type: Class
   - uid: HCMUtils.Types.ModeType
     name: ModeType
     type: Enum
@@ -58,13 +64,13 @@ items:
   name: HCMUtils.Validators
   type: Namespace
   items:
-  - uid: HCMUtils.Validators.BuildLegacyInputStringInputValidator`1
-    name: BuildLegacyInputStringInputValidator<TCalculationType>
+  - uid: HCMUtils.Validators.LegacyInputValidator`1
+    name: LegacyInputValidator<TLegacyInput>
     type: Class
-  - uid: HCMUtils.Validators.BuildLegacyInputStringPointToLineInputValidator
-    name: BuildLegacyInputStringPointToLineInputValidator
+  - uid: HCMUtils.Validators.LegacyPointToLineInputValidator
+    name: LegacyPointToLineInputValidator
     type: Class
-  - uid: HCMUtils.Validators.BuildLegacyInputStringPointToPointInputValidator
-    name: BuildLegacyInputStringPointToPointInputValidator
+  - uid: HCMUtils.Validators.LegacyPointToPointInputValidator
+    name: LegacyPointToPointInputValidator
     type: Class
 memberLayout: SamePage
