@@ -373,6 +373,7 @@ public partial class StringHelpers
 
         return new LegacyOutput(
             input,
+            ParseTemperature(outputString[90..91]),
             outputString[376..382].Trim(),
             ParseCoordinates(outputString[402..417]),
             ParseCoordinates(outputString[417..432]),

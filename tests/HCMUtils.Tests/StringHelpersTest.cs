@@ -575,6 +575,7 @@ public class StringHelpersTest
                 "D:\\MORPHO",
                 "C:\\"
             ),
+            Temperature.Warm,
             "1.3.37",
             (8.36, 51.36027777777778),
             (7.693333333333333, 72.69083333333333),
