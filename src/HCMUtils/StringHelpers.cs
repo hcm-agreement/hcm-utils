@@ -114,7 +114,7 @@ public partial class StringHelpers
     {
         "w" => Temperature.Warm,
         "c" => Temperature.Cold,
-        "i" => Temperature.Moderate,
+        "i" => Temperature.Intermediate,
         _ => throw new ArgumentException($"Unable to parse temperature `{input}")
     };
 
@@ -209,7 +209,7 @@ public partial class StringHelpers
     public static string ToTemperatureString(Temperature temperature) => temperature switch
     {
         Temperature.Cold => "C",
-        Temperature.Moderate => "I",
+        Temperature.Intermediate => "I",
         Temperature.Warm => "W",
         _ => throw new ArgumentException($"Not an enum value {temperature}")
     };

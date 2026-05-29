@@ -4,5 +4,5 @@ public enum Temperature
 {
     Warm,
     Cold,
-    Moderate
+    Intermediate
 }
