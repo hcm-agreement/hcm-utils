@@ -114,6 +114,7 @@ public partial class StringHelpers
     {
         "w" => Temperature.Warm,
         "c" => Temperature.Cold,
+        "i" => Temperature.Moderate,
         _ => throw new ArgumentException($"Unable to parse temperature `{input}")
     };
 

@@ -89,6 +89,8 @@ public class StringHelpersTest
         Assert.Equal(Temperature.Warm, StringHelpers.ParseTemperature("W"));
         Assert.Equal(Temperature.Cold, StringHelpers.ParseTemperature("c"));
         Assert.Equal(Temperature.Warm, StringHelpers.ParseTemperature("w"));
+        Assert.Equal(Temperature.Moderate, StringHelpers.ParseTemperature("I"));
+        Assert.Equal(Temperature.Moderate, StringHelpers.ParseTemperature("i"));
         Assert.Throws<ArgumentException>(() => StringHelpers.ParseTemperature("f"));
     }
 
