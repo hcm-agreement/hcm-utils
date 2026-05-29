@@ -187,6 +187,8 @@ public class StringHelpersTest
     {
         Assert.Equal("W", StringHelpers.ToTemperatureString(Temperature.Warm));
         Assert.Equal("C", StringHelpers.ToTemperatureString(Temperature.Cold));
+        Assert.Equal("I", StringHelpers.ToTemperatureString(Temperature.Moderate));
+        Assert.Throws<ArgumentException>(() => StringHelpers.ToTemperatureString((Temperature)1337));
     }
 
     [Fact]

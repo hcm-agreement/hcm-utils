@@ -206,7 +206,13 @@ public partial class StringHelpers
     /// <returns>The ouput string, e.g. "1"</returns>
     public static string ToBooleanString(bool input) => input ? "1" : "0";
 
-    public static string ToTemperatureString(Temperature temperature) => temperature == Temperature.Warm ? "W" : "C";
+    public static string ToTemperatureString(Temperature temperature) => temperature switch
+    {
+        Temperature.Cold => "C",
+        Temperature.Moderate => "I",
+        Temperature.Warm => "W",
+        _ => throw new ArgumentException($"Not an enum value {temperature}")
+    };
 
     /// <summary>
     /// Returns a legacy string for point-to-point calculations
