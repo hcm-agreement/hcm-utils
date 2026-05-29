@@ -22,7 +22,7 @@ public class LegacyPointToLineInputValidatorTest
             true,
             Temperature.Warm,
             10000,
-            10000.0,
+            10000,
             "x5M00G7WEF",
             10_000.0,
             Country.Austria,

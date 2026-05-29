@@ -38,7 +38,7 @@ public record LegacyPointToLineInput(
     bool ChannelOccupation,
     Temperature? SeaTemperature,
     int TxServiceAreaRadius,
-    double? DistanceOverSea,
+    int? DistanceOverSea,
     string TxEmissionDesignation,
     double? PermissibleFieldStrength,
     Country TargetCountry,

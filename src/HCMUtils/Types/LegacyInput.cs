@@ -38,7 +38,7 @@ public record LegacyInput(
     bool ChannelOccupation,
     Temperature? SeaTemperature,
     int TxServiceAreaRadius,
-    double? DistanceOverSea,
+    int? DistanceOverSea,
     string TxEmissionDesignation,
     double? PermissibleFieldStrength,
     Country TxCountry,

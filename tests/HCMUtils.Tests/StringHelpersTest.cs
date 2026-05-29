@@ -208,7 +208,7 @@ public class StringHelpersTest
                 Temperature.Warm,
                 112_320,
                 -18_123,
-                1210.2,
+                1210,
                 -1,
                 "13M00G7WEF",
                 "15M00G7WEF",
@@ -243,7 +243,7 @@ public class StringHelpersTest
                 true,
                 Temperature.Warm,
                 10000,
-                10000.0,
+                10000,
                 "x5M00G7WEF",
                 10_000.0,
                 Country.Austria,
@@ -262,7 +262,7 @@ public class StringHelpersTest
     {
         // point to line
         Assert.Equal(
-            "008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
+            "008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20        10                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
             StringHelpers.ToLegacyString(
                 new LegacyPointToLineInput(
                     (8.22, 51.7625),
@@ -277,7 +277,7 @@ public class StringHelpersTest
                     true,
                     Temperature.Warm,
                     20,
-                    10.2,
+                    10,
                     "5M00G7WEF",
                     2.1,
                     Country.Austria,
@@ -293,7 +293,7 @@ public class StringHelpersTest
 
         // point to point
         Assert.Equal(
-            "008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
+            "008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18   10 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\",
             StringHelpers.ToLegacyString(
                 new LegacyPointToPointInput(
                     (8.22, 51.7625),
@@ -312,7 +312,7 @@ public class StringHelpersTest
                     Temperature.Warm,
                     20,
                     18,
-                    10.2,
+                    10,
                     8_800_000_000,
                     "3M00G7WEF",
                     "5M00G7WEF",
@@ -427,7 +427,7 @@ public class StringHelpersTest
             true,
             Temperature.Warm,
             20,
-            10.2,
+            10,
             "5M00G7WEF",
             2.1,
             Country.Austria,
@@ -437,7 +437,7 @@ public class StringHelpersTest
             "D:\\BORDER",
             "D:\\MORPHO",
             "C:\\"
-        ), StringHelpers.ParseLegacyInputString("008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\"));
+        ), StringHelpers.ParseLegacyInputString("008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20        10                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\"));
 
         // point to point
         Assert.Equal(new LegacyPointToPointInput(
@@ -457,7 +457,7 @@ public class StringHelpersTest
             Temperature.Warm,
             20,
             18,
-            10.2,
+            10,
             8_800_000_000,
             "3M00G7WEF",
             "5M00G7WEF",
@@ -475,7 +475,7 @@ public class StringHelpersTest
             "D:\\BORDER",
             "D:\\MORPHO",
             "C:\\"
-        ), StringHelpers.ParseLegacyInputString("008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18 10.2 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\"));
+        ), StringHelpers.ParseLegacyInputString("008E131251N4545018E131252N4545  24  22000ND00123AB56 23.5-11.0   2   4I 26.22 3800.00000M1W   20   18   10 8800.00000M3M00G7WEF5M00G7WEF000ND00000ND00 12.4 -9.2E10.0 2.0  2.1   1AUTD__   D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                                                                              C:\\"));
 
         // test null parameters
         // point to line
@@ -562,7 +562,7 @@ public class StringHelpersTest
                 true,
                 Temperature.Warm,
                 20,
-                10.2,
+                10,
                 "5M00G7WEF",
                 2.1,
                 Country.Austria,
@@ -596,7 +596,7 @@ public class StringHelpersTest
                 true,
                 true
             )
-        ), StringHelpers.ParseLegacyOutputString("008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20      10.2                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                      1.3.37TTTTTTTTTTTTTTTTTT  008E213651N2137007E413672N4127C:\\"));
+        ), StringHelpers.ParseLegacyOutputString("008E131251N4545                 24    000ND00123AB56 23.5-11.0   2    I 26.22 3800.00000M1W   20        10                     5M00G7WEF                                   2.1    AUTD__  2D:\\TOPO                                                        D:\\BORDER                                                      D:\\MORPHO                                                      1.3.37TTTTTTTTTTTTTTTTTT  008E213651N2137007E413672N4127C:\\"));
 
     [Fact]
     public void ParsesInfoValuesCorrectly()

@@ -31,7 +31,7 @@ public class LegacyInputValidator<TLegacyInput> : AbstractValidator<TLegacyInput
         this.RuleFor(input => input.TxServiceAreaRadius)
             .InclusiveBetween(0, 9999);
         this.RuleFor(input => input.DistanceOverSea)
-            .ExclusiveBetween(0, 10_000)
+            .ExclusiveBetween(0, 100_000)
             .When(input => input.DistanceOverSea != null);
         this.RuleFor(input => input.TxEmissionDesignation)
             .MaximumLength(9);

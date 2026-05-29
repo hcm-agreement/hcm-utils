@@ -239,7 +239,7 @@ public partial class StringHelpers
             (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
             input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
             input.RxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
-            (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+            (input.DistanceOverSea?.ToString(CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
             ToFrequencyString(input.RxFrequency, SIPrefix.M).PadLeft(12) +
             input.RxEmissionDesignation.PadLeft(9) +
             input.TxEmissionDesignation.PadLeft(9) +
@@ -297,7 +297,7 @@ public partial class StringHelpers
           (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
           input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
           "".PadLeft(5) +
-          (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          (input.DistanceOverSea?.ToString(CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           "".PadLeft(12) +
           "".PadLeft(9) +
           input.TxEmissionDesignation.PadLeft(9) +
@@ -403,7 +403,7 @@ public partial class StringHelpers
                 ParseBoolean(input[89..90]),
                 input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
                 int.Parse(input[91..96], CultureInfo.InvariantCulture),
-                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                int.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
                 input[127..136],
                 double.TryParse(input[169..174], CultureInfo.InvariantCulture, out var permissibleFieldStrength) ? permissibleFieldStrength : null,
                 ITUHelpers.ParseCountry(input[178..181]),
@@ -434,7 +434,7 @@ public partial class StringHelpers
                 input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
                 int.Parse(input[91..96], CultureInfo.InvariantCulture),
                 int.Parse(input[96..101], CultureInfo.InvariantCulture),
-                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                int.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
                 ParseSINumber(input[106..118]),
                 input[118..127],
                 input[127..136],

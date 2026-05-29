@@ -22,7 +22,7 @@ public class LegacyInputValidatorTest
             true,
             Temperature.Warm,
             10000,
-            10000.0,
+            100000,
             "x5M00G7WEF",
             10_000.0,
             Country.Germany,
