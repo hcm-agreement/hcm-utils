@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-dotnet@v5
-      - run: dotnet pack
+      - run: dotnet pack -o build
       - uses: NuGet/login@v1
         id: login
         with:
