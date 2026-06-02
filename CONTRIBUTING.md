@@ -53,7 +53,7 @@ before submitting your pull request for approval in order to verify your code co
 
 ## Releasing
 
-The following only applies to package maintainers>
+The following only applies to package maintainers.
 
 In order to release a new package to nuget, [create a GitHub release](https://github.com/hcm-agreement/hcm-utils/releases/new). Make sure the correct version number is listed in the `HCMUtils.csproj` file for the package version and the assembly version. These version should be the same.
 
