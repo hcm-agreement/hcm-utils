@@ -114,6 +114,7 @@ public partial class StringHelpers
     {
         "w" => Temperature.Warm,
         "c" => Temperature.Cold,
+        "i" => Temperature.Intermediate,
         _ => throw new ArgumentException($"Unable to parse temperature `{input}")
     };
 
@@ -205,7 +206,13 @@ public partial class StringHelpers
     /// <returns>The ouput string, e.g. "1"</returns>
     public static string ToBooleanString(bool input) => input ? "1" : "0";
 
-    public static string ToTemperatureString(Temperature temperature) => temperature == Temperature.Warm ? "W" : "C";
+    public static string ToTemperatureString(Temperature temperature) => temperature switch
+    {
+        Temperature.Cold => "C",
+        Temperature.Intermediate => "I",
+        Temperature.Warm => "W",
+        _ => throw new ArgumentException($"Not an enum value {temperature}")
+    };
 
     /// <summary>
     /// Returns a legacy string for point-to-point calculations
@@ -239,7 +246,7 @@ public partial class StringHelpers
             (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
             input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
             input.RxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
-            (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+            (input.DistanceOverSea?.ToString(CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
             ToFrequencyString(input.RxFrequency, SIPrefix.M).PadLeft(12) +
             input.RxEmissionDesignation.PadLeft(9) +
             input.TxEmissionDesignation.PadLeft(9) +
@@ -297,7 +304,7 @@ public partial class StringHelpers
           (input.SeaTemperature == null ? " " : ToTemperatureString((Temperature)input.SeaTemperature)) + // waiting until they fixed dotnet/csharplang#33
           input.TxServiceAreaRadius.ToString(CultureInfo.InvariantCulture).PadLeft(5) +
           "".PadLeft(5) +
-          (input.DistanceOverSea?.ToString("###.0", CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
+          (input.DistanceOverSea?.ToString(CultureInfo.InvariantCulture).PadLeft(5) ?? "     ") +
           "".PadLeft(12) +
           "".PadLeft(9) +
           input.TxEmissionDesignation.PadLeft(9) +
@@ -372,6 +379,7 @@ public partial class StringHelpers
 
         return new LegacyOutput(
             input,
+            ParseTemperature(outputString[90..91]),
             outputString[376..382].Trim(),
             ParseCoordinates(outputString[402..417]),
             ParseCoordinates(outputString[417..432]),
@@ -403,7 +411,7 @@ public partial class StringHelpers
                 ParseBoolean(input[89..90]),
                 input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
                 int.Parse(input[91..96], CultureInfo.InvariantCulture),
-                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                int.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
                 input[127..136],
                 double.TryParse(input[169..174], CultureInfo.InvariantCulture, out var permissibleFieldStrength) ? permissibleFieldStrength : null,
                 ITUHelpers.ParseCountry(input[178..181]),
@@ -434,7 +442,7 @@ public partial class StringHelpers
                 input[90..91].Trim().Length > 0 ? ParseTemperature(input[90..91]) : null,
                 int.Parse(input[91..96], CultureInfo.InvariantCulture),
                 int.Parse(input[96..101], CultureInfo.InvariantCulture),
-                double.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
+                int.TryParse(input[101..106], CultureInfo.InvariantCulture, out var distanceOverSea) ? distanceOverSea : null,
                 ParseSINumber(input[106..118]),
                 input[118..127],
                 input[127..136],

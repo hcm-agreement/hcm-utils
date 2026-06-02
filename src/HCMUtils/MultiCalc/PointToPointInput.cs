@@ -4,7 +4,7 @@ using HCMUtils.Types;
 
 public record PointToPointInput(
     int Mode,
-    (double Lat, double Long) TxCoordinates,
+    (double Long, double Lat) TxCoordinates,
     int? TxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
     double TxAzimuth,
@@ -17,7 +17,7 @@ public record PointToPointInput(
     Temperature? SeaTemperature,
     double? DistanceOverSea,
     int TxServiceAreaRadius,
-    (double Lat, double Long) RxCoordinates,
+    (double Long, double Lat) RxCoordinates,
     int? RxSiteHeight,
     int RxAntennaHeight,
     Country TxCountry,

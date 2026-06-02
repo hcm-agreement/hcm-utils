@@ -38,8 +38,8 @@ namespace HCMUtils.Types;
 /// <param name="MorphoPath">An absolute path where to find the morpho data</param>
 /// <param name="DebugOutputPath">An absolute path where a debug output will be placed</param>
 public record LegacyPointToPointInput(
-    (double Lat, double Long) TxCoordinates,
-    (double Lat, double Long) RxCoordinates,
+    (double Long, double Lat) TxCoordinates,
+    (double Long, double Lat) RxCoordinates,
     int? TxSiteHeight,
     int? RxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
@@ -54,7 +54,7 @@ public record LegacyPointToPointInput(
     Temperature? SeaTemperature,
     int TxServiceAreaRadius,
     int RxServiceAreaRadius,
-    double? DistanceOverSea,
+    int? DistanceOverSea,
     double RxFrequency,
     string RxEmissionDesignation,
     string TxEmissionDesignation,
@@ -65,7 +65,7 @@ public record LegacyPointToPointInput(
     double RxGain,
     double DepolarizationLoss,
     double? PermissibleFieldStrength,
-    int? FrequencyDifferenceCorrectionFactor,
+    double? FrequencyDifferenceCorrectionFactor,
     Country RxCountry,
     Country TxCountry,
     string TopoPath,

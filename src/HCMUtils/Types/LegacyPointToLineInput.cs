@@ -26,7 +26,7 @@ namespace HCMUtils.Types;
 /// <param name="MorphoPath">An absolute path where to find the morpho data</param>
 /// <param name="DebugOutputPath">An absolute path where a debug output will be placed</param>
 public record LegacyPointToLineInput(
-    (double Lat, double Long) TxCoordinates,
+    (double Long, double Lat) TxCoordinates,
     int? TxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
     double TxAzimuth,
@@ -38,7 +38,7 @@ public record LegacyPointToLineInput(
     bool ChannelOccupation,
     Temperature? SeaTemperature,
     int TxServiceAreaRadius,
-    double? DistanceOverSea,
+    int? DistanceOverSea,
     string TxEmissionDesignation,
     double? PermissibleFieldStrength,
     Country TargetCountry,

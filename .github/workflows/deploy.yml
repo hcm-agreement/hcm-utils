@@ -1,0 +1,18 @@
+name: deploy
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  deploy:
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+      - run: dotnet pack
+      - uses: NuGet/login@v1
+        id: login
+        with:
+          user: ${{ secrets.NUGET_USER }}
+      - run: dotnet nuget push build/*.nupkg --api-key ${{steps.login.outputs.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json

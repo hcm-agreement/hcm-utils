@@ -4,7 +4,7 @@ using HCMUtils.Types;
 
 public record PointToLineInput(
     int Mode,
-    (double Lat, double Long) TxCoordinates,
+    (double Long, double Lat) TxCoordinates,
     int? TxSiteHeight,
     (string Horizontal, string Vertical) TxAntennaType,
     double TxAzimuth,
