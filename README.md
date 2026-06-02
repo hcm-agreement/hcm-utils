@@ -12,7 +12,7 @@ A .NET library for dealing with HCM input and output data
 
 ![Workflow Status](https://github.com/hcm-agreement/hcm-utils/actions/workflows/check.yml/badge.svg)
 ![License](https://img.shields.io/github/license/hcm-agreement/hcm-utils)
-![NuGet Version](https://img.shields.io/nuget/hcm-agreement/hcm-utils)
+![NuGet Version](https://img.shields.io/nuget/v/HCMUtils)
 
 
 # Getting Started
