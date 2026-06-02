@@ -32,6 +32,7 @@ jobs:
           path: tests/HCMUtils.Tests/bin/Debug/net10.0/TestResults/coverage.cobertura.xml
           skip_covered: false
           minimum_coverage: 75
+          report_name: check / coverage
   verify-format:
     runs-on: ubuntu-latest
     steps:
