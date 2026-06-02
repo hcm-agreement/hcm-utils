@@ -60,9 +60,3 @@ var gainType = StringHelpers.ParseGainType("E"); // => GainType.Dipole
 # Contributing
 
 Please refer to [the contributing guide](https://github.com/hcm-agreement/hcm-utils/blob/main/CONTRIBUTING.md).
-
-# Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=hcm-agreement/hcm-utils)](https://github.com/hcm-agreement/hcm-utils/graphs/contributors)
-
-Made with [contrib.rocks](https://contrib.rocks).
