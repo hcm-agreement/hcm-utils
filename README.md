@@ -17,14 +17,6 @@ A .NET library for dealing with HCM input and output data
 
 # Getting Started
 
-## Installation
-
-```bash
-dotnet add package HCMAgreement.HCMUtils
-```
-
-The package is supported on Linux and Windows with a minimum .NET SDK of 10.0.
-
 ## Examples
 
 ### Build a legacy string
