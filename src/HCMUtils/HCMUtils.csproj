@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageVersion>0.0.2</PackageVersion>
+    <PackageVersion>0.0.3</PackageVersion>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -12,7 +12,7 @@
   <PropertyGroup>
     <AssemblyTitle>HCMUtils</AssemblyTitle>
     <Copyright>Bundesnetzagentur ©  2026</Copyright>
-    <AssemblyVersion>0.0.2</AssemblyVersion>
+    <AssemblyVersion>0.0.3</AssemblyVersion>
   </PropertyGroup>
 
 

@@ -1,19 +1,13 @@
 
-<div align="center">
-<h3 align="center">@hcm-agreement/hcm-utils</h3>
-<p align="center">
+# @hcm-agreement/hcm-utils
+
 A .NET library for dealing with HCM input and output data
 
-<a href="https://hcm-agreement.github.io/hcm-utils"><strong>Explore the docs »</strong></a>
-<br />
-<a href="https://github.com/hcm-agreement/hcm-utils/issues/new">Report Issue</a>
-</p>
-</div>
+[Explore the docs](https://hcm-agreement.github.io/hcm-utils) - [Report an issue](https://github.com/hcm-agreement/hcm-utils/issues/new)
 
 ![Workflow Status](https://github.com/hcm-agreement/hcm-utils/actions/workflows/check.yml/badge.svg)
 ![License](https://img.shields.io/github/license/hcm-agreement/hcm-utils)
 ![NuGet Version](https://img.shields.io/nuget/v/HCMUtils)
-
 
 # Getting Started
 
