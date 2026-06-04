@@ -13,7 +13,7 @@ namespace HCMUtils.Types;
 /// <param name="RxSiteHeightFromDatabase">No height of Rx site is given or Rx is mobile/line, height is from the terrain database</param>
 /// <param name="RxSiteHeightDifferentFromDatabase">Height of Rx site differs from height of terrain data</param>
 /// <param name="RxSiteHeightLargeDifferenceFromDatabase">Rx site height differs more than 10%, calculated values may be (extremely) wrong!</param>
-/// <param name="FreeSpaceFieldStrengthUsedBecauseSmallDistance">Free space field strength used because distance < 1 km</param>
+/// <param name="FreeSpaceFieldStrengthUsedBecauseSmallDistance">Free space field strength used because distance less than 1 km</param>
 /// <param name="FreeSpaceFieldStrengthUsedBecauseFirstFresnelZoneFree">Free space field strength is used, because 1st Fresnel zone is free</param>
 /// <param name="DistanceOverSeaLargerThanDistanceBetweenTxRx">Distance over sea is greater than total distance. Distance between Tx and Rx is used!</param>
 /// <param name="FrequencyDifferenceCorrectionFactorInputUsed">Input value of correction factor according frequency difference is used</param>
